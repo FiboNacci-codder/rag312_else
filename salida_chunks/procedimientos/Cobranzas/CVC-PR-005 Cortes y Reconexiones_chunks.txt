@@ -1,0 +1,405 @@
+================================================================================
+Chunk: 0 / 23
+Páginas: [1]
+Sección: None
+Tipo: text
+--------------------------------------------------------------------------------
+Código
+Versión
+Aprobado
+Fecha
+Página
+: CVC-PR-005
+: 16
+: CSIG
+: 29/10/2025
+: 1 de 20
+
+================================================================================
+Chunk: 1 / 23
+Páginas: [1]
+Sección: CORTES Y RECONEXIONES
+Tipo: table
+--------------------------------------------------------------------------------
+Dueño del proceso Nivel 0:, 1 = Gerente Comercial. Nombre del proceso Nivel 1:, 1 = Facturación y Cobranzas. Nombre del proceso Nivel 2:, 1 = Recaudación
+
+================================================================================
+Chunk: 2 / 23
+Páginas: [1, 2]
+Sección: PROCEDIMIENTO DE CORTES Y RECONEXIONES
+Tipo: mixto: table, text
+--------------------------------------------------------------------------------
+No
+(
+Elaborado por:, Responsable = Supervisor 2- Cobranzas. Elaborado por:, Fecha = 07/08/2025. Revisado por:, Responsable = Jefe de Ventas. Revisado por:, Fecha = 17/10/2025. , Responsable = Gerente Comercial. , Fecha = 21/10/2025. Homologado por:, Responsable = Especialista en Sistemas de Gestión. Homologado por:, Fecha = 24/10/2025. Aprobado por:, Responsable = Comité del Sistema Integrado de Gestión. Aprobado por:, Fecha = 29/10/2025
+Código
+Versión
+Aprobado
+Fecha
+Página
+: CVC-PR-005
+: 16
+: CSIG
+: 29/10/2025
+: 2 de 20
+
+================================================================================
+Chunk: 3 / 23
+Páginas: [2]
+Sección: CORTES Y RECONEXIONES
+Tipo: table
+--------------------------------------------------------------------------------
+00, Control de cambios.Descripción del cambio = Versión inicial del documento. 00, Control de cambios.Fecha de aprobación = 26/01/2005. 01, Control de cambios.Descripción del cambio = Modificaciones generales. 01, Control de cambios.Fecha de aprobación = 18/07/2007. 02, Control de cambios.Descripción del cambio = Modificaciones generales. 02, Control de cambios.Fecha de aprobación = 06/01/2009. 03, Control de cambios.Descripción del cambio = Modificaciones generales. 03, Control de cambios.Fecha de aprobación = 15/03/2010. 04, Control de cambios.Descripción del cambio = Modificaciones generales. 04, Control de cambios.Fecha de aprobación = 22/07/2013. 05, Control de cambios.Descripción del cambio = -. 05, Control de cambios.Fecha de aprobación = -. 06, Control de cambios.Descripción del cambio = -. 06, Control de cambios.Fecha de aprobación = -. 07, Control de cambios.Descripción del cambio = -. 07, Control de cambios.Fecha de aprobación = -. 08, Control de cambios.Descripción del cambio = -. 08, Control de cambios.Fecha de aprobación = -. 09, Control de cambios.Descripción del cambio = -. 09, Control de cambios.Fecha de aprobación = -. 10, Control de cambios.Descripción del cambio = -. 10, Control de cambios.Fecha de aprobación = -. 11, Control de cambios.Descripción del cambio = -. 11, Control de cambios.Fecha de aprobación = -. 12, Control de cambios.Descripción del cambio = Implementación del GOS. 12, Control de cambios.Fecha de aprobación = 27/09/2017. 13, Control de cambios.Descripción del cambio = Se adiciona los sectores típicos. 13, Control de cambios.Fecha de aprobación = 28/06/2018. 14, Control de cambios.Descripción del cambio = Se integra el CVI-PR-013 como salida del procedimiento. 14, Control de cambios.Fecha de aprobación = 19/03/2021. 15, Control de cambios.Descripción del cambio = Se mapea la actividad de carga de listado de OT en el GOS.. 15, Control de cambios.Fecha de aprobación = 03/04/2025. 16, Control de cambios.Descripción del cambio = Versión inicial del documento. 16, Control de cambios.Fecha de aprobación = 29/10/2025
+, 1 = Documento de aprobación Fecha. Acta de comité SIG, 1 = 29/10/2025
+
+================================================================================
+Chunk: 4 / 23
+Páginas: [3]
+Sección: 1. OBJETIVOS Y ALCANCE
+Tipo: text
+--------------------------------------------------------------------------------
+Establecer las actividades a clientes deudores a los que se les generen órdenes de corte y reconexión del suministro de energía eléctrica de Red Baja Tensión y Media Tensión. El alcance de aplicación del presente procedimiento es para todo el ámbito de Electro Sur Este S.A.A
+
+================================================================================
+Chunk: 5 / 23
+Páginas: [3]
+Sección: 2. DEFINICIONES
+Tipo: list_item
+--------------------------------------------------------------------------------
+- 2.1. GOS: Gestión de órdenes de servicio.
+- 2.2. Red  de  Baja  Tensión: Son  las  instalaciones  del  concesionario  mediante  la  cual  se transfiere energía eléctrica desde las sub-estaciones de distribución hasta los puntos de entrega a los clientes, con un nivel de tensión de hasta 1 kV.
+- 2.3. Red de Media Tensión: Son las instalaciones del concesionario que permiten transferir energía eléctrica desde los alimentadores primarios hasta los puntos de entrega a los clientes, con un nivel de tensión de hasta 30 kV.
+- 2.4. Ordenes de Cortes: Es una base de datos que contiene, datos de los clientes deudores desde 02 meses (incluye deudores: activos, anulados, con cortes anteriores), para ser ejecutadas por el contratista.
+- 2.5. Órdenes de Reconexiones: Es una base de datos que contiene las órdenes de trabajo de  reconexiones  de  los  deudores  que  pagan  su  deuda,  para  ser  ejecutadas  por  el contratista.
+
+================================================================================
+Chunk: 6 / 23
+Páginas: [3]
+Sección: 2.6. Muestra en Campo
+Tipo: mixto: list_item, text
+--------------------------------------------------------------------------------
+De acuerdo con SIG-TA-001 tablas de muestras para la supervisión El tamaño del lote para las muestras en campo se realizará por zona:
+Para CONSIDERARSE SATISFACTORIO como calidad media del producto o servicio, el nivel de error permitido a considerarse será 'σ'=1.0
+- Se considera UNIDAD DEFECTUOSA (no conforme a la supervisión), cuando no se ejecute el Corte/Reconexión del suministro y/o cuando no se cumpla con el instructivo CVC-IN-005 Ejecución de Cortes/Reconexiones.
+- 2.7. Criterios temporales: En la medida que se presenten situaciones que afectan al SIG y su  desempeño  normal,  se  aplican  criterios  temporales,  como,  por  ejemplo,  una pandemia,  un  siniestro ocasionado  por  la  naturaleza donde  se  aplica  un  plan contingencias de grandes desastres.
+
+================================================================================
+Chunk: 7 / 23
+Páginas: [3]
+Sección: 3. MARCO NORMATIVO Y/O DOCUMENTOS RELACIONADOS
+Tipo: list_item
+--------------------------------------------------------------------------------
+- 3.1. CVC-PR-001 Recaudación de cobranzas
+- 3.2. CVC-IN-005 Ejecución de cortes y reconexiones
+- 3.3. SIG-RE-017 Cronograma del proceso de Comercialización
+- 3.4. SIG-TA-001 Tabla de muestras
+- 3.5. Resolución N° 153-2013-OS/CD 'Procedimiento para la supervisión del cumplimiento de las normas vigentes sobre corte y reconexión del servicio público de electricidad
+
+================================================================================
+Chunk: 8 / 23
+Páginas: [3]
+Sección: 4. RECURSOS HUMANOS Y RESPONSABILIDADES
+Tipo: list_item
+--------------------------------------------------------------------------------
+- 4.1. El Comité del Sistema Integrado de Gestión (CSIG), es responsable de la aprobación del Presente procedimiento.
+- 4.2. El supervisor de Cortes y Reconexiones, o quien haga sus veces, es el encargado de implementar y supervisar que este procedimiento se ejecute.
+
+================================================================================
+Chunk: 9 / 23
+Páginas: [3, 4]
+Sección: 5. INFRAESTRUCTURA, RECURSOS Y AMBIENTE
+Tipo: mixto: list_item, text
+--------------------------------------------------------------------------------
+- 5.1. SIELSE.
+Código
+Versión
+Aprobado
+Fecha
+Página
+: CVC-PR-005
+: 16
+: CSIG
+: 29/10/2025
+: 3 de 20
+- 5.2. Web Osinergmin.
+- 5.3. Oficinas / Instalaciones / Zona de concesión de Electro Sur Este S.A.A.
+
+================================================================================
+Chunk: 10 / 23
+Páginas: [4]
+Sección: 6. DESARROLLO / PROCEDIMIENTO
+Tipo: text
+--------------------------------------------------------------------------------
+El procedimiento de cortes por campaña y sostenimiento se encuentra desarrollado en Flujo N°1.
+El procedimiento de reconexiones se encuentra desarrollado en Flujo N°2.
+
+================================================================================
+Chunk: 11 / 23
+Páginas: [4]
+Sección: 7. REGISTROS Y ANEXOS
+Tipo: mixto: list_item, text
+--------------------------------------------------------------------------------
+Los registros generados son:
+- 7.1. CVC-RE-003 Campaña de supervisión de cortes y reconexiones
+- 7.2. SGC- RE-017 Cronograma comercial
+- 7.3. Anexo 3A
+- 7.4. Anexo 5
+
+================================================================================
+Chunk: 12 / 23
+Páginas: [5, 6, 7, 8]
+Sección: CORTES Y RECONEXIONES
+Tipo: mixto: caption, table, text
+--------------------------------------------------------------------------------
+Código
+Versión
+Aprobado
+Fecha
+Página
+: CVC-PR-005
+: 16
+: CSIG
+: 29/10/2025
+: 5 de 20
+Flujo 1: Cortes por campaña y sostenimiento
+Código
+Versión
+Aprobado
+Fecha
+Página
+: CVC-PR-005
+: 16
+: CSIG
+: 29/10/2025
+: 6 de 20
+-, Entradas = SGC-RE-017 Cronograma Comercial. -, N° = 1. -, Descripción Actividades = Coordina recursos asignados para la campaña de corte de acuerdo con contrato. -, Salidas = . -, Clientes = Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces. -, Ejecutor de la Actividad = Contratista (Supervisor). -, Sistema que soporta la Activida d = SIELSE. -, ¿Es control Cable? (Sí=x) = . Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Entradas = Recibos y sus fechas de vencimientos de pagos CVC-PR-001 Recaudación. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, N° = 2. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Descripción Actividades = ¿Es campaña de cortes? SI: Va a la actividad 4 NO: Va a la actividad 3. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Salidas = -. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Clientes = Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Ejecutor de la Actividad = Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Sistema que soporta la Activida d = SIELSE. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, ¿Es control Cable? (Sí=x) = . Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Entradas = Reporte de usuarios con corte. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, N° = 3. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Descripción Actividades = Generar campaña de cortes según zona, en base al consumo observado Este padrón se elaborará considerando lo siguiente: • Si un usuario, cuya orden de corte ha sido ejecutada, registra consumo en el periodo facturado, se interpretará como una posible reconexión irregular. • En estos casos, el sistema deberá detectar automáticamente dicho consumo y generar el padrón correspondiente para ejecutar los cortes por sostenimiento Esta medida tiene como finalidad identificar posibles reconexiones no autorizadas, reforzar el control operativo y reducir las pérdidas comerciales asociadas.. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Salidas = Padrón de cortes. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Clientes = Sistema. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Ejecutor de la Actividad = Sistema. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Sistema que soporta la Activida d = SIELSE. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, ¿Es control Cable? (Sí=x) = 
+Prohibido reproducir sin autorización de la Alta Dirección de ELSE
+Código
+Versión
+Aprobado
+Fecha
+Página
+: CVC-PR-005
+: 16
+: CSIG
+: 29/10/2025
+: 7 de 20
+Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Entradas = SGC-RE-017 Cronograma Comercial Plan de trabajo. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, N° = 4. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Descripción Actividades = Generar campaña de cortes según zona, De acuerdo con cronograma de procesos comerciales.. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Salidas = -. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Clientes = Sistema. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Ejecutor de la Actividad = Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Sistema que soporta la Activida d = SIELSE. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, ¿Es control Cable? (Sí=x) = . Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Entradas = -. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, N° = 5. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Descripción Actividades = ¿Ha vencido el plazo de pago? SI: Va a la actividad 6 NO: Fin del proceso. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Salidas = -. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Clientes = Sistema. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Ejecutor de la Actividad = Sistema. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Sistema que soporta la Activida d = SIELSE. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, ¿Es control Cable? (Sí=x) = . Sistema, Entradas = -. Sistema, N° = 6. Sistema, Descripción Actividades = ¿Cliente tiene más de 1 mes de deuda? SI: Va a la actividad 7 NO: Fin del proceso. Sistema, Salidas = -. Sistema, Clientes = Sistema. Sistema, Ejecutor de la Actividad = Sistema. Sistema, Sistema que soporta la Activida d = SIELSE. Sistema, ¿Es control Cable? (Sí=x) = . Sistema, Entradas = -. Sistema, N° = 7. Sistema, Descripción Actividades = Generar órdenes de corte. Sistema, Salidas = Órdenes de corte. Sistema, Clientes = Sistema. Sistema, Ejecutor de la Actividad = Sistema. Sistema, Sistema que soporta la Activida d = SIELSE. Sistema, ¿Es control Cable? (Sí=x) = . Sistema, Entradas = Órdenes de corte. Sistema, N° = 8. Sistema, Descripción Actividades = Filtrar el padrón de cortes y subir base de datos filtrado al SIELSE De acuerdo con los siguientes criterios: Monto de deuda, Meses de deuda, Nivel de Consumo. Sistema, Salidas = Base de datos filtrado. xsl. Sistema, Clientes = Sistema. Sistema, Ejecutor de la Actividad = Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces. Sistema, Sistema que soporta la Activida d = SIELSE. Sistema, ¿Es control Cable? (Sí=x) = 
+Código
+Versión
+Aprobado
+Fecha
+Página
+: CVC-PR-005
+: 16
+: CSIG
+: 29/10/2025
+: 8 de 20
+
+================================================================================
+Chunk: 13 / 23
+Páginas: [8, 9]
+Sección: CORTES Y RECONEXIONES
+Tipo: mixto: table, text
+--------------------------------------------------------------------------------
+Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Entradas = TDC de corte. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, N° = 9. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Descripción Actividades = Cargar listado de ordenes de trabajo en el sistema GOS. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Salidas = TDC de corte. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Clientes = Contratista (Supervisor). Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Ejecutor de la Actividad = Sistema. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Sistema que soporta la Activida d = SIELSE. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, ¿Es control Cable? (Sí=x) = . Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Entradas = TDC de corte. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, N° = 10. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Descripción Actividades = Recibir notificación de órdenes de trabajo de campo (TDC) para programar cortes Vía GOS el contratista recibe la base de datos de los clientes con deuda para la ejecución de los cortes según pago de los clientes durante la campaña de cortes. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Salidas = TDC de corte. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Clientes = Contratista (Supervisor). Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Ejecutor de la Actividad = Contratista (Supervisor). Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Sistema que soporta la Activida d = SIELSE. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, ¿Es control Cable? (Sí=x) = . Contratista (Supervisor), Entradas = TDC de corte. Contratista (Supervisor), N° = 11. Contratista (Supervisor), Descripción Actividades = Programar y distribuir jornada de trabajo por técnico El contratista distribuye la programación de los cortes a través del Sistema GOS SIELSE.. Contratista (Supervisor), Salidas = Jornada de trabajo programado. Contratista (Supervisor), Clientes = Contratista (Técnico). Contratista (Supervisor), Ejecutor de la Actividad = Contratista (Supervisor). Contratista (Supervisor), Sistema que soporta la Activida d = SIELSE. Contratista (Supervisor), ¿Es control Cable? (Sí=x) = . Contratista (Supervisor), Entradas = Jornada de trabajo programado. Contratista (Supervisor), N° = 12. Contratista (Supervisor), Descripción Actividades = Descargar listado de trabajos de campo. Contratista (Supervisor), Salidas = Listado de TDC. Contratista (Supervisor), Clientes = Contratista (Técnico). Contratista (Supervisor), Ejecutor de la Actividad = Contratista (Técnico). Contratista (Supervisor), Sistema que soporta la Activida d = SIELSE. Contratista (Supervisor), ¿Es control Cable? (Sí=x) = . Contratista (Técnico), Entradas = -. Contratista (Técnico), N° = 13. Contratista (Técnico), Descripción Actividades = ¿Cliente paga deuda? SI: Fin del proceso NO: Va a la actividad 14. Contratista (Técnico), Salidas = -. Contratista (Técnico), Clientes = Contratista (Técnico). Contratista (Técnico), Ejecutor de la Actividad = Contratista (Técnico). Contratista (Técnico), Sistema que soporta la Activida d = SIELSE (GOS). Contratista (Técnico), ¿Es control Cable? (Sí=x) = . Contratista (Técnico), Entradas = Listado de TDC. Contratista (Técnico), N° = 14. Contratista (Técnico), Descripción Actividades = Ejecutar las ordenes de corte CVS-IN-005 Ejecución de cortes y reconexión El contratista ejecuta el corte cumpliendo el instructivo CVS-IN-005. Contratista (Técnico), Salidas = CVS-IN-005 Ejecución de cortes y reconexión. Contratista (Técnico), Clientes = Contratista (Técnico). Contratista (Técnico), Ejecutor de la Actividad = Contratista (Técnico). Contratista (Técnico), Sistema que soporta la Activida d = SIELSE (GOS). Contratista (Técnico), ¿Es control Cable? (Sí=x) = 
+Código
+Versión
+Aprobado
+Fecha
+Página
+: CVC-PR-005
+: 16
+: CSIG
+: 29/10/2025
+: 9 de 20
+
+================================================================================
+Chunk: 14 / 23
+Páginas: [9, 10]
+Sección: CORTES Y RECONEXIONES
+Tipo: mixto: table, text
+--------------------------------------------------------------------------------
+Contratista (Técnico), Entradas = -. Contratista (Técnico), N° = 15. Contratista (Técnico), Descripción Actividades = Cerrar jornada de trabajo El contratista registra los cortes ejecutados en el día, mediante el sistema GOS SIELSE: • Tipo de corte • Numero de sticker • Lectura • Remaches de la caja toma • Precinto de medidor de caja toma • Y sube las fotos que sustentan la ejecución del trabajo • Observaciones, donde se detalla la causa del impedimento de la ejecución del corte o reconexión. Contratista (Técnico), Salidas = Jornada de trabajo cerrada. Contratista (Técnico), Clientes = Contratista (Supervisor). Contratista (Técnico), Ejecutor de la Actividad = Contratista (Técnico). Contratista (Técnico), Sistema que soporta la Activida d = SIELSE. Contratista (Técnico), ¿Es control Cable? (Sí=x) = . Contratista (Técnico), Entradas = Listado de TDC. Contratista (Técnico), N° = 16. Contratista (Técnico), Descripción Actividades = Monitorear avance de la ejecución de cortes. Contratista (Técnico), Salidas = -. Contratista (Técnico), Clientes = Contratista (Supervisor). Contratista (Técnico), Ejecutor de la Actividad = Contratista (Supervisor). Contratista (Técnico), Sistema que soporta la Activida d = SIELSE. Contratista (Técnico), ¿Es control Cable? (Sí=x) = . Contratista (Supervisor), Entradas = -. Contratista (Supervisor), N° = 17. Contratista (Supervisor), Descripción Actividades = ¿Quedan suministros por cortar? SI: Va a la actividad 18 NO: Va a la actividad 19. Contratista (Supervisor), Salidas = -. Contratista (Supervisor), Clientes = Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces. Contratista (Supervisor), Ejecutor de la Actividad = Contratista (Supervisor). Contratista (Supervisor), Sistema que soporta la Activida d = SIELSE. Contratista (Supervisor), ¿Es control Cable? (Sí=x) = . Contratista (Supervisor), Entradas = Suministros pendientes de corte. Contratista (Supervisor), N° = 18. Contratista (Supervisor), Descripción Actividades = Reprograma campaña de cortes Va a la actividad 12. Contratista (Supervisor), Salidas = Reprogramaci ón de cortes. Contratista (Supervisor), Clientes = Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces. Contratista (Supervisor), Ejecutor de la Actividad = Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces. Contratista (Supervisor), Sistema que soporta la Activida d = SIELSE. Contratista (Supervisor), ¿Es control Cable? (Sí=x) = 
+Código
+Versión
+Aprobado
+Fecha
+Página
+: CVC-PR-005
+: 16
+: CSIG
+: 29/10/2025
+: 10 de 20
+Contratista (Supervisor), Entradas = Total, de TDC culminados. Contratista (Supervisor), N° = 19. Contratista (Supervisor), Descripción Actividades = Informar al ejecutivo de Cobranzas/ Supervisor Comercial. Contratista (Supervisor), Salidas = -. Contratista (Supervisor), Clientes = Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces. Contratista (Supervisor), Ejecutor de la Actividad = Contratista (Supervisor). Contratista (Supervisor), Sistema que soporta la Activida d = -. Contratista (Supervisor), ¿Es control Cable? (Sí=x) = -. Contratista (Supervisor), Entradas = -. Contratista (Supervisor), N° = 20. Contratista (Supervisor), Descripción Actividades = Tomar conocimiento. Contratista (Supervisor), Salidas = -. Contratista (Supervisor), Clientes = Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces. Contratista (Supervisor), Ejecutor de la Actividad = Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces. Contratista (Supervisor), Sistema que soporta la Activida d = -. Contratista (Supervisor), ¿Es control Cable? (Sí=x) = -. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Entradas = . Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, N° = 21. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Descripción Actividades = ¿Se cerró campaña de corte por zona? SI: Va a la actividad 24 NO: Va a la actividad 22. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Salidas = -. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Clientes = Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Ejecutor de la Actividad = Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Sistema que soporta la Activida d = SIELSE. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, ¿Es control Cable? (Sí=x) = -. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Entradas = -. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, N° = 22. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Descripción Actividades = Comunicar al Sup. De la contratista que concluya el cierre de la ordenes de trabajo de corte. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Salidas = -. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Clientes = Contratista (Supervisor). Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Ejecutor de la Actividad = Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Sistema que soporta la Activida d = SIELSE. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, ¿Es control Cable? (Sí=x) = -. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Entradas = -. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, N° = 23. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Descripción Actividades = Verificar causas e informar inconvenientes si los tuviera Va a la actividad 16. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Salidas = -. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Clientes = Contratista (Supervisor). Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Ejecutor de la Actividad = Contratista (Supervisor). Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Sistema que soporta la Activida d = SIELSE. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, ¿Es control Cable? (Sí=x) = -
+
+================================================================================
+Chunk: 15 / 23
+Páginas: [11, 12]
+Sección: PROCEDIMIENTO CORTES Y RECONEXIONES
+Tipo: mixto: table, text
+--------------------------------------------------------------------------------
+Código
+Versión
+Aprobado
+Fecha
+Página
+: CVC-PR-005
+: 16
+: CSIG
+: 29/10/2025
+: 11 de 20
+Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Entradas = Muestra. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, N° = 24. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Descripción Actividades = Ejecutar supervisión en gabinete mediante el aplicativo SIELSE GOS. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Salidas = CVC-RE-003 Campaña de supervisión de cortes y reconexiones. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Clientes = Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Ejecutor de la Actividad = Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Sistema que soporta la Activida d = SIELSE. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, ¿Es control Cable? (Sí=x) = -. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Entradas = -. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, N° = 25. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Descripción Actividades = Registrar en el Módulo Supervisión de cortes por cada suministro de la muestra. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Salidas = -. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Clientes = Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Ejecutor de la Actividad = Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Sistema que soporta la Activida d = SIELSE. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, ¿Es control Cable? (Sí=x) = -. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Entradas = -. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, N° = 26. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Descripción Actividades = ¿Suministro fue cortado y con el procedimiento correcto? SI: Va a la actividad 27 NO: Va a la actividad 28. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Salidas = -. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Clientes = Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Ejecutor de la Actividad = Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Sistema que soporta la Activida d = SIELSE. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, ¿Es control Cable? (Sí=x) = -. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Entradas = Conformidad del servicio. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, N° = 27. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Descripción Actividades = Emitir conformidad del servicio Fin del proceso. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Salidas = Conformidad. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Clientes = Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Ejecutor de la Actividad = Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Sistema que soporta la Activida d = SIELSE. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, ¿Es control Cable? (Sí=x) = -
+Código
+Versión
+Aprobado
+Fecha
+Página
+: CVC-PR-005
+: 16
+: CSIG
+: 29/10/2025
+: 12 de 20
+
+================================================================================
+Chunk: 16 / 23
+Páginas: [12, 13]
+Sección: CORTES Y RECONEXIONES
+Tipo: mixto: table, text
+--------------------------------------------------------------------------------
+Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Entradas = -. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, N° = 28. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Descripción Actividades = Generar una no conformidad Va al procedimiento SIG-PR-007 Control de Productos y Servicios No Conformes. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Salidas = No conformidad SIG-PR-007 Control de Productos y Servicios No Conformes. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Clientes = Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Ejecutor de la Actividad = Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Sistema que soporta la Activida d = SIELSE. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, ¿Es control Cable? (Sí=x) = -. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Entradas = -. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, N° = 29. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Descripción Actividades = ¿Es conforme? Si: Va a la actividad 27 No: Va a la actividad 30. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Salidas = -. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Clientes = Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Ejecutor de la Actividad = Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Sistema que soporta la Activida d = -. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, ¿Es control Cable? (Sí=x) = -. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Entradas = -. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, N° = 30. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Descripción Actividades = ¿Observaciones son atribuibles a Contratista? Si: Va a la actividad 31 No: Va a la actividad 32. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Salidas = -. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Clientes = Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Ejecutor de la Actividad = Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Sistema que soporta la Activida d = -. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, ¿Es control Cable? (Sí=x) = -. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Entradas = . Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, N° = 31. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Descripción Actividades = Aplicar penalidad Fin del proceso. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Salidas = Penalidad. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Clientes = Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Ejecutor de la Actividad = Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Sistema que soporta la Activida d = -. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, ¿Es control Cable? (Sí=x) = -
+Prohibido reproducir sin autorización de la Alta Dirección de ELSE
+Código
+Versión
+Aprobado
+Fecha
+Página
+: CVC-PR-005
+: 16
+: CSIG
+: 29/10/2025
+: 13 de 20
+
+================================================================================
+Chunk: 17 / 23
+Páginas: [13, 14]
+Sección: CORTES Y RECONEXIONES
+Tipo: mixto: table, text
+--------------------------------------------------------------------------------
+Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Entradas = Observaciones detectadas. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, N° = 32. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Descripción Actividades = Comunicar observaciones De los suministros. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Salidas = -. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Clientes = Instalaciones / Supervisión Comercial. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Ejecutor de la Actividad = Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Sistema que soporta la Activida d = -. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, ¿Es control Cable? (Sí=x) = -. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Entradas = -. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, N° = 33. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Descripción Actividades = ¿Es 1ro de Julio o 1ro de Enero? Si: Va a la actividad 34 No: Va a la actividad 36. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Salidas = -. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Clientes = Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Ejecutor de la Actividad = Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Sistema que soporta la Activida d = -. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, ¿Es control Cable? (Sí=x) = -. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Entradas = -. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, N° = 34. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Descripción Actividades = Elaborar el informe semestral para OSINERGMIN a nivel empresarial (Anexo N°05) Anexo N° 5 - "Publicación en el portal web de OSINERGMIN de la información sobre el total de cortes ejecutados" En la página web de OSINERGMIN. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Salidas = Informe semestral. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Clientes = Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Ejecutor de la Actividad = Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Sistema que soporta la Activida d = -. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, ¿Es control Cable? (Sí=x) = . Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Entradas = Informe semestral. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, N° = 35. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Descripción Actividades = Enviar archivo (Anexo 5) con la información de cortes según plazo establecido por Osinergmin. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Salidas = Informe semestral Anexo 5. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Clientes = Osinergmin. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Ejecutor de la Actividad = Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Sistema que soporta la Activida d = Web OSINE RGMIN. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, ¿Es control Cable? (Sí=x) = -. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Entradas = -. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, N° = 36. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Descripción Actividades = Enviar 'resumen de Cortes' a OSIGNERMIN y ELSE (Anexo N°3A) Se realiza de manera paralela a la actividad 04 Se utiliza el anexo N° 3A - "Publicación en el portal web de OSINERGMIN de la información del total del programa de cortes" y en la web ELSE. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Salidas = Informe a OSINERGMIN 'Resumen de cortes'. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Clientes = Osinergmin. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Ejecutor de la Actividad = Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Sistema que soporta la Activida d = Web OSINE RGMIN Web ELSE. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, ¿Es control Cable? (Sí=x) = -
+Código
+Aprobado
+: CVC-PR-005
+: 16
+: CSIG
+: 29/10/2025
+: 14 de 20
+Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Entradas = Informe a OSINERGMIN 'Resumen de cortes'. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, N° = 37. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Descripción Actividades = Archivar. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Salidas = Archivo. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Clientes = -. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Ejecutor de la Actividad = Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Sistema que soporta la Activida d = SIELSE. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, ¿Es control Cable? (Sí=x) = 
+Com
+No
+Copia
+
+================================================================================
+Chunk: 18 / 23
+Páginas: [15, 16]
+Sección: Flujo 2: Reconexiones
+Tipo: text
+--------------------------------------------------------------------------------
+Código
+Versión
+Aprobado
+Fecha
+Página
+: CVC-PR-005
+: 16
+: CSIG
+: 29/10/2025
+: 15 de 20
+Código
+Versión
+Aprobado
+Fecha
+Página
+: CVC-PR-005
+: 16
+: CSIG
+: 29/10/2025
+: 16 de 20
+
+================================================================================
+Chunk: 19 / 23
+Páginas: [16, 17, 18]
+Sección: CORTES Y RECONEXIONES
+Tipo: mixto: table, text
+--------------------------------------------------------------------------------
+Facturación, Entradas = Recibos y sus fechas de vencimientos de pagos. Facturación, N° = 1. Facturación, Descripción Actividades = CVC-PR-001 Recaudación ¿Suministro en situación de corte esta con deuda cancelada?: Si: Va a la actividad 3 No: Fin del proceso. Facturación, Salidas = -. Facturación, Clientes = Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces. Facturación, Ejecutor de la Actividad = Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces. Facturación, Sistema que soporta la Actividad = SIELSE. Facturación, ¿Es control Cable? (Sí=x) = . -, Entradas = SGC-RE-017 Cronograma Comercial. -, N° = 2. -, Descripción Actividades = Coordina recursos asignados para la campaña de corte de acuerdo con contrato Va a la actividad 03. -, Salidas = Plan de trabajo. -, Clientes = Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces. -, Ejecutor de la Actividad = Contratista (Supervisor ). -, Sistema que soporta la Actividad = SIELSE. -, ¿Es control Cable? (Sí=x) = . Sistema, Entradas = -. Sistema, N° = 3. Sistema, Descripción Actividades = Generar automáticamente el listado de Trabajos De Campo (TDC) de reconexión Vía SIELSE se programa la orden de trabajo por zona con los clientes que ya cancelaron su deuda y esta información es transferida vía GOS hacia el contratista.. Sistema, Salidas = TDC de reconexión. Sistema, Clientes = Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces. Sistema, Ejecutor de la Actividad = Sistema. Sistema, Sistema que soporta la Actividad = SIELSE. Sistema, ¿Es control Cable? (Sí=x) = . Sistema, Entradas = TDC de reconexión. Sistema, N° = 4. Sistema, Descripción Actividades = Cargar listado de ordenes de reconexión en el sistema GOS. Sistema, Salidas = TDC de reconexión. Sistema, Clientes = Contratista (Técnico). Sistema, Ejecutor de la Actividad = Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces. Sistema, Sistema que soporta la Actividad = SIELSE. Sistema, ¿Es control Cable? (Sí=x) = 
+Prohibido reproducir sin autorización de la Alta Dirección de ELSE
+Código
+Versión
+Aprobado
+Fecha
+Página
+: CVC-PR-005
+: 16
+: CSIG
+: 29/10/2025
+: 17 de 20
+Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Entradas = TDC de reconexión. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, N° = 5. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Descripción Actividades = Recibir notificación de ordenes de Campo (TDC) para reconexiones Vía GOS el contratista recibe la base de datos de los clientes que cancelaron su deuda para la ejecución de las reconexiones. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Salidas = TDC de reconexión. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Clientes = Contratista (Técnico). Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Ejecutor de la Actividad = Contratista (Técnico). Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Sistema que soporta la Actividad = SIELSE. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, ¿Es control Cable? (Sí=x) = . Contratista (Técnico), Entradas = -. Contratista (Técnico), N° = 6. Contratista (Técnico), Descripción Actividades = Ejecutar las ordenes de reconexión CVS-IN-005 Ejecución de cortes y reconexión Se debe ejecutar dentro del plazo de 24 horas si es urbano y 48 horas si es rural.. Contratista (Técnico), Salidas = -. Contratista (Técnico), Clientes = Contratista (Supervisor ). Contratista (Técnico), Ejecutor de la Actividad = Contratista (Técnico). Contratista (Técnico), Sistema que soporta la Actividad = SIELSE (GOS). Contratista (Técnico), ¿Es control Cable? (Sí=x) = . Contratista (Técnico), Entradas = -. Contratista (Técnico), N° = 7. Contratista (Técnico), Descripción Actividades = Monitorear avance de la ejecución de reconexiones. Contratista (Técnico), Salidas = -. Contratista (Técnico), Clientes = Contratista (Supervisor ). Contratista (Técnico), Ejecutor de la Actividad = Contratista (Supervisor ). Contratista (Técnico), Sistema que soporta la Actividad = SIELSE. Contratista (Técnico), ¿Es control Cable? (Sí=x) = . Contratista (Supervisor ), Entradas = -. Contratista (Supervisor ), N° = 8. Contratista (Supervisor ), Descripción Actividades = ¿Se ejecuto la reconexión? Si: Va a la actividad 9 No: Va a la actividad 6. Contratista (Supervisor ), Salidas = -. Contratista (Supervisor ), Clientes = Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces. Contratista (Supervisor ), Ejecutor de la Actividad = Contratista (Supervisor ). Contratista (Supervisor ), Sistema que soporta la Actividad = SIELSE. Contratista (Supervisor ), ¿Es control Cable? (Sí=x) = . Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Entradas = -. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, N° = 9. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Descripción Actividades = Imprimir muestra. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Salidas = Muestra. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Clientes = Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Ejecutor de la Actividad = Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Sistema que soporta la Actividad = SIELSE. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, ¿Es control Cable? (Sí=x) = 
+Prohibido reproducir sin autorización de la Alta Dirección de ELSE
+Código
+Versión
+Aprobado
+Fecha
+Página
+: CVC-PR-005
+: 16
+: CSIG
+: 29/10/2025
+: 18 de 20
+
+================================================================================
+Chunk: 20 / 23
+Páginas: [18, 19]
+Sección: CORTES Y RECONEXIONES
+Tipo: mixto: table, text
+--------------------------------------------------------------------------------
+Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Entradas = Muestra. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, N° = 10. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Descripción Actividades = Ejecutar supervisión en gabinete mediante el aplicativo SIELSE GOS. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Salidas = CVC-RE-003 Campaña de supervisión de cortes y reconexiones. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Clientes = Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Ejecutor de la Actividad = Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Sistema que soporta la Actividad = SIELSE. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, ¿Es control Cable? (Sí=x) = . Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Entradas = -. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, N° = 11. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Descripción Actividades = Registrar en el Módulo Supervisión de reconexiones por cada suministro de la muestra. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Salidas = -. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Clientes = Cobranzas / Supervisión Comercial. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Ejecutor de la Actividad = Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Sistema que soporta la Actividad = SIELSE. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, ¿Es control Cable? (Sí=x) = . Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Entradas = -. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, N° = 12. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Descripción Actividades = ¿Procedimiento fue correcto? Si: Va a la actividad 15 No: Va a la actividad 16. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Salidas = -. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Clientes = Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Ejecutor de la Actividad = Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Sistema que soporta la Actividad = SIELSE. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, ¿Es control Cable? (Sí=x) = . Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Entradas = -. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, N° = 13. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Descripción Actividades = Emitir conformidad del servicio Fin del proceso. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Salidas = Conformidad. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Clientes = Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Ejecutor de la Actividad = Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Sistema que soporta la Actividad = SIELSE. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, ¿Es control Cable? (Sí=x) = 
+Prohibido reproducir sin autorización de la Alta Dirección de ELSE
+Código
+Versión
+Aprobado
+Fecha
+Página
+: CVC-PR-005
+: 16
+: CSIG
+: 29/10/2025
+: 19 de 20
+
+================================================================================
+Chunk: 21 / 23
+Páginas: [19]
+Sección: CORTES Y RECONEXIONES
+Tipo: mixto: table, text
+--------------------------------------------------------------------------------
+Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Entradas = -. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, N° = 14. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Descripción Actividades = Generar una no conformidad Va al procedimiento SIG-PR-007 Control de Productos y Servicios No Conformes. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Salidas = No conformidad. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Clientes = Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Ejecutor de la Actividad = Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Sistema que soporta la Actividad = SIELSE. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, ¿Es control Cable? (Sí=x) = . Contratista, Entradas = . Contratista, N° = 15. Contratista, Descripción Actividades = ¿Es Conforme? Si: Va a la actividad 15 No: Va a la actividad 18. Contratista, Salidas = . Contratista, Clientes = Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces. Contratista, Ejecutor de la Actividad = Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces. Contratista, Sistema que soporta la Actividad = . Contratista, ¿Es control Cable? (Sí=x) = . Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Entradas = . Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, N° = 16. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Descripción Actividades = ¿Observaciones son atribuibles a Contratista? Si: Va a la actividad 20 No: Va a la actividad 19. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Salidas = . Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Clientes = Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Ejecutor de la Actividad = Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Sistema que soporta la Actividad = . Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, ¿Es control Cable? (Sí=x) = . Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Entradas = . Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, N° = 17. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Descripción Actividades = Comunicar observaciones De los suministros, áreas involucradas Derivar al área que corresponda. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Salidas = . Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Clientes = Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces de ELSE o que sus. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Ejecutor de la Actividad = Ejecutivo cobranzas / supervisor comercial el haga veces. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Sistema que soporta la Actividad = . Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, ¿Es control Cable? (Sí=x) = 
+Prohibido reproducir sin autorización de la Alta Dirección de ELSE
+
+================================================================================
+Chunk: 22 / 23
+Páginas: [20]
+Sección: PROCEDIMIENTO CORTES Y RECONEXIONES
+Tipo: mixto: table, text
+--------------------------------------------------------------------------------
+Código
+Versión
+Aprobado
+Fecha
+Página
+: CVC-PR-005
+: 16
+: CSIG
+: 29/10/2025
+: 20 de 20
+Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Entradas = . Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, N° = 18. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Descripción Actividades = Aplicar penalidad. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Salidas = . Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Clientes = Contratista. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Ejecutor de la Actividad = Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Sistema que soporta la Actividad = . Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, ¿Es control Cable? (Sí=x) = . Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Entradas = -. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, N° = 19. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Descripción Actividades = Elaborar el informe semestral para OSINERGMIN a nivel empresarial (Anexo N°05) Anexo N° 5 - "Publicación en el portal web de OSINERGMIN de la información sobre el total de reconexiones ejecutados" En la página web de OSINERGMIN. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Salidas = Informe semestral. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Clientes = Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Ejecutor de la Actividad = Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Sistema que soporta la Actividad = -. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, ¿Es control Cable? (Sí=x) = . Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Entradas = Informe semestral. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, N° = 20. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Descripción Actividades = Enviar archivo (Anexo 5) con la información de reconexiones según plazo establecido por Osinergmin. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Salidas = Informe semestral. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Clientes = Osinergmin. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Ejecutor de la Actividad = Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, Sistema que soporta la Actividad = Web OSINERGM IN. Ejecutivo de cobranzas / supervisor comercial ELSE o el que haga sus veces, ¿Es control Cable? (Sí=x) = 
+

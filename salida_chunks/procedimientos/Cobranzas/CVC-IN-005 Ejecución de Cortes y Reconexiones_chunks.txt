@@ -1,0 +1,296 @@
+================================================================================
+Chunk: 0 / 21
+Páginas: [1]
+Sección: None
+Tipo: text
+--------------------------------------------------------------------------------
+Página
+: CVC-IN-005
+: CSIG
+: 30-11-2017
+: 1 de 5
+
+================================================================================
+Chunk: 1 / 21
+Páginas: [1]
+Sección: EJECUCIÓN DE CORTES Y RECONEXIONES
+Tipo: table
+--------------------------------------------------------------------------------
+COPIA CONTROLADA:, 1 = COPIA NO CONTROLADA. ASIGNADA A:, 1 = 
+
+================================================================================
+Chunk: 2 / 21
+Páginas: [1]
+Sección: 1. OBJETIVO Y ALCANCE
+Tipo: text
+--------------------------------------------------------------------------------
+Describir las actividades a realizar para la Ejecución de cortes y reconexiones de suministros deudores en locales del usuario para el caso de baja tensión. Aplicado para todas las sedes de Electro Sur Este S.A.A.
+
+================================================================================
+Chunk: 3 / 21
+Páginas: [1]
+Sección: 2. DEFINICIONES
+Tipo: text
+--------------------------------------------------------------------------------
+No requiere aclarar términos.
+
+================================================================================
+Chunk: 4 / 21
+Páginas: [1]
+Sección: 3. DOCUMENTOS A CONSULTAR
+Tipo: list_item
+--------------------------------------------------------------------------------
+- 3.1. CVC-PR-005 Cortes y Reconexiones
+- 3.2. Ejecución  de  cortes  y  reconexiones  Art.  90  de  la  Ley  de  Concesiones  Eléctricas  N° 25844
+- 3.3. Resolución  de  Consejo  Directivo  Organismo  Supervisor  de  La  Inversión  en  Energía OSINERG N ° 259-2015-OS/CD "Fijan importes máximos de corte y reconexión aplicables a usuarios finales del servicio público de electricidad".
+- 3.4. Resolución N° 153-2013-OS/CD Procedimiento para la supervisión del cumplimiento de las normas vigentes sobre corte y reconexión del servicio público de electricidad
+
+================================================================================
+Chunk: 5 / 21
+Páginas: [1]
+Sección: 4. RESPONSABILIDADES
+Tipo: list_item
+--------------------------------------------------------------------------------
+- 4.1. El Comité Sistema Integrado de Gestión (CSIG), es responsable de la aprobación del Presente Instructivo.
+- 4.2. El Supervisor de Cortes y Reconexiones y la Empresa Contratista, son los responsables de hacer cumplir este instructivo
+- 4.3. Los técnicos especialista de la Empresa Contratista, ejecutan el presente instructivo
+
+================================================================================
+Chunk: 6 / 21
+Páginas: [1, 2]
+Sección: 5. DESARROLLO / PROCEDIMIENTO
+Tipo: text
+--------------------------------------------------------------------------------
+El Supervisor de las actividades de Corte y Reconexión o el que haga sus veces emitirá el reporte detallado por técnico de las ordenes de trabajo las cuales serán alcanzadas a la contratista con un cargo en el resumen de reporte de cortes.
+El supervisor de la contratista convoca a los ejecutores en su centro de operaciones El supervisor efectúa charla de 5 minutos sobre ejecución de trabajos y seguridad. Seguidamente ejecuta la distribución de trabajos a cada técnico
+El supervisor de la contratista verifica que el personal técnico se encuentre con todos los implementos de trabajo necesarios para la ejecución del trabajo.
+Los técnicos del contratista una vez recibidos los listados de órdenes de corte y listados de reconexión programados para realizar durante el día se constituyen en la zona de trabajo.
+Los técnicos proceden a ubicar el predio, verificando la dirección, código de suministro, número de medidor, lectura del medidor, luego ejecuta el trabajo.
+Versión
+Aprobado
+Fecha
+Página
+: CVC-IN-005
+: 01
+: CSIG
+: 30-11-2017
+: 2 de 5
+
+================================================================================
+Chunk: 7 / 21
+Páginas: [2]
+Sección: EJECUCIÓN DE CORTES Y RECONEXIONES
+Tipo: text
+--------------------------------------------------------------------------------
+Concluido los trabajos asignados a cada técnico. Este entrega los trabajos ejecutados al supervisor de la contratista para que estos sean registrados en la base de datos de ELSE.
+Contratista realizará el sostenimiento de los cortes ejecutados en la campaña y cortes anteriores, El supervisor de la contratista deberá garantizar que el total de los cortes estén ejecutados.
+El Supervisor de Cortes y Reconexiones o el que haga sus veces publicará en la página web de ELSE el registro de información (listado de cortes) Procedimiento de OSINERG 153-2013- OS/CD.
+
+================================================================================
+Chunk: 8 / 21
+Páginas: [2, 3]
+Sección: 5.1. Ejecución de cortes
+Tipo: mixto: list_item, text
+--------------------------------------------------------------------------------
+El técnico ejecuta los cortes:
+- a) Corte tipo [I]: Corte en fusible o interruptor (tapa sin ranura). O interruptor (tapa con ranura): Se aplica en los casos en que estén pendientes de pago facturaciones y/o cuotas, notificadas de dos a más meses derivados de la prestación del servicio público de electricidad
+El técnico procederá a abrir la cajatoma, rompiendo los remaches, precinto de seguridad, toma nota de la lectura del medidor y luego ejecuta el corte con la apertura del interruptor a 'off' y/o la desconexión del cable de alimentación aislándolo seguidamente verifica que todo esté bien fijado, como los empalmes, medidor, etc. El técnico anotará en el sticker de corte el código de ruta, la fecha y hora del corte, el tipo de corte y la lectura del medidor al momento del corte y pegará dentro de la cajatoma (Contratapa). Cerrando y sellando la cajatoma con remaches, y colocando un nuevo precinto de seguridad.
+- b)  C orte tipo [II]: Corte en caja de medición (aislamiento de acometida): Se aplica en aquellos suministro que, encontrándose con corte en fusible o interruptor (tapa sin ranura) o interruptor (tapa con ranura) (Corte tipo [I]), se producen reconexiones sin autorización.
+El técnico procederá a abrir la cajatoma, rompiendo los remaches, precinto de seguridad, tomar nota de la lectura del medidor, la apertura del interruptor a 'off',  luego efectúa la desconexión del cable de alimentación aislandolo y desconectando la línea de carga en bornera del medidor , seguidamente verifica que todo esté bien fijado, como el fusible, medidor, etc., el técnico anotará en el sticker de corte el código de ruta, la fecha y hora del corte, el tipo de corte y la lectura del medidor al momento del corte y pegará dentro de la cajatoma (Contratapa) evidenciando que el suministro esté cortado. Cerrando y sellando la cajatoma con remaches, y colocando un nuevo precinto de seguridad.
+- c) Corte tipo [III]: Corte en línea aérea (empalme) para una conexión aérea o en caja de medición (aislamiento de acometida bloqueada) para una conexión subterránea: Se aplica en aquellos suministros que, encontrándose con corte caja de medición (aislamiento de acometida) (Corte tipo [II]), se producen reconexiones sin autorización. El  técnico  identificará  correctamente  las  fases  de  la  acometida  (acometida  y  línea)  y procederá al corte retirando la cinta aislante que cubre el empalme (acometida línea) en el sistema convencional o cobertor en el sistema autoportante, seguidamente procederá a desconectar los empalmes de la acometida y línea para desconectar de la red de baja tensión de manera que quede claramente que el suministro ha sido cortado, en caso
+Código
+Versión
+Aprobado
+Fecha
+Página
+: CVC-IN-005
+: 01
+: CSIG
+: 30-11-2017
+: 3 de 5
+
+================================================================================
+Chunk: 9 / 21
+Páginas: [3]
+Sección: EJECUCIÓN DE CORTES Y RECONEXIONES
+Tipo: mixto: list_item, text
+--------------------------------------------------------------------------------
+de bancos de medidores el técnico procederá con el corte en la caja matriz, identificando la acometida con señalización (código).
+Luego colocará la  cinta  aislante  en  la  línea  y  en  la  acometida,  finalmente el  técnico anotará en el sticker de corte el código de ruta, la fecha y hora del corte, el tipo de corte y la lectura del medidor al momento del corte y pegará dentro de la cajatoma (Contratapa) evidenciando que el suministro esté cortado.
+Nota: La empresa contratista deberá colocar, en cada oportunidad que realiza el corte, el sticker de identificación que contenga la siguiente información: número de suministro, fecha, hora, lectura del medidor al momento del corte y tipo de corte aplicado.
+- 5.2. En cualquier momento de la ejecución de cortes y reconexiones el supervisor comercial realiza Inspecciones de campo al personal propio de Electro Sur Este S.A.A. y de Contratista con el formato ES-RE-011 Formato de Seguridad (opcional).
+
+================================================================================
+Chunk: 10 / 21
+Páginas: [3]
+Sección: 5.3. Ingreso de ejecución de corte al sistema.
+Tipo: text
+--------------------------------------------------------------------------------
+La Empresa Contratista ingresa al Sistema de Información Comercial la información de Cortes realizadas
+Ingresa a:
+Sistema de Información Comercial \ Cortes y Reconexiones \ Mantenimiento \ Informe de Cortes
+Zona de trabajo:(Digitar número de zona)
+Año mes:
+(Digitar mes facturado)
+<< OK >>
+(Digitar el código de suministro y <OK>)
+En la ventana se debe registrar: Tipo corte:
+I A
+Corte en fusible o interruptor (tapa sin ranura)
+IB
+Corte en interruptor (tapa con ranura)
+II
+Corte en caja de medición (aislamiento de acometida)
+III
+Corte en línea aérea (empalme)
+CA
+Corte Anterior
+PV
+Pago Verificado
+ER
+En reclamo
+DC
+Domicilio Cerrado
+OCC Oposición corte clientes
+NroCortes
+Digitar el Número de cortes
+Corte_fecha
+Digitar fecha de corte
+Corte_hora
+Digitar hora de corte
+Ej.0925 (9 Hrs con 25')
+Lectura
+Digitar lectura de corte
+Técnico
+Digitar nombre de Técnico.
+
+================================================================================
+Chunk: 11 / 21
+Páginas: [4]
+Sección: EJECUCIÓN DE CORTES Y RECONEXIONES
+Tipo: text
+--------------------------------------------------------------------------------
+Testigo
+Digitar nombre de Testigo
+Obscorte
+Digitar Observación encontrada.
+
+================================================================================
+Chunk: 12 / 21
+Páginas: [4]
+Sección: 5.4. Emisión de listado de reconexiones.
+Tipo: text
+--------------------------------------------------------------------------------
+La empresa contratista emitirá el listado de reconexiones del Sistema de Información Comercial cada hora.
+
+================================================================================
+Chunk: 13 / 21
+Páginas: [4]
+Sección: 5.5. Ejecución de reconexiones
+Tipo: mixto: list_item, text
+--------------------------------------------------------------------------------
+El técnico ejecuta las reconexiones:
+- d) Reconexión tipo [I]: Cuando el corte se ha efectuado en el fusible o interruptor, el técnico procederá a abrir la cajatoma rompiendo los remaches y precinto de seguridad; y ejecuta la reconexión conectando el cable de acometida al interruptor dejando en modo 'on', luego verifica que todo esté bien fijado con los empalmes, medidor, etc., seguidamente el técnico anotará el código de ruta, la fecha, la hora, la lectura y el tipo de reconexión luego pegará el sticker de reconexión en el interior de la cajatoma (Contratapa) y verificará que el predio se encuentre con el servicio repuesto. Finalmente cierra y sella la cajatoma con remaches y colocando un nuevo precinto de seguridad.
+- e) Reconexión tipo [II]: Cuando el corte se ha efectuado en caja de medición (aislamiento de acometida), el técnico procederá a abrir la cajatoma, rompiendo los remaches, y el precinto de seguridad, luego ejecutará la reconexión realizando la conexión del cable de  acometida  al  interruptor,  luego  conectará  la  línea  de  carga en  la  bornera  del medidor, dejando en modo 'on' al interruptor , luego verifica que todo esté bien fijado, seguidamente el técnico anotará el código de ruta, la fecha, la hora, la lectura y el tipo de reconexión luego pegará el sticker de reconexión en el interior de la cajatoma (Contratapa) y verificará que el predio se encuentre con el servicio repuesto. Finalmente cierra y sella la cajatoma con remaches y colocando un nuevo precinto de seguridad.
+- f) Reconexión tipo [III]: Cuando el corte se ha efectuado en línea aérea (empalme) , subterráneo,  caja  matriz , el  técnico  identificará  correctamente  las  fases (de medidores trifásicos) y procederá a la reconexión retirando la cinta aislante de la línea y acometida, seguidamente procederá a conectar los empalmes de la acometida y línea para conectar a la red de baja tensión, entorchando los cables y aislando en el sistema convencional o conectando el cobertor en el sistema autoportante, para el caso de caja matriz realizar conexión en las borneras de la misma, a continuación el técnico anotará el código de ruta, la fecha, la hora, la lectura y el tipo de reconexión luego pegará el sticker de reconexión en el interior de la cajatoma (Contratapa) y verificará que el predio se encuentre con el servicio repuesto. Finalmente cierra y sella la cajatoma con remaches y colocando un nuevo precinto de seguridad.
+El Técnico Ejecutor Elaborará un informe al supervisor del Contratista para ir ingresando al Sistema Comercial los clientes reconectados.
+
+================================================================================
+Chunk: 14 / 21
+Páginas: [4]
+Sección: 5.6. Ingreso de reconexión al sistema.
+Tipo: text
+--------------------------------------------------------------------------------
+El representante de Contratista en ELSE ingresa al sistema Comercial. Sistema de Información Comercial \ Cortes y Reconexiones \ Mantenimiento \ Informe de Re
+Código
+Versión
+Aprobado
+Fecha
+Página
+: CVC-IN-005
+: 01
+: CSIG
+: 30-11-2017
+: 4 de 5
+
+================================================================================
+Chunk: 15 / 21
+Páginas: [5]
+Sección: EJECUCIÓN DE CORTES Y RECONEXIONES
+Tipo: text
+--------------------------------------------------------------------------------
+Zona de trabajo:(Digitar número de la zona)
+Año mes:
+(Digitar mes facturado)
+<< OK >>
+(Digitar el código de suministro y <OK>)
+En la ventana se debe registrar:
+Recon_fech:
+Digitar fecha de reconexión
+Recon_hora:
+Digitar hora de reconexión
+Testigo:
+Digitar nombre de ejecutor.
+Obscorte:
+Digitar Observación encontrada.
+
+================================================================================
+Chunk: 16 / 21
+Páginas: [5]
+Sección: 6. REGISTROS
+Tipo: list_item
+--------------------------------------------------------------------------------
+- 6.1. CVC-RE-021 Listado de Ordenes de Cortes.
+- 6.2. CVC-RE-023 Listado de Reconexiones.
+- 6.3. ES-RE-011 Formato de Seguridad (opcional)
+
+================================================================================
+Chunk: 17 / 21
+Páginas: [5]
+Sección: 7. MATERIALES
+Tipo: list_item
+--------------------------------------------------------------------------------
+- 7.1. Cinta aislante, conectores, remaches.
+
+================================================================================
+Chunk: 18 / 21
+Páginas: [5]
+Sección: 8.1. Equipo de protección personal
+Tipo: list_item
+--------------------------------------------------------------------------------
+- Zapatos dieléctricos
+- Uniforme de trabajo (con fotocheck)
+- Casco
+- Guantes de seguridad dieléctrico para baja tensión (con protector de cuero)
+- Bolsa para guantes dieléctricos
+- Correa de seguridad y/o arnés (si el caso lo amerita)
+- Protector de rostro adecuado para fijación en casco
+
+================================================================================
+Chunk: 19 / 21
+Páginas: [5]
+Sección: 8.2. Equipos / Herramientas
+Tipo: list_item
+--------------------------------------------------------------------------------
+- Probador BT
+- Alicate dieléctrico de corte y presión
+- Destornillador dieléctrico plana y estrella
+- Remachadora
+- Tranquera / Banderines/Cinta (si el caso lo amerita)
+- Escalera de fibra de vidrio (si el caso lo amerita)
+
+================================================================================
+Chunk: 20 / 21
+Páginas: [5]
+Sección: 8.3. Manipulación
+Tipo: mixto: list_item, text
+--------------------------------------------------------------------------------
+- Siempre utilizar escalera de fibra vidrio o estrobos.
+- Vehículo (camioneta) en buen estado con barandas para trasporte de escalera y con seguro
+- Ubicación de tranquera, cono y cintas de señalización apropiadas y suficientes para evitar circulación del tránsito y peatonal
+- Implementación y uso adecuado de equipos de seguridad
+- Implementación y uso adecuado de herramientas
+Página
+: 30-11-2017
+: 5 de 5
+

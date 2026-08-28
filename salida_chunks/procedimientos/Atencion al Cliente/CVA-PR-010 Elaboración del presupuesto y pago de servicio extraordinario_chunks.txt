@@ -1,0 +1,268 @@
+================================================================================
+Chunk: 0 / 19
+Páginas: [1]
+Sección: None
+Tipo: text
+--------------------------------------------------------------------------------
+Código
+Versión
+Aprobado
+Fecha
+Página
+: CVA-PR-010
+: 08
+: CSIG
+: 29/10/2025
+: 1 de 4
+
+================================================================================
+Chunk: 1 / 19
+Páginas: [1]
+Sección: ELABORACIÓN EL PRESUPUESTO DE PAGO DE SERVICIO EXTRAORDINARIO O SERVICIO TEMPORAL
+Tipo: table
+--------------------------------------------------------------------------------
+Dueño del proceso Nivel 0:, 1 = Gerente Comercial. Nombre del proceso Nivel 1:, 1 = Atención al Cliente. Nombre del proceso Nivel 2:, 1 = Atención de Consultas y Solicitudes
+
+================================================================================
+Chunk: 2 / 19
+Páginas: [1, 2]
+Sección: PROCEDIMIENTO DE ELABORACIÓN DEL PRESUPUESTO Y PAGO DE SERVICIO EXTRAORDINARIO O SERVICIO TEMPORAL
+Tipo: mixto: table, text
+--------------------------------------------------------------------------------
+Elaborado por:, Responsable = Supervisor de Instalaciones y mediciones. Elaborado por:, Fecha = 15/10/2025. Revisado por:, Responsable = Jefe de Ventas. Revisado por:, Fecha = 17/10/2025. , Responsable = Gerente Comercial. , Fecha = 21/10/2025. Homologado por:, Responsable = Especialista en Sistemas de Gestión. Homologado por:, Fecha = 24/10/2025. Aprobado por:, Responsable = Comité del Sistema Integrado de Gestión. Aprobado por:, Fecha = 29/10/2025
+Código
+Versión
+Aprobado
+Fecha
+Página
+: CVA-PR-010
+: 08
+: CSIG
+: 29/10/2025
+: 2 de 4
+
+================================================================================
+Chunk: 3 / 19
+Páginas: [2]
+Sección: ELABORACIÓN EL PRESUPUESTO DE PAGO DE SERVICIO EXTRAORDINARIO O SERVICIO TEMPORAL
+Tipo: mixto: table, text
+--------------------------------------------------------------------------------
+00, Control de cambios.Descripción del cambio = • Versión inicial del documento. 00, Control de cambios.Fecha de aprobación = -. 01, Control de cambios.Descripción del cambio = • -. 01, Control de cambios.Fecha de aprobación = -. 02, Control de cambios.Descripción del cambio = • Se ratifica el retiro de la conexión terminado el servicio. 02, Control de cambios.Fecha de aprobación = 02/07/2003. 03, Control de cambios.Descripción del cambio = • Se indica que el servicio podrá ser ejecutado por personal ELSE o la contratista. 03, Control de cambios.Fecha de aprobación = 18/07/2007. 04, Control de cambios.Descripción del cambio = • Se adiciona el formato de servicio extraordinario. 04, Control de cambios.Fecha de aprobación = 01/03/2016. 05, Control de cambios.Descripción del cambio = • Se agrega el formato CVA-RE-015 Solicitud de servicio extraordinario. 05, Control de cambios.Fecha de aprobación = 30/11/2017. 06, Control de cambios.Descripción del cambio = • Se adiciona en el SIELSE el servicio. 06, Control de cambios.Fecha de aprobación = 19/03/2021. 07, Control de cambios.Descripción del cambio = • Se cambia el formato ene general. 07, Control de cambios.Fecha de aprobación = 10/03/2022. 08, Control de cambios.Descripción del cambio = • Se diferencia el servicio facturado por potencia y con me- dición. 08, Control de cambios.Fecha de aprobación = 29/10/2025
+Documento de aprobación
+Acta de comité SIG
+Fecha
+29/10/2025
+
+================================================================================
+Chunk: 4 / 19
+Páginas: [3]
+Sección: 1. OBJETIVO Y ALCANCE
+Tipo: text
+--------------------------------------------------------------------------------
+Establecer el procedimiento de Elaboración del presupuesto y pago de Servicio Extraordinario, aplicado para los clientes de todas las sedes de Electro Sur Este S.A.A.
+
+================================================================================
+Chunk: 5 / 19
+Páginas: [3]
+Sección: 2. DEFINICIONES
+Tipo: list_item
+--------------------------------------------------------------------------------
+- 2.1. Servicio Extraordinario: servicio temporal con equipo de medición o conexión directa con potencia fija en forma eventual .
+
+================================================================================
+Chunk: 6 / 19
+Páginas: [3]
+Sección: 3. MARCO NORMATIVO Y/O DOCUMENTOS RELACIONADOS
+Tipo: list_item
+--------------------------------------------------------------------------------
+- 3.1. Ley de Concesiones Eléctrica Nro. 25844, su Reglamento y modificatorias
+- 3.2. Código Nacional de Electricidad
+
+================================================================================
+Chunk: 7 / 19
+Páginas: [3]
+Sección: 4. RECURSOS HUMANOS Y RESPONSABILIDADES
+Tipo: list_item
+--------------------------------------------------------------------------------
+- 4.1. El Comité del Sistema Integrado de Gestión (CSIG), es responsable de la aprobación del  presente  procedimiento  y  de  supervisar  la  implementación  del  presente  procedimiento.
+- 4.2. El personal de Atención al Cliente e Instalaciones y/o los que hacen sus veces en el  ámbito de la empresa, son responsables de aplicar lo establecido en el siguiente procedimiento.
+
+================================================================================
+Chunk: 8 / 19
+Páginas: [3]
+Sección: 5. INFRAESTRUCTURA, RECURSOS Y AMBIENTE
+Tipo: list_item
+--------------------------------------------------------------------------------
+- 5.1. Oficinas / Instalaciones / Zona de concesión de Electro Sur Este S.A.A.
+
+================================================================================
+Chunk: 9 / 19
+Páginas: [3]
+Sección: 6. DESARROLLO / PROCEDIMIENTO
+Tipo: text
+--------------------------------------------------------------------------------
+El procedimiento se encuentra desarrollado en Flujo N°1.
+
+================================================================================
+Chunk: 10 / 19
+Páginas: [3, 4]
+Sección: 6.1. Requisitos
+Tipo: mixto: list_item, text
+--------------------------------------------------------------------------------
+Condiciones generales para la atención de instalación de un suministro nuevo:
+- El solicitante debe identificarse mostrando su DNI en original.
+- Certificado de defensa civil para el caso de instalaciones de uso público o masivo.
+- La ubicación de la caja porta medidor deberá estar situada en un lugar libre y permanente acceso al personal de la empresa, es decir, en el límite de la vía pública, al borde de la vereda municipal, sin elementos que obstaculicen su intervención.
+- Para inmediata ubicación del predio, agradeceremos tener rotulada la dirección en la fachada  del  domicilio,  así  como  tener  listas  las  instalaciones  internas  a  cargo  del usuario.
+- Encontrarse al día en sus pagos por consumo de energía eléctrica, en caso cuente con suministro existente.
+- El presupuesto de instalación nueva no contempla la apertura de nicho, ranura y/o accesorios adicionales.
+Código
+Versión
+Aprobado
+Fecha
+Página
+: CVA-PR-010
+: 08
+: CSIG
+: 29/10/2025
+: 3 de 4
+Página
+: CVA-PR-010
+: 08
+: CSIG
+: 29/10/2025
+: 4 de 4
+
+================================================================================
+Chunk: 11 / 19
+Páginas: [4]
+Sección: ELABORACIÓN EL PRESUPUESTO DE PAGO DE SERVICIO EXTRAORDINARIO O SERVICIO TEMPORAL
+Tipo: mixto: list_item, text
+--------------------------------------------------------------------------------
+- Antes de la instalación el solicitante deberá tener ejecutado su circuito de carga desde su equipo de protección interno hasta el nicho.
+Para los usuarios provisionales:
+- Sustento de litigio que impide contar con el acta de recepción de obra. Por un tiempo máximo de 1 año. O una acción de amparo o similar.
+- Certificado de operatividad (Emitido por Operaciones ELSE o el  que haga sus veces).
+
+================================================================================
+Chunk: 12 / 19
+Páginas: [4]
+Sección: Para los usuarios Medición Centralizada:
+Tipo: list_item
+--------------------------------------------------------------------------------
+- Que la infraestructura eléctrica esté culminada.
+- Cada usuario debe contar con su equipo de medición propia además del equipo de medición centralizado.
+- Certificado de operatividad (Emitido por Operaciones ELSE o el que haga sus veces).
+
+================================================================================
+Chunk: 13 / 19
+Páginas: [4]
+Sección: Para usuarios temporales:
+Tipo: mixto: list_item, text
+--------------------------------------------------------------------------------
+- Existencia de redes en la zona donde se solicita el suministro.
+- Visto bueno de Defensa Civil.
+- Permiso del Municipio.
+Para los usuarios con Celdas Fotovoltaicas: ELSE no ejecuta la instalación de suministros nuevos en sistemas de Celdas Fotovoltaicas, pero incorpora en el sistema comercial como un cliente, para ello es necesario contar con los requisitos generales siguientes:
+- El solicitante y/o representante debe identificarse mostrando su DNI o Carnet de extranjería, en original.
+- Croquis referencial a mano para facilitar la ubicación del predio.
+- Alcanzar información necesaria para obtener cualquiera de los siguientes documentos:
+- o CRI (Certificado Registral Inmobiliario emitido por SUNARP)
+- En caso de no contar con información de CRI, pueden alcanzar cualquiera de los siguientes documentos:
+- o Testimonio y/o Escritura Pública.
+- o Minuta de contrato de compra venta fedatado y acompañado por fotocopia del pago de autoevalúo emitido por la Municipalidad a la que pertenece.
+- o Certificado de posesión (en caso de comunidades y asociaciones pro vivienda emergentes) y alcanzar información para obtener la vigencia de poder de los otorgantes.
+
+================================================================================
+Chunk: 14 / 19
+Páginas: [4, 5]
+Sección: 7. REGISTROS Y ANEXOS
+Tipo: mixto: list_item, text
+--------------------------------------------------------------------------------
+Los registros generados son:
+- 7.1. Comprobante de Pago (Factura y/o Boleta de Venta)
+- 7.2. CVA-RE-015 Solicitud de servicio extraordinario
+- 7.3. CVI-PR-020 Presupuesto de Servicio Extraordinario.
+Código
+Versión
+Aprobado
+Fecha
+Página
+: CVA-PR-010
+: 08
+: CSIG
+: 29/10/2025
+: 5 de 5
+
+================================================================================
+Chunk: 15 / 19
+Páginas: [6, 7]
+Sección: ELABORACIÓN EL PRESUPUESTO DE PAGO DE SERVICIO EXTRAORDINARIO O SERVICIO TEMPORAL
+Tipo: mixto: table, text
+--------------------------------------------------------------------------------
+Código
+Versión
+Aprobado
+Fecha
+Página
+: CVA-PR-010
+: 08
+: CSIG
+: 29/10/2025
+: 6 de 5
+, Entradas = . , N° = 1. , Descripción Actividades = Solicitar información (presencial / mesa de partes virtual / web / contact center). , Salidas = Información. , Clientes = Atención al Cliente / Contact Center. , Ejecutor de la Actividad = Cliente. , Sistema que sopor- ta la Activi- dad = -. , ¿Es con- trol Ca- ble? (Sí=x) = -. Cliente, Entradas = . Cliente, N° = 2. Cliente, Descripción Actividades = Brindar Información de acuerdo a tipo de servicio extraordinario (6.1). Cliente, Salidas = Información brindada. Cliente, Clientes = Atención al Cliente / Contact Center. Cliente, Ejecutor de la Actividad = Atención al Cliente / Contact Center. Cliente, Sistema que sopor- ta la Activi- dad = -. Cliente, ¿Es con- trol Ca- ble? (Sí=x) = -. Atención al Cliente / Contact Center, Entradas = Solicitud. Atención al Cliente / Contact Center, N° = 3. Atención al Cliente / Contact Center, Descripción Actividades = ¿Es Por mesa de partes virtual / ELSE? Si: Pasar a la actividad 4 No: Pasar a la actividad 5. Atención al Cliente / Contact Center, Salidas = -. Atención al Cliente / Contact Center, Clientes = Atención al Cliente. Atención al Cliente / Contact Center, Ejecutor de la Actividad = Atención al Cliente / Contact Center. Atención al Cliente / Contact Center, Sistema que sopor- ta la Activi- dad = -. Atención al Cliente / Contact Center, ¿Es con- trol Ca- ble? (Sí=x) = x. Atención al Cliente / Contact Center, Entradas = Información. Atención al Cliente / Contact Center, N° = 4. Atención al Cliente / Contact Center, Descripción Actividades = Verificar información Ir a la actividad 10. Atención al Cliente / Contact Center, Salidas = Verificación de informa- ción. Atención al Cliente / Contact Center, Clientes = Atención al Cliente. Atención al Cliente / Contact Center, Ejecutor de la Actividad = Atención al Cliente. Atención al Cliente / Contact Center, Sistema que sopor- ta la Activi- dad = MGD. Atención al Cliente / Contact Center, ¿Es con- trol Ca- ble? (Sí=x) = . Atención al Cliente, Entradas = -. Atención al Cliente, N° = 5. Atención al Cliente, Descripción Actividades = ¿Cliente en baja o media tensión? Media tensión: Ir al procedimiento de servi- cios extraordinario de clientes mayores Baja tensión: Pasar a la actividad 6. Atención al Cliente, Salidas = -. Atención al Cliente, Clientes = Atención al Cliente. Atención al Cliente, Ejecutor de la Actividad = Atención al Cliente. Atención al Cliente, Sistema que sopor- ta la Activi- dad = -. Atención al Cliente, ¿Es con- trol Ca- ble? (Sí=x) = -. Atención al Cliente, Entradas = -. Atención al Cliente, N° = 6. Atención al Cliente, Descripción Actividades = ¿Servicio solicitado excede los 7 días? Si: Pasar a la actividad 7 No: Pasar a la actividad 14. Atención al Cliente, Salidas = -. Atención al Cliente, Clientes = Atención al Cliente. Atención al Cliente, Ejecutor de la Actividad = Atención al Cliente. Atención al Cliente, Sistema que sopor- ta la Activi- dad = -. Atención al Cliente, ¿Es con- trol Ca- ble? (Sí=x) = x. Atención al Cliente, Entradas = Solicitud en Baja tensión. Atención al Cliente, N° = 7. Atención al Cliente, Descripción Actividades = Registrar solicitud con medición. Atención al Cliente, Salidas = Registro de Solicitud. Atención al Cliente, Clientes = Atención al Cliente. Atención al Cliente, Ejecutor de la Actividad = Atención al Cliente. Atención al Cliente, Sistema que sopor- ta la Activi- dad = -. Atención al Cliente, ¿Es con- trol Ca- ble? (Sí=x) = -. Atención al Cliente, Entradas = . Atención al Cliente, N° = 8. Atención al Cliente, Descripción Actividades = Realizar factibilidad. Atención al Cliente, Salidas = factibilidad. Atención al Cliente, Clientes = Atención al Cliente. Atención al Cliente, Ejecutor de la Actividad = Contratista. Atención al Cliente, Sistema que sopor- ta la Activi- dad = -. Atención al Cliente, ¿Es con- trol Ca- ble? (Sí=x) = --. Atención al Cliente, Entradas = Registro de Solicitud. Atención al Cliente, N° = 9. Atención al Cliente, Descripción Actividades = Solicitar al cliente depósito de fondo de garantía. Atención al Cliente, Salidas = Solicitud de depósito. Atención al Cliente, Clientes = Atención al Cliente. Atención al Cliente, Ejecutor de la Actividad = Atención al Cliente. Atención al Cliente, Sistema que sopor- ta la Activi- dad = -. Atención al Cliente, ¿Es con- trol Ca- ble? (Sí=x) = -. Atención al Cliente, Entradas = Solicitud de depósito. Atención al Cliente, N° = 10. Atención al Cliente, Descripción Actividades = ¿Cliente acepta? Si: Pasar a la actividad 17 No: Finalizar actividad. Atención al Cliente, Salidas = -. Atención al Cliente, Clientes = Atención al Cliente. Atención al Cliente, Ejecutor de la Actividad = Atención al Cliente. Atención al Cliente, Sistema que sopor- ta la Activi- dad = -. Atención al Cliente, ¿Es con- trol Ca- ble? (Sí=x) = x
+Código
+Versión
+Aprobado
+Fecha
+Página
+: CVA-PR-010
+: 08
+: CSIG
+: 29/10/2025
+: 7 de 5
+
+================================================================================
+Chunk: 16 / 19
+Páginas: [7, 8]
+Sección: ELABORACIÓN EL PRESUPUESTO DE PAGO DE SERVICIO EXTRAORDINARIO O SERVICIO TEMPORAL
+Tipo: mixto: table, text
+--------------------------------------------------------------------------------
+Atención al Cliente, Entradas = Pago de de- posito. Atención al Cliente, N° = 11. Atención al Cliente, Descripción Actividades = ¿Es conforme? Si: Pasar a la actividad 13 No: Pasar a la actividad 12. Atención al Cliente, Salidas = -. Atención al Cliente, Clientes = Atención al Cliente. Atención al Cliente, Ejecutor de la Actividad = Atención al Cliente. Atención al Cliente, Sistema que sopor- ta la Activi- dad = -. Atención al Cliente, ¿Es con- trol Ca- ble? (Sí=x) = x. Atención al Cliente, Entradas = Solicitud. Atención al Cliente, N° = 12. Atención al Cliente, Descripción Actividades = Informar observaciones a corregir (por el medio presentado) Ir a la actividad 3. Atención al Cliente, Salidas = Observacio- nes. Atención al Cliente, Clientes = Atención al Cliente. Atención al Cliente, Ejecutor de la Actividad = Atención al Cliente. Atención al Cliente, Sistema que sopor- ta la Activi- dad = -. Atención al Cliente, ¿Es con- trol Ca- ble? (Sí=x) = -. Atención al Cliente, Entradas = -. Atención al Cliente, N° = 13. Atención al Cliente, Descripción Actividades = Informar al cliente la presentación de solici- tud de manera presencial. Atención al Cliente, Salidas = Solicitud. Atención al Cliente, Clientes = Cliente. Atención al Cliente, Ejecutor de la Actividad = Atención al Cliente. Atención al Cliente, Sistema que sopor- ta la Activi- dad = -. Atención al Cliente, ¿Es con- trol Ca- ble? (Sí=x) = -. Atención al Cliente, Entradas = -. Atención al Cliente, N° = 14. Atención al Cliente, Descripción Actividades = Entregar solicitud. Atención al Cliente, Salidas = Entrega de solicitud. Atención al Cliente, Clientes = Atención al Cliente. Atención al Cliente, Ejecutor de la Actividad = Cliente. Atención al Cliente, Sistema que sopor- ta la Activi- dad = -. Atención al Cliente, ¿Es con- trol Ca- ble? (Sí=x) = -. Cliente, Entradas = -. Cliente, N° = 15. Cliente, Descripción Actividades = Revisar información, registrar solicitud por potencia declarada. Cliente, Salidas = Presupuesto CVA-RE-015 Solicitud de servicio Ex- traordinario. Cliente, Clientes = Supervisor de Instala- ciones y mediciones o el que haga sus ve- ces en sectores. Cliente, Ejecutor de la Actividad = Atención al Cliente. Cliente, Sistema que sopor- ta la Activi- dad = -. Cliente, ¿Es con- trol Ca- ble? (Sí=x) = -. Atención al Cliente, Entradas = -. Atención al Cliente, N° = 16. Atención al Cliente, Descripción Actividades = ¿Procede? Si: Pasar a la actividad 18 No: Pasar a la actividad 17. Atención al Cliente, Salidas = -. Atención al Cliente, Clientes = Supervisor de Instala- ciones y mediciones o el que haga sus ve- ces en sectores. Atención al Cliente, Ejecutor de la Actividad = Supervisor de Insta- laciones y medicio- nes o el que haga sus veces en secto- res. Atención al Cliente, Sistema que sopor- ta la Activi- dad = -. Atención al Cliente, ¿Es con- trol Ca- ble? (Sí=x) = x. Supervisor de Insta- laciones y medicio- nes o el que haga sus veces en secto- res, Entradas = -. Supervisor de Insta- laciones y medicio- nes o el que haga sus veces en secto- res, N° = 17. Supervisor de Insta- laciones y medicio- nes o el que haga sus veces en secto- res, Descripción Actividades = Informar a cliente la improcedencia de su solicitud Finalizar actividad. Supervisor de Insta- laciones y medicio- nes o el que haga sus veces en secto- res, Salidas = -. Supervisor de Insta- laciones y medicio- nes o el que haga sus veces en secto- res, Clientes = Cliente. Supervisor de Insta- laciones y medicio- nes o el que haga sus veces en secto- res, Ejecutor de la Actividad = Supervisor de Insta- laciones y medicio- nes o el que haga sus veces en secto- res. Supervisor de Insta- laciones y medicio- nes o el que haga sus veces en secto- res, Sistema que sopor- ta la Activi- dad = -. Supervisor de Insta- laciones y medicio- nes o el que haga sus veces en secto- res, ¿Es con- trol Ca- ble? (Sí=x) = 
+Código
+Versión
+Aprobado
+Fecha
+Página
+: CVA-PR-010
+: 08
+: CSIG
+: 29/10/2025
+: 8 de 5
+
+================================================================================
+Chunk: 17 / 19
+Páginas: [8, 9]
+Sección: ELABORACIÓN EL PRESUPUESTO DE PAGO DE SERVICIO EXTRAORDINARIO O SERVICIO TEMPORAL
+Tipo: mixto: table, text
+--------------------------------------------------------------------------------
+Supervisor de Ins- talaciones y medi- ciones o el que haga sus veces en sectores, Entradas = -. Supervisor de Ins- talaciones y medi- ciones o el que haga sus veces en sectores, N° = 18. Supervisor de Ins- talaciones y medi- ciones o el que haga sus veces en sectores, Descripción Actividades = Determinar medio de pago (Con afecto a un suministro, Depósito bancario, Pago pre- sencial). Supervisor de Ins- talaciones y medi- ciones o el que haga sus veces en sectores, Salidas = Medio de pago de- terminado. Supervisor de Ins- talaciones y medi- ciones o el que haga sus veces en sectores, Clientes = Supervisor de Insta- laciones y medicio- nes o el que haga sus veces en secto- res. Supervisor de Ins- talaciones y medi- ciones o el que haga sus veces en sectores, Ejecutor de la Actividad = Supervisor de Insta- laciones y medicio- nes o el que haga sus veces en secto- res. Supervisor de Ins- talaciones y medi- ciones o el que haga sus veces en sectores, Sistema que sopor- ta la Activi- dad = -. Supervisor de Ins- talaciones y medi- ciones o el que haga sus veces en sectores, ¿Es con- trol Ca- ble? (Sí=x) = -. Supervisor de Insta- laciones y medicio- nes o el que haga sus veces en secto-, Entradas = -. Supervisor de Insta- laciones y medicio- nes o el que haga sus veces en secto-, N° = 19. Supervisor de Insta- laciones y medicio- nes o el que haga sus veces en secto-, Descripción Actividades = Calificar servicio extraordinario, elaborar e ingresar datos del presupuesto al sistema. Supervisor de Insta- laciones y medicio- nes o el que haga sus veces en secto-, Salidas = Presupues- to. Supervisor de Insta- laciones y medicio- nes o el que haga sus veces en secto-, Clientes = Supervisor de Instala- ciones y mediciones o el que haga sus ve- ces en sectores. Supervisor de Insta- laciones y medicio- nes o el que haga sus veces en secto-, Ejecutor de la Actividad = Supervisor de Insta- laciones y medicio- nes o el que haga sus veces en secto- res. Supervisor de Insta- laciones y medicio- nes o el que haga sus veces en secto-, Sistema que sopor- ta la Activi- dad = SIELSE. Supervisor de Insta- laciones y medicio- nes o el que haga sus veces en secto-, ¿Es con- trol Ca- ble? (Sí=x) = -. res Supervisor de Insta- laciones y medicio- nes o el que haga sus veces en secto- res, Entradas = Presupuesto. res Supervisor de Insta- laciones y medicio- nes o el que haga sus veces en secto- res, N° = 20. res Supervisor de Insta- laciones y medicio- nes o el que haga sus veces en secto- res, Descripción Actividades = ¿Cliente Acepta? Si: Pasar a la actividad 21 No: Finalizar actividad. res Supervisor de Insta- laciones y medicio- nes o el que haga sus veces en secto- res, Salidas = -. res Supervisor de Insta- laciones y medicio- nes o el que haga sus veces en secto- res, Clientes = Atención al Cliente. res Supervisor de Insta- laciones y medicio- nes o el que haga sus veces en secto- res, Ejecutor de la Actividad = Supervisor de Insta- laciones y medicio- nes o el que haga sus veces en secto- res. res Supervisor de Insta- laciones y medicio- nes o el que haga sus veces en secto- res, Sistema que sopor- ta la Activi- dad = -. res Supervisor de Insta- laciones y medicio- nes o el que haga sus veces en secto- res, ¿Es con- trol Ca- ble? (Sí=x) = x. Supervisor de Insta- laciones y medicio- nes o el que haga sus veces en secto- res, Entradas = Presupuesto. Supervisor de Insta- laciones y medicio- nes o el que haga sus veces en secto- res, N° = 21. Supervisor de Insta- laciones y medicio- nes o el que haga sus veces en secto- res, Descripción Actividades = Cancelar presupuesto / solicitud indican- do suministro afecto de facturación de consumo de E. Supervisor de Insta- laciones y medicio- nes o el que haga sus veces en secto- res, Salidas = Comproban- te de pago. Supervisor de Insta- laciones y medicio- nes o el que haga sus veces en secto- res, Clientes = Atención al Cliente. Supervisor de Insta- laciones y medicio- nes o el que haga sus veces en secto- res, Ejecutor de la Actividad = Atención al Cliente. Supervisor de Insta- laciones y medicio- nes o el que haga sus veces en secto- res, Sistema que sopor- ta la Activi- dad = -. Supervisor de Insta- laciones y medicio- nes o el que haga sus veces en secto- res, ¿Es con- trol Ca- ble? (Sí=x) = -. Atención al Cliente, Entradas = -. Atención al Cliente, N° = 22. Atención al Cliente, Descripción Actividades = Elaborar expediente de servicio extraordi- nario y enviar a instalaciones. Atención al Cliente, Salidas = Expediente de servicio extraordina- rio. Atención al Cliente, Clientes = Supervisor de Instala- ciones y mediciones o el que haga sus ve- ces en sectores. Atención al Cliente, Ejecutor de la Actividad = Atención al Cliente. Atención al Cliente, Sistema que sopor- ta la Activi- dad = SIELSE. Atención al Cliente, ¿Es con- trol Ca- ble? (Sí=x) = -. Atención al Cliente, Entradas = Expediente de servicio extraordina- rio. Atención al Cliente, N° = 23. Atención al Cliente, Descripción Actividades = Programar orden de trabajo en el sistema. Atención al Cliente, Salidas = OT. Atención al Cliente, Clientes = Supervisor de Instala- ciones y mediciones o el que haga sus ve- ces en sectores. Atención al Cliente, Ejecutor de la Actividad = Supervisor de Insta- laciones y medicio- nes o el que haga sus veces en secto- res. Atención al Cliente, Sistema que sopor- ta la Activi- dad = SIELSE. Atención al Cliente, ¿Es con- trol Ca- ble? (Sí=x) = -
+Código
+Versión
+Aprobado
+Fecha
+Página
+: CVA-PR-010
+: 08
+: CSIG
+: 29/10/2025
+: 9 de 5
+
+================================================================================
+Chunk: 18 / 19
+Páginas: [9]
+Sección: ELABORACIÓN EL PRESUPUESTO DE PAGO DE SERVICIO EXTRAORDINARIO O SERVICIO TEMPORAL
+Tipo: table
+--------------------------------------------------------------------------------
+Supervisor de Insta- laciones y medicio- nes o el que haga sus veces en secto- res, Entradas = OT. Supervisor de Insta- laciones y medicio- nes o el que haga sus veces en secto- res, N° = 24. Supervisor de Insta- laciones y medicio- nes o el que haga sus veces en secto- res, Descripción Actividades = Ejecutar el servicio extraordinario. Supervisor de Insta- laciones y medicio- nes o el que haga sus veces en secto- res, Salidas = Ejecución. Supervisor de Insta- laciones y medicio- nes o el que haga sus veces en secto- res, Clientes = Supervisor de Instala- ciones y mediciones o el que haga sus ve- ces en sectores. Supervisor de Insta- laciones y medicio- nes o el que haga sus veces en secto- res, Ejecutor de la Actividad = Contratista. Supervisor de Insta- laciones y medicio- nes o el que haga sus veces en secto- res, Sistema que sopor- ta la Activi- dad = -. Supervisor de Insta- laciones y medicio- nes o el que haga sus veces en secto- res, ¿Es con- trol Ca- ble? (Sí=x) = -. Contratista, Entradas = -. Contratista, N° = 25. Contratista, Descripción Actividades = ¿Tiene sistema de medición? Si: Pasar a la actividad 26 No: Pasar a la actividad 27. Contratista, Salidas = -. Contratista, Clientes = Contratista. Contratista, Ejecutor de la Actividad = Contratista. Contratista, Sistema que sopor- ta la Activi- dad = . Contratista, ¿Es con- trol Ca- ble? (Sí=x) = . Contratista, Entradas = -. Contratista, N° = 26. Contratista, Descripción Actividades = Realizar lectura. Contratista, Salidas = -. Contratista, Clientes = Contratista. Contratista, Ejecutor de la Actividad = Contratista. Contratista, Sistema que sopor- ta la Activi- dad = . Contratista, ¿Es con- trol Ca- ble? (Sí=x) = . Supervisor de Insta- laciones y medicio- nes o el que haga sus veces en secto- res, Entradas = Desconexión de servicio. Supervisor de Insta- laciones y medicio- nes o el que haga sus veces en secto- res, N° = 27. Supervisor de Insta- laciones y medicio- nes o el que haga sus veces en secto- res, Descripción Actividades = Desconectar el servicio, cuando ya se cumplió el tiempo de atención del servicio. Supervisor de Insta- laciones y medicio- nes o el que haga sus veces en secto- res, Salidas = Desconexión de servicio. Supervisor de Insta- laciones y medicio- nes o el que haga sus veces en secto- res, Clientes = Supervisor de Instala- ciones y mediciones o el que haga sus ve- ces en sectores. Supervisor de Insta- laciones y medicio- nes o el que haga sus veces en secto- res, Ejecutor de la Actividad = Supervisor de Insta- laciones y medicio- nes o el que haga sus veces en secto- res. Supervisor de Insta- laciones y medicio- nes o el que haga sus veces en secto- res, Sistema que sopor- ta la Activi- dad = -. Supervisor de Insta- laciones y medicio- nes o el que haga sus veces en secto- res, ¿Es con- trol Ca- ble? (Sí=x) = -. Supervisor de Insta- laciones y medicio- nes o el que haga sus veces en secto- res, Entradas = . Supervisor de Insta- laciones y medicio- nes o el que haga sus veces en secto- res, N° = 28. Supervisor de Insta- laciones y medicio- nes o el que haga sus veces en secto- res, Descripción Actividades = Registrar informe y aprobar OT servicio extraordinario en el sistema y archivar ex- pediente Finalizar procedimiento. Supervisor de Insta- laciones y medicio- nes o el que haga sus veces en secto- res, Salidas = Aprobación de OT. Supervisor de Insta- laciones y medicio- nes o el que haga sus veces en secto- res, Clientes = . Supervisor de Insta- laciones y medicio- nes o el que haga sus veces en secto- res, Ejecutor de la Actividad = Supervisor de Insta- laciones y medicio- nes o el que haga sus veces en secto- res. Supervisor de Insta- laciones y medicio- nes o el que haga sus veces en secto- res, Sistema que sopor- ta la Activi- dad = -. Supervisor de Insta- laciones y medicio- nes o el que haga sus veces en secto- res, ¿Es con- trol Ca- ble? (Sí=x) = -
+

@@ -1,0 +1,152 @@
+================================================================================
+Chunk: 0 / 15
+Páginas: [1]
+Sección: None
+Tipo: text
+--------------------------------------------------------------------------------
+Código:
+CVA-PR-017
+Versión: 00
+Aprobado: CSIG
+Fecha:
+Página: 1 de 4
+
+================================================================================
+Chunk: 1 / 15
+Páginas: [1]
+Sección: ATENCION A PERSONAS CON DISCAPACIDAD
+Tipo: table
+--------------------------------------------------------------------------------
+Dueño del proceso Nivel 0:, 1 = Gerente Comercial. Nombre del proceso Nivel 1:, 1 = División de Ventas. Nombre del proceso Nivel 2:, 1 = 
+
+================================================================================
+Chunk: 2 / 15
+Páginas: [1]
+Sección: PROCEDIMIENTO  DE ATENCION A PERSONAS CON DISCAPACIDAD
+Tipo: table
+--------------------------------------------------------------------------------
+División de Ventas, Revisado por: = Gerente Comercial. División de Ventas, Homologado por: = Especialista en Sistemas Integrados de Gestión y BGC. División de Ventas, Aprobado por: = Comité del Sistema Integrado de Gestión. 23/01/2024, Revisado por: = --/--/2024. 23/01/2024, Homologado por: = --/--/2024. 23/01/2024, Aprobado por: = --/--/2024
+
+================================================================================
+Chunk: 3 / 15
+Páginas: [2]
+Sección: 1. ANTECEDENTES
+Tipo: text
+--------------------------------------------------------------------------------
+Las personas con discapacidad intelectual tienen derecho a un trato adecuado y al respeto  de  sus  derechos,  por  ello,  es  necesario  propiciar  las  condiciones  que garanticen el logro de una inclusión integral de las personas con discapacidad.
+
+================================================================================
+Chunk: 4 / 15
+Páginas: [2]
+Sección: 2. OBJETIVO
+Tipo: text
+--------------------------------------------------------------------------------
+Atender  la  necesidad  de  garantizar  el  acceso  y  la  atención  de  personas  con discapacidad.  Este  procedimiento  pretende  garantizar  el  efectivo  acceso  a  las instalaciones  y  entorno  físico,  como  para  la  atención  integral  a  personas  con discapacidad el cual, será de aplicación en todo el ámbito de Electro Sur Este S.A.A.
+
+================================================================================
+Chunk: 5 / 15
+Páginas: [2]
+Sección: 3. ALCANCE
+Tipo: text
+--------------------------------------------------------------------------------
+Será de aplicación en todo el ámbito de Electro Sur Este S.A.A..
+
+================================================================================
+Chunk: 6 / 15
+Páginas: [2]
+Sección: 4. DEFINICIONES
+Tipo: text
+--------------------------------------------------------------------------------
+Accesibilidad: Asegurar el acceso de las personas con discapacidad en igualdad de condiciones con las demás a las instalaciones y entorno físico.
+Persona  con  Discapacidad: es  aquella  que  tiene  una  o  más  deficiencias  físicas, sensoriales, mentales o intelectuales de carácter permanente que, al interactuar con diversas barreras actitudinales y del entorno, no ejerza o pueda verse impedida en el ejercicio de sus derechos y su inclusión plena y efectiva en la sociedad, en igualdad de condiciones que las demás (Congreso de la República del Perú, 2012).
+
+================================================================================
+Chunk: 7 / 15
+Páginas: [2]
+Sección: 5. MARCO NORMATIVO Y/O DOCUMENTOS RELACIONADOS
+Tipo: list_item
+--------------------------------------------------------------------------------
+- ONU. (2006). Convención sobre los derechos de las personas con discapacidad.
+- Ley 29973 'Ley General de la Persona con Discapacidad'.
+- Ley N° 27408, Ley que establece la atención preferente en lugares de atención al público.
+- Decreto Supremo N° 002-2014-MIMP, aprueba el reglamento de la Ley N° 29973.
+- Resolución Ministerial N°075-2023-Vivienda.
+- Norma Técnica A.120 'Accesibilidad Universal en Edificaciones' del RNE.
+
+================================================================================
+Chunk: 8 / 15
+Páginas: [2, 3]
+Sección: 6. RECURSOS HUMANOS Y RESPONSABILIDADES
+Tipo: mixto: list_item, text
+--------------------------------------------------------------------------------
+- Comité del Sistema Integrado de Gestión (CSIG): es responsable de aprobar el presente procedimiento.
+- Gerentes: Impulsan y velan por el cumplimiento de este procedimiento en las
+CVA-PR-017
+Fecha:
+CVA-PR-017
+Fecha:
+
+================================================================================
+Chunk: 9 / 15
+Páginas: [3]
+Sección: ATENCION A PERSONAS CON DISCAPACIDAD
+Tipo: mixto: list_item, text
+--------------------------------------------------------------------------------
+instalaciones del que son responsables, proporcionando el tiempo, la información y los medios para llevar a cabo las actividades necesarias en el cumplimiento de este procedimiento.
+- Jefes  de  División,  jefes  de  Sectores,  Supervisores: Son  responsables  de cumplir el presente procedimiento; así como, de la difusión a todo el personal a su cargo,  el  'Procedimiento  de  Atencion  a  Personas  con  Discapacidad'  para  su cumplimiento irrestricto.
+
+================================================================================
+Chunk: 10 / 15
+Páginas: [3]
+Sección: 7.1. Atención a Personas con Discapacidad
+Tipo: text
+--------------------------------------------------------------------------------
+La atención de personas con discapacidad, se realizará en el primer nivel de las oficinas  de  Atención  al  Cliente  y/o  ambientes  administrativos  especialmente adecuados para tal fin.
+
+================================================================================
+Chunk: 11 / 15
+Páginas: [3]
+Sección: 7.2. Entrevista con Personas con Discapacidad Física
+Tipo: list_item
+--------------------------------------------------------------------------------
+- Primero: La persona con discapacidad se identifica en mesa de partes, e indica que desea entrevistarse con un gerente, funcionario, jefe o personal de Electro Sur Este S.A.A.
+- Segundo: La  persona  encargada  de  mesa  de  partes  comunica  al  gerente, funcionario, jefe o personal que, la persona con discapacidad desea conversar con él, para lo cual señala que debe apersonarse al ambiente establecido para entrevistas en el primer nivel las oficinas de Atención al Cliente y/o ambientes administrativos.
+- Tercero: La persona con discapacidad y con ayuda del personal de vigilancia, se dirige  hacia  el  ambiente  adecuado  de  Atención  al  Cliente  y/o  ambientes administrativos  para  mantener  la  entrevista  con  el  gerente,  funcionario,  jefe  o personal de Electro Sur Este S.A.A.
+- Cuarto: Culminada la entrevista, la persona con discapacidad procede a retirarse de las instalaciones de Electro Sur Este S.A.A.
+
+================================================================================
+Chunk: 12 / 15
+Páginas: [3]
+Sección: 8. DISPOSICIÓN FINAL
+Tipo: text
+--------------------------------------------------------------------------------
+Corresponde a los Gerentes de Área, jefes de División, jefes de Sectores Eléctricos, jefes  y  Supervisores  de  Oficina  velar  por  el  estricto  cumplimiento  del  presente procedimiento.
+
+================================================================================
+Chunk: 13 / 15
+Páginas: [3, 4]
+Sección: 9. ANEXOS
+Tipo: text
+--------------------------------------------------------------------------------
+El procedimiento se describe en el Flujograma N°1.
+Código:
+CVA-PR-017
+Versión: 00
+Aprobado: CSIG
+Fecha:
+Página: 4 de 4
+
+================================================================================
+Chunk: 14 / 15
+Páginas: [5]
+Sección: ATENCION A PERSONAS CON DISCAPACIDAD
+Tipo: mixto: table, text
+--------------------------------------------------------------------------------
+Código:
+CVA-PR-017
+Versión: 00
+Aprobado: CSIG
+Fecha:
+Página: 5 de 4
+-, Entradas N° = - 1. -, Descripción Actividades = 1.1. Ingreso de la persona con discapacidad a las instalaciones de ELSE. -, Salida s = . -, Clientes = . -, Ejecutor de la Actividad = . -, Sistema que soporta la Actividad = . -, ¿Es control Cable? (Sí=x) = . Cliente, Entradas N° = 2. Cliente, Descripción Actividades = 2.1. Realiza el pago del servicio o hace uso del módulo de atención al cliente. Cliente, Salida s = . Cliente, Clientes = Cliente. Cliente, Ejecutor de la Actividad = Cliente. Cliente, Sistema que soporta la Actividad = . Cliente, ¿Es control Cable? (Sí=x) = . Cliente, Entradas N° = 3. Cliente, Descripción Actividades = 3.1. ¿Es conforme? No: Finaliza la actividad Si: Pasar a la actividad 4. Cliente, Salida s = . Cliente, Clientes = Cliente. Cliente, Ejecutor de la Actividad = Cliente. Cliente, Sistema que soporta la Actividad = . Cliente, ¿Es control Cable? (Sí=x) = . Cliente, Entradas N° = 4. Cliente, Descripción Actividades = 4.1. Solicita una entrevista con el gerente, funcionario, jefe o personal de ELSE. Cliente, Salida s = . Cliente, Clientes = Cliente. Cliente, Ejecutor de la Actividad = Cliente. Cliente, Sistema que soporta la Actividad = . Cliente, ¿Es control Cable? (Sí=x) = . Personal de atención al cliente, Entradas N° = 5. Personal de atención al cliente, Descripción Actividades = 5.1. Notifica solicitud de entrevista. Personal de atención al cliente, Salida s = . Personal de atención al cliente, Clientes = Cliente. Personal de atención al cliente, Ejecutor de la Actividad = Personal de atención al cliente. Personal de atención al cliente, Sistema que soporta la Actividad = . Personal de atención al cliente, ¿Es control Cable? (Sí=x) = . Gerente, funcionario a cargo, jefe o el que haga sus veces, Entradas N° = 6. Gerente, funcionario a cargo, jefe o el que haga sus veces, Descripción Actividades = 6.1. Se dirige al primer al ambiente designado para la entrevista. Gerente, funcionario a cargo, jefe o el que haga sus veces, Salida s = . Gerente, funcionario a cargo, jefe o el que haga sus veces, Clientes = Gerente, funcionario a cargo, jefe o el que haga sus veces. Gerente, funcionario a cargo, jefe o el que haga sus veces, Ejecutor de la Actividad = Gerente, funcionario a cargo, jefe o el que haga sus veces. Gerente, funcionario a cargo, jefe o el que haga sus veces, Sistema que soporta la Actividad = . Gerente, funcionario a cargo, jefe o el que haga sus veces, ¿Es control Cable? (Sí=x) = . Gerente, funcionario a cargo, jefe o el que haga sus veces, Entradas N° = 7. Gerente, funcionario a cargo, jefe o el que haga sus veces, Descripción Actividades = 7.1. Se realiza la entrevista solicitada. Gerente, funcionario a cargo, jefe o el que haga sus veces, Salida s = . Gerente, funcionario a cargo, jefe o el que haga sus veces, Clientes = Gerente, funcionario a cargo, jefe o el que haga sus veces. Gerente, funcionario a cargo, jefe o el que haga sus veces, Ejecutor de la Actividad = Gerente, funcionario a cargo, jefe o el que haga sus veces. Gerente, funcionario a cargo, jefe o el que haga sus veces, Sistema que soporta la Actividad = . Gerente, funcionario a cargo, jefe o el que haga sus veces, ¿Es control Cable? (Sí=x) = . Cliente, Entradas N° = 8. Cliente, Descripción Actividades = 8.1. Se retira de las instalaciones de ELSE Finaliza actividad. Cliente, Salida s = . Cliente, Clientes = Cliente. Cliente, Ejecutor de la Actividad = Cliente. Cliente, Sistema que soporta la Actividad = . Cliente, ¿Es control Cable? (Sí=x) = 
+

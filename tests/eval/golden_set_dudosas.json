@@ -1,0 +1,92 @@
+[
+  {
+    "id": "q0034",
+    "pregunta": "¿Qué entidad ostenta la calidad de persona jurídica de derecho público adscrita al Sector Transportes y Comunicaciones según la Ley Nº 28900?",
+    "categoria": "Marketing",
+    "fuente_esperada": {
+      "documento": "CMA-PR-001 Alquiler de Infraestructura Eléctrica.pdf",
+      "seccion_contiene": "ALQUILER DE INFRAESTRUCTURA ELÉCTRICA"
+    },
+    "chunk_origen_index": 4,
+    "revisado": true,
+    "veredicto_juez": {
+      "autocontenida": true,
+      "respondible_con_chunk": true,
+      "suena_natural": false,
+      "error": null
+    },
+    "estado_filtro": "dudosa"
+  },
+  {
+    "id": "q0040",
+    "pregunta": "¿Quién es el responsable de aprobar el presente procedimiento y supervisar su implementación?",
+    "categoria": "Supervision Comercial",
+    "fuente_esperada": {
+      "documento": "CVS-IN-002 Reparto de Recibos.pdf",
+      "seccion_contiene": "4. RECURSOS HUMANOS Y RESPONSABILIDADES"
+    },
+    "chunk_origen_index": 5,
+    "revisado": true,
+    "veredicto_juez": {
+      "autocontenida": true,
+      "respondible_con_chunk": true,
+      "suena_natural": false,
+      "error": null
+    },
+    "estado_filtro": "dudosa"
+  },
+  {
+    "id": "q0053",
+    "pregunta": "¿Qué diferencia técnica existe entre los umbrales de máxima demanda anual que definen a un Usuario Regulado y a un Usuario Libre?",
+    "categoria": "Atencion al Cliente",
+    "fuente_esperada": {
+      "documento": "CVA-PR-004 Solicitud de Cambio de Tarifa v7.pdf",
+      "seccion_contiene": "2. DEFINICIONES"
+    },
+    "chunk_origen_index": 5,
+    "revisado": true,
+    "veredicto_juez": {
+      "autocontenida": true,
+      "respondible_con_chunk": true,
+      "suena_natural": false,
+      "error": null
+    },
+    "estado_filtro": "dudosa"
+  },
+  {
+    "id": "q0055",
+    "pregunta": "¿Qué funciones específicas tiene el equipo de calidad de la Contratista del Contact Center según el numeral 6.1 y cómo se relaciona con la gestión de indicadores?",
+    "categoria": "Marketing",
+    "fuente_esperada": {
+      "documento": "CM-PR-004 Supervisión de atención de contact center.pdf",
+      "seccion_contiene": "SUPERVISIÓN LA ATENCIÓN DE CONTACT CENTER"
+    },
+    "chunk_origen_index": 11,
+    "revisado": true,
+    "veredicto_juez": {
+      "autocontenida": true,
+      "respondible_con_chunk": true,
+      "suena_natural": false,
+      "error": null
+    },
+    "estado_filtro": "dudosa"
+  },
+  {
+    "id": "q0059",
+    "pregunta": "¿Quién tiene la facultad de aprobar el presente procedimiento y supervisar su implementación?",
+    "categoria": "Atencion al Cliente",
+    "fuente_esperada": {
+      "documento": "CVA-PR-005 Tramitación y aprobación de corte definitivo.pdf",
+      "seccion_contiene": "4. RECURSOS HUMANOS Y RESPONSABILIDADES"
+    },
+    "chunk_origen_index": 6,
+    "revisado": true,
+    "veredicto_juez": {
+      "autocontenida": true,
+      "respondible_con_chunk": true,
+      "suena_natural": false,
+      "error": null
+    },
+    "estado_filtro": "dudosa"
+  }
+]

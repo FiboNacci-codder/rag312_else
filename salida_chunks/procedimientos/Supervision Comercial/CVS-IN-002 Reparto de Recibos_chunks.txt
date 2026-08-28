@@ -1,0 +1,152 @@
+================================================================================
+Chunk: 0 / 11
+Páginas: [1]
+Sección: None
+Tipo: table
+--------------------------------------------------------------------------------
+INSTRUCTIVO REPARTO DE RECIBOS DE PAGO DE CONSUMO DE ENERGÍA ELÉCTRICA DE CLIENTES, 1 = Código Versión Aprobado Fecha Página. INSTRUCTIVO REPARTO DE RECIBOS DE PAGO DE CONSUMO DE ENERGÍA ELÉCTRICA DE CLIENTES, 2 = : CVS-IN-00 2 : 09 : CSIG : 10/03/2022 : 1 de 6
+Nombre del procedimiento:, 1 = Facturación. Código del procedimiento:, 1 = CVF-PR-001
+
+================================================================================
+Chunk: 1 / 11
+Páginas: [1]
+Sección: INSTRUCTIVO PARA EL REPARTO DE RECIBOS DE PAGO DE CONSUMO DE ENERGÍA ELÉCTRICA DE CLIENTES
+Tipo: table
+--------------------------------------------------------------------------------
+Supervisor Comercial, Revisado por: = Jefe de Ventas. Supervisor Comercial, Homologado por: = Especialista en Sistemas de Gestión y BGC. Supervisor Comercial, Aprobado por: = Comité del Siste- ma Integrado de Gestión. 21/02/2022, Revisado por: = 04/03/2022. 21/02/2022, Homologado por: = 07/03/2022. 21/02/2022, Aprobado por: = 10/03/2022
+
+================================================================================
+Chunk: 2 / 11
+Páginas: [2]
+Sección: 1. OBJETIVO Y ALCANCE
+Tipo: text
+--------------------------------------------------------------------------------
+Establecer el instructivo para desarrollar el trabajo de Reparto de recibos de pago por consumo de energía eléctrica de clientes menores por parte de las empresas Contratistas y la respectiva Supervisión.
+
+================================================================================
+Chunk: 3 / 11
+Páginas: [2]
+Sección: 2. DEFINICIONES
+Tipo: mixto: list_item, text
+--------------------------------------------------------------------------------
+- 2.1. Muestra en Campo: De acuerdo a SGC-TA-001 tablas de muestras para la supervisión. El tamaño del lote para las muestras de lecturas en campo, en el sector típico 2 se realizará por zona y en los demás sectores típicos se realizaran por libro en cada localidad.
+- En el SECTOR TIPICOS 2 el nivel de inspección general será la Reducida (I)
+- En los demás SECTORES TIPICOS el nivel de inspección será la Reducida (I)
+Para CONSIDERARSE SATISFACTORIO como calidad media del producto o servicio, el nivel de error permitido a considerarse será 'σ'=1.0
+Se considera UNIDAD DEFECTUOSA (no conforme a la supervisión), cuando la diferencia entre la lectura verificada y la lectura del contratista, supere al consumo diario del promedio mensual de consumo.
+
+================================================================================
+Chunk: 4 / 11
+Páginas: [2]
+Sección: 3. MARCO NORMATIVO Y/O DOCUMENTOS RELACIONADOS
+Tipo: list_item
+--------------------------------------------------------------------------------
+- 3.1. CVF-PR-001 Facturación
+- 3.2. SIG-RE-017 Cronograma de Procesos Comerciales.
+- 3.3. Contrato de Servicios comerciales.
+
+================================================================================
+Chunk: 5 / 11
+Páginas: [2]
+Sección: 4. RECURSOS HUMANOS Y RESPONSABILIDADES
+Tipo: list_item
+--------------------------------------------------------------------------------
+- 4.1. El Comité del Sistema Integrado de Gestión (CSIG), es responsable de la aprobación del presente procedimiento y de supervisar la implementación del presente procedimiento.
+- 4.2. El Supervisor Comercial o el que hagas sus veces es el encargado de implementar y supervisar que este Instructivo se ejecute.
+
+================================================================================
+Chunk: 6 / 11
+Páginas: [2]
+Sección: 5. INFRAESTRUCTURA, RECURSOS Y AMBIENTE
+Tipo: list_item
+--------------------------------------------------------------------------------
+- 5.1. SIELSE
+- 5.2. Oficinas / Instalaciones / Zona de concesión de Electro Sur Este S.A.A.
+
+================================================================================
+Chunk: 7 / 11
+Páginas: [2]
+Sección: 6. DESARROLLO / PROCEDIMIENTO
+Tipo: text
+--------------------------------------------------------------------------------
+El presente instructivo se encuentra desarrollado en el flujograma adjunto.
+
+================================================================================
+Chunk: 8 / 11
+Páginas: [2, 3]
+Sección: 7. REGISTROS Y ANEXOS
+Tipo: mixto: list_item, text
+--------------------------------------------------------------------------------
+Los registros generados son:
+- 7.1. CVS-RE-002 Encuesta de Reparto de Recibos
+Código
+Versión
+Aprobado
+Fecha
+Página
+: CVS-IN-00 2
+: 09
+: CSIG
+: 10/03/2022
+: 2 de 6
+Código
+Versión
+Aprobado
+Fecha
+Página
+: CVS-IN-00 2
+: 09
+: CSIG
+: 10/03/2022
+: 3 de 6
+
+================================================================================
+Chunk: 9 / 11
+Páginas: [3, 4, 5, 6]
+Sección: REPARTO DE RECIBOS DE PAGO DE CONSUMO DE ENERGÍA ELÉCTRICA DE CLIENTES
+Tipo: mixto: caption, table, text
+--------------------------------------------------------------------------------
+FLUJO N°1: Reparto de recibos de pago de consumo de energía eléctrica de clientes (página 1)
+Fase
+Código
+Versión
+Aprobado
+Fecha
+Página
+: CVS-IN-00 2
+: 09
+: CSIG
+: 10/03/2022
+: 4 de 6
+FLUJO N°1: Reparto de recibos de pago de consumo de energía eléctrica de clientes (página 2)
+Fase
+Código
+Versión
+Aprobado
+Fecha
+Página
+: CVS-IN-00 2
+: 09
+: CSIG
+: 10/03/2022
+: 5 de 6
+Facturador, Entradas N° = 1. Facturador, Descripción Actividades = Entregar recibos a contratista Para reparto con cargo de acuerdo a: SGC-RE-017 Cronograma de Procesos Comerciales. Facturador, Salidas = Recibos de pago Notificaciones Otros. Facturador, Clientes Ejecutor = Contratista (Sup. de repar- to) Facturador. Facturador, de la Actividad Sistema que soporta la Actividad = No Aplica. Facturador, ¿Es con- trol Cable? (Sí=x) = . Facturador, Entradas N° = 2. Facturador, Descripción Actividades = Recibir y firmar cargo de los recibido. Facturador, Salidas = . Facturador, Clientes Ejecutor = Contratista (Sup. de repar- to). Facturador, de la Actividad Sistema que soporta la Actividad = Contratista (Sup. de repar- to). Facturador, ¿Es con- trol Cable? (Sí=x) = No Aplica. Contratista (Sup. de repar- to), Entradas N° = 3. Contratista (Sup. de repar- to), Descripción Actividades = Realizar revisión aleatoria de la impresión de los recibos. Contratista (Sup. de repar- to), Salidas = . Contratista (Sup. de repar- to), Clientes Ejecutor = Contratista (Sup. de repar- to). Contratista (Sup. de repar- to), de la Actividad Sistema que soporta la Actividad = Contratista (Sup. de repar- to). Contratista (Sup. de repar- to), ¿Es con- trol Cable? (Sí=x) = No Aplica. Contratista (Sup. de repar- to), Entradas N° = 4. Contratista (Sup. de repar- to), Descripción Actividades = ¿Es Conforme? SI: Va a actividad 06 NO: Va a actividad 05. Contratista (Sup. de repar- to), Salidas = . Contratista (Sup. de repar- to), Clientes Ejecutor = Contratista (Sup. de repar- to). Contratista (Sup. de repar- to), de la Actividad Sistema que soporta la Actividad = Contratista (Sup. de repar- to). Contratista (Sup. de repar- to), ¿Es con- trol Cable? (Sí=x) = No Aplica. Contratista (Sup. de repar- to), Entradas N° = 5. Contratista (Sup. de repar- to), Descripción Actividades = Corregir observaciones Va a actividad 01. Contratista (Sup. de repar- to), Salidas = . Contratista (Sup. de repar- to), Clientes Ejecutor = Contratista (Sup. de repar- to). Contratista (Sup. de repar- to), de la Actividad Sistema que soporta la Actividad = Facturación. Contratista (Sup. de repar- to), ¿Es con- trol Cable? (Sí=x) = No Aplica. Contratista (Sup. de repar- to), Entradas N° = 6. Contratista (Sup. de repar- to), Descripción Actividades = Programar entregas De acuerdo a su cronograma mensual de distribución de técnicos. Contratista (Sup. de repar- to), Salidas = . Contratista (Sup. de repar- to), Clientes Ejecutor = Contratista (Sup. de repar- to). Contratista (Sup. de repar- to), de la Actividad Sistema que soporta la Actividad = Contratista (Sup. de repar- to). Contratista (Sup. de repar- to), ¿Es con- trol Cable? (Sí=x) = No Aplica. Contratista (Sup. de repar- to), Entradas N° = 7. Contratista (Sup. de repar- to), Descripción Actividades = Entregar a repartidores. Contratista (Sup. de repar- to), Salidas = . Contratista (Sup. de repar- to), Clientes Ejecutor = Contratista (Repartidores). Contratista (Sup. de repar- to), de la Actividad Sistema que soporta la Actividad = Contratista (Sup. de repar- to). Contratista (Sup. de repar- to), ¿Es con- trol Cable? (Sí=x) = No Aplica. Contratista (Sup. de repar- to), Entradas N° = 8. Contratista (Sup. de repar- to), Descripción Actividades = Recibir, Ordenar y Revisar los recibos. Contratista (Sup. de repar- to), Salidas = . Contratista (Sup. de repar- to), Clientes Ejecutor = Contratista (Repartidores). Contratista (Sup. de repar- to), de la Actividad Sistema que soporta la Actividad = Contratista (Repartidores). Contratista (Sup. de repar- to), ¿Es con- trol Cable? (Sí=x) = No Aplica. Contratista (Repartidores), Entradas N° = 9. Contratista (Repartidores), Descripción Actividades = Ubicar el predio verificando los datos del suministro e Identifi- car clientes con observación - Dirección - Código del suministro - Nombres y Apellidos del cliente En el Sistema de Información Comercial. Contratista (Repartidores), Salidas = . Contratista (Repartidores), Clientes Ejecutor = Contratista (Repartidores). Contratista (Repartidores), de la Actividad Sistema que soporta la Actividad = Contratista (Repartidores). Contratista (Repartidores), ¿Es con- trol Cable? (Sí=x) = GOS (donde se tenga co- bertura). Contratista (Repartidores), Entradas N° = 10. Contratista (Repartidores), Descripción Actividades = ¿Cliente con observación ? SI: Va a actividad 11 NO: Va a actividad 12. Contratista (Repartidores), Salidas = . Contratista (Repartidores), Clientes Ejecutor = Contratista (Repartidores). Contratista (Repartidores), de la Actividad Sistema que soporta la Actividad = Contratista (Repartidores). Contratista (Repartidores), ¿Es con- trol Cable? (Sí=x) = GOS (donde se tenga co- bertura). Contratista (Repartidores), Entradas N° = 11. Contratista (Repartidores), Descripción Actividades = Fotografiar el predio - Para que quede constancia de que se realizó la entrega del reci- bo - Se carga automáticamente al sistema de reparto de recibos en. Contratista (Repartidores), Salidas = . Contratista (Repartidores), Clientes Ejecutor = Contratista (Repartidores). Contratista (Repartidores), de la Actividad Sistema que soporta la Actividad = Contratista (Repartidores). Contratista (Repartidores), ¿Es con- trol Cable? (Sí=x) = No Aplica
+Código
+Versión
+Aprobado
+Fecha
+Página
+: CVS-IN-00 2
+: 09
+: CSIG
+: 10/03/2022
+: 6 de 6
+
+================================================================================
+Chunk: 10 / 11
+Páginas: [6]
+Sección: REPARTO DE RECIBOS DE PAGO DE CONSUMO DE ENERGÍA ELÉCTRICA DE CLIENTES
+Tipo: table
+--------------------------------------------------------------------------------
+, Entradas = . , N° = . , Descripción Actividades = línea. , Salidas = . , Clientes = . , Ejecutor de la Actividad = . , Sistema que soporta la Actividad ¿Es trol = . , con- Cable? (Sí=x) = . Contratista (Repartidores), Entradas = . Contratista (Repartidores), N° = 12. Contratista (Repartidores), Descripción Actividades = Proceder a dejar el recibo - Al cliente (Si se encuentra presente) - Buzón del predio - Zonas establecidas por el cliente. Contratista (Repartidores), Salidas = . Contratista (Repartidores), Clientes = Supervisor Comercial. Contratista (Repartidores), Ejecutor de la Actividad = Contratista (Repartidores). Contratista (Repartidores), Sistema que soporta la Actividad ¿Es trol = No Aplica. Contratista (Repartidores), con- Cable? (Sí=x) = . Contratista (Repartidores), Entradas = . Contratista (Repartidores), N° = 13. Contratista (Repartidores), Descripción Actividades = Definir muestra SGC-TA-001 Tabla de muestras para la supervisión. Contratista (Repartidores), Salidas = . Contratista (Repartidores), Clientes = Supervisor Comercial. Contratista (Repartidores), Ejecutor de la Actividad = Supervisor Comercial. Contratista (Repartidores), Sistema que soporta la Actividad ¿Es trol = No Aplica. Contratista (Repartidores), con- Cable? (Sí=x) = . Supervisor Comercial, Entradas = . Supervisor Comercial, N° = 14. Supervisor Comercial, Descripción Actividades = Realizar muestreo de reparto Se puede realizar en gabinete usando la información que se tiene en el sistema. De acuerdo a: - SGC-RE-017 Cronograma de Procesos Comerciales - Cronograma de supervisión de cada sector o división. Supervisor Comercial, Salidas = . Supervisor Comercial, Clientes = Supervisor Comercial. Supervisor Comercial, Ejecutor de la Actividad = Supervisor Comercial. Supervisor Comercial, Sistema que soporta la Actividad ¿Es trol = No Aplica. Supervisor Comercial, con- Cable? (Sí=x) = . Supervisor Comercial, Entradas = . Supervisor Comercial, N° = 15. Supervisor Comercial, Descripción Actividades = Ubicar el predio - Dirección - Código del suministro - Nombres y Apellidos del cliente. Supervisor Comercial, Salidas = . Supervisor Comercial, Clientes = Supervisor Comercial. Supervisor Comercial, Ejecutor de la Actividad = Supervisor Comercial. Supervisor Comercial, Sistema que soporta la Actividad ¿Es trol = No Aplica. Supervisor Comercial, con- Cable? (Sí=x) = . Supervisor Comercial, Entradas = . Supervisor Comercial, N° = 16. Supervisor Comercial, Descripción Actividades = Verificar el reparto de recibos Encuesta al cliente. Supervisor Comercial, Salidas = CVS-RE-002 Encuesta de reparto de reci- bos. Supervisor Comercial, Clientes = Supervisor Comercial. Supervisor Comercial, Ejecutor de la Actividad = Supervisor Comercial. Supervisor Comercial, Sistema que soporta la Actividad ¿Es trol = No Aplica. Supervisor Comercial, con- Cable? (Sí=x) = . Supervisor Comercial, Entradas = . Supervisor Comercial, N° = 17. Supervisor Comercial, Descripción Actividades = ¿Recibo entregado? SI: Va a actividad 20 NO: Va a actividad 18. Supervisor Comercial, Salidas = . Supervisor Comercial, Clientes = Supervisor Comercial. Supervisor Comercial, Ejecutor de la Actividad = Supervisor Comercial. Supervisor Comercial, Sistema que soporta la Actividad ¿Es trol = No Aplica. Supervisor Comercial, con- Cable? (Sí=x) = . Supervisor Comercial, Entradas = . Supervisor Comercial, N° = 18. Supervisor Comercial, Descripción Actividades = Comunicar Observaciones. Supervisor Comercial, Salidas = . Supervisor Comercial, Clientes = Contratista. Supervisor Comercial, Ejecutor de la Actividad = Supervisor Comercial. Supervisor Comercial, Sistema que soporta la Actividad ¿Es trol = No Aplica. Supervisor Comercial, con- Cable? (Sí=x) = . Supervisor Comercial, Entradas = . Supervisor Comercial, N° = 19. Supervisor Comercial, Descripción Actividades = ¿Levanto Observaciones? SI: Va a actividad 21 NO: Va a actividad 20. Supervisor Comercial, Salidas = . Supervisor Comercial, Clientes = Supervisor Comercial. Supervisor Comercial, Ejecutor de la Actividad = Contratista. Supervisor Comercial, Sistema que soporta la Actividad ¿Es trol = No Aplica. Supervisor Comercial, con- Cable? (Sí=x) = . Contratista, Entradas = . Contratista, N° = 20. Contratista, Descripción Actividades = Aplicar penalización Según corresponda. Contratista, Salidas = . Contratista, Clientes = Supervisor Comercial. Contratista, Ejecutor de la Actividad = Supervisor Comercial. Contratista, Sistema que soporta la Actividad ¿Es trol = No Aplica. Contratista, con- Cable? (Sí=x) = . Supervisor Comercial, Entradas = . Supervisor Comercial, N° = 21. Supervisor Comercial, Descripción Actividades = Realizar informe para liquidación de trabajos ejecutados por contratista Pasa al área de Administración y Finanzas. Supervisor Comercial, Salidas = . Supervisor Comercial, Clientes = . Supervisor Comercial, Ejecutor de la Actividad = Supervisor Comercial. Supervisor Comercial, Sistema que soporta la Actividad ¿Es trol = No Aplica. Supervisor Comercial, con- Cable? (Sí=x) = 
+

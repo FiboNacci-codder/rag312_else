@@ -1,0 +1,102 @@
+================================================================================
+Chunk: 0 / 9
+Páginas: [1]
+Sección: None
+Tipo: text
+--------------------------------------------------------------------------------
+: CVI-PR-012
+Versión       :01
+Aprobado   : CSIG
+Fecha
+: 30/11/2017
+Página
+: 1 de 3
+
+================================================================================
+Chunk: 1 / 9
+Páginas: [1]
+Sección: SUPERVISIÓN DE MANTENIMIENTO DE EQUIPOS DE MEDICIÓN
+Tipo: table
+--------------------------------------------------------------------------------
+COPIA CONTROLADA:, 1 = COPIA NO CONTROLADA. ASIGNADA A:, 1 = 
+
+================================================================================
+Chunk: 2 / 9
+Páginas: [1]
+Sección: 1. OBJETO Y ALCANCE
+Tipo: text
+--------------------------------------------------------------------------------
+Describir las actividades del procedimiento para realizar la Supervisión del Mantenimiento,  Verificación  de  Equipos  de  medición  que  emplea  Electro  Sur  Este S.A.A. con la finalidad de que no existan deficiencias en su funcionamiento y garantizar su operatividad.
+
+================================================================================
+Chunk: 3 / 9
+Páginas: [1]
+Sección: 2. DEFINICIONES
+Tipo: list_item
+--------------------------------------------------------------------------------
+- 2.1 Reparación: actividades de restauración de las condiciones normales de operación del equipo, debido a factores internos y/o externos a ella.
+- 2.2 Mantenimiento: actividades destinadas a conservar las características iníciales de operación del equipo e instalaciones ya sea nuevo o reparado.
+- 2.3 Verificación : Actividad destinada a efectuar la verificación de los equipos, que permita certificar  que  las  magnitudes  medibles  con  dicho  equipo  estén  dentro  de  los  rangos establecidos  en  la  clase  de  precisión  de  cada  uno  de  ellos,  la  verificación    deberá realizarse con un equipo patrón trazable (Certificado por INDECOPI).
+
+================================================================================
+Chunk: 4 / 9
+Páginas: [1]
+Sección: 3. DOCUMENTOS A CONSULTAR
+Tipo: list_item
+--------------------------------------------------------------------------------
+- 3.1 Manual de los equipos.
+- 3.2 CVI-IN-005 Instructivo para el mantenimiento y verificación de Equipos de Medición
+- 3.3 CVI-PR-009 Mantenimiento y Verificación de Equipos de medición
+
+================================================================================
+Chunk: 5 / 9
+Páginas: [1]
+Sección: 4. RESPONSABILIDADES
+Tipo: list_item
+--------------------------------------------------------------------------------
+- 4.1 El Comité del Sistema Integrado de Gestión (CSIG) es responsable de aprobar el presente Procedimiento.
+- 4.2 El  supervisor  de  instalaciones  y  mediciones,  responsable  de  laboratorio  y/o  los  que hagan sus veces en el ámbito de la empresa son responsables de verificar y asegurar el conocimiento y cumplimiento del presente Procedimiento, por todo el personal a su cargo.
+- 4.3 El supervisor de instalaciones y mediciones y/o los que hagan sus veces en el ámbito de  la empresa son responsables de efectuar la verificación de la implementación de este procedimiento con los equipos utilizados por el Contratista.
+- 4.3.1 El Personal de Operaciones (técnicos de turno), Contratistas son  responsables de cumplir y ejecutar el presente procedimiento
+
+================================================================================
+Chunk: 6 / 9
+Páginas: [1]
+Sección: DESARROLLO DEL PROCEDIMIENTO
+Tipo: text
+--------------------------------------------------------------------------------
+El presente procedimiento de encuentra desarrollado en el flujo adjunto
+
+================================================================================
+Chunk: 7 / 9
+Páginas: [1, 2]
+Sección: REGISTROS
+Tipo: mixto: list_item, text
+--------------------------------------------------------------------------------
+- 6.1 Los registros generados durante el desarrollo del presente Procedimiento son:
+- Acta Supervisión de mantenimiento de equipos de medición
+Código
+: CVI-PR-012
+Versión       :01
+Aprobado   : CSIG
+Fecha
+: 30/11/2017
+Página
+: 2 de 3
+
+================================================================================
+Chunk: 8 / 9
+Páginas: [3]
+Sección: SUPERVISIÓN DE MANTENIMIENTO DE EQUIPOS DE MEDICIÓN
+Tipo: mixto: table, text
+--------------------------------------------------------------------------------
+Código
+: CVI-PR-012
+Versión       :01
+Aprobado   : CSIG
+Fecha
+: 30/11/2017
+Página
+: 3 de 3
+01., Responsable de la Actividad = Sedes. 01., Descripción de la actividad = Establece responsable e informa Designación de un personal responsable de la actividad. 01., Registro = . 02., Responsable de la Actividad = Sedes. 02., Descripción de la actividad = Revisión mensual de mantenimiento El responsable mensualmente revisa su plan de mantenimiento. 02., Registro = . 03., Responsable de la Actividad = Sedes. 03., Descripción de la actividad = ¿Cumple cronograma? SI: Pasa a 4 NO: Retorna a 2. 03., Registro = . 04., Responsable de la Actividad = Sedes. 04., Descripción de la actividad = Emite Acta Supervisión de mantenimiento de equipos de medición. 04., Registro = Acta Supervisión de mantenimiento de equipos de medición. 05., Responsable de la Actividad = Sedes. 05., Descripción de la actividad = Revisa información de rendimiento de equipos Responsable revisa informaciones pasadas de actas de supervisión. 05., Registro = . 06., Responsable de la Actividad = Sedes. 06., Descripción de la actividad = ¿Existe información? SI: Pasa a 7 NO: Pasa 8. 06., Registro = . 07., Responsable de la Actividad = Sedes. 07., Descripción de la actividad = Emite Acta Supervisión de mantenimiento de equipos de medición Acta. 07., Registro = Supervisión de mantenimiento de equipos de medición. 08., Responsable de la Actividad = Sedes. 08., Descripción de la actividad = Evalúa y envía conformidad de información de mantenimiento de equipos de medición. 08., Registro = . 09., Responsable de la Actividad = Sedes. 09., Descripción de la actividad = Emite acta de conformidad. 09., Registro = . 10, Responsable de la Actividad = Contratista. 10, Descripción de la actividad = Levanta observaciones. 10, Registro = . 11, Responsable de la Actividad = Contratista. 11, Descripción de la actividad = Envía información de operatividad de equipos. 11, Registro = . 12, Responsable de la Actividad = Instalación y mediciones. 12, Descripción de la actividad = Da Seguimiento del cumplimiento del mantenimiento en las sedes. 12, Registro = . 13, Responsable de la Actividad = Instalación y mediciones. 13, Descripción de la actividad = Da conformidad determina cumplimiento del cronograma. 13, Registro = . 14, Responsable de la Actividad = Instalación y mediciones. 14, Descripción de la actividad = Evalúa observaciones. 14, Registro = 
+

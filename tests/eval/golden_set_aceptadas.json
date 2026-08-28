@@ -1,0 +1,740 @@
+[
+  {
+    "id": "q0001",
+    "pregunta": "¿Qué es el recurso impugnatorio y cuál es el plazo máximo para presentarlo según el procedimiento?",
+    "categoria": "Atencion al Cliente",
+    "fuente_esperada": {
+      "documento": "CVA-PR-014 Atención de reclamos por oposición a cambio de Razón Social.pdf",
+      "seccion_contiene": "ATENCIÓN DE RECLAMOS POR OPOSICION A CAMBIO DE RAZON SOCIAL"
+    },
+    "chunk_origen_index": 23,
+    "revisado": true,
+    "veredicto_juez": {
+      "autocontenida": true,
+      "respondible_con_chunk": true,
+      "suena_natural": true,
+      "error": null
+    },
+    "estado_filtro": "aceptada"
+  },
+  {
+    "id": "q0002",
+    "pregunta": "¿Qué documentos genera la actividad N° 17 al completar datos y explicar el detalle al cliente?",
+    "categoria": "Perdidas Comerciales",
+    "fuente_esperada": {
+      "documento": "CVPC-IN-001 Ejecución de la Verificación de Suministros, con Consumos Irregulares. (1).pdf",
+      "seccion_contiene": "VERIFICACIÓN DE SUMINISTROS, CON CONSUMOS IRREGULARES."
+    },
+    "chunk_origen_index": 16,
+    "revisado": false,
+    "veredicto_juez": {
+      "autocontenida": true,
+      "respondible_con_chunk": true,
+      "suena_natural": true,
+      "error": null
+    },
+    "estado_filtro": "aceptada"
+  },
+  {
+    "id": "q0003",
+    "pregunta": "¿Qué son los reintegros y bajo qué circunstancias la concesionaria está obligada a devolver el importe al usuario?",
+    "categoria": "Perdidas Comerciales",
+    "fuente_esperada": {
+      "documento": "CVPC-IN-004 Preparación del Anexo 02.pdf",
+      "seccion_contiene": "2. DEFINICIONES"
+    },
+    "chunk_origen_index": 5,
+    "revisado": true,
+    "veredicto_juez": {
+      "autocontenida": true,
+      "respondible_con_chunk": true,
+      "suena_natural": true,
+      "error": null
+    },
+    "estado_filtro": "aceptada"
+  },
+  {
+    "id": "q0004",
+    "pregunta": "¿Cuál es la frecuencia y el plazo máximo para publicar en la página web de Osinergmin la información requerida en la estructura de base datos Anexo N° 2?",
+    "categoria": "Perdidas Comerciales",
+    "fuente_esperada": {
+      "documento": "CVPC-IN-004 Preparación del Anexo 02.pdf",
+      "seccion_contiene": "PREPARACIÓN REPORTE ANEXO 02."
+    },
+    "chunk_origen_index": 12,
+    "revisado": true,
+    "veredicto_juez": {
+      "autocontenida": true,
+      "respondible_con_chunk": true,
+      "suena_natural": true,
+      "error": null
+    },
+    "estado_filtro": "aceptada"
+  },
+  {
+    "id": "q0006",
+    "pregunta": "Si el usuario no confirma la recepción de notificación dentro de los 2 días hábiles, ¿a qué actividad debo pasar?",
+    "categoria": "Atencion al Cliente",
+    "fuente_esperada": {
+      "documento": "CVA-PR-013 Atención de reclamos por no entrega de recibos.pdf",
+      "seccion_contiene": "ATENCIÓN DE RECLAMOS POR NO ENTREGA DE RECIBOS"
+    },
+    "chunk_origen_index": 17,
+    "revisado": true,
+    "veredicto_juez": {
+      "autocontenida": true,
+      "respondible_con_chunk": true,
+      "suena_natural": true,
+      "error": null
+    },
+    "estado_filtro": "aceptada"
+  },
+  {
+    "id": "q0007",
+    "pregunta": "¿Qué datos específicos debe registrar el Contratista (Técnico) en el sistema GOS SIELSE para cerrar la jornada de trabajo y cuáles son las observaciones que deben incluirse?",
+    "categoria": "Cobranzas",
+    "fuente_esperada": {
+      "documento": "CVC-PR-005 Cortes y Reconexiones.pdf",
+      "seccion_contiene": "CORTES Y RECONEXIONES"
+    },
+    "chunk_origen_index": 14,
+    "revisado": true,
+    "veredicto_juez": {
+      "autocontenida": true,
+      "respondible_con_chunk": true,
+      "suena_natural": true,
+      "error": null
+    },
+    "estado_filtro": "aceptada"
+  },
+  {
+    "id": "q0008",
+    "pregunta": "¿Qué es el metrado eléctrico y con qué finalidad se realiza?",
+    "categoria": "Instalaciones",
+    "fuente_esperada": {
+      "documento": "CVI-IN-003 Supervisión de la Ejecución de Instalación de Suministros Nuevos.pdf",
+      "seccion_contiene": "2. DEFINICIONES"
+    },
+    "chunk_origen_index": 3,
+    "revisado": false,
+    "veredicto_juez": {
+      "autocontenida": true,
+      "respondible_con_chunk": true,
+      "suena_natural": true,
+      "error": null
+    },
+    "estado_filtro": "aceptada"
+  },
+  {
+    "id": "q0009",
+    "pregunta": "¿Qué fechas tienen los estados de Revisado, Homologado y Aprobado para el procedimiento del Supervisor de Facturación?",
+    "categoria": "Facturacion",
+    "fuente_esperada": {
+      "documento": "CVF-PR-001 Facturación.pdf",
+      "seccion_contiene": "PROCEDIMIENTO DE FACTURACIÓN"
+    },
+    "chunk_origen_index": 1,
+    "revisado": false,
+    "veredicto_juez": {
+      "autocontenida": true,
+      "respondible_con_chunk": true,
+      "suena_natural": true,
+      "error": null
+    },
+    "estado_filtro": "aceptada"
+  },
+  {
+    "id": "q0010",
+    "pregunta": "¿Cómo se denomina el código de este procedimiento y en qué fecha fue aprobado por CSIG?",
+    "categoria": "Cobranzas",
+    "fuente_esperada": {
+      "documento": "CVC-PR-001 Recaudación de cobranzas.pdf",
+      "seccion_contiene": "5. INFRAESTRUCTURA, RECURSOS Y AMBIENTE"
+    },
+    "chunk_origen_index": 6,
+    "revisado": false,
+    "veredicto_juez": {
+      "autocontenida": true,
+      "respondible_con_chunk": true,
+      "suena_natural": true,
+      "error": null
+    },
+    "estado_filtro": "aceptada"
+  },
+  {
+    "id": "q0011",
+    "pregunta": "¿Quién es el dueño del proceso y a qué nivel de gestión técnico comercial corresponde la normalización de suministro a solicitud del cliente?",
+    "categoria": "Instalaciones",
+    "fuente_esperada": {
+      "documento": "CVI-PR-002 Servicios Complementarios - NORMALIZACIÓN DE SUMINISTRO (A SOLICITUD DEL CLIENTE).pdf",
+      "seccion_contiene": null
+    },
+    "chunk_origen_index": 0,
+    "revisado": true,
+    "veredicto_juez": {
+      "autocontenida": true,
+      "respondible_con_chunk": true,
+      "suena_natural": true,
+      "error": null
+    },
+    "estado_filtro": "aceptada"
+  },
+  {
+    "id": "q0013",
+    "pregunta": "¿Cómo ingreso al módulo de refacturación dentro del sistema SIELSE?",
+    "categoria": "Facturacion",
+    "fuente_esperada": {
+      "documento": "CVF-PR-002 Refacturación.pdf",
+      "seccion_contiene": "REFACTURACIÓN"
+    },
+    "chunk_origen_index": 13,
+    "revisado": true,
+    "veredicto_juez": {
+      "autocontenida": true,
+      "respondible_con_chunk": true,
+      "suena_natural": true,
+      "error": null
+    },
+    "estado_filtro": "aceptada"
+  },
+  {
+    "id": "q0015",
+    "pregunta": "¿Qué documentos normativos y precedentes de observancia obligatoria se deben considerar en la resolución de un reclamo de usuarios?",
+    "categoria": "Atencion al Cliente",
+    "fuente_esperada": {
+      "documento": "CVA-PR-018 Atención de reclamos por daños y perjuicios.pdf",
+      "seccion_contiene": "ATENCIÓN DE RECLAMOS POR DAÑOS Y PERJUICIOS"
+    },
+    "chunk_origen_index": 8,
+    "revisado": true,
+    "veredicto_juez": {
+      "autocontenida": true,
+      "respondible_con_chunk": true,
+      "suena_natural": true,
+      "error": null
+    },
+    "estado_filtro": "aceptada"
+  },
+  {
+    "id": "q0016",
+    "pregunta": "¿Qué requisitos específicos debe incluir un expediente nuevo para instalación de suministro según la lista del paso 3?",
+    "categoria": "Instalaciones",
+    "fuente_esperada": {
+      "documento": "CVI-IN-007 Archivamiento de expedientes de Instalación de Suministros Nuevos en tarifa BT5 y BT6.pdf",
+      "seccion_contiene": "ARCHIVAMIENTO DE EXPEDIENTES DE INSTALACIÓN DE SUMINISTROS NUEVOS EN TARIFA BT5 Y BT6"
+    },
+    "chunk_origen_index": 8,
+    "revisado": true,
+    "veredicto_juez": {
+      "autocontenida": true,
+      "respondible_con_chunk": true,
+      "suena_natural": true,
+      "error": null
+    },
+    "estado_filtro": "aceptada"
+  },
+  {
+    "id": "q0017",
+    "pregunta": "¿Quién es el responsable de aprobar el procedimiento del Sistema Integrado de Gestión?",
+    "categoria": "Marketing",
+    "fuente_esperada": {
+      "documento": "CM-PR-002 Atencion de llamadas.pdf",
+      "seccion_contiene": "4. RECURSOS HUMANOS Y RESPONSABILIDADES"
+    },
+    "chunk_origen_index": 8,
+    "revisado": true,
+    "veredicto_juez": {
+      "autocontenida": true,
+      "respondible_con_chunk": true,
+      "suena_natural": true,
+      "error": null
+    },
+    "estado_filtro": "aceptada"
+  },
+  {
+    "id": "q0019",
+    "pregunta": "¿Qué normativa específica regula la calidad de los servicios eléctricos rurales según el documento CVA-PR-018?",
+    "categoria": "Atencion al Cliente",
+    "fuente_esperada": {
+      "documento": "CVA-PR-018 Atención de reclamos por daños y perjuicios.pdf",
+      "seccion_contiene": "3. MARCO NORMATIVO Y/O DOCUMENTOS RELACIONADOS"
+    },
+    "chunk_origen_index": 7,
+    "revisado": false,
+    "veredicto_juez": {
+      "autocontenida": true,
+      "respondible_con_chunk": true,
+      "suena_natural": true,
+      "error": null
+    },
+    "estado_filtro": "aceptada"
+  },
+  {
+    "id": "q0020",
+    "pregunta": "Qué actividades específicas debo realizar durante la primera inspección de campo según la descripción en el procedimiento?",
+    "categoria": "Atencion al Cliente",
+    "fuente_esperada": {
+      "documento": "CVA-PR-001 Atención de Reclamos por excesivo consumo facturado.pdf",
+      "seccion_contiene": "ATENCIÓN DE RECLAMOS POR EXCESIVO CONSUMO FACTURADO"
+    },
+    "chunk_origen_index": 15,
+    "revisado": false,
+    "veredicto_juez": {
+      "autocontenida": true,
+      "respondible_con_chunk": true,
+      "suena_natural": true,
+      "error": null
+    },
+    "estado_filtro": "aceptada"
+  },
+  {
+    "id": "q0021",
+    "pregunta": "¿Qué procedimiento debo seguir para la recepción del equipo de medición según el programa de mantenimiento y la ficha CVI-RE-012?",
+    "categoria": "Instalaciones",
+    "fuente_esperada": {
+      "documento": "CVI-IN-005 Mantenimiento y Verificación de Equipos de Medición.pdf",
+      "seccion_contiene": "6.2.4. Procedimiento"
+    },
+    "chunk_origen_index": 8,
+    "revisado": true,
+    "veredicto_juez": {
+      "autocontenida": true,
+      "respondible_con_chunk": true,
+      "suena_natural": true,
+      "error": null
+    },
+    "estado_filtro": "aceptada"
+  },
+  {
+    "id": "q0022",
+    "pregunta": "¿Cuál es el número de procedimiento CVM para la instalación de suministro nuevo en clientes mayores?",
+    "categoria": "Instalaciones",
+    "fuente_esperada": {
+      "documento": "CVI-PR-001 Instalación de suministro Nuevo.pdf",
+      "seccion_contiene": "Descripción del cuadro de actividades del flujo 2: Revisión de solicitud"
+    },
+    "chunk_origen_index": 29,
+    "revisado": false,
+    "veredicto_juez": {
+      "autocontenida": true,
+      "respondible_con_chunk": true,
+      "suena_natural": true,
+      "error": null
+    },
+    "estado_filtro": "aceptada"
+  },
+  {
+    "id": "q0023",
+    "pregunta": "¿Qué procedimiento administrativo debo seguir para presentar un reclamo sobre mi factura de electricidad según la normativa vigente?",
+    "categoria": "Facturacion",
+    "fuente_esperada": {
+      "documento": "CVF-PR-002 Refacturación.pdf",
+      "seccion_contiene": "3. MARCO NORMATIVO Y/O DOCUMENTOS RELACIONADOS"
+    },
+    "chunk_origen_index": 4,
+    "revisado": true,
+    "veredicto_juez": {
+      "autocontenida": true,
+      "respondible_con_chunk": true,
+      "suena_natural": true,
+      "error": null
+    },
+    "estado_filtro": "aceptada"
+  },
+  {
+    "id": "q0025",
+    "pregunta": "¿Qué equipos específicos están incluidos en el plan de calibración o verificación según el procedimiento?",
+    "categoria": "Instalaciones",
+    "fuente_esperada": {
+      "documento": "CVI-IN-005 Mantenimiento y Verificación de Equipos de Medición.pdf",
+      "seccion_contiene": "6. DESARROLLO / PROCEDIMIENTO"
+    },
+    "chunk_origen_index": 7,
+    "revisado": true,
+    "veredicto_juez": {
+      "autocontenida": true,
+      "respondible_con_chunk": true,
+      "suena_natural": true,
+      "error": null
+    },
+    "estado_filtro": "aceptada"
+  },
+  {
+    "id": "q0026",
+    "pregunta": "¿Qué condición de tiempo de impago cumple una acometida para ser considerada para el retiro de conexión según el artículo 178° del Reglamento de la Ley de Concesiones Eléctricas?",
+    "categoria": "Cobranzas",
+    "fuente_esperada": {
+      "documento": "CVC-PR-006 Retiro de Acometida por Deuda.pdf",
+      "seccion_contiene": "1.          OBJETIVO Y ALCANCE"
+    },
+    "chunk_origen_index": 2,
+    "revisado": true,
+    "veredicto_juez": {
+      "autocontenida": true,
+      "respondible_con_chunk": true,
+      "suena_natural": true,
+      "error": null
+    },
+    "estado_filtro": "aceptada"
+  },
+  {
+    "id": "q0028",
+    "pregunta": "¿Quién fue el responsable de la homologación del procedimiento CVI-IN-001?",
+    "categoria": "Instalaciones",
+    "fuente_esperada": {
+      "documento": "CVI-IN-001 Instructivo de Instalacion de suministro nuevo V9.pdf",
+      "seccion_contiene": "INSTRUCTIVO DE INSTALACIÓN DE SUMINISTRO NUEVO REUBICACIÓN Y CAMBIO DE MEDIDOR"
+    },
+    "chunk_origen_index": 1,
+    "revisado": true,
+    "veredicto_juez": {
+      "autocontenida": true,
+      "respondible_con_chunk": true,
+      "suena_natural": true,
+      "error": null
+    },
+    "estado_filtro": "aceptada"
+  },
+  {
+    "id": "q0030",
+    "pregunta": "¿Qué nivel de error debe ser considerado como calidad media del producto de acuerdo con el SIG-TA-001?",
+    "categoria": "Cobranzas",
+    "fuente_esperada": {
+      "documento": "CVC-PR-005 Cortes y Reconexiones.pdf",
+      "seccion_contiene": "2.6. Muestra en Campo"
+    },
+    "chunk_origen_index": 6,
+    "revisado": true,
+    "veredicto_juez": {
+      "autocontenida": true,
+      "respondible_con_chunk": true,
+      "suena_natural": true,
+      "error": null
+    },
+    "estado_filtro": "aceptada"
+  },
+  {
+    "id": "q0031",
+    "pregunta": "¿Qué es un Cliente SER y qué normativa lo rige?",
+    "categoria": "Instalaciones",
+    "fuente_esperada": {
+      "documento": "CVI-PR-015 Reinstalación de Suministro V4.pdf",
+      "seccion_contiene": "REINSTALACIÓN DE SUMINISTRO"
+    },
+    "chunk_origen_index": 8,
+    "revisado": true,
+    "veredicto_juez": {
+      "autocontenida": true,
+      "respondible_con_chunk": true,
+      "suena_natural": true,
+      "error": null
+    },
+    "estado_filtro": "aceptada"
+  },
+  {
+    "id": "q0032",
+    "pregunta": "¿Qué canal de atención telefónica es el que describe este procedimiento para la atención de llamadas?",
+    "categoria": "Marketing",
+    "fuente_esperada": {
+      "documento": "CM-PR-002 Atencion de llamadas.pdf",
+      "seccion_contiene": "1. OBJETIVO Y ALCANCE"
+    },
+    "chunk_origen_index": 3,
+    "revisado": true,
+    "veredicto_juez": {
+      "autocontenida": true,
+      "respondible_con_chunk": true,
+      "suena_natural": true,
+      "error": null
+    },
+    "estado_filtro": "aceptada"
+  },
+  {
+    "id": "q0033",
+    "pregunta": "¿Qué es el código CVPC-IN-004 de la Tabla Nº 1?",
+    "categoria": "Perdidas Comerciales",
+    "fuente_esperada": {
+      "documento": "CVPC-IN-004 Preparación del Anexo 02.pdf",
+      "seccion_contiene": "Contenido, frecuencia y plazos de entrega de la información"
+    },
+    "chunk_origen_index": 11,
+    "revisado": true,
+    "veredicto_juez": {
+      "autocontenida": true,
+      "respondible_con_chunk": true,
+      "suena_natural": true,
+      "error": null
+    },
+    "estado_filtro": "aceptada"
+  },
+  {
+    "id": "q0035",
+    "pregunta": "¿Qué valores de amperaje se consideran para la verificación dentro del rango de 1 a 100 A?",
+    "categoria": "Instalaciones",
+    "fuente_esperada": {
+      "documento": "CVI-IN-005 Mantenimiento y Verificación de Equipos de Medición.pdf",
+      "seccion_contiene": "Observaciones:"
+    },
+    "chunk_origen_index": 37,
+    "revisado": true,
+    "veredicto_juez": {
+      "autocontenida": true,
+      "respondible_con_chunk": true,
+      "suena_natural": true,
+      "error": null
+    },
+    "estado_filtro": "aceptada"
+  },
+  {
+    "id": "q0036",
+    "pregunta": "¿Cómo afecta la verificación de las fechas reales de inicio y fin del contrato al cálculo de los pagos?",
+    "categoria": "Atencion al Cliente",
+    "fuente_esperada": {
+      "documento": "CVA-IN-002 Emisión de comprobantes.pdf",
+      "seccion_contiene": "5.2. Programación de Emisión"
+    },
+    "chunk_origen_index": 7,
+    "revisado": true,
+    "veredicto_juez": {
+      "autocontenida": true,
+      "respondible_con_chunk": true,
+      "suena_natural": true,
+      "error": null
+    },
+    "estado_filtro": "aceptada"
+  },
+  {
+    "id": "q0037",
+    "pregunta": "¿Qué procedimiento de control de productos o servicios no conformes soporta la actividad de levantar y sustentar servicio no conforme?",
+    "categoria": "Instalaciones",
+    "fuente_esperada": {
+      "documento": "CVI-PR-002 Servicios Complementarios - NORMALIZACIÓN DE SUMINISTRO (A SOLICITUD DEL CLIENTE).pdf",
+      "seccion_contiene": "SERVICIOS COMPLEMENTARIOS -NORMALIZACIÓN DE SUMINISTRO (A SOLICITUD DEL CLIENTE)"
+    },
+    "chunk_origen_index": 14,
+    "revisado": true,
+    "veredicto_juez": {
+      "autocontenida": true,
+      "respondible_con_chunk": true,
+      "suena_natural": true,
+      "error": null
+    },
+    "estado_filtro": "aceptada"
+  },
+  {
+    "id": "q0042",
+    "pregunta": "¿Qué normativas y procedimientos administrativos específicos rigen la administración de acciones correctivas en SIELSE?",
+    "categoria": "Atencion al Cliente",
+    "fuente_esperada": {
+      "documento": "CVA-PR-014 Atención de reclamos por oposición a cambio de Razón Social.pdf",
+      "seccion_contiene": "3. MARCO NORMATIVO Y/O DOCUMENTOS RELACIONADOS"
+    },
+    "chunk_origen_index": 6,
+    "revisado": true,
+    "veredicto_juez": {
+      "autocontenida": true,
+      "respondible_con_chunk": true,
+      "suena_natural": true,
+      "error": null
+    },
+    "estado_filtro": "aceptada"
+  },
+  {
+    "id": "q0043",
+    "pregunta": "¿Qué información específica se consigna en la parte desglosable del recibo por consumo de energía eléctrica conocido como talón?",
+    "categoria": "Cobranzas",
+    "fuente_esperada": {
+      "documento": "CVC-IN-002 Cobranza Tiempo Diferido.pdf",
+      "seccion_contiene": "2. DEFINICIONES"
+    },
+    "chunk_origen_index": 3,
+    "revisado": true,
+    "veredicto_juez": {
+      "autocontenida": true,
+      "respondible_con_chunk": true,
+      "suena_natural": true,
+      "error": null
+    },
+    "estado_filtro": "aceptada"
+  },
+  {
+    "id": "q0044",
+    "pregunta": "¿Quién tiene la autoridad para aprobar este procedimiento?",
+    "categoria": "Marketing",
+    "fuente_esperada": {
+      "documento": "CM-PR-003 Atencion en medios virtuales y redes sociales.pdf",
+      "seccion_contiene": "4. RECURSOS HUMANOS Y RESPONSABILIDADES"
+    },
+    "chunk_origen_index": 8,
+    "revisado": true,
+    "veredicto_juez": {
+      "autocontenida": true,
+      "respondible_con_chunk": true,
+      "suena_natural": true,
+      "error": null
+    },
+    "estado_filtro": "aceptada"
+  },
+  {
+    "id": "q0045",
+    "pregunta": "¿Qué normativa reglamentaria específica aplica para los servicios eléctricos rurales según el fragmento?",
+    "categoria": "Atencion al Cliente",
+    "fuente_esperada": {
+      "documento": "CVA-PR-016 Inspección de Suministros.pdf",
+      "seccion_contiene": "3. MARCO NORMATIVO Y/O DOCUMENTOS RELACIONADOS"
+    },
+    "chunk_origen_index": 4,
+    "revisado": true,
+    "veredicto_juez": {
+      "autocontenida": true,
+      "respondible_con_chunk": true,
+      "suena_natural": true,
+      "error": null
+    },
+    "estado_filtro": "aceptada"
+  },
+  {
+    "id": "q0047",
+    "pregunta": "¿Qué tipo de caja porta medidor se especifica para un sistema monofásico de 2 hilos electrónico?",
+    "categoria": "Instalaciones",
+    "fuente_esperada": {
+      "documento": "CVI-IN-001 Instructivo de Instalacion de suministro nuevo V9.pdf",
+      "seccion_contiene": "Requerimientos para la instalación de medidores"
+    },
+    "chunk_origen_index": 30,
+    "revisado": true,
+    "veredicto_juez": {
+      "autocontenida": true,
+      "respondible_con_chunk": true,
+      "suena_natural": true,
+      "error": null
+    },
+    "estado_filtro": "aceptada"
+  },
+  {
+    "id": "q0048",
+    "pregunta": "Para la tarifa BT5B-Residencial, ¿cómo se calcula el monto proyectado de energía si el consumo del mes es menor a 30 kWh?",
+    "categoria": "Facturacion",
+    "fuente_esperada": {
+      "documento": "CVF-PR-003 Proyección del consumo de energía no facturada V3_.pdf",
+      "seccion_contiene": "PROYECCIÓN DEL CONSUMO DE ENERGÍA NO FACTURADA"
+    },
+    "chunk_origen_index": 9,
+    "revisado": true,
+    "veredicto_juez": {
+      "autocontenida": true,
+      "respondible_con_chunk": true,
+      "suena_natural": true,
+      "error": null
+    },
+    "estado_filtro": "aceptada"
+  },
+  {
+    "id": "q0049",
+    "pregunta": "¿Quién es el responsable de revisar el procedimiento del Supervisor de Cobranzas?",
+    "categoria": "Clientes Mayores",
+    "fuente_esperada": {
+      "documento": "CVFM-PR-001 Instalación de suministro - Clientes Mayores.pdf",
+      "seccion_contiene": "PROCEDIMIENTO DE INSTALACIÓN DE SUMINISTRO NUEVO PARA CLIENTES MAYORES"
+    },
+    "chunk_origen_index": 1,
+    "revisado": true,
+    "veredicto_juez": {
+      "autocontenida": true,
+      "respondible_con_chunk": true,
+      "suena_natural": true,
+      "error": null
+    },
+    "estado_filtro": "aceptada"
+  },
+  {
+    "id": "q0050",
+    "pregunta": "¿Quién es el responsable directo de revisar el procedimiento de Supervisor de Cobranzas?",
+    "categoria": "Cobranzas",
+    "fuente_esperada": {
+      "documento": "CVC-PR-001 Recaudación de cobranzas.pdf",
+      "seccion_contiene": "PROCEDIMIENTO DE RECAUDACIÓN DE COBRANZA"
+    },
+    "chunk_origen_index": 1,
+    "revisado": true,
+    "veredicto_juez": {
+      "autocontenida": true,
+      "respondible_con_chunk": true,
+      "suena_natural": true,
+      "error": null
+    },
+    "estado_filtro": "aceptada"
+  },
+  {
+    "id": "q0052",
+    "pregunta": "¿Qué postura debe adoptar el equipo ante las solicitudes informativas de periodistas cuando desconoce alguna información?",
+    "categoria": "Relaciones Públicas",
+    "fuente_esperada": {
+      "documento": "RP-PR-003 PROCEDIMIENTO DE COMUNICACIÓN DE CRISIS VR 00.pdf",
+      "seccion_contiene": "Comportamientos inapropiados de los voceros:"
+    },
+    "chunk_origen_index": 24,
+    "revisado": true,
+    "veredicto_juez": {
+      "autocontenida": true,
+      "respondible_con_chunk": true,
+      "suena_natural": true,
+      "error": null
+    },
+    "estado_filtro": "aceptada"
+  },
+  {
+    "id": "q0056",
+    "pregunta": "¿En qué sistema se ingresa el presupuesto para el servicio extraordinario?",
+    "categoria": "Atencion al Cliente",
+    "fuente_esperada": {
+      "documento": "CVA-PR-010 Elaboración del presupuesto y pago de servicio extraordinario.pdf",
+      "seccion_contiene": "ELABORACIÓN EL PRESUPUESTO DE PAGO DE SERVICIO EXTRAORDINARIO O SERVICIO TEMPORAL"
+    },
+    "chunk_origen_index": 17,
+    "revisado": true,
+    "veredicto_juez": {
+      "autocontenida": true,
+      "respondible_con_chunk": true,
+      "suena_natural": true,
+      "error": null
+    },
+    "estado_filtro": "aceptada"
+  },
+  {
+    "id": "q0057",
+    "pregunta": "¿Cuál es el nombre y el código del procedimiento correspondiente a la instalación de suministros nuevos?",
+    "categoria": "Instalaciones",
+    "fuente_esperada": {
+      "documento": "CVI-IN-003 Supervisión de la Ejecución de Instalación de Suministros Nuevos.pdf",
+      "seccion_contiene": null
+    },
+    "chunk_origen_index": 0,
+    "revisado": true,
+    "veredicto_juez": {
+      "autocontenida": true,
+      "respondible_con_chunk": true,
+      "suena_natural": true,
+      "error": null
+    },
+    "estado_filtro": "aceptada"
+  },
+  {
+    "id": "q0058",
+    "pregunta": "¿Quién tiene la facultad de aprobar el Procedimiento?",
+    "categoria": "Atencion al Cliente",
+    "fuente_esperada": {
+      "documento": "CVA-IN-002 Emisión de comprobantes.pdf",
+      "seccion_contiene": "4. RESPONSABILIDADES"
+    },
+    "chunk_origen_index": 4,
+    "revisado": false,
+    "veredicto_juez": {
+      "autocontenida": true,
+      "respondible_con_chunk": true,
+      "suena_natural": true,
+      "error": null
+    },
+    "estado_filtro": "aceptada"
+  }
+]

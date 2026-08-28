@@ -1,0 +1,540 @@
+================================================================================
+Chunk: 0 / 35
+Páginas: [1]
+Sección: None
+Tipo: text
+--------------------------------------------------------------------------------
+Código
+Versión
+Aprobado
+Fecha
+Página
+: CVI-PR-001
+: 16
+: CSIG
+: 29/10/2025
+: 1 de 20
+
+================================================================================
+Chunk: 1 / 35
+Páginas: [1]
+Sección: INSTALACIÓN DE SUMINISTRO NUEVO
+Tipo: table
+--------------------------------------------------------------------------------
+Dueño del proceso Nivel 0:, 1 = Gerente Comercial. Nombre del proceso Nivel 1:, 1 = Gestión Técnico Comercial. Nombre del proceso Nivel 2:, 1 = Instalaciones de suministros
+
+================================================================================
+Chunk: 2 / 35
+Páginas: [1, 2]
+Sección: PROCEDIMIENTO DE INSTALACIÓN DE SUMINISTRO NUEVO
+Tipo: mixto: table, text
+--------------------------------------------------------------------------------
+Elaborado por:, Responsable = Jefe de Instalaciones y Mediciones. Elaborado por:, Fecha = 15/10/2025. Revisado por:, Responsable = Jefe de Ventas. Revisado por:, Fecha = 17/10/2025. , Responsable = Gerente Comercial. , Fecha = 21/10/2025. Homologado por:, Responsable = Especialista en Sistemas de Gestión. Homologado por:, Fecha = 24/10/2025. Aprobado por:, Responsable = Comité del Sistema Integrado de Gestión. Aprobado por:, Fecha = 29/10/2025
+Código
+Versión
+Aprobado
+Fecha
+Página
+: CVI-PR-001
+: 16
+: CSIG
+: 29/10/2025
+: 2 de 20
+
+================================================================================
+Chunk: 3 / 35
+Páginas: [2]
+Sección: INSTALACIÓN DE SUMINISTRO NUEVO
+Tipo: table
+--------------------------------------------------------------------------------
+00, Control de cambios.Descripción del cambio = Actualización de información. 00, Control de cambios.Fecha de aprobación = -. 01, Control de cambios.Descripción del cambio = Actualización de información. 01, Control de cambios.Fecha de aprobación = 20/02/2003. 02, Control de cambios.Descripción del cambio = Actualización de información. 02, Control de cambios.Fecha de aprobación = 24/07/2003. 03, Control de cambios.Descripción del cambio = Actualización de información. 03, Control de cambios.Fecha de aprobación = 12/11/2003. 04, Control de cambios.Descripción del cambio = Actualización de información. 04, Control de cambios.Fecha de aprobación = 13/07/2004. 05, Control de cambios.Descripción del cambio = Actualización de información. 05, Control de cambios.Fecha de aprobación = 06/01/2009. 06, Control de cambios.Descripción del cambio = Actualización de información. 06, Control de cambios.Fecha de aprobación = 15/03/2010. 07, Control de cambios.Descripción del cambio = Actualización de información. 07, Control de cambios.Fecha de aprobación = -. 08, Control de cambios.Descripción del cambio = Actualización de información. 08, Control de cambios.Fecha de aprobación = 04/07/2014. 09, Control de cambios.Descripción del cambio = Actualización de información. 09, Control de cambios.Fecha de aprobación = 29/07/2019. 10, Control de cambios.Descripción del cambio = Actualización de información. 10, Control de cambios.Fecha de aprobación = 20/12/2018. 11, Control de cambios.Descripción del cambio = Actualización de información. 11, Control de cambios.Fecha de aprobación = -. 12, Control de cambios.Descripción del cambio = Actualización de información. 12, Control de cambios.Fecha de aprobación = 10/03/2022. 13, Control de cambios.Descripción del cambio = Actualización de información. 13, Control de cambios.Fecha de aprobación = 28/06/2022. 14, Control de cambios.Descripción del cambio = Actualización de información. 14, Control de cambios.Fecha de aprobación = 03/04/2024. 15, Control de cambios.Descripción del cambio = Se agrega el control de cambios, se reorganizo la información y se implementó el uso de medidores inteligentes. 15, Control de cambios.Fecha de aprobación = 17/03/2025. 16, Control de cambios.Descripción del cambio = Se adiciona los códigos de la Resolución188 DE Osinergmin en el procedimiento. 16, Control de cambios.Fecha de aprobación = 29/10/2025
+Acta de comité SIG, Fecha = 29/10/2025
+
+================================================================================
+Chunk: 4 / 35
+Páginas: [3]
+Sección: 1. OBJETIVO Y ALCANCE
+Tipo: text
+--------------------------------------------------------------------------------
+Establecer el procedimiento de instalación de suministro nuevo que cumpla con la Ley de Concesiones Eléctricas su reglamento y la Norma Técnica de Calidad de Servicios Eléctricos  (NTCSE)  y  Norma  Técnica  de  Calidad  de  Servicios  Eléctricos  Rurales (NTCSER). El alcance establecido para el presente procedimiento es para todas sedes de Electro Sur Este S.A.A. (ELSE).
+
+================================================================================
+Chunk: 5 / 35
+Páginas: [3]
+Sección: 2. DEFINICIONES
+Tipo: mixto: list_item, text
+--------------------------------------------------------------------------------
+- 2.1. Cliente:
+Consumidores finales de electricidad localizados en el Perú.
+
+================================================================================
+Chunk: 6 / 35
+Páginas: [3, 4]
+Sección: 2.2. Usuarios Regulados:
+Tipo: mixto: list_item, text
+--------------------------------------------------------------------------------
+Según el reglamento de la ley de concesiones eléctricas: El límite de potencia para los suministros sujetos al régimen de regulación de precios es fijado en 200 kW.
+Según el reglamento de usuarios libres de electricidad: En concordancia con el artículo 2 del RLCE, los Usuarios cuya máxima demanda anual sea igual o menor a 200 kW, tienen la condición de Usuario Regulado.
+Según  el  reglamento  de  usuarios  libres  de  electricidad:  Los  Usuarios  cuya  máxima demanda anual sea mayor de 200 kW, hasta 2500 kW, tienen derecho a elegir entre la condición  de  Usuario  Regulado  o  de  Usuario  Libre,  cumpliendo  los  requisitos  y condiciones establecidos en el Reglamento.
+- 2.3. Cliente Mayor. Persona natural o jurídica que se encuentra en posesión de un predio y  está en posibilidad de hacer uso legal del suministro de energía eléctrica con fines productivos, siendo atendidos mediante opciones tarifarias binomios, con una potencia contratada mayor a 20kW en hora punta.
+*Este tipo de clientes es para efectos de segmentación.
+- 2.4. Usuarios temporales: Se define como usuarios temporales a aquellos usuarios que requieren el servicio eléctrico por un periodo limitado de tiempo y en forma no repetitiva (ejemplo: ferias, eventos y/o espectáculos en la vía pública, circos, obras en construcción, etc.)
+La  posibilidad  de  conexión  de  los  usuarios  bajo  esta  modalidad  está  limitada  a  la ausencia de la necesidad de desarrollo de redes por parte de la empresa distribuidora para la atención del suministro temporal.
+El costo de la conexión temporal será cubierto por el usuario y  dicho costo no podrá superar los precios regulados de la conexión eléctrica fijados por el OSINERGMIN.
+- 2.5. Clientes  con  Celdas  Fotovoltaicas: Son  aquellos  usuarios  ubicados  en  sistemas eléctricos rurales (SER) establecidos por la LGER y cuyos suministros son alimentados mediante sistemas fotovoltaicos.
+- 2.6. Clientes provisionales (Usuarios provisionales): Se define como usuarios provisionales del servicio eléctrico, de acuerdo, al artículo 85 de la ley de Concesiones Eléctricas,  a  aquellos  usuarios  ubicados  en  zonas  habitadas  que  no  cuentan  con habilitación urbana, conectados en BT en forma colectiva.
+- 2.7. Propiedad del Cliente. Materiales y/o equipos definidos en el presupuesto y vendidos por ELSE a la firma del Contrato, los que son empleados en la instalación del suministro eléctrico. Antes de la instalación del suministro eléctrico, ELSE verifica su funcionamiento, asegura su integridad durante el almacenamiento y traslado hasta la instalación en el predio del Cliente.
+Página
+: CVI-PR-001
+: 16
+: CSIG
+: 29/10/2025
+: 3 de 20
+Código
+Versión
+Aprobado
+Fecha
+Página
+: CVI-PR-001
+: 16
+: CSIG
+: 29/10/2025
+: 4 de 20
+
+================================================================================
+Chunk: 7 / 35
+Páginas: [4]
+Sección: INSTALACIÓN DE SUMINISTRO NUEVO
+Tipo: list_item
+--------------------------------------------------------------------------------
+- 2.8. Cliente SER. Es el cliente  que  está  fuera  del  área  de  concesión  y  lo  atiende  ELSE. (Revisar norma asociada Ley de Electrificación Rural).
+- 2.9. GOS: Sistema de Gestión de órdenes de servicio (según ELSE).
+- 2.10. APP GOS: Aplicativo GOS (según ELSE).
+- 2.11. TDC: Trabajo de campo (según ELSE).
+- 2.12. Cliente urbano : Sector típico 2 y3
+- 2.13. Cliente rural : Sector típico 4
+- 2.14. Medidores  inteligentes: Medidores  que  permiten  la  lectura  remota,  monitoreo  de eventos de la red, niveles de tensión, alarma de los medidores, conexión y desconexión remota.
+- 2.15. HES: Head End System (Sistema de Cabecera)
+
+================================================================================
+Chunk: 8 / 35
+Páginas: [4]
+Sección: 3. MARCO NORMATIVO Y/O DOCUMENTOS RELACIONADOS
+Tipo: list_item
+--------------------------------------------------------------------------------
+- 3.1. Ley de Concesiones Eléctricas Nro. 25844, su Reglamento y sus modificatorias.
+- 3.2. Código Nacional de Electricidad - suministro.
+- 3.3. Ley 30224 - ley que crea el sistema para la calidad y el instituto nacional de la calidad.
+- 3.4. Ley 29783 Ley de seguridad y salud en el trabajo.
+- 3.5. RM 055-2020-TR 'Guía para la prevención del coronavirus en el ámbito laboral'.
+- 3.6. R. Nº115-2017-OS/CD,' Procedimiento para la Supervisión del Proceso de la Facturación a los Usuarios por el Servicio Público de Electricidad'.
+- 3.7. R. Nº206-2013-OS/CD, 'Opciones Tarifarias y Condiciones de Aplicación de las Tarifas a Usuario Final'
+- 3.8. R. N° 047-2009-OS/CD Supervisión de la facturación, cobranza y atención al usuario
+- 3.9. R.D  N°  016-2008-EM/DGE  'Norma  Técnica  de  Calidad  de  los  Servicios  Eléctricos Rurales (NTCSER)'.
+- 3.10. DS N° 020-97-EM 'Norma técnica de calidad de los servicios eléctricos'.
+- 3.11. Norma  DGE  'Conexiones  Eléctricas  en  Baja  Tensión  en  Zonas  de  Concesión  de Distribución'
+- 3.12. Resolución Osinergmin N° 225-2015-OS/CD Fijación de costos de conexión eléctrica 2019-2023.
+- 3.13. Norma de Costos de Conexión y Cargos de Reposición y Mantenimiento.
+- 3.14. CVI-IN-001 Instalación de suministro nuevo, reubicación y cambio de medidor.
+- 3.15. CVI-IN-003 Supervisión de la Ejecución de Instalación de Suministros Nuevos.
+- 3.16. CVI-IN-007 Archivamiento de expedientes de Instalación de Suministros Nuevos en tarifa BT5 y BT6
+- 3.17. SIG-PR-007 Control de Productos y Servicios no conformes.
+- 3.18. SID-PR-003 Actualización entidad eléctrica SIELSE.
+- 3.19. CVM-PR-001 Instalación de suministro Nuevo de Clientes Mayores.
+- 3.20. CVA-PR-012 Emisión y control de comprobantes de pago
+- 3.21. D.S.028-2021-EM Implementación de los sistemas de medición inteligente (SMI) y otras disposiciones.
+- 3.22. Resolución de Consejo Directivo N.° 188-2024-OS/CD 'Directiva de acceso en línea a  la  información  sobre  el  estado  de  requerimientos  de  usuarios  en  el  Servicio Público de Electricidad'
+
+================================================================================
+Chunk: 9 / 35
+Páginas: [4, 5]
+Sección: 4. RECURSOS HUMANOS Y RESPONSABILIDADES
+Tipo: mixto: list_item, text
+--------------------------------------------------------------------------------
+- 4.1. El Comité del Sistema Integrado de Gestión (CSIG) es  responsable  de  aprobar  el presente procedimiento.
+- 4.2. Supervisor comercial, personal de atención al cliente, personal de Instalaciones y Mediciones  y/o  los  que  hagan  sus  veces  en  el  ámbito  de  la  empresa, son  los responsables de aplicar lo establecido en el siguiente procedimiento.
+- 4.3. Personal  del  contratista ,  es  responsable  de  cumplir  con  lo  establecido  en  este procedimiento según el alcance de su contrato vigente.
+Código
+Versión
+Aprobado
+Fecha
+Página
+: CVI-PR-001
+: 16
+: CSIG
+: 29/10/2025
+: 5 de 20
+
+================================================================================
+Chunk: 10 / 35
+Páginas: [5]
+Sección: INSTALACIÓN DE SUMINISTRO NUEVO
+Tipo: list_item
+--------------------------------------------------------------------------------
+- 4.4. Gerente  Comercial  /  Gerente  Regional  /  jefe  de  División  /  jefe  de  Sector, son responsables de supervisar este procedimiento.
+
+================================================================================
+Chunk: 11 / 35
+Páginas: [5]
+Sección: 5. INFRAESTRUCTURA, RECURSOS Y AMBIENTE
+Tipo: list_item
+--------------------------------------------------------------------------------
+- 5.1. SIELSE, GOS y APP GOS.
+- 5.2. Equipos informáticos
+- 5.3. Oficinas / Instalaciones / Zona de concesión de Electro Sur Este S.A.A.
+
+================================================================================
+Chunk: 12 / 35
+Páginas: [5]
+Sección: 6. DESARROLLO / PROCEDIMIENTO
+Tipo: list_item
+--------------------------------------------------------------------------------
+- El presente procedimiento se encuentra desarrollado en flujo N°1 adjunto.
+- Flujo 2: Revisión de la solicitud
+- Flujo 3: Factibilidad
+- En el desarrollo del procedimiento, encontrarán los códigos asociados a la RCD N.° 188 de Osinergmin, los cuales tienen el siguiente significado:
+
+================================================================================
+Chunk: 13 / 35
+Páginas: [5]
+Sección: Se informan en Línea:
+Tipo: table
+--------------------------------------------------------------------------------
+1, Nombre = Registro de una atención comercial. 1, Grupo estado = EN PROCESO. 2, Nombre = En proceso / Análisis. 2, Grupo estado = EN PROCESO. 3, Nombre = CERRADO. Al finalizar con el registro de la conclusión de la atención comercial. 3, Grupo estado = CERRADO. 4, Nombre = Conforme, posterior al cierre. 4, Grupo estado = CERRADO. 5, Nombre = No conforme, posterior al cierre. 5, Grupo estado = CERRADO. 6, Nombre = Cerrado a solicitud expresa del usuario, sin intervención de la EDE. 6, Grupo estado = CERRADO. 8, Nombre = Desestimado. En caso, posterior a la evaluación de la EDE, no corresponda la atención a la empresa eléctrica. 8, Grupo estado = CERRADO. 50, Nombre = Ante evaluación de la EDE, se requiere modificar el dato registrado inicialmente en la tabla 1 (campos permitidos para modificación: 6, 7, 8, 9, 10, 11, 12, 13 y 16). 50, Grupo estado = EN PROCESO. 51, Nombre = Ante evaluación de la EDE, posterior al registro, se debe modificar el CODIGO DE ASUNTO. 51, Grupo estado = EN PROCESO. 52, Nombre = Respuesta / notificación a usuario o solicitante. 52, Grupo estado = CERRADO
+
+================================================================================
+Chunk: 14 / 35
+Páginas: [5]
+Sección: Se informan 24 horas después:
+Tipo: table
+--------------------------------------------------------------------------------
+211, SOLICITUDES = En proceso de emisión de factibilidad. 211,  = EN PROCESO. 213, SOLICITUDES = Presupuesto emitido. 213,  = EN PROCESO. 214, SOLICITUDES = Pago de presupuesto. 214,  = EN PROCESO. 215, SOLICITUDES = Firma de contrato para suministros nuevos. 215,  = EN PROCESO. 224, SOLICITUDES = En proceso, no se superan aún los plazos NTCSE / R. 224,  = EN PROCESO. 228, SOLICITUDES = Instalación ejecutada. 228,  = CERRADO. 258, SOLICITUDES = No instalado, por no haber pagado el presupuesto. 258,  = CERRADO. 276, SOLICITUDES = No instalado, por no cumplir con condiciones técnicas el predio del interesado. 276,  = CERRADO. 279, SOLICITUDES = No atendida por otras causas. 279,  = CERRADO
+
+================================================================================
+Chunk: 15 / 35
+Páginas: [6]
+Sección: Plazos Máximos de Atención
+Tipo: text
+--------------------------------------------------------------------------------
+Código
+Versión
+Aprobado
+Fecha
+Página
+: CVI-PR-001
+: 16
+: CSIG
+: 29/10/2025
+: 6 de 20
+
+================================================================================
+Chunk: 16 / 35
+Páginas: [6]
+Sección: INSTALACIÓN DE SUMINISTRO NUEVO
+Tipo: text
+--------------------------------------------------------------------------------
+Cumplidos los requisitos a que están obligados los clientes, los plazos máximos de atención a su solicitud de nuevo suministro son:
+
+================================================================================
+Chunk: 17 / 35
+Páginas: [6]
+Sección: Clientes URBANOS:
+Tipo: mixto: table, text
+--------------------------------------------------------------------------------
+Sin Modificación de Redes, Solicitudes = Hasta 50 kW. Sin Modificación de Redes, Plazo Máximo = 7. Sin Modificación de Redes, Solicitudes = Mayor a 50 kW. Sin Modificación de Redes, Plazo Máximo = 21. , Solicitudes = Hasta 50 kW. , Plazo Máximo = 21. , Solicitudes = Mayor a 50 kW. , Plazo Máximo = 56. Con Expansión Sustancial (Atender la solicitud de suministro nuevo Con expansión sustancial y con necesidad de proyecto de red primaria que incluye nuevas Subestaciones y tendido de red primaria), Solicitudes = Con Expansión Sustancial (Atender la solicitud de suministro nuevo Con expansión sustancial y con necesidad de proyecto de red primaria que incluye nuevas Subestaciones y tendido de red primaria). Con Expansión Sustancial (Atender la solicitud de suministro nuevo Con expansión sustancial y con necesidad de proyecto de red primaria que incluye nuevas Subestaciones y tendido de red primaria), Plazo Máximo = 360
+Según  el  DS  N°  020-97-EM  'Norma  técnica  de  calidad  de  los  servicios eléctricos'.
+
+================================================================================
+Chunk: 18 / 35
+Páginas: [6]
+Sección: Clientes RURALES:
+Tipo: mixto: caption, table
+--------------------------------------------------------------------------------
+Según R.D N° 016-2008-EM/DGE 'Norma Técnica de Calidad de los Servicios Eléctricos Rurales (NTCSER)'.
+
+Sin Modificación de Redes, Solicitudes = Hasta 50 kW. Sin Modificación de Redes, Plazo Máximo = 15. Sin Modificación de Redes, Solicitudes = Mayor a 50 kW. Sin Modificación de Redes, Plazo Máximo = 30. Con Modificación de Redes, Solicitudes = Hasta 50 kW. Con Modificación de Redes, Plazo Máximo = 30. Con Modificación de Redes, Solicitudes = Mayor a 50 kW. Con Modificación de Redes, Plazo Máximo = 90. Con Expansión Sustancial, Solicitudes = Con Expansión Sustancial. Con Expansión Sustancial, Plazo Máximo = 360
+
+================================================================================
+Chunk: 19 / 35
+Páginas: [6]
+Sección: 7. REGISTROS Y ANEXOS
+Tipo: mixto: list_item, text
+--------------------------------------------------------------------------------
+Los registros generados son:
+- 7.1. CVI-RE-001 Constancia de visita (opcional)
+- 7.2. CVI-RE-002 Informe de Trabajo / Inspección
+- 7.3. CVI-RE-003 Acta de Instalación de Acometida
+- 7.4. CVA-RE-007 Declaración Jurada.
+- 7.5. CVA-RE-023 Presupuesto Comercial
+- 7.6. Potencia contratada (Opcional)
+- 7.7. Comprobante de pago con sello Cancelado (sin código impreso en el documento por aspectos tributarios) (no aplica solicitudes de clientes SER)
+- 7.8. CVA-RE-001 Comprobante de recepción de solicitudes.
+- 7.9. CVA-RE-002 Solicitud de servicio 'Formato A'
+- 7.10. CVA-RE-003 Contrato de Suministro.
+- 7.11. CVA-RE-004 Carta de autorización Formato C (Opcional)
+- 7.12. CVA-RE-022 Solicitud de Otorgamiento de Crédito (Opcional).
+- 7.13. CVA-RE- 016 Requisitos de atención para solicitudes
+
+================================================================================
+Chunk: 20 / 35
+Páginas: [7]
+Sección: INSTALACIÓN DE SUMINISTRO NUEVO
+Tipo: mixto: caption, text
+--------------------------------------------------------------------------------
+Código
+Versión
+Aprobado
+Fecha
+Página
+: CVI-PR-001
+: 16
+: CSIG
+: 29/10/2025
+: 7 de 20
+Flujo 1: Procedimiento de Instalaciones
+
+================================================================================
+Chunk: 21 / 35
+Páginas: [8]
+Sección: NUEVO
+Tipo: mixto: caption, text
+--------------------------------------------------------------------------------
+Flujo 2: Revisión de solicitud
+F
+Código
+Versión
+Aprobado
+Fecha
+Página
+: CVI-PR-001
+: 16
+: CSIG
+: 29/10/2025
+: 8 de 20
+
+================================================================================
+Chunk: 22 / 35
+Páginas: [9, 10]
+Sección: Flujo 3: Factibilidad
+Tipo: mixto: caption, text
+--------------------------------------------------------------------------------
+Prohibido reproducir sin autorización de la Alta Dirección de ELSE
+Código
+Versión
+Aprobado
+Fecha
+Página
+: CVI-PR-001
+: 16
+: CSIG
+: 29/10/2025
+: 9 de 20
+Código
+Versión
+Aprobado
+Fecha
+Página
+: CVI-PR-001
+: 16
+: CSIG
+: 29/10/2025
+: 10 de 20
+
+================================================================================
+Chunk: 23 / 35
+Páginas: [10, 11]
+Sección: Descripción del cuadro de actividades del flujo 1: Instalación de suministro nuevo
+Tipo: mixto: table, text
+--------------------------------------------------------------------------------
+Cliente/ solicitante, Entradas = Solicitud. Cliente/ solicitante, N° = 1. Cliente/ solicitante, Descripción Actividades = Solicitar información Previa comunicación con los diferentes medios de atención, contact center, atención al cliente o la página web. El interesado solicita información de requisitos para una instalación de suministro nuevo Pasar al sub proceso de Revisión de solicitud y Factibilidad.. Cliente/ solicitante, Salidas = Revisión de solicitud y Factibilidad. Cliente/ solicitante, Clientes = Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de atención al cliente. Cliente/ solicitante, Ejecutor de la Actividad = Cliente/ Solicitante. Cliente/ solicitante, Sistema que soporta la Actividad = -. Cliente/ solicitante, ¿Es control Cable? (Sí=x) = -. Cliente/ Solicitante, Entradas = Revisión de solicitud y Factibilidad. Cliente/ Solicitante, N° = 2. Cliente/ Solicitante, Descripción Actividades = Emitir comprobante Según CVA-PR-012 Emisión y control de comprobantes de pago. Cliente/ Solicitante, Salidas = CVA-PR-012 Emisión y control de comprobantes de pago. Cliente/ Solicitante, Clientes = Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de atención al cliente. Cliente/ Solicitante, Ejecutor de la Actividad = Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de atención al cliente. Cliente/ Solicitante, Sistema que soporta la Actividad = -. Cliente/ Solicitante, ¿Es control Cable? (Sí=x) = -. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de atención al cliente, Entradas = CVA-PR-012 Emisión y control de comprobantes de pago. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de atención al cliente, N° = 3. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de atención al cliente, Descripción Actividades = ¿Cliente paga presupuesto? Si: Pasar a la actividad 5 No: Finalizar actividad. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de atención al cliente, Salidas = 6 meses para cerrar OT de manera automática en el SIELSE. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de atención al cliente, Clientes = Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de atención al cliente. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de atención al cliente, Ejecutor de la Actividad = Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de atención al cliente. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de atención al cliente, Sistema que soporta la Actividad = -. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de atención al cliente, ¿Es control Cable? (Sí=x) = x
+Código
+Versión
+Aprobado
+Fecha
+Página
+: CVI-PR-001
+: 16
+: CSIG
+: 29/10/2025
+: 11 de 20
+
+================================================================================
+Chunk: 24 / 35
+Páginas: [11, 12]
+Sección: INSTALACIÓN DE SUMINISTRO NUEVO
+Tipo: mixto: table, text
+--------------------------------------------------------------------------------
+Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de atención al cliente, Entradas = Pago de presupuesto. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de atención al cliente, N° = 4. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de atención al cliente, Descripción Actividades = Recabar la firma del solicitante en el contrato y configurar expediente • CVA-RE-002 Solicitud de Servicio (Formato A) • CVI-RE-031 Presupuesto Preliminar • CVI-RE-032 Presupuesto ejecutado (actualizado de haber modificación) • Comprobante de pago Cancelado. • CVA-RE-003 Contrato de Suministro. • CVA-RE-007 Declaración jurada. • CVA-RE-001 Comprobante Recepción de Solicitud • CVI-RE-006 Ficha de factibilidad. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de atención al cliente, Salidas = Contrato firmado Expedinete. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de atención al cliente, Clientes = Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de atención al cliente. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de atención al cliente, Ejecutor de la Actividad = Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de atención al cliente. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de atención al cliente, Sistema que soporta la Actividad = Osinergmin (Código 214). Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de atención al cliente, ¿Es control Cable? (Sí=x) = x. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de atención al cliente, Entradas = Expediente. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de atención al cliente, N° = 5. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de atención al cliente, Descripción Actividades = El sistema genera TDC para su ejecución El sistema programa automáticamente fecha probable de visita al cliente.. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de atención al cliente, Salidas = TDC de ejecución. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de atención al cliente, Clientes = Contratista o el que h Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de atención al cliente aga sus veces. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de atención al cliente, Ejecutor de la Actividad = Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de atención al cliente. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de atención al cliente, Sistema que soporta la Actividad = SIELSE. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de atención al cliente, ¿Es control Cable? (Sí=x) = . Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de atención al cliente, Entradas = TDC de ejecución. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de atención al cliente, N° = 6. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de atención al cliente, Descripción Actividades = Recibir, Verificar y programar TDC en GOS para su ejecución. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de atención al cliente, Salidas = TDC en GOS. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de atención al cliente, Clientes = Contratista o el que haga sus veces. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de atención al cliente, Ejecutor de la Actividad = Contratista o el que h Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de atención al cliente aga sus veces. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de atención al cliente, Sistema que soporta la Actividad = GOS. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de atención al cliente, ¿Es control Cable? (Sí=x) = -
+Código
+Versión
+Aprobado
+Fecha
+Página
+: CVI-PR-001
+: 16
+: CSIG
+: 29/10/2025
+: 12 de 20
+
+================================================================================
+Chunk: 25 / 35
+Páginas: [12, 13]
+Sección: INSTALACIÓN DE SUMINISTRO NUEVO
+Tipo: mixto: table, text
+--------------------------------------------------------------------------------
+Contratista o el que h Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de atención al cliente aga sus veces, Entradas = TDC en GOS. Contratista o el que h Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de atención al cliente aga sus veces, N° = 7. Contratista o el que h Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de atención al cliente aga sus veces, Descripción Actividades = ¿Existe Oposición? Si: Pasar a la actividad 8 No: Pasar a la actividad 12. Contratista o el que h Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de atención al cliente aga sus veces, Salidas = -. Contratista o el que h Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de atención al cliente aga sus veces, Clientes = Contratista o el que haga sus veces. Contratista o el que h Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de atención al cliente aga sus veces, Ejecutor de la Actividad = Contratista o el que haga sus veces. Contratista o el que h Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de atención al cliente aga sus veces, Sistema que soporta la Actividad = -. Contratista o el que h Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de atención al cliente aga sus veces, ¿Es control Cable? (Sí=x) = x. Contratista o el que haga sus veces, Entradas = Oposición. Contratista o el que haga sus veces, N° = 8. Contratista o el que haga sus veces, Descripción Actividades = Dejar constancia de la oposición. Contratista o el que haga sus veces, Salidas = CVI-RE-001 Constancia de visita. Contratista o el que haga sus veces, Clientes = Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de atención al cliente. Contratista o el que haga sus veces, Ejecutor de la Actividad = Contratista o el que haga sus veces. Contratista o el que haga sus veces, Sistema que soporta la Actividad = -. Contratista o el que haga sus veces, ¿Es control Cable? (Sí=x) = -. Contratista o el que haga sus veces, Entradas = CVI-RE-001 Constancia de visita. Contratista o el que haga sus veces, N° = 9. Contratista o el que haga sus veces, Descripción Actividades = Registrar en el SIELSE en estado (No ejecutado/ Reclamo). Contratista o el que haga sus veces, Salidas = Registro en SIELSE. Contratista o el que haga sus veces, Clientes = Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de atención al cliente. Contratista o el que haga sus veces, Ejecutor de la Actividad = Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de atención al cliente. Contratista o el que haga sus veces, Sistema que soporta la Actividad = SIELSE. Contratista o el que haga sus veces, ¿Es control Cable? (Sí=x) = . Contratista o el que haga sus veces, Entradas = CVI-RE-001 Constancia de visita. Contratista o el que haga sus veces, N° = 10. Contratista o el que haga sus veces, Descripción Actividades = ¿Cliente/ opositor presenta reclamo? Si: Pasar al procedimiento CVA-PR- 001 Atención de reclamos. No: Pasar al procedimiento CVA-PR- 001 Devolución de pagos en efectivo, finalizar actividad. Contratista o el que haga sus veces, Salidas = -. Contratista o el que haga sus veces, Clientes = Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de atención al cliente. Contratista o el que haga sus veces, Ejecutor de la Actividad = Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de atención al cliente. Contratista o el que haga sus veces, Sistema que soporta la Actividad = Osinergmin (Código 279). Contratista o el que haga sus veces, ¿Es control Cable? (Sí=x) = x. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de atención al cliente, Entradas = -. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de atención al cliente, N° = 11. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de atención al cliente, Descripción Actividades = ¿Reclamo es a favor del solicitante? Si: Pasar a la actividad 12 No: Pasar al procedimiento CVA-PR- 001Devolución de pagos en efectivo.. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de atención al cliente, Salidas = -. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de atención al cliente, Clientes = Contratista o el que haga sus veces. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de atención al cliente, Ejecutor de la Actividad = Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de atención al cliente. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de atención al cliente, Sistema que soporta la Actividad = Osinergmin (Código 279). Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de atención al cliente, ¿Es control Cable? (Sí=x) = x
+Prohibido reproducir sin autorización de la Alta Dirección de ELSE
+Código
+Versión
+Aprobado
+Fecha
+Página
+: CVI-PR-001
+: 16
+: CSIG
+: 29/10/2025
+: 13 de 20
+
+================================================================================
+Chunk: 26 / 35
+Páginas: [13]
+Sección: INSTALACIÓN DE SUMINISTRO NUEVO
+Tipo: table
+--------------------------------------------------------------------------------
+Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de atención al cliente, Entradas = -. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de atención al cliente, N° = 12. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de atención al cliente, Descripción Actividades = Ejecutar trabajo De acuerdo con el instructivo CVI-IN- 001 'Instalación de Suministro Nuevo, Reubicación y Cambio de Medido. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de atención al cliente, Salidas = CVI-IN-001 Instalación de suministro nuevo, reubicación y cambio de medidor. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de atención al cliente, Clientes = Contratista o el que haga sus veces. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de atención al cliente, Ejecutor de la Actividad = Contratista o el que haga sus veces. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de atención al cliente, Sistema que soporta la Actividad = . Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de atención al cliente, ¿Es control Cable? (Sí=x) = . Contratista o el que haga sus veces, Entradas = CVI-IN-001 Instalación de suministro nuevo, reubicación y cambio de medidor. Contratista o el que haga sus veces, N° = 13. Contratista o el que haga sus veces, Descripción Actividades = Entregar acta de instalación de suministro nuevo. Contratista o el que haga sus veces, Salidas = CVI-RE-003 Acta de instalación de suministro nuevo CVI-RE-002 Informe de trabajo- Inspección. Contratista o el que haga sus veces, Clientes = Contratista o el que haga sus veces. Contratista o el que haga sus veces, Ejecutor de la Actividad = Contratista o el que haga sus veces. Contratista o el que haga sus veces, Sistema que soporta la Actividad = . Contratista o el que haga sus veces, ¿Es control Cable? (Sí=x) = . Contratista o el que haga sus veces, Entradas = CVI-RE-003 Acta de instalación de suministro nuevo. Contratista o el que haga sus veces, N° = 14. Contratista o el que haga sus veces, Descripción Actividades = Registrar datos e informar en el SIELSE y/o APP GOS Y la información se envía automáticamente al SIELSE. Contratista o el que haga sus veces, Salidas = Registro de información. Contratista o el que haga sus veces, Clientes = Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de atención al cliente. Contratista o el que haga sus veces, Ejecutor de la Actividad = Contratista o el que haga sus veces. Contratista o el que haga sus veces, Sistema que soporta la Actividad = SIELSE Osinergmin (Código 228). Contratista o el que haga sus veces, ¿Es control Cable? (Sí=x) = . Contratista o el que haga sus veces, Entradas = -. Contratista o el que haga sus veces, N° = 15. Contratista o el que haga sus veces, Descripción Actividades = ¿Es medidor SMI? Si: Pasar a la actividad 16 No: Pasar a la actividad 17. Contratista o el que haga sus veces, Salidas = -. Contratista o el que haga sus veces, Clientes = Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de atención al cliente. Contratista o el que haga sus veces, Ejecutor de la Actividad = Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de atención al cliente. Contratista o el que haga sus veces, Sistema que soporta la Actividad = -. Contratista o el que haga sus veces, ¿Es control Cable? (Sí=x) = x. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de atención al cliente, Entradas = Medidor SMI. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de atención al cliente, N° = 16. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de atención al cliente, Descripción Actividades = Registrar en el portal HES-SMI. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de atención al cliente, Salidas = Registro en el portal HSE-SMI. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de atención al cliente, Clientes = Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de atención al cliente. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de atención al cliente, Ejecutor de la Actividad = Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de atención al cliente. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de atención al cliente, Sistema que soporta la Actividad = HSE-SMI. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de atención al cliente, ¿Es control Cable? (Sí=x) = -
+
+================================================================================
+Chunk: 27 / 35
+Páginas: [14]
+Sección: PROCEDIMIENTO
+Tipo: text
+--------------------------------------------------------------------------------
+Código
+Versión
+Aprobado
+Fecha
+Página
+: CVI-PR-001
+: 16
+: CSIG
+: 29/10/2025
+: 14 de 20
+
+================================================================================
+Chunk: 28 / 35
+Páginas: [14, 15]
+Sección: INSTALACIÓN DE SUMINISTRO NUEVO
+Tipo: mixto: table, text
+--------------------------------------------------------------------------------
+Clectro
+Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de atención al cliente, Entradas = -. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de atención al cliente, N° = 17. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de atención al cliente, Descripción Actividades = Ejecutar supervisión aleatoria, verifica datos, metrado La supervisión será aleatoria, basada en la tabla de muestras para la supervisión, debiéndose realizarse como mínimo la inspección reducida (I) Se ejecuta de manera paralela en instructivo CVI-IN-003 Supervisión de la ejecución de instalación de suministros nuevos. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de atención al cliente, Salidas = CVI-IN-003 Supervisión de la ejecución de instalación de suministros nuevos SIG-TA-001 Tabla de muestras para la supervisión. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de atención al cliente, Clientes = Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de atención al cliente. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de atención al cliente, Ejecutor de la Actividad = Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de atención al cliente. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de atención al cliente, Sistema que soporta la Actividad = -. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de atención al cliente, ¿Es control Cable? (Sí=x) = -. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de atención al cliente, Entradas = CVI-IN-003 Supervisión de la ejecución de instalación de suministros nuevos SIG-TA-001 Tabla de muestras para la supervisión. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de atención al cliente, N° = 18. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de atención al cliente, Descripción Actividades = ¿Es conforme? Si: Pasar a la actividad 19 No: Pasar al procedimiento SIG-PR- 007 Control de productos y servicios no conformes. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de atención al cliente, Salidas = SIG-PR-007 Control de productos y servicios no conformes. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de atención al cliente, Clientes = Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de atención al cliente. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de atención al cliente, Ejecutor de la Actividad = Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de atención al cliente. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de atención al cliente, Sistema que soporta la Actividad = -. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de atención al cliente, ¿Es control Cable? (Sí=x) = x. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de atención al cliente, Entradas = SIG-PR-007 Control de productos y servicios no conformes. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de atención al cliente, N° = 19. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de atención al cliente, Descripción Actividades = Realizar la aprobación del cliente nuevo en el SIELSE • Verifica código del cliente • Serie del medidor • Factores del sistema de medición (de ser el caso) • Código de ruta • Materiales utilizados. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de atención al cliente, Salidas = SID-PR-003 Actualización entidad eléctrica SIELSE. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de atención al cliente, Clientes = Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de atención al cliente. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de atención al cliente, Ejecutor de la Actividad = Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de atención al cliente. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de atención al cliente, Sistema que soporta la Actividad = -. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de atención al cliente, ¿Es control Cable? (Sí=x) = -. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de atención al cliente, Entradas = -. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de atención al cliente, N° = 20. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de atención al cliente, Descripción Actividades = Archivar y escanear Finalizar actividad. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de atención al cliente, Salidas = CVI-IN 007 Archivamiento de expedientes de instalación de suministros nuevos en tarifa BT5 Y BT6. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de atención al cliente, Clientes = -. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de atención al cliente, Ejecutor de la Actividad = Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de atención al cliente. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de atención al cliente, Sistema que soporta la Actividad = SIELSE. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de atención al cliente, ¿Es control Cable? (Sí=x) = -
+Prohibido reproducir sin autorización de la Alta Dirección de ELSE
+Código
+Versión
+Aprobado
+Fecha
+Página
+: CVI-PR-001
+: 16
+: CSIG
+: 29/10/2025
+: 15 de 20
+
+================================================================================
+Chunk: 29 / 35
+Páginas: [15, 16]
+Sección: Descripción del cuadro de actividades del flujo 2: Revisión de solicitud
+Tipo: mixto: table, text
+--------------------------------------------------------------------------------
+Cliente/ solicitante, Entradas = Solicitud. Cliente/ solicitante, N° = 1. Cliente/ solicitante, Descripción Actividades = Proporcionar información y requisitos. Cliente/ solicitante, Salidas = CVA-RE-016. Cliente/ solicitante, Clientes = Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de aten. al cliente o el que haga sus veces. Cliente/ solicitante, Ejecutor de la Actividad = Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de aten. al cliente o el que haga sus veces. Cliente/ solicitante, Sistema que soporta la Actividad = -. Cliente/ solicitante, ¿Es control Cable? (Sí=x) = -. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de aten. al cliente o el que haga sus veces, Entradas = Solicitud. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de aten. al cliente o el que haga sus veces, N° = 2. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de aten. al cliente o el que haga sus veces, Descripción Actividades = ¿Es cliente mayor? Si: Pasar al procedimiento CVM- PR-001 Instalación de suministro nuevo- Clientes mayores. No: Pasar a la actividad 3. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de aten. al cliente o el que haga sus veces, Salidas = CVM-PR-001 Instalación de suministro nuevo- Clientes mayores.. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de aten. al cliente o el que haga sus veces, Clientes = Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de aten. al cliente o el que haga sus veces. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de aten. al cliente o el que haga sus veces, Ejecutor de la Actividad = Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de aten. al cliente o el que haga sus veces. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de aten. al cliente o el que haga sus veces, Sistema que soporta la Actividad = -. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de aten. al cliente o el que haga sus veces, ¿Es control Cable? (Sí=x) = x. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de aten. al cliente o el que haga sus veces, Entradas = Solicitud. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de aten. al cliente o el que haga sus veces, N° = 3. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de aten. al cliente o el que haga sus veces, Descripción Actividades = ¿Cliente tiene deuda? Si: Pasar a la actividad 4 No: Pasar a la actividad 7. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de aten. al cliente o el que haga sus veces, Salidas = -. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de aten. al cliente o el que haga sus veces, Clientes = Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de aten. al cliente o el que haga sus veces. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de aten. al cliente o el que haga sus veces, Ejecutor de la Actividad = Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de aten. al cliente o el que haga sus veces. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de aten. al cliente o el que haga sus veces, Sistema que soporta la Actividad = -. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de aten. al cliente o el que haga sus veces, ¿Es control Cable? (Sí=x) = x. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de aten. al cliente o el que haga sus veces, Entradas = Deuda existente. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de aten. al cliente o el que haga sus veces, N° = 4. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de aten. al cliente o el que haga sus veces, Descripción Actividades = Informar deuda (Gestión de Cobranzas). Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de aten. al cliente o el que haga sus veces, Salidas = Informar. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de aten. al cliente o el que haga sus veces, Clientes = Contratista o el que haga sus veces en sectores. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de aten. al cliente o el que haga sus veces, Ejecutor de la Actividad = Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de aten. al cliente o el que haga sus veces. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de aten. al cliente o el que haga sus veces, Sistema que soporta la Actividad = -. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de aten. al cliente o el que haga sus veces, ¿Es control Cable? (Sí=x) = -
+Código
+Versión
+Aprobado
+Fecha
+Página
+: CVI-PR-001
+: 16
+: CSIG
+: 29/10/2025
+: 16 de 20
+
+================================================================================
+Chunk: 30 / 35
+Páginas: [16, 17]
+Sección: INSTALACIÓN DE SUMINISTRO NUEVO
+Tipo: mixto: table, text
+--------------------------------------------------------------------------------
+Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de aten. al cliente o el que haga sus veces, Entradas = Deuda existente cancelada. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de aten. al cliente o el que haga sus veces, N° = 5. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de aten. al cliente o el que haga sus veces, Descripción Actividades = ¿Cliente Cancela deuda? Si: Pasar a la actividad 7 No: Pasar a la actividad 6. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de aten. al cliente o el que haga sus veces, Salidas = -. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de aten. al cliente o el que haga sus veces, Clientes = Contratista o el que haga sus veces en sectores. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de aten. al cliente o el que haga sus veces, Ejecutor de la Actividad = Contratista o el que haga sus veces en sectores. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de aten. al cliente o el que haga sus veces, Sistema que soporta la Actividad = -. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de aten. al cliente o el que haga sus veces, ¿Es control Cable? (Sí=x) = x. Contratista o el que haga sus veces en sectores, Entradas = Deuda sin pago. Contratista o el que haga sus veces en sectores, N° = 6. Contratista o el que haga sus veces en sectores, Descripción Actividades = Finalizar procedimiento. Contratista o el que haga sus veces en sectores, Salidas = Cerrar OT de manera automática después de los 6 meses. Contratista o el que haga sus veces en sectores, Clientes = Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de aten. al cliente o el que haga sus veces. Contratista o el que haga sus veces en sectores, Ejecutor de la Actividad = Contratista o el que haga sus veces en sectores. Contratista o el que haga sus veces en sectores, Sistema que soporta la Actividad = SIELSE. Contratista o el que haga sus veces en sectores, ¿Es control Cable? (Sí=x) = -. Contratista o el que haga sus veces en sectores, Entradas = Deuda existente cancelada. Contratista o el que haga sus veces en sectores, N° = 7. Contratista o el que haga sus veces en sectores, Descripción Actividades = Solicitar al cliente requisitos. Contratista o el que haga sus veces en sectores, Salidas = -. Contratista o el que haga sus veces en sectores, Clientes = Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de aten. al cliente o el que haga sus veces. Contratista o el que haga sus veces en sectores, Ejecutor de la Actividad = Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de aten. al cliente o el que haga sus veces. Contratista o el que haga sus veces en sectores, Sistema que soporta la Actividad = -. Contratista o el que haga sus veces en sectores, ¿Es control Cable? (Sí=x) = -. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de aten. al cliente o el que haga sus veces, Entradas = Requisitos. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de aten. al cliente o el que haga sus veces, N° = 8. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de aten. al cliente o el que haga sus veces, Descripción Actividades = Recepcionar requisitos. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de aten. al cliente o el que haga sus veces, Salidas = -. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de aten. al cliente o el que haga sus veces, Clientes = Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de aten. al cliente o el que haga sus veces. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de aten. al cliente o el que haga sus veces, Ejecutor de la Actividad = Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de aten. al cliente o el que haga sus veces. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de aten. al cliente o el que haga sus veces, Sistema que soporta la Actividad = -. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de aten. al cliente o el que haga sus veces, ¿Es control Cable? (Sí=x) = -. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de aten. al cliente o el que haga sus veces, Entradas = -. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de aten. al cliente o el que haga sus veces, N° = 9. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de aten. al cliente o el que haga sus veces, Descripción Actividades = ¿Documentación cumple requisitos completos? Si: Pasar a la actividad 10 No: Pasar a la actividad 12. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de aten. al cliente o el que haga sus veces, Salidas = -. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de aten. al cliente o el que haga sus veces, Clientes = Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de aten. al cliente o el que haga sus veces. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de aten. al cliente o el que haga sus veces, Ejecutor de la Actividad = Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de aten. al cliente o el que haga sus veces. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de aten. al cliente o el que haga sus veces, Sistema que soporta la Actividad = -. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de aten. al cliente o el que haga sus veces, ¿Es control Cable? (Sí=x) = x
+Código
+Versión
+Aprobado
+Fecha
+Página
+: CVI-PR-001
+: 16
+: CSIG
+: 29/10/2025
+: 17 de 20
+
+================================================================================
+Chunk: 31 / 35
+Páginas: [17, 18]
+Sección: INSTALACIÓN DE SUMINISTRO NUEVO
+Tipo: mixto: table, text
+--------------------------------------------------------------------------------
+Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de aten. al cliente o el que haga sus veces, Entradas = Requisitos completos. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de aten. al cliente o el que haga sus veces, N° = 10. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de aten. al cliente o el que haga sus veces, Descripción Actividades = Registrar en el SIELSE, emitir registros. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de aten. al cliente o el que haga sus veces, Salidas = Potencia Contratada (opcional) CVA-RE-001 Comprobante de recepción de solicitud CVA-RE-023 Presupuesto (preliminar). Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de aten. al cliente o el que haga sus veces, Clientes = Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de aten. al cliente o el que haga sus veces. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de aten. al cliente o el que haga sus veces, Ejecutor de la Actividad = Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de aten. al cliente o el que haga sus veces. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de aten. al cliente o el que haga sus veces, Sistema que soporta la Actividad = -. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de aten. al cliente o el que haga sus veces, ¿Es control Cable? (Sí=x) = -. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de aten. al cliente o el que haga sus veces, Entradas = -. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de aten. al cliente o el que haga sus veces, N° = 11. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de aten. al cliente o el que haga sus veces, Descripción Actividades = ¿OT con requisitos completos en el SIELSE? Si: Pasar a la actividad 13 No: Pasar a la actividad 12. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de aten. al cliente o el que haga sus veces, Salidas = -. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de aten. al cliente o el que haga sus veces, Clientes = SIELSE. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de aten. al cliente o el que haga sus veces, Ejecutor de la Actividad = Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de aten. al cliente o el que haga sus veces. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de aten. al cliente o el que haga sus veces, Sistema que soporta la Actividad = -. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de aten. al cliente o el que haga sus veces, ¿Es control Cable? (Sí=x) = x. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de aten. al cliente o el que haga sus veces, Entradas = -. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de aten. al cliente o el que haga sus veces, N° = 12. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de aten. al cliente o el que haga sus veces, Descripción Actividades = Desestimar OT en el SIELSE (Automático) A las 00 horas de cada día Finalizar la actividad. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de aten. al cliente o el que haga sus veces, Salidas = -. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de aten. al cliente o el que haga sus veces, Clientes = Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de aten. al cliente o el que haga sus veces. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de aten. al cliente o el que haga sus veces, Ejecutor de la Actividad = SIELSE. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de aten. al cliente o el que haga sus veces, Sistema que soporta la Actividad = -. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de aten. al cliente o el que haga sus veces, ¿Es control Cable? (Sí=x) = -. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de aten. al cliente o el que haga sus veces, Entradas = Requisitos completos. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de aten. al cliente o el que haga sus veces, N° = 13. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de aten. al cliente o el que haga sus veces, Descripción Actividades = Registrar OT con requisitos completos Pasar al subproceso de Factibilidad. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de aten. al cliente o el que haga sus veces, Salidas = Sub proceso de Factibilidad. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de aten. al cliente o el que haga sus veces, Clientes = -. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de aten. al cliente o el que haga sus veces, Ejecutor de la Actividad = Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de aten. al cliente o el que haga sus veces. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de aten. al cliente o el que haga sus veces, Sistema que soporta la Actividad = Osinergmin (Código 1, 2). Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de aten. al cliente o el que haga sus veces, ¿Es control Cable? (Sí=x) = -
+Código
+Versión
+Aprobado
+Fecha
+Página
+: CVI-PR-001
+: 16
+: CSIG
+: 29/10/2025
+: 18 de 20
+
+================================================================================
+Chunk: 32 / 35
+Páginas: [18]
+Sección: Descripción del cuadro de actividades del flujo 3: Factibilidad
+Tipo: table
+--------------------------------------------------------------------------------
+-, Entradas = Solicitud. -, N° = 1. -, Descripción Actividades = Completar requisitos y el sistema genera TDC y programar visita. -, Salidas = TDC/ visita. -, Clientes = Contratista o el que haga sus veces en sectores. -, Ejecutor de la Actividad = Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de aten. al cliente. -, Sistema que soporta la Actividad = Osinergmin (Código 213, 211) SIELSE. -, ¿Es control Cable? (Sí=x) = -. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de aten. al cliente, Entradas = TDC/ visita. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de aten. al cliente, N° = 2. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de aten. al cliente, Descripción Actividades = Verificar y programar TDC en GOS para visita en campo. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de aten. al cliente, Salidas = Visita de campo en GOS. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de aten. al cliente, Clientes = Contratista o el que haga sus veces en sectores. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de aten. al cliente, Ejecutor de la Actividad = Contratista o el que haga sus veces en sectores. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de aten. al cliente, Sistema que soporta la Actividad = GOS. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de aten. al cliente, ¿Es control Cable? (Sí=x) = -. Contratista o el que haga sus veces en sectores, Entradas = -. Contratista o el que haga sus veces en sectores, N° = 3. Contratista o el que haga sus veces en sectores, Descripción Actividades = Realizar visita en Campo, realizar metrado de materiales a utilizar. Contratista o el que haga sus veces en sectores, Salidas = Metrado. Contratista o el que haga sus veces en sectores, Clientes = Contratista o el que haga sus veces en sectores. Contratista o el que haga sus veces en sectores, Ejecutor de la Actividad = Contratista o el que haga sus veces en sectores. Contratista o el que haga sus veces en sectores, Sistema que soporta la Actividad = GOS. Contratista o el que haga sus veces en sectores, ¿Es control Cable? (Sí=x) = -. Contratista o el que haga sus veces en sectores, Entradas = -. Contratista o el que haga sus veces en sectores, N° = 4. Contratista o el que haga sus veces en sectores, Descripción Actividades = Verificar y/o determinar la ubicación del nicho y ranura.. Contratista o el que haga sus veces en sectores, Salidas = Ubicación de nicho y ranura. Contratista o el que haga sus veces en sectores, Clientes = Contratista o el que haga sus veces en sectores. Contratista o el que haga sus veces en sectores, Ejecutor de la Actividad = Contratista o el que haga sus veces en sectores. Contratista o el que haga sus veces en sectores, Sistema que soporta la Actividad = GOS. Contratista o el que haga sus veces en sectores, ¿Es control Cable? (Sí=x) = -. Contratista o el que haga sus veces en sectores, Entradas = -. Contratista o el que haga sus veces en sectores, N° = 5. Contratista o el que haga sus veces en sectores, Descripción Actividades = Reportar la ubicación del suministro vecino. Contratista o el que haga sus veces en sectores, Salidas = Ubicación de suministro vecino. Contratista o el que haga sus veces en sectores, Clientes = Contratista o el que haga sus veces en sectores. Contratista o el que haga sus veces en sectores, Ejecutor de la Actividad = Contratista o el que haga sus veces en sectores. Contratista o el que haga sus veces en sectores, Sistema que soporta la Actividad = GOS. Contratista o el que haga sus veces en sectores, ¿Es control Cable? (Sí=x) = -. Contratista o el que haga sus veces en sectores, Entradas = -. Contratista o el que haga sus veces en sectores, N° = 6. Contratista o el que haga sus veces en sectores, Descripción Actividades = ¿Es factible? Si: Pasar a la actividad 8 No: Pasar a la actividad 7 6 meses para cerrar OT de manera automática en el SIELSE. Contratista o el que haga sus veces en sectores, Salidas = Cierre de OT automático. Contratista o el que haga sus veces en sectores, Clientes = Contratista o el que haga sus veces en sectores. Contratista o el que haga sus veces en sectores, Ejecutor de la Actividad = Contratista o el que haga sus veces en sectores. Contratista o el que haga sus veces en sectores, Sistema que soporta la Actividad = Osinergmin (Código 279) SIELSE. Contratista o el que haga sus veces en sectores, ¿Es control Cable? (Sí=x) = x
+
+================================================================================
+Chunk: 33 / 35
+Páginas: [19]
+Sección: NUEVO
+Tipo: mixto: table, text
+--------------------------------------------------------------------------------
+Código
+Versión
+Aprobado
+Fecha
+Página
+: CVI-PR-001
+: 16
+: CSIG
+: 29/10/2025
+: 19 de 20
+Contratista o el que haga sus veces en sectores, Entradas = -. Contratista o el que haga sus veces en sectores, N° = 7. Contratista o el que haga sus veces en sectores, Descripción Actividades = Desestimar por oposición en el SIELSE (derivar a Atención al cliente) u otras causas. Contratista o el que haga sus veces en sectores, Salidas = Desestimación de OT. Contratista o el que haga sus veces en sectores, Clientes = Contratista o el que haga sus veces en sectores. Contratista o el que haga sus veces en sectores, Ejecutor de la Actividad = Contratista o el que haga sus veces en sectores. Contratista o el que haga sus veces en sectores, Sistema que soporta la Actividad = Osinergmin (Código 279) SIELSE. Contratista o el que haga sus veces en sectores, ¿Es control Cable? (Sí=x) = . Contratista o el que haga sus veces en sectores, Entradas = -. Contratista o el que haga sus veces en sectores, N° = 8. Contratista o el que haga sus veces en sectores, Descripción Actividades = ¿Tiene observaciones? Si: Pasar a la actividad 9 No: Pasar a la actividad 15. Contratista o el que haga sus veces en sectores, Salidas = -. Contratista o el que haga sus veces en sectores, Clientes = Contratista o el que haga sus veces en sectores. Contratista o el que haga sus veces en sectores, Ejecutor de la Actividad = Contratista o el que haga sus veces en sectores. Contratista o el que haga sus veces en sectores, Sistema que soporta la Actividad = -. Contratista o el que haga sus veces en sectores, ¿Es control Cable? (Sí=x) = x. Contratista o el que haga sus veces en sectores, Entradas = . Contratista o el que haga sus veces en sectores, N° = 9. Contratista o el que haga sus veces en sectores, Descripción Actividades = Comunicar al cliente cuando corresponda. Contratista o el que haga sus veces en sectores, Salidas = CVA-RE- 008 Hoja de trabajo. Contratista o el que haga sus veces en sectores, Clientes = Contratista o el que haga sus veces en sectores. Contratista o el que haga sus veces en sectores, Ejecutor de la Actividad = Contratista o el que haga sus veces en sectores. Contratista o el que haga sus veces en sectores, Sistema que soporta la Actividad = -. Contratista o el que haga sus veces en sectores, ¿Es control Cable? (Sí=x) = -. Contratista o el que haga sus veces en sectores, Entradas = -. Contratista o el que haga sus veces en sectores, N° = 10. Contratista o el que haga sus veces en sectores, Descripción Actividades = ¿Infraestructura eléctrica es adecuada? Si: Pasar a la actividad 14 No: Pasar a la actividad 11. Contratista o el que haga sus veces en sectores, Salidas = -. Contratista o el que haga sus veces en sectores, Clientes = Contratista o el que haga sus veces en sectores. Contratista o el que haga sus veces en sectores, Ejecutor de la Actividad = Contratista o el que haga sus veces en sectores. Contratista o el que haga sus veces en sectores, Sistema que soporta la Actividad = -. Contratista o el que haga sus veces en sectores, ¿Es control Cable? (Sí=x) = X. Contratista o el que haga sus veces en sectores, Entradas = -. Contratista o el que haga sus veces en sectores, N° = 11. Contratista o el que haga sus veces en sectores, Descripción Actividades = ¿Necesita verificación de la capacidad de carga? Si: Pasar a la actividad 12 No: Pasar a la actividad 13. Contratista o el que haga sus veces en sectores, Salidas = -. Contratista o el que haga sus veces en sectores, Clientes = Contratista o el que haga sus veces en sectores. Contratista o el que haga sus veces en sectores, Ejecutor de la Actividad = Contratista o el que haga sus veces en sectores. Contratista o el que haga sus veces en sectores, Sistema que soporta la Actividad = -. Contratista o el que haga sus veces en sectores, ¿Es control Cable? (Sí=x) = x. Contratista o el que haga sus veces en sectores, Entradas = -. Contratista o el que haga sus veces en sectores, N° = 12. Contratista o el que haga sus veces en sectores, Descripción Actividades = Reportar solicitud de atención en sistema al área de Calidad Pasar al procedimiento: OCA-PR- 006 Atención de inspección técnica de factibilidad Finalizar actividad. Contratista o el que haga sus veces en sectores, Salidas = OCA-PR-006 Atención de inspección técnica de factibilidad. Contratista o el que haga sus veces en sectores, Clientes = Contratista o el que haga sus veces en sectores. Contratista o el que haga sus veces en sectores, Ejecutor de la Actividad = Contratista o el que haga sus veces en sectores. Contratista o el que haga sus veces en sectores, Sistema que soporta la Actividad = -. Contratista o el que haga sus veces en sectores, ¿Es control Cable? (Sí=x) = -
+
+================================================================================
+Chunk: 34 / 35
+Páginas: [20]
+Sección: PROCEDIMIENTO INSTALACIÓN DE SUMINISTRO NUEVO
+Tipo: mixto: table, text
+--------------------------------------------------------------------------------
+Código
+Versión
+Aprobado
+Fecha
+Página
+: CVI-PR-001
+: 16
+: CSIG
+: 29/10/2025
+: 20 de 20
+Contratista o el que haga sus veces en sectores, Entradas = -. Contratista o el que haga sus veces en sectores, N° = 13. Contratista o el que haga sus veces en sectores, Descripción Actividades = Comunicar al área de Mantenimiento. (RIESGO E/ DMS Finalizar actividad. Contratista o el que haga sus veces en sectores, Salidas = Riesgo E/ DMS. Contratista o el que haga sus veces en sectores, Clientes = Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de aten. al cliente. Contratista o el que haga sus veces en sectores, Ejecutor de la Actividad = Contratista o el que haga sus veces en sectores. Contratista o el que haga sus veces en sectores, Sistema que soporta la Actividad = -. Contratista o el que haga sus veces en sectores, ¿Es control Cable? (Sí=x) = -. Contratista o el que haga sus veces en sectores, Entradas = -. Contratista o el que haga sus veces en sectores, N° = 14. Contratista o el que haga sus veces en sectores, Descripción Actividades = ¿Observaciones de visita de factibilidad, fueron levantadas? Si: Pasar a la actividad 15 No: Finalizar actividad. Contratista o el que haga sus veces en sectores, Salidas = -. Contratista o el que haga sus veces en sectores, Clientes = Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de aten. al cliente. Contratista o el que haga sus veces en sectores, Ejecutor de la Actividad = Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de aten. al cliente. Contratista o el que haga sus veces en sectores, Sistema que soporta la Actividad = -. Contratista o el que haga sus veces en sectores, ¿Es control Cable? (Sí=x) = x. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de aten. al cliente, Entradas = -. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de aten. al cliente, N° = 15. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de aten. al cliente, Descripción Actividades = ¿Trae evidencias? Si: Pasar a la actividad 16 No: Finalizar actividad. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de aten. al cliente, Salidas = -. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de aten. al cliente, Clientes = Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de aten. al cliente. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de aten. al cliente, Ejecutor de la Actividad = Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de aten. al cliente. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de aten. al cliente, Sistema que soporta la Actividad = -. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de aten. al cliente, ¿Es control Cable? (Sí=x) = x. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de aten. al cliente, Entradas = -. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de aten. al cliente, N° = 16. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de aten. al cliente, Descripción Actividades = Aprobar factibilidad, actualizar presupuesto e informar al cliente. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de aten. al cliente, Salidas = CVA-RE-023 CVI-RE-006 CVA-RE-008. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de aten. al cliente, Clientes = -. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de aten. al cliente, Ejecutor de la Actividad = Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de aten. al cliente. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de aten. al cliente, Sistema que soporta la Actividad = -. Sup. de Instalaciones (Cusco), Sup. Comercial (Sedes), Ejec. de aten. al cliente, ¿Es control Cable? (Sí=x) = -
+

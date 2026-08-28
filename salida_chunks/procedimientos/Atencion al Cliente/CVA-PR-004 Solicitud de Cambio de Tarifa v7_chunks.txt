@@ -1,0 +1,208 @@
+================================================================================
+Chunk: 0 / 13
+Páginas: [1]
+Sección: None
+Tipo: text
+--------------------------------------------------------------------------------
+Código
+Versión
+Aprobado
+Fecha
+Página
+: CVA-PR-004
+: 07
+: CSIG
+: 29/10/2025
+: 1 de 8
+
+================================================================================
+Chunk: 1 / 13
+Páginas: [1]
+Sección: SOLICITUD DE CAMBIO DE TARIFA
+Tipo: table
+--------------------------------------------------------------------------------
+Dueño del proceso Nivel 0:, 1 = Gerente Comercial. Nombre del proceso Nivel 1:, 1 = Atención al Cliente. Nombre del proceso Nivel 2:, 1 = Atención de Consultas y Solicitudes
+
+================================================================================
+Chunk: 2 / 13
+Páginas: [1, 2]
+Sección: PROCEDIMIENTO DE SOLICITUD DE CAMBIO DE TARIFA
+Tipo: mixto: table, text
+--------------------------------------------------------------------------------
+Responsable, 1 = Responsable. Responsable, 2 = Fecha. Elaborado por:, 1 = Jefe de Instalaciones/ Atención al cliente. Elaborado por:, 2 = 15/10/2025. Revisado por:, 1 = Jefe de ventas. Revisado por:, 2 = 17/10/2025. Revisado por:, 1 = Gerente Comercial. Revisado por:, 2 = 21/10/2025. Homologado por:, 1 = Especialista en Sistemas de Gestión. Homologado por:, 2 = 24/10/2025. Aprobado por:, 1 = Comité del Sistema Integrado de Gestión. Aprobado por:, 2 = 29/10/2025
+Código
+Versión
+Aprobado
+Fecha
+Página
+: CVA-PR-004
+: 07
+: CSIG
+: 29/10/2025
+: 2 de 8
+
+================================================================================
+Chunk: 3 / 13
+Páginas: [2]
+Sección: SOLICITUD DE CAMBIO DE TARIFA
+Tipo: table
+--------------------------------------------------------------------------------
+• Versión inicial del documento, Control de cambios.Descripción del cambio = -. • Versión inicial del documento, Control de cambios.Fecha de aprobación = 00. • -, Control de cambios.Descripción del cambio = 20/02/2003. • -, Control de cambios.Fecha de aprobación = 01. • -, Control de cambios.Descripción del cambio = 13/07/2004. • -, Control de cambios.Fecha de aprobación = 02. • -, Control de cambios.Descripción del cambio = 18/07/2007. • -, Control de cambios.Fecha de aprobación = 03. • -, Control de cambios.Descripción del cambio = 22/07/2013. • -, Control de cambios.Fecha de aprobación = 04. • Se agrega la tabla de descripción de actividades, Control de cambios.Descripción del cambio = 28/11/2016. • Se agrega la tabla de descripción de actividades, Control de cambios.Fecha de aprobación = 05. • Se amplia el alcance del procedimiento a todas las sedes y se complementa la normativa vigente, Control de cambios.Descripción del cambio = 19/03/2021. • Se amplia el alcance del procedimiento a todas las sedes y se complementa la normativa vigente, Control de cambios.Fecha de aprobación = 06. • Se adicionan los códigos de Resolución de Consejo Directivo N.° 188-2024-OS/CD, Control de cambios.Descripción del cambio = 29/10/2025. • Se adicionan los códigos de Resolución de Consejo Directivo N.° 188-2024-OS/CD, Control de cambios.Fecha de aprobación = 07
+Acta de comité SIG, Fecha = 29/10/2025
+
+================================================================================
+Chunk: 4 / 13
+Páginas: [3]
+Sección: 1. OBJETIVO Y ALCANCE
+Tipo: text
+--------------------------------------------------------------------------------
+Establecer el procedimiento para atender las solicitudes de cambio de tarifa, aplicado todas las sedes de Electro Sur Este S.A.A. (ELSE).
+
+================================================================================
+Chunk: 5 / 13
+Páginas: [3]
+Sección: 2. DEFINICIONES
+Tipo: list_item
+--------------------------------------------------------------------------------
+- 2.1. Cambio de Tarifa, a solicitud del cliente, previa  evaluación  técnico-económica,  de acuerdo a lo dispuesto en la Norma Técnica de Calidad de los Servicios Eléctricos.
+- 2.1. Cliente: Consumidores finales de electricidad.
+- 2.2. Cliente Regulados:
+- 2.2.1. Según el reglamento de usuarios libres de electricidad: En concordancia con el artículo 2 del RLCE, los Usuarios cuya máxima demanda anual sea igual o menor a 200 kW, tienen la condición de Usuario Regulado.
+- 2.3. Clientes Libres:
+- 2.3.1. Según  el  reglamento  de  usuarios  libres  de  electricidad:  Los  Usuarios  cuya  máxima demanda anual sea mayor de 200 kW, hasta 2500 kW, tienen derecho a elegir entre la condición  de  Usuario  Regulado  o  de  Usuario  Libre,  cumpliendo  los  requisitos  y condiciones establecidos en el Reglamento.
+- 2.3.2. Según el reglamento de usuarios libres de electricidad: Usuarios conectados al SEIN no sujetos a regulación de precios por la energía o potencia que consumen. Los Usuarios cuya máxima demanda anual sea mayor a 2 500 kW, tienen la condición de Usuarios Libres.
+- 2.4. Cliente Mayor. Persona natural o jurídica que se encuentra en posesión de un predio y  está en posibilidad de hacer uso legal del suministro de energía eléctrica con fines productivos, siendo atendidos mediante opciones tarifarias binomias, con una potencia contratada mayor a 20kW.
+
+================================================================================
+Chunk: 6 / 13
+Páginas: [3]
+Sección: 3. MARCO NORMATIVO Y/O DOCUMENTOS RELACIONADOS
+Tipo: list_item
+--------------------------------------------------------------------------------
+- 3.1 Ley de Concesiones Eléctricas Nro. 25844, su Reglamento y modificatorias
+- 3.2 NTCSE Normas Técnicas de Calidad de los Servicios Eléctricos D.S. Nº 020-97-EM
+- 3.3 DS 022-2009 Reglamento de usuarios libres de electricidad.
+- 3.4 Norma 206-2013-OS/CD 'Opciones. Tarifarias y las Condiciones de Aplicación de las Tarifas a Usuario Final'
+- 3.5 Resolución de Consejo Directivo N.° 188-2024-OS/CD 'Directiva de acceso en línea a  la  información  sobre  el  estado  de  requerimientos  de  usuarios  en  el  Servicio Público de Electricidad' y modificatorias.
+
+================================================================================
+Chunk: 7 / 13
+Páginas: [3]
+Sección: 4. RECURSO HUMANOS Y RESPONSABILIDADES
+Tipo: text
+--------------------------------------------------------------------------------
+4.1
+El Comité del Sistema Integrado de Gestión (CSIG) es responsable de la aprobación del Presente Procedimiento.
+4.2
+El personal de Atención al Cliente, Instalaciones, Atención de Clientes Mayores y/o las que hacen sus veces en todas las oficinas Comerciales de la empresa, son responsables de aplicar lo establecido en el siguiente procedimiento.
+
+================================================================================
+Chunk: 8 / 13
+Páginas: [3]
+Sección: 5. INFRAESTRUCTURA RECURSOS Y AMBIENTE
+Tipo: mixto: list_item, text
+--------------------------------------------------------------------------------
+- 5.1. Oficinas / Clientes Mayores / Zona de Concesión de Electro Sur Este S.A.A.
+- 5.2. Sistema de Información SIELSE
+Código
+Versión
+Aprobado
+Fecha
+Página
+: CVA-PR-004
+: 07
+: CSIG
+: 29/10/2025
+: 3 de 8
+
+================================================================================
+Chunk: 9 / 13
+Páginas: [4]
+Sección: 6. DESARROLLO
+Tipo: mixto: table, text
+--------------------------------------------------------------------------------
+El presente procedimiento se encuentra desarrollado en flujo adjunto.
+En el desarrollo del procedimiento, encontrarán los códigos asociados a la RCD N.° 188 de Osinergmin, los cuales tienen el siguiente significado:
+Se informan en Línea:
+1, Nombre = Registro de una atención comercial. 1, Grupo estado = EN PROCESO. 2, Nombre = En proceso / Análisis. 2, Grupo estado = EN PROCESO. 3, Nombre = CERRADO. Al finalizar con el registro de la conclusión de la atención comercial. 3, Grupo estado = CERRADO. 4, Nombre = Conforme, posterior al cierre. 4, Grupo estado = CERRADO. 5, Nombre = No conforme, posterior al cierre. 5, Grupo estado = CERRADO. 6, Nombre = Cerrado a solicitud expresa del usuario, sin intervención de la EDE. 6, Grupo estado = CERRADO. 8, Nombre = Desestimado. En caso, posterior a la evaluación de la EDE, no corresponda la atención a la empresa eléctrica. 8, Grupo estado = CERRADO. 50, Nombre = Ante evaluación de la EDE, se requiere modificar el dato registrado inicialmente en la tabla 1 (campos permitidos para modificación: 6, 7, 8, 9, 10, 11, 12, 13 y 16). 50, Grupo estado = EN PROCESO. 51, Nombre = Ante evaluación de la EDE, posterior al registro, se debe modificar el CODIGO DE ASUNTO. 51, Grupo estado = EN PROCESO. 52, Nombre = Respuesta / notificación a usuario o solicitante. 52, Grupo estado = CERRADO
+
+================================================================================
+Chunk: 10 / 13
+Páginas: [4, 5]
+Sección: 7. REGISTROS
+Tipo: mixto: list_item, text
+--------------------------------------------------------------------------------
+Los registros generados son:
+- 7.1. CVA-RE-001 Comprobante de Recepción de Solicitud.
+- 7.2. CVA-RE-002 Solicitud de servicio - Formato 'A'.
+- 7.3. CVA-RE-003 Contrato de suministro de energía eléctrica.
+- 7.4. CVA-RE-004 Carta de autorización (inquilino) - Formato 'C'.
+- 7.5. CVA-RE-016 Requisitos para la atención de solicitudes.
+Código
+Versión
+Aprobado
+Fecha
+Página
+: CVA-PR-004
+: 07
+: CSIG
+: 29/10/2025
+: 4 de 8
+Código
+Versión
+Aprobado
+Fecha
+Página
+: CVA-PR-004
+: 07
+: CSIG
+: 29/10/2025
+: 5 de 8
+
+================================================================================
+Chunk: 11 / 13
+Páginas: [6, 7]
+Sección: SOLICITUD DE CAMBIO DE TARIFA
+Tipo: mixto: table, text
+--------------------------------------------------------------------------------
+Código
+Versión
+Aprobado
+Fecha
+Página
+: CVA-PR-004
+: 07
+: CSIG
+: 29/10/2025
+: 6 de 8
+-, Entradas = -. -, N° = 1 - -. -, Descripción Actividades = Solicitar información para cambio de tarifa El cliente solicita información de los requisitos cuando así lo requiere para el Cambio de Tarifa.. -, Salidas = -. -, Clientes = Personal de Atención al Cliente. -, Ejecutor de la Actividad = Cliente. -, Sistema que soporta la Actividad = No Aplica. -, ¿Es control Cable? (Sí=x) = -. Cliente, Entradas = -. Cliente, N° = 2. Cliente, Descripción Actividades = Proporcionar información, requisitos al cliente y las opciones tarifarias Entrega al cliente los requisitos para el cambio de Tarifa, según lo descrito en CVA- RE-016 Y proporciona información acerca de opciones tarifarias.. Cliente, Salidas = CVA-RE-016 Requisitos para la atención de solicitudes.. Cliente, Clientes = Personal de Atención al Cliente. Cliente, Ejecutor de la Actividad = Personal de Atención al Cliente. Cliente, Sistema que soporta la Actividad = No Aplica. Cliente, ¿Es control Cable? (Sí=x) = -. Personal de Atención al Cliente, Entradas = -. Personal de Atención al Cliente, N° = 3. Personal de Atención al Cliente, Descripción Actividades = Revisar si el realizó cambió de tarifa en el período de un año. Personal de Atención al Cliente, Salidas = Revisión en sistema. Personal de Atención al Cliente, Clientes = Personal de Atención al Cliente. Personal de Atención al Cliente, Ejecutor de la Actividad = Personal de Atención al Cliente. Personal de Atención al Cliente, Sistema que soporta la Actividad = SIELSE. Personal de Atención al Cliente, ¿Es control Cable? (Sí=x) = -. Personal de Atención al Cliente, Entradas = Revisión en sistema. Personal de Atención al Cliente, N° = 4. Personal de Atención al Cliente, Descripción Actividades = ¿Cliente realizó cambió? Si: Va a la actividad 05 No: Va a la actividad 06. Personal de Atención al Cliente, Salidas = -. Personal de Atención al Cliente, Clientes = Personal de Atención al Cliente. Personal de Atención al Cliente, Ejecutor de la Actividad = Personal de Atención al Cliente. Personal de Atención al Cliente, Sistema que soporta la Actividad = No Aplica. Personal de Atención al Cliente, ¿Es control Cable? (Sí=x) = x. Personal de Atención al Cliente, Entradas = Cambio de tarifa realizado en un año. Personal de Atención al Cliente, N° = 5. Personal de Atención al Cliente, Descripción Actividades = Comunicar al cliente que no procede su solicitud Porque no se puede hacer más de un cambio dentro de los doce últimos meses.. Personal de Atención al Cliente, Salidas = Rechazo de solicitud. Personal de Atención al Cliente, Clientes = Cliente. Personal de Atención al Cliente, Ejecutor de la Actividad = Personal de Atención al Cliente. Personal de Atención al Cliente, Sistema que soporta la Actividad = No Aplica. Personal de Atención al Cliente, ¿Es control Cable? (Sí=x) = -. Personal de Atención al Cliente, Entradas = -. Personal de Atención al Cliente, N° = 6. Personal de Atención al Cliente, Descripción Actividades = Registrar información del cliente en el sistema Para generar los formatos 'A' y 'C' para la firma del cliente. Personal de Atención al Cliente, Salidas = Formato A y C. Personal de Atención al Cliente, Clientes = Cliente. Personal de Atención al Cliente, Ejecutor de la Actividad = Personal de Atención al Cliente. Personal de Atención al Cliente, Sistema que soporta la Actividad = SIELSE Osinergmin (código 1). Personal de Atención al Cliente, ¿Es control Cable? (Sí=x) = -. Personal de Atención al Cliente, Entradas = Formato A y C. Personal de Atención al Cliente, N° = 7. Personal de Atención al Cliente, Descripción Actividades = Elegir opción tarifaria. Personal de Atención al Cliente, Salidas = Opción tarifaria. Personal de Atención al Cliente, Clientes = Cliente. Personal de Atención al Cliente, Ejecutor de la Actividad = Personal de Atención al Cliente. Personal de Atención al Cliente, Sistema que soporta la Actividad = Sistema Comercial. Personal de Atención al Cliente, ¿Es control Cable? (Sí=x) = -
+Código
+Versión
+Aprobado
+Fecha
+Página
+: CVA-PR-004
+: 07
+: CSIG
+: 29/10/2025
+: 7 de 8
+
+================================================================================
+Chunk: 12 / 13
+Páginas: [7, 8]
+Sección: SOLICITUD DE CAMBIO DE TARIFA
+Tipo: mixto: table, text
+--------------------------------------------------------------------------------
+Cliente, Entradas = Opción tarifaria. Cliente, N° = 8. Cliente, Descripción Actividades = Recepcionar respuesta. Cliente, Salidas = Respuesta. Cliente, Clientes = Personal de Atención al Cliente. Cliente, Ejecutor de la Actividad = Personal de Atención al Cliente. Cliente, Sistema que soporta la Actividad = . Cliente, ¿Es control Cable? (Sí=x) = -. Personal de Atención al Cliente, Entradas = -. Personal de Atención al Cliente, N° = 9. Personal de Atención al Cliente, Descripción Actividades = ¿El trámite es virtual? Si: Va a actividad 10 No: Va a actividad 12. Personal de Atención al Cliente, Salidas = -. Personal de Atención al Cliente, Clientes = Personal de Atención al Cliente. Personal de Atención al Cliente, Ejecutor de la Actividad = Personal de Atención al Cliente. Personal de Atención al Cliente, Sistema que soporta la Actividad = -. Personal de Atención al Cliente, ¿Es control Cable? (Sí=x) = x. Personal de Atención al Cliente, Entradas = -. Personal de Atención al Cliente, N° = 10. Personal de Atención al Cliente, Descripción Actividades = Remitir documentos al cliente para su firma. Personal de Atención al Cliente, Salidas = CVA-RE-002 Formato 'A'. CVA-RE-004 Formato 'C'.. Personal de Atención al Cliente, Clientes = Cliente. Personal de Atención al Cliente, Ejecutor de la Actividad = Personal de Atención al Cliente. Personal de Atención al Cliente, Sistema que soporta la Actividad = -. Personal de Atención al Cliente, ¿Es control Cable? (Sí=x) = -. Personal de Atención al Cliente, Entradas = CVA-RE-002 Formato 'A'. CVA-RE-004 Formato 'C'.. Personal de Atención al Cliente, N° = 11. Personal de Atención al Cliente, Descripción Actividades = Firmar documentos y entregar (presencial / virtual). Personal de Atención al Cliente, Salidas = CVA-RE-002 Formato 'A'. CVA-RE-004 Formato 'C'.. Personal de Atención al Cliente, Clientes = Personal de Atención al Cliente. Personal de Atención al Cliente, Ejecutor de la Actividad = Personal de Atención al Cliente. Personal de Atención al Cliente, Sistema que soporta la Actividad = -. Personal de Atención al Cliente, ¿Es control Cable? (Sí=x) = -. Personal de Atención al Cliente, Entradas = -. Personal de Atención al Cliente, N° = 12. Personal de Atención al Cliente, Descripción Actividades = Imprimir documentos y hacer firmarlos documentos. Personal de Atención al Cliente, Salidas = CVA-RE-002 Formato 'A'. CVA-RE-004 Formato 'C'.. Personal de Atención al Cliente, Clientes = Cliente. Personal de Atención al Cliente, Ejecutor de la Actividad = Personal de Atención al Cliente. Personal de Atención al Cliente, Sistema que soporta la Actividad = -. Personal de Atención al Cliente, ¿Es control Cable? (Sí=x) = -. Cliente, Entradas = CVA-RE-002 Formato 'A'. CVA-RE-004 Formato 'C'.. Cliente, N° = 13. Cliente, Descripción Actividades = Recepcionar documentos. Cliente, Salidas = CVA-RE-002 Formato 'A'. CVA-RE-004 Formato 'C'.. Cliente, Clientes = Personal de Atención al Cliente. Cliente, Ejecutor de la Actividad = Personal de Atención al Cliente. Cliente, Sistema que soporta la Actividad = -. Cliente, ¿Es control Cable? (Sí=x) = -. Cliente, Entradas = . Cliente, N° = 14. Cliente, Descripción Actividades = ¿Es conforme? Si: Va a actividad 16 No: Va a actividad 15. Cliente, Salidas = . Cliente, Clientes = Personal de Atención al Cliente. Cliente, Ejecutor de la Actividad = Personal de Atención al Cliente. Cliente, Sistema que soporta la Actividad = -. Cliente, ¿Es control Cable? (Sí=x) = X
+Código
+Versión
+Aprobado
+Fecha
+Página
+: CVA-PR-004
+: 07
+: CSIG
+: 29/10/2025
+: 8 de 8
+-, Entradas = 15. -, N° Descripción Actividades = Informar observaciones de documentos a corregir (presencial / virtual) Va a la actividad 10. -, Salidas = CVA-RE-002 'A'. CVA-RE-004 'C'. Cliente. -, Clientes = Personal de Atención al Cliente. -, Ejecutor de la Actividad = . -, Sistema que soporta la Actividad = - -. -, ¿Es control Cable? (Sí=x) = Personal de Atención al Cliente Formato Formato. Formato 'A'. CVA-RE-004 Formato 'C'., Entradas = CVA-RE-002 16. Formato 'A'. CVA-RE-004 Formato 'C'., N° Descripción Actividades = comprobante de recepción de solicitud Se le hace la entrega de una copia comprobante de Recepción de Solicitud cliente.. Formato 'A'. CVA-RE-004 Formato 'C'., Salidas = CVA-RE-001 Comprobante de Recepción de Solicitud.. Formato 'A'. CVA-RE-004 Formato 'C'., Clientes = Personal de Atención al Cliente. Formato 'A'. CVA-RE-004 Formato 'C'., Ejecutor de la Actividad = Personal de Atención al Cliente. Formato 'A'. CVA-RE-004 Formato 'C'., Sistema que soporta la Actividad = Sistema Comercial -. Formato 'A'. CVA-RE-004 Formato 'C'., ¿Es control Cable? (Sí=x) = Cliente del al. Personal de -, Entradas = 17. Personal de -, N° Descripción Actividades = Preparar expediente y remitir al responsable correspondiente Si es un cliente mayor derivar al supervisor de Clientes mayores, de lo contrario al Supervisor de Instalaciones Va a CVI-PR-006 Cambio de Tarifa. Personal de -, Salidas = Expediente. Personal de -, Clientes = Supervisor de Instalaciones / Clientes Mayores. Personal de -, Ejecutor de la Actividad = Personal de Atención al Cliente. Personal de -, Sistema que soporta la Actividad = No Aplica -. Personal de -, ¿Es control Cable? (Sí=x) = Atención al Cliente
+

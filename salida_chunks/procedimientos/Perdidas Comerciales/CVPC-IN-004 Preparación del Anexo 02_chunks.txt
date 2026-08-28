@@ -1,0 +1,284 @@
+================================================================================
+Chunk: 0 / 20
+Páginas: [1]
+Sección: None
+Tipo: text
+--------------------------------------------------------------------------------
+Código
+Versión
+Aprobado
+Fecha
+Página
+: CVPC-IN-004
+: 00
+: CSIG
+: 26/11/2024
+: 1 de 10
+
+================================================================================
+Chunk: 1 / 20
+Páginas: [1]
+Sección: PREPARACIÓN REPORTE ANEXO 02.
+Tipo: table
+--------------------------------------------------------------------------------
+Dueño del proceso Nivel 1:, Gerente General = Jefe de Pérdidas. Dueño del proceso Nivel 2:, Gerente General = No Corresponde
+
+================================================================================
+Chunk: 2 / 20
+Páginas: [1, 2]
+Sección: INSTRUCTIVO DE PREPARACIÓN DEL ANEXO 02
+Tipo: mixto: table, text
+--------------------------------------------------------------------------------
+Elaborado por:, Responsable = Supervisor de Control de Pérdidas. Elaborado por:, Fecha = 25/09/2024. Revisado por:, Responsable = Jefe de Pérdidas. Revisado por:, Fecha = 03/10/2024. Revisado por:, Responsable = Gerente General. Revisado por:, Fecha = 16/10/2024. Homologado por:, Responsable = Especialista en Sistemas de Gestión. Homologado por:, Fecha = 31/10/2024. Aprobado por:, Responsable = Comité del Sistema Integrado de Gestión. Aprobado por:, Fecha = 26/11/2024
+Código
+Versión
+Aprobado
+Fecha
+Página
+: CVPC-IN-004
+: 00
+: CSIG
+: 26/11/2024
+: 2 de 10
+
+================================================================================
+Chunk: 3 / 20
+Páginas: [2]
+Sección: PREPARACIÓN REPORTE ANEXO 02.
+Tipo: table
+--------------------------------------------------------------------------------
+00, Control de cambios.Descripción del cambio = Versión Inicial del documento. 00, Control de cambios.Fecha de aprobación = 26/11/2024
+Acta de comité SIG, Fecha = 26/11/2024
+
+================================================================================
+Chunk: 4 / 20
+Páginas: [3]
+Sección: 1. OBJETIVO Y ALCANCE
+Tipo: mixto: list_item, text
+--------------------------------------------------------------------------------
+Establecer el procedimiento de control para la supervisión de las actividades de envió mensual al portal de Osinergmin los reintegros y recuperos en el servicio público de electricidad, que realizan las concesionarias.
+A través del presente procedimiento se establecen:
+- Diseño  del  procedimiento  de  control:  Se  establecerá  un  procedimiento  operativo estandarizado  para  supervisar  el  envío  mensual  de  los  reportes  de  reintegros  y recuperos al portal de Osinergmin, asegurando que las concesionarias cumplan con los plazos y formatos exigidos.
+- Aplicación de normativa vigente: El procedimiento de control se alineará completamente con las normativas y directrices establecidas por Osinergmin para el manejo y envío de reintegros y recuperos de energía eléctrica.
+- Generación de reportes de supervisión: Se establecerá un sistema de reportes de control  y  seguimiento  que  permita  monitorear,  de  forma  mensual,  el  estado  del cumplimiento  de  las  concesionarias  en  el  envío  de  información  al  portal  de Osinergmin.
+El presente procedimiento es aplicable a todas las concesionarias que brindan el servicio público de electricidad en el territorio nacional y respecto de todo su ámbito de concesión o zona de responsabilidad.
+
+================================================================================
+Chunk: 5 / 20
+Páginas: [3]
+Sección: 2. DEFINICIONES
+Tipo: list_item
+--------------------------------------------------------------------------------
+- 2.1. Reintegros: Importe que la concesionaria está obligada a devolver al usuario, debido a: inadecuada medición o error en el proceso de facturación.
+- 2.2. Recupero: Importe  que  la  concesionaria  cobra  al  Usuario  o  Beneficiario  por  los consumos no facturados, debido a: inadecuada medición; error en el proceso facturación; vulneración  de  las  condiciones  del  suministro;  y  consumos  sin  autorización  de  la concesionaria.
+- 2.3. Muestra: La muestra es un listado aleatorio de reintegros y recuperos aplicados por la concesionaria, sobre la cual se evalúan las acciones desarrolladas por ésta en el proceso de reintegros y recuperos de energía eléctrica.
+- 2.4. Osinergmin: Organismo Supervisor de la Inversión en Energía y Minería.
+- 2.5. Usuario: Persona  natural  o  jurídica  que  cuenta  con  Conexión  y  hace  uso  legal  del Suministro correspondiente. Es el responsable por el cumplimiento de las obligaciones técnicas y económicas que se derivan de la utilización de la electricidad.
+- 2.6. Concesionaria: Entidad que presta el Servicio Público de Electricidad por contar con una concesión de distribución otorgada por el Ministerio de Energía y Minas.
+
+================================================================================
+Chunk: 6 / 20
+Páginas: [3, 4]
+Sección: 3. MARCO NORMATIVO Y/O DOCUMENTOS RELACIONADOS
+Tipo: mixto: list_item, text
+--------------------------------------------------------------------------------
+- 3.1. CVPC-PR-001 Verificación de suministros y detección de vulneración y/o consumo sin autorización.
+- 3.2. Resolución de consejo directivo N°208-2021-OS/CD 'Procedimiento para la fiscalización de los reintegros y recuperos de energía eléctrica en el servicio público de electricidad'
+- 3.3. Decreto Ley N° 25844, Ley de Concesiones Eléctricas (LCE).
+Código
+Versión
+Aprobado
+Fecha
+Página
+: CVPC-IN-004
+: 00
+: CSIG
+: 26/11/2024
+: 3 de 10
+Código
+Versión
+Aprobado
+Fecha
+Página
+: CVPC-IN-004
+: 00
+: CSIG
+: 26/11/2024
+: 4 de 10
+
+================================================================================
+Chunk: 7 / 20
+Páginas: [4]
+Sección: PREPARACIÓN REPORTE ANEXO 02.
+Tipo: list_item
+--------------------------------------------------------------------------------
+- 3.4. Reglamento de la Ley de Concesiones Eléctricas, aprobado por Decreto Supremo N° 009-93-EM (RLCE).
+- 3.5. Norma DGE 'Reintegros y Recuperos de Energía Eléctrica' aprobada por Resolución Ministerial N° 571-2006-MEM/DM.
+- 3.6. Reglamento de fiscalización y sanción de las actividades energéticas y mineras a cargo de Osinergmin aprobada por Resolución de Consejo Directivo N° 208-2020-OS/CD.
+- 3.7. Directiva 'Procedimiento administrativo de atención de reclamos de los usuarios de los servicios públicos de  electricidad y gas natural' aprobada por Resolución de Consejo Directivo N° 269- 2014-OS/CD.
+
+================================================================================
+Chunk: 8 / 20
+Páginas: [4]
+Sección: 4. RECURSOS HUMANOS Y RESPONSABILIDADES
+Tipo: list_item
+--------------------------------------------------------------------------------
+- 4.1. El Comité del Sistema Integrado de Gestión (CSIG) es  responsable  de  aprobar el presente instructivo.
+- 4.2. El  Jefe  de  Pérdidas  Comerciales es  responsable  de  Administrar  e  implementar  el presente Instructivo.
+
+================================================================================
+Chunk: 9 / 20
+Páginas: [4]
+Sección: 5. INFRAESTRUCTURA, RECURSOS Y AMBIENTE
+Tipo: list_item
+--------------------------------------------------------------------------------
+- 5.1. SIELSE.
+- 5.2. Oficinas / Instalaciones / Zona de concesión de Electro Sur Este S.A.A.
+
+================================================================================
+Chunk: 10 / 20
+Páginas: [4]
+Sección: 6.1. ANEXO 02
+Tipo: text
+--------------------------------------------------------------------------------
+La concesionaria deberá conformar un expediente por cada caso de reintegro o recupero, el cual deberá contener la información que evidencie el cumplimiento de la Norma DGE 'Reintegros  y  Recuperos  de  Energía  Eléctrica';  y  que  deberá  estar  a  disposición  de Osinergmin en los plazos establecidos en la Tabla N° 1.
+La estructura de la base de datos se efectuará de acuerdo con lo establecido en el Anexo Nº  2.  El  registro  detallado  de  todos  los  casos  de  reintegros  y  recuperos,  para  la fiscalización y determinación de los indicadores de cumplimiento de la normativa vigente, deberá ser reportados por el concesionario en los formatos requeridos por el portal web de Osinergmin.
+La información del Anexo Nº 2 será actualizada y publicada mensualmente en forma acumulativa; es decir, se acumularán de enero a junio y de julio a diciembre según los plazos establecidos en la Tabla Nº 1. Asimismo, la información que debe ser considerada en el Anexo N° 2 corresponderá a los casos de reintegros y recuperos cuya fecha de pago o cobro se haya efectuado o iniciado en el mes a ser reportado.
+
+================================================================================
+Chunk: 11 / 20
+Páginas: [4, 5]
+Sección: Contenido, frecuencia y plazos de entrega de la información
+Tipo: text
+--------------------------------------------------------------------------------
+La Tabla Nº 1 muestra la descripción de la información requerida, así como la frecuencia y plazos máximos de publicación y de entrega de documentación a Osinergmin:
+Código
+Versión
+Aprobado
+Fecha
+Página
+: CVPC-IN-004
+: 00
+: CSIG
+: 26/11/2024
+: 5 de 10
+
+================================================================================
+Chunk: 12 / 20
+Páginas: [5]
+Sección: PREPARACIÓN REPORTE ANEXO 02.
+Tipo: table
+--------------------------------------------------------------------------------
+Publicación en la página Web de Osinergmin, de la información requerida en la estructura de base datos Anexo N? 2, Frecuencia de entrega información = Mensual (Acumulativo durante el período semestral). Publicación en la página Web de Osinergmin, de la información requerida en la estructura de base datos Anexo N? 2, Plazo máximo = Décimo día hábil   del mes inmediato siguiente.. Documentación de la muestra representativa con la información mínima   solicitada por OSINERGMIN al inicio de la fiscalización ., Frecuencia de entrega información = De acuerdo requerimiento de OSINERGMIN.. Documentación de la muestra representativa con la información mínima   solicitada por OSINERGMIN al inicio de la fiscalización ., Plazo máximo = Décimo día hábil de comunicada la muestra, por el Organismo
+
+================================================================================
+Chunk: 13 / 20
+Páginas: [5]
+Sección: Indicadores que evalúa OSINERGMIN
+Tipo: mixto: list_item, table, text
+--------------------------------------------------------------------------------
+Mediante este procedimiento Osinergmin evalúa 5 indicadores de gestión:
+- I.  2 indicadores que miden el cumplimiento de la normativa sobre reintegros y están orientados  a  determinar  las  condiciones  y  plazos  del  reintegro,  así  como  las desviaciones de su cálculo.
+- II.  2 indicadores que miden el cumplimiento de la normativa sobre recuperos y están orientados a determinar la procedencia del recupero, los eventuales excesos en su cálculo.
+, Indicador = DCD. , Descripción = Desviación de las condiciones de los Reintegros. Reintegro s, Indicador = DID. Reintegro s, Descripción = Desviación inferior del importe de los Reintegros. , Indicador = DCR. , Descripción = Desviación de las condiciones de procedencia de los Recuperos. Recuperos, Indicador = DIR. Recuperos, Descripción = Desviación en exceso del importe de los Recuperos
+La información para la determinación de los indicadores se obtiene de la muestra de los expedientes seleccionados del total informado en el Anexo N° 2.
+
+================================================================================
+Chunk: 14 / 20
+Páginas: [6]
+Sección: PREPARACIÓN REPORTE ANEXO 02.
+Tipo: mixto: table, text
+--------------------------------------------------------------------------------
+Versión
+Aprobado
+Fecha
+Página
+: 00
+: CSIG
+: 26/11/2024
+: 6 de 10
+, Concesionaria = Consorcio Eléctrico del Villacuri. , Código = CEV. , Concesionaria = ENEL Distribución Perú S.AA.. , Código = EDN. 3, Concesionaria = Electro Centro. 3, Código = ELC. , Concesionaria = Electronoroeste. , Código = ENO. 5, Concesionaria = Electro Norte. 5, Código = ELN. 6, Concesionaria = Electro Oriente. 6, Código = EOR. , Concesionaria = Electro Puno. , Código = EPU. 8, Concesionaria = Electro Sur. 8, Código = ELS. 9, Concesionaria = Electro Sur Este. 9, Código = ESE. 10, Concesionaria = Electrodunas. 10, Código = ESM. 11, Concesionaria = Electro Tocache. 11, Código = ETO. 12, Concesionaria = Electro Ucayali. 12, Código = EUC. 13, Concesionaria = Electro Norte Medio Hidrandina. 13, Código = HID. 14, Concesionaria = Luz del Sur. 14, Código = EDS. 15, Concesionaria = Sociedad Eléctrica del Sur Oeste. 15, Código = SEA. 16, Concesionaria = Servicio Eléctrico Rioja. 16, Código = RIO. 17, Concesionaria = Empresa Municipal Paramonga. 17, Código = EMP. 18, Concesionaria = Empresa Municipal Utcubamba. 18, Código = EMU
+
+================================================================================
+Chunk: 15 / 20
+Páginas: [6, 7]
+Sección: CÓDIGOS  AUTOGENERADOS  DE  REINTEGROS  Y  RECUPEROS  DE  ENERGÍA ELÉCTRICA
+Tipo: mixto: caption, table, text
+--------------------------------------------------------------------------------
+Cuadro Nº 2
+
+REINTEGRO (D), ITEM. = . REINTEGRO (D), CAUSAL. = Error en el proceso de facturación. REINTEGRO (D), CÓDIGO ALFANUMÉRICO AUTOGENERADO.Alfanumérico = AA DEF. REINTEGRO (D), CÓDIGO ALFANUMÉRICO AUTOGENERADO.Año = . REINTEGRO (D), CÓDIGO ALFANUMÉRICO AUTOGENERADO.Número = Correlativo por cada causal. NNNNNN:. REINTEGRO (D), Ejemplo. = Devolución por error en el proceso de facturación; año 2007 , correlativo N' 000123.. REINTEGRO (D), ITEM. = . REINTEGRO (D), CAUSAL. = Error en el sistema de medición.. REINTEGRO (D), CÓDIGO ALFANUMÉRICO AUTOGENERADO.Alfanumérico = DEM. REINTEGRO (D), CÓDIGO ALFANUMÉRICO AUTOGENERADO.Año = . REINTEGRO (D), CÓDIGO ALFANUMÉRICO AUTOGENERADO.Número = Idem. REINTEGRO (D), Ejemplo. = . REINTEGRO (D), ITEM. = . REINTEGRO (D), CAUSAL. = Error en la instalación del sistema de medición.. REINTEGRO (D), CÓDIGO ALFANUMÉRICO AUTOGENERADO.Alfanumérico = DEI. REINTEGRO (D), CÓDIGO ALFANUMÉRICO AUTOGENERADO.Año = . REINTEGRO (D), CÓDIGO ALFANUMÉRICO AUTOGENERADO.Número = Idem. REINTEGRO (D), Ejemplo. = . RECUPERO ( R), ITEM. = . RECUPERO ( R), CAUSAL. = Error en el proceso de facturación. RECUPERO ( R), CÓDIGO ALFANUMÉRICO AUTOGENERADO.Alfanumérico = REF. RECUPERO ( R), CÓDIGO ALFANUMÉRICO AUTOGENERADO.Año = . RECUPERO ( R), CÓDIGO ALFANUMÉRICO AUTOGENERADO.Número = Idem. RECUPERO ( R), Ejemplo. = . RECUPERO ( R), ITEM. = . RECUPERO ( R), CAUSAL. = Error en el sistema de medición.. RECUPERO ( R), CÓDIGO ALFANUMÉRICO AUTOGENERADO.Alfanumérico = REM. RECUPERO ( R), CÓDIGO ALFANUMÉRICO AUTOGENERADO.Año = . RECUPERO ( R), CÓDIGO ALFANUMÉRICO AUTOGENERADO.Número = Idem. RECUPERO ( R), Ejemplo. = . RECUPERO ( R), ITEM. = . RECUPERO ( R), CAUSAL. = Error en la instalación del sistema de medición.. RECUPERO ( R), CÓDIGO ALFANUMÉRICO AUTOGENERADO.Alfanumérico = REI. RECUPERO ( R), CÓDIGO ALFANUMÉRICO AUTOGENERADO.Año = . RECUPERO ( R), CÓDIGO ALFANUMÉRICO AUTOGENERADO.Número = Idem. RECUPERO ( R), Ejemplo. = . RECUPERO ( R), ITEM. = . RECUPERO ( R), CAUSAL. = Vulneración de las condiciones de suministro. RECUPERO ( R), CÓDIGO ALFANUMÉRICO AUTOGENERADO.Alfanumérico = RVS. RECUPERO ( R), CÓDIGO ALFANUMÉRICO AUTOGENERADO.Año = . RECUPERO ( R), CÓDIGO ALFANUMÉRICO AUTOGENERADO.Número = Idem. RECUPERO ( R), Ejemplo. = . RECUPERO ( R), ITEM. = . RECUPERO ( R), CAUSAL. = Consumo sin autorización del concesionario. RECUPERO ( R), CÓDIGO ALFANUMÉRICO AUTOGENERADO.Alfanumérico = RCS. RECUPERO ( R), CÓDIGO ALFANUMÉRICO AUTOGENERADO.Año = . RECUPERO ( R), CÓDIGO ALFANUMÉRICO AUTOGENERADO.Número = Idem. RECUPERO ( R), Ejemplo. = 
+Aprobado
+: 00
+: CSIG
+: 26/11/2024
+: 7 de 10
+
+================================================================================
+Chunk: 16 / 20
+Páginas: [7]
+Sección: Donde:
+Tipo: list_item
+--------------------------------------------------------------------------------
+1. (*) La concesionaria, en caso corresponda determinará el código del (los) Centro (s) de Atención al Usuario (3 letras) e informará a Osinergmin.
+2. (**) Numeración correlativa: nnnXXXXXXXX. (nnn=Centro de atención al usuario, XXXXXXXX=N° correlativo)
+3. (***) En casos de transacciones extrajudiciales se considerará en éste campo la fecha de su firma
+
+================================================================================
+Chunk: 17 / 20
+Páginas: [8, 9]
+Sección: 6.2. INFORMACIÓN REQUERIDA POR OSINERGMIN
+Tipo: mixto: table, text
+--------------------------------------------------------------------------------
+Los documentos que conforman el expediente mantendrán el orden de su realización y deberán foliarse en numeración correlativa; tanto para recuperos como para reintegros, de acuerdo al cuadro de base de datos de información sobre reintegros y recuperos de energía eléctrica a ser publicada.
+El  registro  detallado  de  todos  los  casos  de  reintegros  y  recuperos  se  realiza  en  los cuadros siguientes previo al formato final para el envío al portal de Osinergmin, para la fiscalización y determinación de los indicadores de cumplimiento de la normativa vigente.
+3.49, intcom = 0.03. 3.49, ncuotas = 1. 3.49, reinvul = NO. 3.49, naviso = S/N. 3.49, faviso = 30/04/2024. 3.49, nactin = S/N. 3.49, factin = 30/04/2024. 3.49, nnotir = QCC000002. 3.49, fnotir = 31/07/2024. 3.49, fpag = 01/08/2024. 9.84, intcom = 0.07. 9.84, ncuotas = 1. 9.84, reinvul = NO. 9.84, naviso = S/N. 9.84, faviso = 30/04/2024. 9.84, nactin = S/N. 9.84, factin = 30/04/2024. 9.84, nnotir = QCC000003. 9.84, fnotir = 31/07/2024. 9.84, fpag = 01/08/2024. 2.60, intcom = 0.02. 2.60, ncuotas = 1. 2.60, reinvul = NO. 2.60, naviso = S/N. 2.60, faviso = 21/05/2024. 2.60, nactin = S/N. 2.60, factin = 21/05/2024. 2.60, nnotir = QCC000004. 2.60, fnotir = 31/07/2024. 2.60, fpag = 01/08/2024. 0.77, intcom = 0.01. 0.77, ncuotas = 1. 0.77, reinvul = NO. 0.77, naviso = S/N. 0.77, faviso = 22/05/2024. 0.77, nactin = S/N. 0.77, factin = 22/05/2024. 0.77, nnotir = QCC000005. 0.77, fnotir = 31/07/2024. 0.77, fpag = 01/08/2024. 63.68, intcom = 0.48. 63.68, ncuotas = 1. 63.68, reinvul = NO. 63.68, naviso = S/N. 63.68, faviso = 21/05/2024. 63.68, nactin = S/N. 63.68, factin = 21/05/2024. 63.68, nnotir = QCC000006. 63.68, fnotir = 31/07/2024. 63.68, fpag = 01/08/2024. 158.47, intcom = 1.17. 158.47, ncuotas = 1. 158.47, reinvul = NO. 158.47, naviso = S/N. 158.47, faviso = 23/05/2024. 158.47, nactin = S/N. 158.47, factin = 23/05/2024. 158.47, nnotir = QCC000007. 158.47, fnotir = 31/07/2024. 158.47, fpag = 01/08/2024. 7.98, intcom = 0.05. 7.98, ncuotas = 1. 7.98, reinvul = NO. 7.98, naviso = S/N. 7.98, faviso = 30/05/2024. 7.98, nactin = S/N. 7.98, factin = 30/05/2024. 7.98, nnotir = ANT000002. 7.98, fnotir = 19/08/2024. 7.98, fpag = 19/08/2024. 88.7, intcom = 0.67. 88.7, ncuotas = 1. 88.7, reinvul = NO. 88.7, naviso = S/N. 88.7, faviso = 05/06/2024. 88.7, nactin = S/N. 88.7, factin = 05/06/2024. 88.7, nnotir = CAN000001. 88.7, fnotir = 19/08/2024. 88.7, fpag = 19/08/2024. 37.19, intcom = 0.27. 37.19, ncuotas = 1. 37.19, reinvul = NO. 37.19, naviso = S/N. 37.19, faviso = 30/05/2024. 37.19, nactin = S/N. 37.19, factin = 30/05/2024. 37.19, nnotir = CUS000058. 37.19, fnotir = 09/08/2024. 37.19, fpag = 09/08/2024
+Después de tener todo  el listado mensual de acuerdo  al orden  de su realización en Recuperos  y  Reintegros,  se  procede  a  cambiar  el  formato  a  texto  (delimitado  por tabulaciones), obteniendo lo siguiente:
+Ingreso al portal de Osinergmin
+Código
+Versión
+Aprobado
+Fecha
+Página
+: CVPC-IN-004
+: 00
+: CSIG
+: 26/11/2024
+: 8 de 10
+: 00
+: CSIG
+
+================================================================================
+Chunk: 18 / 20
+Páginas: [9, 10]
+Sección: PREPARACIÓN REPORTE ANEXO 02.
+Tipo: text
+--------------------------------------------------------------------------------
+Se  ingresa  al  portal  de  Osinergmin  con  usuario  y  contraseña  proporcionada  por  el supervisor.
+Ingresamos  a  la  opción  de  'Comercialización',  después  ingresamos  a  la  opción  de 'Envíos Mensuales'
+Versión
+Aprobado
+Página
+: CVPC-IN-004
+: 00
+: CSIG
+: 26/11/2024
+: 10 de 10
+Seguidamente  se  ingresa  el  año  y  mes  a  reportar  el  anexo  02,  así  también  en 'seleccionar archivo' se ingresa el archivo del listado realizado, ya convertido en formato texto (delimitado por tabulaciones).
+Finalmente se ejecuta en la opción 'Transferir archivo', cargando así la información al portal de Osinergmin.
+min
+Cargado el archivo debe aparecer la siguiente imagen, se debe verificar que el concepto 'Estado' debe estar en 'Finalizado', '% Avance' debe estar en '100', 'Errores' debe estar en '0' y 'Resultado' debe estar en 'C'.
+Es importante para un envío correcto del Anexo 02 al portal de Osinergmin no debe presentar errores, y si los hubiera es necesario corregir el archivo original y volver a convertirlo en formato texto (delimitado por tabulaciones).
+
+================================================================================
+Chunk: 19 / 20
+Páginas: [10]
+Sección: 7. REGISTROS Y ANEXOS
+Tipo: mixto: list_item, text
+--------------------------------------------------------------------------------
+Los registros generados son:
+- 7.1. CVPC-IN-003 Instructivo de Preparación de Muestra Semestral.
+- 7.2. CVPC-RE-010, Acta de Intervención Clientes Comunes.
+- 7.3. CVPC-RE-011, Acta de Intervención Clientes Mayores.
+- 7.4. CVPC-RE-005 Notificación de Recupero de Energía y Calculo Detallado.
+

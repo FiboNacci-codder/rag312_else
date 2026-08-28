@@ -1,0 +1,170 @@
+================================================================================
+Chunk: 0 / 12
+Páginas: [1]
+Sección: None
+Tipo: text
+--------------------------------------------------------------------------------
+Código
+Versión
+Aprobado
+Fecha
+Página
+: CVA-PR-007
+: 08
+: CSIG
+: 10/03/2022
+: 1 de 7
+
+================================================================================
+Chunk: 1 / 12
+Páginas: [1]
+Sección: SOLICITUD DE CAMBIO DE MEDIDOR
+Tipo: table
+--------------------------------------------------------------------------------
+Dueño del proceso Nivel 0:, 1 = Gerente Comercial. Nombre del proceso Nivel 1:, 1 = Atención al Cliente. Nombre del proceso Nivel 2:, 1 = Atención de Consultas y Solicitudes
+
+================================================================================
+Chunk: 2 / 12
+Páginas: [1]
+Sección: PROCEDIMIENTO DE SOLICITUD DE CAMBIO DE MEDIDOR
+Tipo: table
+--------------------------------------------------------------------------------
+Atención al Cliente, Revisado por: = Jefe de Ventas. Atención al Cliente, Homologado por: = Especialista en Sistemas de Gestión y BGC. Atención al Cliente, Aprobado por: = Comité del Siste- ma Integrado de Gestión. 22/02/2022, Revisado por: = 04/03/2022. 22/02/2022, Homologado por: = 07/03/2022. 22/02/2022, Aprobado por: = 10/03/2022
+
+================================================================================
+Chunk: 3 / 12
+Páginas: [2]
+Sección: 1. OBJETIVO Y ALCANCE
+Tipo: text
+--------------------------------------------------------------------------------
+Establecer  el  procedimiento  para  la  atención  de  solicitud  por  parte  del  cliente  para  el cambio de medidor, aplicado todas las sedes de Electro Sur Este S.A.A.
+
+================================================================================
+Chunk: 4 / 12
+Páginas: [2]
+Sección: 2. DEFINICIONES
+Tipo: list_item
+--------------------------------------------------------------------------------
+- 2.1. Cliente: Consumidores finales de electricidad localizados en el Perú ya sea Persona natural o jurídica que firma un contrato de suministro con ELSE.
+- 2.2. Cambio de Medidor por deterioro (imputable al Cliente): procede cuando el medidor ha sufrido un deterioro que no permite su desempeño adecuado (Cliente vulnera y/o modifica las condiciones iniciales de la instalación) y/o cuando el equipo se ha siniestrado por intervención no autorizada del cliente (Caso 1).
+- 2.3. Cambio de Medidor a solicitud del cliente por cambio de potencia: cuando del cliente, decide recontratación de su potencia o cambio de tarifa y el equipo anterior no es adecuado para las nuevas condiciones de suministro (Caso 2).
+- 2.4. Cambio de Medidor por campaña de mantenimiento y reposición: Cuando la empresa ha evaluado las condiciones de operación del medidor y este no se encuentra en condiciones óptimas por lo que se efectúa su cambio por campaña.
+- 2.5. Cambio de Medidor por NTCSE y Procedimiento 227: Cuando OSINERMING alcanza un listado para ser contrastado y el medidor no cumple los estándares de medición se efectúa el cambio (caso 4)
+
+================================================================================
+Chunk: 5 / 12
+Páginas: [2]
+Sección: 3. MARCO NORMATIVO Y/O DOCUMENTOS RELACIONADOS
+Tipo: list_item
+--------------------------------------------------------------------------------
+- 3.1. Código Nacional de Electricidad
+- 3.2. Norma Técnica de Calidad de los Servicios Eléctricos (NTCSE)
+- 3.3. Norma  Técnica  de  Calidad  de  los  Servicios  Eléctricos  Rurales  (NTCSER)  R.D  0162008 EM/DGE
+- 3.4. RCD 227-2013-OS-CD 'Procedimiento para la supervisión de la contrastación de medidores de energía eléctrica'.
+- 3.5. CVI-PR-003 Cambio de medidor
+
+================================================================================
+Chunk: 6 / 12
+Páginas: [2]
+Sección: 4. RECURSOS HUMANOS Y RESPONSABILIDADES
+Tipo: list_item
+--------------------------------------------------------------------------------
+- 4.1. El Comité del Sistema Integrado de Gestión (CSIG), es responsable de la aprobación del presente procedimiento y de supervisar la implementación del presente procedimiento.
+- 4.2. El personal de Atención al Cliente e Instalaciones y/o los que hacen sus veces en todas las oficinas comerciales de la empresa, son responsables de aplicar lo establecido en el siguiente procedimiento.
+
+================================================================================
+Chunk: 7 / 12
+Páginas: [2]
+Sección: 5. INFRAESTRUCTURA, RECURSOS Y AMBIENTE
+Tipo: list_item
+--------------------------------------------------------------------------------
+- 5.1. Oficinas / Instalaciones / Zona de concesión de Electro Sur Este S.A.A.
+
+================================================================================
+Chunk: 8 / 12
+Páginas: [2]
+Sección: 6. DESARROLLO / PROCEDIMIENTO
+Tipo: text
+--------------------------------------------------------------------------------
+El procedimiento se encuentra desarrollado en Flujo N°1.
+Código
+Versión
+Aprobado
+Fecha
+Página
+: CVA-PR-007
+: 08
+: CSIG
+: 10/03/2022
+: 2 de 7
+
+================================================================================
+Chunk: 9 / 12
+Páginas: [3, 4]
+Sección: 7. REGISTROS Y ANEXOS
+Tipo: mixto: list_item, text
+--------------------------------------------------------------------------------
+Los registros generados son:
+- 7.1. CVA-RE-001 Comprobante de Recepción de Solicitud
+- 7.2. CVA-RE-003 Contrato de Suministro de Energía Eléctrica
+- 7.3. CVA-RE-009 Solicitud de Servicio - Formato 'B'
+- 7.4. CVI-RE-006 Ficha de Factibilidad
+Código
+Versión
+Aprobado
+Fecha
+Página
+: CVA-PR-007
+: 08
+: CSIG
+: 10/03/2022
+: 3 de 7
+Código
+Versión
+Aprobado
+Fecha
+Página
+: CVA-PR-007
+: 08
+: CSIG
+: 10/03/2022
+: 4 de 7
+
+================================================================================
+Chunk: 10 / 12
+Páginas: [5, 6]
+Sección: SOLICITUD DE CAMBIO DE MEDIDOR
+Tipo: mixto: table, text
+--------------------------------------------------------------------------------
+Código
+Versión
+Aprobado
+Fecha
+Página
+: CVA-PR-007
+: 08
+: CSIG
+: 10/03/2022
+: 5 de 7
+-, Entradas = (*) CVI-RE-005 Ficha de atención técnico / comercial. -, N° = 1. -, Descripción Actividades = Solicitar información para servicios complementarios (presencial / mesa de partes virtual / web / contac center) El cliente solicita información de los requisitos cuando así lo re- quiere (*) Informe técnico con reporte que se requiere solicitar cambio de medido (atribuible al cliente). -, Salidas = -. -, Clientes = Atención al Cliente / Con- tact Center. -, Ejecutor de la Actividad = Cliente. -, Sistema que soporta la Actividad = -. -, ¿Es control Cable? (Sí=x) = . Atención al Cliente / Contact Center, Entradas = -. Atención al Cliente / Contact Center, N° = 2. Atención al Cliente / Contact Center, Descripción Actividades = ¿Amerita reclamo? Si: Va al procedimiento CVA-PR-001 Reclamos. No: Va a la actividad 03. Atención al Cliente / Contact Center, Salidas = -. Atención al Cliente / Contact Center, Clientes = Aten- ción al Cliente / Contact Center. Atención al Cliente / Contact Center, Ejecutor de la Actividad = Aten- ción al Cliente / Contact Center. Atención al Cliente / Contact Center, Sistema que soporta la Actividad = SIELSE. Atención al Cliente / Contact Center, ¿Es control Cable? (Sí=x) = . Atención al Cliente / Contact Center, Entradas = -. Atención al Cliente / Contact Center, N° = 3. Atención al Cliente / Contact Center, Descripción Actividades = Proporcionar información El personal de la ventanilla de Atención al Cliente o el que haga sus veces entrega al cliente los requisitos correspondientes Contact Center le brinda la información y se le comunica que debe acercarse a la oficina con los requisitos, pero que siempre es necesario que se apersone para firmar de docu- mentos. Atención al Cliente / Contact Center, Salidas = -. Atención al Cliente / Contact Center, Clientes = Cliente. Atención al Cliente / Contact Center, Ejecutor de la Actividad = Atención al Cliente / Con- tact Center. Atención al Cliente / Contact Center, Sistema que soporta la Actividad = -. Atención al Cliente / Contact Center, ¿Es control Cable? (Sí=x) = . Atención al Cliente / Contact Center, Entradas = -. Atención al Cliente / Contact Center, N° = 4. Atención al Cliente / Contact Center, Descripción Actividades = ¿El trámite es virtual? Si: Va a actividad 05 No: Va a actividad 10. Atención al Cliente / Contact Center, Salidas = -. Atención al Cliente / Contact Center, Clientes = Aten- ción al Cliente. Atención al Cliente / Contact Center, Ejecutor de la Actividad = Cliente. Atención al Cliente / Contact Center, Sistema que soporta la Actividad = -. Atención al Cliente / Contact Center, ¿Es control Cable? (Sí=x) = . Cliente, Entradas = CVA-RE-009 Formato 'B'. Cliente, N° = 5. Cliente, Descripción Actividades = Presentar documentos para verificación Según CVA-RE-009 Formato B (que se encuentren vigente con una antigüedad no mayor a 90 días desde su emisión). Cliente, Salidas = Requisitos. Cliente, Clientes = Aten- ción al Cliente. Cliente, Ejecutor de la Actividad = Cliente. Cliente, Sistema que soporta la Actividad = -. Cliente, ¿Es control Cable? (Sí=x) = . Cliente, Entradas = Requisitos. Cliente, N° = 6. Cliente, Descripción Actividades = Verificar información Los documentos presentados por el Cliente son derivados a través del sistema MGD Documentos no mayores a 90 días de antigüedad.. Cliente, Salidas = -. Cliente, Clientes = Aten- ción al Cliente. Cliente, Ejecutor de la Actividad = Aten- ción al Cliente. Cliente, Sistema que soporta la Actividad = MGD. Cliente, ¿Es control Cable? (Sí=x) = X. Atención al, Entradas = -. Atención al, N° = 7. Atención al, Descripción Actividades = ¿Es Conforme?. Atención al, Salidas = -. Atención al, Clientes = Aten-. Atención al, Ejecutor de la Actividad = Aten-. Atención al, Sistema que soporta la Actividad = . Atención al, ¿Es control Cable? (Sí=x) = 
+PROCEDIMIENTO SOLICITUD DE CAMBIO DE MEDIDOR, 1 = Código Versión Aprobado Fecha Página. PROCEDIMIENTO SOLICITUD DE CAMBIO DE MEDIDOR, 2 = : CVA-PR-007 : 08 : CSIG : 10/03/2022 : 6 de 7
+
+================================================================================
+Chunk: 11 / 12
+Páginas: [6, 7]
+Sección: SOLICITUD DE CAMBIO DE MEDIDOR
+Tipo: mixto: table, text
+--------------------------------------------------------------------------------
+Cliente, Entradas = . Cliente, N° = . Cliente, Descripción Actividades = Si: Va a actividad 09 No: Va a actividad 08. Cliente, Salidas = . Cliente, Clientes = ción al Cliente. Cliente, Ejecutor de la Actividad = ción al Cliente. Cliente, Sistema que soporta la Actividad = . Cliente, ¿Es control Cable? (Sí=x) = . Atención al Cliente, Entradas = -. Atención al Cliente, N° = 8. Atención al Cliente, Descripción Actividades = Informar observaciones en los documentos para corregir (por el medio presentado) Indicarle al Cliente, el o los motivos por los que su trámite esta observado, indicando con claridad el documento y la observación detallada. Si los documentos fueron presentados por mesa de partes virtual, se comunica con el cliente por teléfono/correo sobre los documentos observados Va a actividad 05. Atención al Cliente, Salidas = -. Atención al Cliente, Clientes = Aten- ción al Cliente. Atención al Cliente, Ejecutor de la Actividad = Aten- ción al Cliente. Atención al Cliente, Sistema que soporta la Actividad = -. Atención al Cliente, ¿Es control Cable? (Sí=x) = . Atención al Cliente, Entradas = -. Atención al Cliente, N° = 9. Atención al Cliente, Descripción Actividades = Informar al cliente la presentación de documentos de mane- ra presencial Para la firma de documentos. Atención al Cliente, Salidas = -. Atención al Cliente, Clientes = Cliente. Atención al Cliente, Ejecutor de la Actividad = Aten- ción al Cliente. Atención al Cliente, Sistema que soporta la Actividad = -. Atención al Cliente, ¿Es control Cable? (Sí=x) = . Atención al Cliente, Entradas = -. Atención al Cliente, N° = 10. Atención al Cliente, Descripción Actividades = Entregar documentos Según CVA-RE-009 Formato B (que se encuentren vigente con una antigüedad no mayor a 90 días desde su emisión). Atención al Cliente, Salidas = -. Atención al Cliente, Clientes = Atención al Cliente. Atención al Cliente, Ejecutor de la Actividad = Cliente. Atención al Cliente, Sistema que soporta la Actividad = -. Atención al Cliente, ¿Es control Cable? (Sí=x) = . Cliente, Entradas = -. Cliente, N° = 11. Cliente, Descripción Actividades = Verificar conformidad de requisitos. Cliente, Salidas = -. Cliente, Clientes = Atención al Cliente. Cliente, Ejecutor de la Actividad = Atención al Cliente. Cliente, Sistema que soporta la Actividad = -. Cliente, ¿Es control Cable? (Sí=x) = X. Atención al Cliente, Entradas = -. Atención al Cliente, N° = 12. Atención al Cliente, Descripción Actividades = ¿Es conforme? Si: Va a actividad 06 No: Va a actividad 03. Atención al Cliente, Salidas = -. Atención al Cliente, Clientes = Atención al Cliente. Atención al Cliente, Ejecutor de la Actividad = Atención al Cliente. Atención al Cliente, Sistema que soporta la Actividad = -. Atención al Cliente, ¿Es control Cable? (Sí=x) = . Atención al Cliente, Entradas = -. Atención al Cliente, N° = 13. Atención al Cliente, Descripción Actividades = Ingresar al sistema - SIELSE y entregar presupuesto preli- minar - N° Solicitud - Datos del cliente Imprimir el CVA-RE-01, CVA-RE-006, CVA-RE-009. Atención al Cliente, Salidas = CVA-RE-001 Comprobante de recepción de solici- tud CVI-RE-006 Ficha de factibilidad CVA-RE-009 Formato "B". Atención al Cliente, Clientes = Cliente. Atención al Cliente, Ejecutor de la Actividad = Atención al Cliente. Atención al Cliente, Sistema que soporta la Actividad = -. Atención al Cliente, ¿Es control Cable? (Sí=x) = 
+Código
+Versión
+Aprobado
+Fecha
+Página
+: CVA-PR-007
+: 08
+: CSIG
+: 10/03/2022
+: 7 de 7
+, Entradas = . , N° = . , Descripción Actividades = . , Salidas = CVA-RE-003 Contrato de sumi- nistro de energía Presupuesto Pre- liminar. , Clientes = . , Ejecutor de la Actividad = . , Sistema que soporta la Actividad = . , ¿Es control Cable? (Sí=x) = . Atención al Cliente, Entradas = CVA-RE-001 Comprobante de recepción de solici- tud CVI-RE-006 Ficha de factibilidad CVA-RE-009 Formato "B" CVA-RE-003 Contrato de sumi- nistro de energía Presupuesto Preli- minar. Atención al Cliente, N° = 14. Atención al Cliente, Descripción Actividades = Recepcionar comprobante y Firmar Formato B y contrato Cliente se queda con una copia del contrato.. Atención al Cliente, Salidas = CVA-RE-001 Comprobante de recepción de solici- tud CVI-RE-006 Ficha de factibilidad CVA-RE-009 Formato "B" CVA-RE-003 Contrato de sumi- nistro de energía Presupuesto Pre- liminar. Atención al Cliente, Clientes = . Atención al Cliente, Ejecutor de la Actividad = . Atención al Cliente, Sistema que soporta la Actividad = . Atención al Cliente, ¿Es control Cable? (Sí=x) = . Atención al Cliente, Entradas = CVA-RE-001 Comprobante de recepción de solici- tud CVI-RE-006 Ficha de factibilidad CVA-RE-009 Formato "B" CVA-RE-003 Contrato de sumi- nistro de energía Presupuesto Preli- minar. Atención al Cliente, N° = 15. Atención al Cliente, Descripción Actividades = Preparar expediente y remitir al área de instalaciones y me- diciones Va a CVI-PR-003 Cambio de Medidor. Atención al Cliente, Salidas = Expediente de Cambio de medi- dor. Atención al Cliente, Clientes = . Atención al Cliente, Ejecutor de la Actividad = Atención al Cliente. Atención al Cliente, Sistema que soporta la Actividad = . Atención al Cliente, ¿Es control Cable? (Sí=x) = 
+

@@ -1,0 +1,442 @@
+[
+  {
+    "id": "m0001",
+    "pregunta": "Hola, si hay un problema grave en la empresa, ¿cuánto tiempo tardan en avisarme algo nuevo y cómo saben si la información que me dan es real?",
+    "categoria": "Relaciones Públicas",
+    "fuente_esperada": {
+      "documento": "RP-PR-003 PROCEDIMIENTO DE COMUNICACIÓN DE CRISIS VR 00.pdf",
+      "seccion_contiene": "COMUNICACIÓN DE CRISIS"
+    },
+    "origen_generacion": "markdown_seccion",
+    "revisado": false
+  },
+  {
+    "id": "m0002",
+    "pregunta": "¿Cómo hago para que me envíen mi boleta o factura de pago?",
+    "categoria": "Atencion al Cliente",
+    "fuente_esperada": {
+      "documento": "CVA-PR-012 Emisión y Control de Comprobantes de Pago.pdf",
+      "seccion_contiene": "EMISIÓN Y CONTROL DE COMPROBANTES DE PAGO"
+    },
+    "origen_generacion": "markdown_seccion",
+    "revisado": false
+  },
+  {
+    "id": "m0003",
+    "pregunta": "Hola, me surgió un problema con mi factura y quiero hacer un reclamo, ¿cómo lo hago y qué necesito ponerle?",
+    "categoria": "Atencion al Cliente",
+    "fuente_esperada": {
+      "documento": "CVA-PR-001 Atención de Reclamos por excesivo consumo facturado.pdf",
+      "seccion_contiene": "ATENCIÓN DE RECLAMOS POR EXCESIVO CONSUMO FACTURADO"
+    },
+    "origen_generacion": "markdown_seccion",
+    "revisado": false
+  },
+  {
+    "id": "m0004",
+    "pregunta": "Hola, ¿qué diferencia hay exactamente entre el Titular del suministro y el Usuario?",
+    "categoria": "Cobranzas",
+    "fuente_esperada": {
+      "documento": "CVC-PR-006 Retiro de Acometida por Deuda.pdf",
+      "seccion_contiene": "2.          DEFINICIONES"
+    },
+    "origen_generacion": "markdown_seccion",
+    "revisado": false
+  },
+  {
+    "id": "m0005",
+    "pregunta": "Hola, si no he pagado mi factura por más de un mes, ¿qué pasos sigue la empresa para cobrar mi deuda y cómo me van a contactar?",
+    "categoria": "Cobranzas",
+    "fuente_esperada": {
+      "documento": "CVC-PR-002 Gestión de Cobranza de Deudas Vencidas v2020.1.pdf",
+      "seccion_contiene": "GESTIÓN DE COBRANZA DE DEUDAS VENCIDAS"
+    },
+    "origen_generacion": "markdown_seccion",
+    "revisado": false
+  },
+  {
+    "id": "m0006",
+    "pregunta": "¿Me pueden cobrar el valor del corte y la reconexión de mi luz, cuánto es exactamente?",
+    "categoria": "Cobranzas",
+    "fuente_esperada": {
+      "documento": "CVC-IN-005 Ejecución de Cortes y Reconexiones.pdf",
+      "seccion_contiene": "3. DOCUMENTOS A CONSULTAR"
+    },
+    "origen_generacion": "markdown_seccion",
+    "revisado": false
+  },
+  {
+    "id": "m0007",
+    "pregunta": "Hola, vi que mencionan varias leyes y normas técnicas en el documento, ¿esto significa que si tengo un problema con mi factura o la calidad de la luz, tienen algún plazo específico para resolverlo antes de que me den una multa?",
+    "categoria": "Atencion al Cliente",
+    "fuente_esperada": {
+      "documento": "CVA-PR-014 Atención de reclamos por oposición a cambio de Razón Social.pdf",
+      "seccion_contiene": "3. MARCO NORMATIVO Y/O DOCUMENTOS RELACIONADOS"
+    },
+    "origen_generacion": "markdown_seccion",
+    "revisado": false
+  },
+  {
+    "id": "m0008",
+    "pregunta": "Hola, quiero saber si me pueden dar el comprobante de pago de mi última factura y cómo hago para pedir un reintegro si creo que el medidor me cobra más de lo que consumí.",
+    "categoria": "Atencion al Cliente",
+    "fuente_esperada": {
+      "documento": "CVA-PR-011 Devolución de pagos en efectivo.pdf",
+      "seccion_contiene": "3. MARCO NORMATIVO Y/O DOCUMENTOS RELACIONADOS"
+    },
+    "origen_generacion": "markdown_seccion",
+    "revisado": false
+  },
+  {
+    "id": "m0009",
+    "pregunta": "Hola, ¿cuál es la persona encargada de verificar que todo salga bien con este trámite?",
+    "categoria": "Marketing",
+    "fuente_esperada": {
+      "documento": "CMA-PR-001 Alquiler de Infraestructura Eléctrica.pdf",
+      "seccion_contiene": "ALQUILER DE INFRAESTRUCTURA ELÉCTRICA"
+    },
+    "origen_generacion": "markdown_seccion",
+    "revisado": false
+  },
+  {
+    "id": "m0010",
+    "pregunta": "Hola, ¿me podrían ayudar a sacar un recibo duplicado del pago de la luz, ya que lo perdí?",
+    "categoria": "Atencion al Cliente",
+    "fuente_esperada": {
+      "documento": "CVA-PR-008 Duplicados y Otorgamiento de crédito.pdf",
+      "seccion_contiene": "DUPLICADOS / OTORGAMIENTO DE CRÉDITOS"
+    },
+    "origen_generacion": "markdown_seccion",
+    "revisado": false
+  },
+  {
+    "id": "m0011",
+    "pregunta": "Hola, en la factura que me enviaron dice que hicieron un \"inventario de carga\" y un \"esquema encontrado\", ¿qué significan eso exactamente y qué datos tienen que ver con mis electrodomésticos?",
+    "categoria": "Perdidas Comerciales",
+    "fuente_esperada": {
+      "documento": "CVPC-IN-003 Preparación de la muestra semestral.pdf",
+      "seccion_contiene": "INSTRUCTIVO"
+    },
+    "origen_generacion": "markdown_seccion",
+    "revisado": false
+  },
+  {
+    "id": "m0012",
+    "pregunta": "¿Quién va a firmar la aprobación final de este documento?",
+    "categoria": "Instalaciones",
+    "fuente_esperada": {
+      "documento": "CVI-PR-002 Servicios Complementarios - NORMALIZACIÓN DE SUMINISTRO (A SOLICITUD DEL CLIENTE).pdf",
+      "seccion_contiene": "PROCEDIMIENTO DE SERVICIOS COMPLEMENTARIOS - NORMALIZACIÓN DE SUMINISTRO (A SOLICITUD DEL CLIENTE)"
+    },
+    "origen_generacion": "markdown_seccion",
+    "revisado": false
+  },
+  {
+    "id": "m0013",
+    "pregunta": "Hola, si mi consumo está muy por encima del promedio de los últimos doce meses, ¿qué pruebas tiene que hacer el medidor para confirmar si está bien o no?",
+    "categoria": "Atencion al Cliente",
+    "fuente_esperada": {
+      "documento": "CVA-PR-001 Atención de Reclamos por excesivo consumo facturado.pdf",
+      "seccion_contiene": "ATENCIÓN DE RECLAMOS POR EXCESIVO CONSUMO FACTURADO"
+    },
+    "origen_generacion": "markdown_seccion",
+    "revisado": false
+  },
+  {
+    "id": "m0014",
+    "pregunta": "Si me notifican una resolución, ¿cuánto tiempo tengo para pedirle que la revisen si no estoy de acuerdo?",
+    "categoria": "Atencion al Cliente",
+    "fuente_esperada": {
+      "documento": "CVA-PR-001 Atención de Reclamos por excesivo consumo facturado.pdf",
+      "seccion_contiene": "ATENCIÓN DE RECLAMOS POR EXCESIVO CONSUMO FACTURADO"
+    },
+    "origen_generacion": "markdown_seccion",
+    "revisado": false
+  },
+  {
+    "id": "m0015",
+    "pregunta": "Hola, necesito instalar luz por primera vez en mi casa, ¿qué documentos tengo que llevar y dónde deben estar ubicados los materiales?",
+    "categoria": "Atencion al Cliente",
+    "fuente_esperada": {
+      "documento": "CVA-PR-010 Elaboración del presupuesto y pago de servicio extraordinario.pdf",
+      "seccion_contiene": "6.1. Requisitos"
+    },
+    "origen_generacion": "markdown_seccion",
+    "revisado": false
+  },
+  {
+    "id": "m0016",
+    "pregunta": "Oye, ¿cómo funciona la cosa de pagar con el talón?",
+    "categoria": "Cobranzas",
+    "fuente_esperada": {
+      "documento": "CVC-IN-002 Cobranza Tiempo Diferido.pdf",
+      "seccion_contiene": "2. DEFINICIONES"
+    },
+    "origen_generacion": "markdown_seccion",
+    "revisado": false
+  },
+  {
+    "id": "m0017",
+    "pregunta": "¿Están obligados a usar la tarjeta de crédito o débito para pagar la luz o también aceptan efectivo?",
+    "categoria": "Cobranzas",
+    "fuente_esperada": {
+      "documento": "CVC-PR-001 Recaudación de cobranzas.pdf",
+      "seccion_contiene": "3. DOCUMENTOS A CONSULTAR"
+    },
+    "origen_generacion": "markdown_seccion",
+    "revisado": false
+  },
+  {
+    "id": "m0018",
+    "pregunta": "Hola, ¿cómo hacen para saber si estoy satisfecho con el servicio?",
+    "categoria": "Marketing",
+    "fuente_esperada": {
+      "documento": "CM-PR-001 Determinación de la Satisfacción del Cliente.pdf",
+      "seccion_contiene": "(sin título)"
+    },
+    "origen_generacion": "markdown_seccion",
+    "revisado": false
+  },
+  {
+    "id": "m0019",
+    "pregunta": "Si el cliente es una empresa y no tiene representante para firmar la notificación, ¿qué tienen que hacer para que valga legalmente?",
+    "categoria": "Perdidas Comerciales",
+    "fuente_esperada": {
+      "documento": "CVPC-IN-003 Preparación de la muestra semestral.pdf",
+      "seccion_contiene": "INSTRUCTIVO"
+    },
+    "origen_generacion": "markdown_seccion",
+    "revisado": false
+  },
+  {
+    "id": "m0020",
+    "pregunta": "Si me declaran un reclamo inadmisible, ¿cómo me lo notifican y en cuánto tiempo debo esperar?",
+    "categoria": "Atencion al Cliente",
+    "fuente_esperada": {
+      "documento": "CVA-PR-001 Atención de Reclamos por excesivo consumo facturado.pdf",
+      "seccion_contiene": "ATENCIÓN DE RECLAMOS POR EXCESIVO CONSUMO FACTURADO"
+    },
+    "origen_generacion": "markdown_seccion",
+    "revisado": false
+  },
+  {
+    "id": "m0021",
+    "pregunta": "Hola, vi una nota sobre el recupero de energía, ¿cómo sé si tengo que pagar algo o si me devuelven el dinero por el cambio de medidor?",
+    "categoria": "Perdidas Comerciales",
+    "fuente_esperada": {
+      "documento": "CVPC - PR-001 VERIFICACION DE SUMINISTROS, CON CONSUMOS IRREGULARES.pdf",
+      "seccion_contiene": "VERIFICACIÓN DE SUMINISTROS, CON CONSUMOS IRREGULARES."
+    },
+    "origen_generacion": "markdown_seccion",
+    "revisado": false
+  },
+  {
+    "id": "m0022",
+    "pregunta": "Hola, si quiero hacer una conexión eléctrica, ¿cuánto tiempo tardan en darme la respuesta si no tengo que cambiar los cables de la calle?",
+    "categoria": "Clientes Mayores",
+    "fuente_esperada": {
+      "documento": "CVFM-PR-001 Instalación de suministro - Clientes Mayores.pdf",
+      "seccion_contiene": "Clientes URBANOS:"
+    },
+    "origen_generacion": "markdown_seccion",
+    "revisado": false
+  },
+  {
+    "id": "m0023",
+    "pregunta": "Hola, vi que hay varias normas sobre facturación, ¿podrían explicarme cómo calculan mi recibo y por qué se ve diferente al mes pasado?",
+    "categoria": "Supervision Comercial",
+    "fuente_esperada": {
+      "documento": "CVS-IN-001 Lectura de contadores de Energía.pdf",
+      "seccion_contiene": "3. MARCO NORMATIVO Y/O DOCUMENTOS RELACIONADOS"
+    },
+    "origen_generacion": "markdown_seccion",
+    "revisado": false
+  },
+  {
+    "id": "m0024",
+    "pregunta": "Llegué a reclamar una orden de trabajo y me dijeron que la desestiman; ¿qué pasa si tengo observaciones sobre eso?",
+    "categoria": "Instalaciones",
+    "fuente_esperada": {
+      "documento": "CVI-PR-001 Instalación de suministro Nuevo.pdf",
+      "seccion_contiene": "NUEVO"
+    },
+    "origen_generacion": "markdown_seccion",
+    "revisado": false
+  },
+  {
+    "id": "m0025",
+    "pregunta": "Hola, ¿cómo veo los talones y los resúmenes de mis depósitos en la pantalla?",
+    "categoria": "Cobranzas",
+    "fuente_esperada": {
+      "documento": "CVC-IN-002 Cobranza Tiempo Diferido.pdf",
+      "seccion_contiene": "5.6 Genera Paquetes"
+    },
+    "origen_generacion": "markdown_seccion",
+    "revisado": false
+  },
+  {
+    "id": "m0026",
+    "pregunta": "Cuando no pago mi recibo de luz, ¿cuánto tiempo tengo antes de que me corten el servicio definitivamente?",
+    "categoria": "Instalaciones",
+    "fuente_esperada": {
+      "documento": "CVI-PR-004 Corte Definitivo del Suministro a Solicitud del Cliente v11.pdf",
+      "seccion_contiene": "CORTE DEFINITIVO DEL SUMINISTRO A SOLICITUD DEL CLIENTE"
+    },
+    "origen_generacion": "markdown_seccion",
+    "revisado": false
+  },
+  {
+    "id": "m0027",
+    "pregunta": "Hola, ¿es obligatorio tener el DNI del titular para hacer la intervención o pueden dejarlo en blanco si no lo tienen?",
+    "categoria": "Perdidas Comerciales",
+    "fuente_esperada": {
+      "documento": "CVPC-IN-003 Preparación de la muestra semestral.pdf",
+      "seccion_contiene": "INSTRUCTIVO"
+    },
+    "origen_generacion": "markdown_seccion",
+    "revisado": false
+  },
+  {
+    "id": "m0028",
+    "pregunta": "¿Quién es el encargado de aprobar este procedimiento?",
+    "categoria": "Cobranzas",
+    "fuente_esperada": {
+      "documento": "CVC-PR-006 Retiro de Acometida por Deuda.pdf",
+      "seccion_contiene": "4.          RESPONSABILIDADES"
+    },
+    "origen_generacion": "markdown_seccion",
+    "revisado": false
+  },
+  {
+    "id": "m0029",
+    "pregunta": "¿Cómo se calculan los pagos según las fechas del contrato?",
+    "categoria": "Atencion al Cliente",
+    "fuente_esperada": {
+      "documento": "CVA-IN-002 Emisión de comprobantes.pdf",
+      "seccion_contiene": "5.2. Programación de Emisión"
+    },
+    "origen_generacion": "markdown_seccion",
+    "revisado": false
+  },
+  {
+    "id": "m0030",
+    "pregunta": "Hola, soy cliente y quiero cobrar mi consumo de luz, ¿qué datos necesitan que les envíe por acá?",
+    "categoria": "Atencion al Cliente",
+    "fuente_esperada": {
+      "documento": "CVA-PR-016 Inspección de Suministros.pdf",
+      "seccion_contiene": "INSPECCIÓN DE SUMINISTROS"
+    },
+    "origen_generacion": "markdown_seccion",
+    "revisado": false
+  },
+  {
+    "id": "m0031",
+    "pregunta": "Hola, ¿pueden decirme dónde se guardan los reportes de proyección de consumo y ventas de energía eléctrica?",
+    "categoria": "Facturacion",
+    "fuente_esperada": {
+      "documento": "CVF-PR-003 Proyección del consumo de energía no facturada V3_.pdf",
+      "seccion_contiene": "7. REGISTROS"
+    },
+    "origen_generacion": "markdown_seccion",
+    "revisado": false
+  },
+  {
+    "id": "m0032",
+    "pregunta": "Hola, si mi reclamo no fue respondido en quince días hábiles, ¿qué pasa ahora con mi caso?",
+    "categoria": "Atencion al Cliente",
+    "fuente_esperada": {
+      "documento": "CVA-PR-014 Atención de reclamos por oposición a cambio de Razón Social.pdf",
+      "seccion_contiene": "ATENCIÓN DE RECLAMOS POR OPOSICION A CAMBIO DE RAZON SOCIAL"
+    },
+    "origen_generacion": "markdown_seccion",
+    "revisado": false
+  },
+  {
+    "id": "m0033",
+    "pregunta": "Hola, quiero saber cómo puedo pagar mi recibo de luz si no tengo el talón físico, ¿sirve el código de barras?",
+    "categoria": "Cobranzas",
+    "fuente_esperada": {
+      "documento": "CVC-IN-001 Cobranza En Linea.pdf",
+      "seccion_contiene": "2. DEFINICIONES"
+    },
+    "origen_generacion": "markdown_seccion",
+    "revisado": false
+  },
+  {
+    "id": "m0034",
+    "pregunta": "Hola, tengo la factura de mi empresa con cargos por energía de \"horas punta\" y \"fuera de punta\", ¿a qué tarifas se aplica esa separación y a cuáles no?",
+    "categoria": "Facturacion",
+    "fuente_esperada": {
+      "documento": "CVF-PR-003 Proyección del consumo de energía no facturada V3_.pdf",
+      "seccion_contiene": "PROYECCIÓN DEL CONSUMO DE ENERGÍA NO FACTURADA"
+    },
+    "origen_generacion": "markdown_seccion",
+    "revisado": false
+  },
+  {
+    "id": "m0035",
+    "pregunta": "¿Qué cambios han tenido este documento a lo largo del tiempo y cuándo se aprobaron?",
+    "categoria": "Atencion al Cliente",
+    "fuente_esperada": {
+      "documento": "CVA-PR-010 Elaboración del presupuesto y pago de servicio extraordinario.pdf",
+      "seccion_contiene": "ELABORACIÓN EL PRESUPUESTO DE PAGO DE SERVICIO EXTRAORDINARIO O SERVICIO TEMPORAL"
+    },
+    "origen_generacion": "markdown_seccion",
+    "revisado": false
+  },
+  {
+    "id": "m0036",
+    "pregunta": "Hola, ¿me podrían ayudar a saber qué datos tengo que poner exactamente para registrar la prueba de la pinza amperimétrica en el sistema?",
+    "categoria": "Instalaciones",
+    "fuente_esperada": {
+      "documento": "CVI-IN-005 Mantenimiento y Verificación de Equipos de Medición.pdf",
+      "seccion_contiene": "6.4.2. Pruebas de equipo"
+    },
+    "origen_generacion": "markdown_seccion",
+    "revisado": false
+  },
+  {
+    "id": "m0037",
+    "pregunta": "Buenas, ¿cuánto tiempo tengo para corregir mi depósito si no me sale bien la revisión inicial?",
+    "categoria": "Atencion al Cliente",
+    "fuente_esperada": {
+      "documento": "CVA-PR-010 Elaboración del presupuesto y pago de servicio extraordinario.pdf",
+      "seccion_contiene": "ELABORACIÓN EL PRESUPUESTO DE PAGO DE SERVICIO EXTRAORDINARIO O SERVICIO TEMPORAL"
+    },
+    "origen_generacion": "markdown_seccion",
+    "revisado": false
+  },
+  {
+    "id": "m0038",
+    "pregunta": "¿Qué tienen que escribirle al técnico con bolígrafo negro en la tapa de la caja una vez que viene a arreglar el medidor?",
+    "categoria": "Instalaciones",
+    "fuente_esperada": {
+      "documento": "CVI-IN-001 Instructivo de Instalacion de suministro nuevo V9.pdf",
+      "seccion_contiene": "5.1.7. Conexión y sellado"
+    },
+    "origen_generacion": "markdown_seccion",
+    "revisado": false
+  },
+  {
+    "id": "m0039",
+    "pregunta": "Hola, ¿quién es el encargado de que se hagan cumplir las reglas si yo tengo un problema?",
+    "categoria": "Facturacion",
+    "fuente_esperada": {
+      "documento": "CVF-PR-004 Atención de denuncias por procesos de facturación irregular.pdf",
+      "seccion_contiene": "4. RESPONSABILIDADES"
+    },
+    "origen_generacion": "markdown_seccion",
+    "revisado": false
+  },
+  {
+    "id": "m0040",
+    "pregunta": "Hola, ¿en qué fecha fue aprobado por última vez este documento y quién lo homologó?",
+    "categoria": "Perdidas Comerciales",
+    "fuente_esperada": {
+      "documento": "CVPC-IN-004 Preparación del Anexo 02.pdf",
+      "seccion_contiene": "INSTRUCTIVO DE PREPARACIÓN DEL ANEXO 02"
+    },
+    "origen_generacion": "markdown_seccion",
+    "revisado": false
+  }
+]

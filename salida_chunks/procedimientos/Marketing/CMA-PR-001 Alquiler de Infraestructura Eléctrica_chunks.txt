@@ -1,0 +1,387 @@
+================================================================================
+Chunk: 0 / 22
+Páginas: [1]
+Sección: None
+Tipo: table
+--------------------------------------------------------------------------------
+PROCEDIMIENTO ALQUILER DE INFRAESTRUCTURA ELÉCTRICA, 1 = Código Versión Aprobado Fecha Página : CMA-PR-001 : 00 : CSIG : 28-06-2018 : 1 de 16
+Dueño del proceso Nivel 0:, 1 = Gerente Comercial. Nombre del proceso Nivel 1:, 1 = Marketing. Nombre del proceso Nivel 2:, 1 = Gestión de productos y nuevas oportunidades de Negocio
+
+================================================================================
+Chunk: 1 / 22
+Páginas: [1]
+Sección: PROCEDIMIENTO DE ALQUILER DE INFRAESTRUCTURA ELÉCTRICA
+Tipo: mixto: table, text
+--------------------------------------------------------------------------------
+El Supervisor de Alquiler de Infraestructura Eléctrica División de Marketing, Revisado por: = Jefe de Marketing Área Comercial. El Supervisor de Alquiler de Infraestructura Eléctrica División de Marketing, Homologado por: = Especialista en Sistemas de Gestión Área de Planeamiento y Desarrollo. El Supervisor de Alquiler de Infraestructura Eléctrica División de Marketing, Aprobado por: = Comité del Sistema Integrado de Gestión. 18/05/2018, Revisado por: = 18/05/2018. 18/05/2018, Homologado por: = 18/06/2018. 18/05/2018, Aprobado por: = 28/06/2018
+Prohibido reproducir sin autorización de la Alta Dirección de  ELSE
+
+================================================================================
+Chunk: 2 / 22
+Páginas: [2]
+Sección: 1. OBJETIVOS Y ALCANCE
+Tipo: text
+--------------------------------------------------------------------------------
+Establecer  un  procedimiento  para  'Alquilar  la  Infraestructura  Eléctrica',  conforme  lo establecen, la  Ley N° 28295 y D.S. N° 009-2005-MTC 'Ley y Reglamento  de la Ley que  Regula  el  Acceso  y  Uso  Compartido  de  Infraestructura  de  Uso  Público  para  la Prestación  de  Servicios  Público  de  Telecomunicaciones',  Ley  N°  29904  y  D.S.  0142013-MTC  'Ley  y  Reglamento  de  la  Ley  de  Promoción  de  la  Banda  Ancha  y Construcción de la Red Dorsal Nacional de Fibra Óptica', así como, directivas internas de ELSE para alquilar la infraestructura eléctrica.
+
+================================================================================
+Chunk: 3 / 22
+Páginas: [2, 3]
+Sección: 2. DEFINICIONES
+Tipo: mixto: list_item, text
+--------------------------------------------------------------------------------
+- 2.1 Concesionaria: Entidad que presta el Servicio Público de Electricidad por contar con una concesión de distribución otorgada por el Ministerio de Energía y Minas.
+- 2.2 Infraestructura  Eléctrica  (IE): Materiales  eléctricos,  como  postes,  torres,  cables, equipos  e instalaciones, que en conjunto, forman parte del sistema eléctrico, para su transmisión, distribución y comercialización de energía eléctrica.
+- 2.3 Acceso y Uso Compartido: Es el derecho que permite hacer uso de la Infraestructura de Uso Público bajo las condiciones previstas en la Ley N° 28295.
+- 2.4 Infraestructura de Uso Público: Todo poste, ducto, conducto, cámara, torre, derechos de  vía  asociado  a  la  prestación  de  servicios  públicos  de  telecomunicaciones  y/o energía.  Adicionalmente,  se  considera  considerará  infraestructura  de  uso  público  a aquella  que  así  sea  declara  por  OSIPTEL  con  opinión  previa  y  favorable  de  los organismos reguladores competentes.
+- 2.5 Poste o Torre: Soporte para el tendido de cables aéreos.
+- 2.6 Titulares de la infraestructura de uso público: Toda persona natural o jurídica que cuente con infraestructura  de uso  público al amparo  de derechos reconocidos  por el Estado.
+- 2.7 Coubicación: Es el uso de espacio físico, energía infraestructura de soporte de redes y  otras  facilidades  disponibles  en  la  infraestructura  de  uso  público,  requerido  por  un operador de servicio público de telecomunicaciones para la ubicación y operación de equipos y/o elementos de telecomunicaciones.
+- 2.8 Barreras  de  acceso  al  mercado: Cualquier  acto  o  disposición  de  las  autoridades competentes que impongan barreras burocráticas que impidan u obstaculicen ilegal o irracionalmente  el  acceso  o  la  permanencia  de  operadores  de  servicios  públicos  de telecomunicaciones en el mercado.
+- 2.9 Beneficiario  de  la  infraestructura  de  uso  público: Concesionario  de  servicios públicos de telecomunicaciones que al amparo de un contrato de compartición o de un mandato de compartición, celebrado o emitido, respectivamente, en el marco de la Ley y el Reglamento, tiene el derecho de acceso y uso compartido de la infraestructura de uso público.
+- 2.10 Banda Ancha: Es la conectividad de transmisión de datos definida en el artículo 4 de la Ley N° 29904.
+2.11
+- Compartición de infraestructura Eléctrica: Se refiere al empleo de la Infraestructura de redes de electricidad, hidrocarburos, carreteras y/o ferrocarriles, para el despliegue de infraestructura y redes de telecomunicaciones, conforme a los artículos 11, 12 y 13 de la Ley N° 29904. Comprende  la coubicación provista por los respectivos concesionarios de energía y transporte.
+- 2.12 Infraestructura  de  Soporte  Eléctrico: Es  la  infraestructura  de  las  empresas  que brindan servicios de energía eléctrica, hidrocarburos y transporte ferroviario, sobre la cual  se  desplegará  la  Red  Dorsal  Nacional  de  Fibra  Óptica  y,  de  ser  el  caso,  los proyectos a los que se refiere el literal a) del artículo 13.2 de la Ley N° 29904.
+Código
+Versión
+Aprobado
+Fecha
+Página
+: CMA-PR-001
+: 00
+: CSIG
+: 28-06-2018
+: 2 de 16
+Código
+Versión
+Aprobado
+Fecha
+Página
+: CMA-PR-001
+: 00
+: CSIG
+: 28-06-2018
+: 3 de 16
+
+================================================================================
+Chunk: 4 / 22
+Páginas: [3]
+Sección: ALQUILER DE INFRAESTRUCTURA ELÉCTRICA
+Tipo: list_item
+--------------------------------------------------------------------------------
+- 2.13 Operador  de  Telecomunicaciones: Persona  natural  o  jurídica  que  cuenta  con concesión o registro para prestar uno o más servicios públicos de telecomunicaciones.
+- 2.14 Operador Dorsal: Es (son) el (los) concesionario(s) de la operación total o parcial de la Red Dorsal Nacional de Fibra Óptica.
+- 2.15 MTC: Ministerio de Transportes y Comunicaciones.
+- 2.16 FITEL: Fondo de Inversión en Telecomunicaciones que según la Ley Nº 28900 ostenta la  calidad  de  persona  jurídica  de  derecho  público,  adscrita  al  Sector  Transportes  y Comunicaciones.
+- 2.17 INDECOPI: Instituto Nacional de Defensa de la Competencia y de la Protección de la propiedad Intelectual.
+- 2.18 OSIPTEL: Organismo Supervisor de Inversión Privada de Telecomunicaciones.
+- 2.19 OSINERG: Organismo Supervisor de Inversión en Energía.
+
+================================================================================
+Chunk: 5 / 22
+Páginas: [3]
+Sección: 3. MARCO NORMATIVO Y/O DOCUMENTOS RELACIONADOS
+Tipo: list_item
+--------------------------------------------------------------------------------
+- 3.1 Decreto Supremo 014-2013-MTC 'Reglamento de la Ley N° 29904 de Promoción de la Banda Ancha y Construcción de la Red Dorsal Nacional de Fibra Óptica'.
+- 3.2 Ley N° 29904 'Promoción de la Banda Ancha y Construcción de la Red Dorsal Nacional de Fibra Óptica'.
+- 3.3 Decreto Supremo N° 009-2005-MTC 'Reglamento de la Ley N° 28295 que Regula el Acceso  y  Uso  Compartido  de  Infraestructura  de  Uso  Público  para  la  Prestación  de Servicios Público de Telecomunicaciones'.
+- 3.4 Ley N° 28295 'Ley que Regula el Acceso y Uso Compartido de Infraestructura de Uso Público para la Prestación de Servicios Público de Telecomunicaciones'.
+- 3.5 Ley N° 27444 'Ley del Procedimiento Administrativo General'.
+- 3.6 Código Nacional de Electricidad - Suministro, aprobado por Resolución Ministerial N° 214-2011-MEM/DM.
+- 3.7 Código  Nacional  de  Electricidad  -  Sistema  de  Utilización,  aprobado  por  Resolución Ministerial N° 037-2006-MEM/DM.
+- 3.8 Decreto Supremo N° 027-2004-MTC  'Reglamento de la Ley de Telecomunicaciones, del Texto  Único  Ordenado  de  la  Ley  de  Telecomunicaciones,  aprobado  por  Decreto Supremo N° 013-93-TCC.
+- 3.9 Ley de Telecomunicaciones ' Texto Único Ordenado de la Ley de Telecomunicaciones', aprobado por Decreto Supremo N° 013-93-TCC.
+- 3.10 Reglamento de Seguridad e Higiene Ocupacional del Subsector Electricidad, aprobado con Resolución Ministerial N° 263-2001-EM/VME.
+- 3.11 Decreto Supremo N° 009-93-EM 'Reglamento de la Ley de Concesiones Eléctricas'.
+- 3.12 Decreto Ley N° 25844 'Ley de Concesiones Eléctricas'.
+- 3.13 Directivas internas de ELSE para alquiler de infraestructura eléctrica.
+
+================================================================================
+Chunk: 6 / 22
+Páginas: [3, 4]
+Sección: RECURSOS HUMANOS Y RESPONSABILIDADES
+Tipo: mixto: list_item, text
+--------------------------------------------------------------------------------
+El  Comité del Sistema Integrado de Gestión (CSIG) es responsable de aprobar el presente procedimiento.
+- 4.2 El Gerente Comercial o el que haga sus veces son los responsables del seguimiento del cumplimiento del presente procedimiento.
+- 4.3 El Jefe de la División de Marketing o el que haga sus veces son los responsables del seguimiento del cumplimiento del presente procedimiento.
+- 4.4 El Supervisor de Alquiler de Infraestructura Eléctrica o el que haga sus veces son los responsables del seguimiento del cumplimiento del presente procedimiento.
+- 4.5 El  Gerente  de  Operaciones  o  el  que  haga  sus  veces son  los  responsables  del seguimiento del cumplimiento del presente procedimiento.
+Código
+Versión
+Aprobado
+Fecha
+Página
+: CMA-PR-001
+: 00
+: CSIG
+: 28-06-2018
+: 4 de 16
+
+================================================================================
+Chunk: 7 / 22
+Páginas: [4]
+Sección: ALQUILER DE INFRAESTRUCTURA ELÉCTRICA
+Tipo: list_item
+--------------------------------------------------------------------------------
+- 4.6 El  Gerente  de  Planeamiento  y  Desarrollo  o  el  que  haga  sus  veces son  los responsables del seguimiento del cumplimiento del presente procedimiento.
+- 4.7 El Jefe de la División de Mantenimiento, los Jefes de los Servicios Eléctricos a Nivel Regional o el que haga sus veces son  los  responsables  del  seguimiento  del cumplimiento del presente procedimiento.
+- 4.8 Los Supervisores de Mantenimiento a Nivel Regional o el que haga sus veces son responsables de realizar el seguimiento del cumplimiento del presente procedimiento.
+- 4.9 Los  Supervisores  Comerciales  a  Nivel  Regional  o  el  que  haga  sus  veces son responsables de realizar el seguimiento del cumplimiento del presente procedimiento.
+- 4.10 El Supervisor de Tecnología de Información y Comunicación (TIC) o el que haga sus veces son responsables que el Modulo de Alquiler de Infraestructura Eléctrica este operativo para el cumplimiento del procedimiento.
+
+================================================================================
+Chunk: 8 / 22
+Páginas: [4]
+Sección: 5. INFRAESTRUCTURA, RECURSOS Y AMBIENTE
+Tipo: list_item
+--------------------------------------------------------------------------------
+- 5.1. SIELSE
+- 5.2. Oficinas / Instalaciones / Zona de concesión de Electro Sur Este S.A.A.
+
+================================================================================
+Chunk: 9 / 22
+Páginas: [4]
+Sección: 6. DESARROLLO / PROCEDIMIENTO
+Tipo: mixto: list_item, text
+--------------------------------------------------------------------------------
+El desarrollo del Alquiler de Infraestructura Eléctrica está compuesto por las siguientes actividades:
+- Flujo Nº1: Suscripción de Contrato por Alquiler de Infraestructura Eléctrica
+- Flujo Nº2: Ampliación o Reducción al Alquiler de Infraestructura Eléctrica
+- Flujo Nº3: Inspección al Alquiler de Infraestructura Eléctrica
+- Flujo Nº4: Actualización de Precios al Alquiler de Infraestructura Eléctrica
+- Flujo Nº5: Emisión de Facturas de Alquiler de Infraestructura Eléctrica
+- Flujo Nº6: Cobranza por Alquiler de Infraestructura Eléctrica
+Los procesos de Alquiler de Infraestructura Eléctrica se detallan en los flujogramas con su descripción por actividad adjuntos:
+
+================================================================================
+Chunk: 10 / 22
+Páginas: [4, 5]
+Sección: 7. REGISTROS Y ANEXOS
+Tipo: mixto: list_item, text
+--------------------------------------------------------------------------------
+Los registros generados son:
+- CMA-RE-001  Inspección  conjunta  para  contrato  por  Alquiler  de  Infraestructura Eléctrica (vía sistema).
+- CMA-RE-002  Informe  de  Factibilidad  de  Alquiler  de  Infraestructura  Eléctrica  (vía sistema).
+- CMA-RE-003  Inspección  conjunta  para  ampliación  o  reducción  de  Alquiler  de Infraestructura Eléctrica (vía sistema).
+- CMA-RE-004  Actualización de Infraestructura por Alquiler de Infraestructura Eléctrica (vía sistema).
+- CMA-RE-005  Inspección  conjunta  por  Alquiler  de  Infraestructura  Eléctrica  (vía sistema).
+- CMA-RE-006  Informe  de  Actualización  de  Precios  por  Alquiler  de  Infraestructura Eléctrica sin Autorización (vía sistema).
+- CMA-RE-007 Facturas por Alquiler de Infraestructura Eléctrica (vía sistema).
+- CMA-RE-008  Informe  Técnico  de  cálculo  por  Alquiler  de  Infraestructura  Eléctrica para emitir Factura (vía sistema).
+- CMA-RE-009  Notificación  por  Retraso  de  Pago  por  Alquiler  de  Infraestructura Eléctrica (vía sistema).
+Código
+Versión
+Aprobado
+Fecha
+Página
+: CMA-PR-001
+: 00
+: CSIG
+: 28-06-2018
+: 5 de 16
+
+================================================================================
+Chunk: 11 / 22
+Páginas: [6]
+Sección: Flujo Nº1: Suscripción de Contrato por Alquiler de Infraestructura Eléctrica
+Tipo: text
+--------------------------------------------------------------------------------
+Código
+Versión
+Aprobado
+Fecha
+Página
+: CMA-PR-001
+: 00
+: CSIG
+: 28-06-2018
+: 6 de 16
+
+================================================================================
+Chunk: 12 / 22
+Páginas: [6, 7]
+Sección: ALQUILER DE INFRAESTRUCTURA ELÉCTRICA
+Tipo: mixto: table, text
+--------------------------------------------------------------------------------
+-, Entradas = -. -, N° = 1. -, Descripción Actividades = Solicita alquiler de IE, adjunta requisitos.. -, Salidas = Solicitud. -, Clientes = Supervisor Alquiler IE. -, Ejecutor de la Actividad = Interesado. -, Sistema que soporta la Actividad = No aplica. -, ¿Es control Cable? (Sí=x) = . Interesado, Entradas = Solicitud. Interesado, N° = 2. Interesado, Descripción Actividades = ¿Cumple los Requisitos? Si: Va a la actividad 03 No: Devuelve solicitud. Interesado, Salidas = -. Interesado, Clientes = Supervisor Alquiler IE. Interesado, Ejecutor de la Actividad = Supervisor Alquiler IE. Interesado, Sistema que soporta la Actividad = No aplica. Interesado, ¿Es control Cable? (Sí=x) = . Supervisor Alquiler IE, Entradas = -. Supervisor Alquiler IE, N° = 3. Supervisor Alquiler IE, Descripción Actividades = Registrar solicitud de contrato por alquiler de IE. Registra en módulo de alquiler de infraestructura eléctrica del sistema comercial, solicitud del interesado, pidiendo suscripción de contrato, registrando: Datos del interesado: Constitución, autorizaciones, RUC Representante legal, DNI Datos técnicos Otros. Supervisor Alquiler IE, Salidas = -. Supervisor Alquiler IE, Clientes = Supervisor Mantenimiento. Supervisor Alquiler IE, Ejecutor de la Actividad = Supervisor Alquiler IE. Supervisor Alquiler IE, Sistema que soporta la Actividad = SIELSE. Supervisor Alquiler IE, ¿Es control Cable? (Sí=x) = . Supervisor Alquiler IE, Entradas = . Supervisor Alquiler IE, N° = 4. Supervisor Alquiler IE, Descripción Actividades = Ejecutar inspección conjunta para contrato por alquiler de IE, Ejecuta inspección en forma conjunta, con supervisor de alquiler de infraestructura eléctrica y el interesado. Realiza un informe técnico para la suscripción de contrato por alquiler de Infraestructura Eléctrica.. Supervisor Alquiler IE, Salidas = CMA-RE-001 Inspección conjunta para contrato por Alquiler de IE. Supervisor Alquiler IE, Clientes = Supervisor Mantenimiento. Supervisor Alquiler IE, Ejecutor de la Actividad = Supervisor Mantenimiento. Supervisor Alquiler IE, Sistema que soporta la Actividad = SIELSE. Supervisor Alquiler IE, ¿Es control Cable? (Sí=x) = . Supervisor Mantenimiento, Entradas = CMA-RE-001 Inspección conjunta para contrato por Alquiler de IE. Supervisor Mantenimiento, N° = 5. Supervisor Mantenimiento, Descripción Actividades = ¿Es factible? Si: Va a la actividad 06 No: Va a la actividad 08. Supervisor Mantenimiento, Salidas = -. Supervisor Mantenimiento, Clientes = Supervisor Mantenimiento. Supervisor Mantenimiento, Ejecutor de la Actividad = Supervisor Mantenimiento. Supervisor Mantenimiento, Sistema que soporta la Actividad = No aplica. Supervisor Mantenimiento, ¿Es control Cable? (Sí=x) = . Supervisor Mantenimiento, Entradas = -. Supervisor Mantenimiento, N° = 6. Supervisor Mantenimiento, Descripción Actividades = Informar la factibilidad para alquiler de IE Informa factibilidad al supervisor de alquiler de infraestructura eléctrica.. Supervisor Mantenimiento, Salidas = CMA-RE-002 Informe Factibilidad IE. Supervisor Mantenimiento, Clientes = Supervisor de Alquiler de IE. Supervisor Mantenimiento, Ejecutor de la Actividad = Supervisor Mantenimiento. Supervisor Mantenimiento, Sistema que soporta la Actividad = SIELSE. Supervisor Mantenimiento, ¿Es control Cable? (Sí=x) = . Supervisor Mantenimiento, Entradas = CMA-RE-002 Informe Factibilidad IE. Supervisor Mantenimiento, N° = 7. Supervisor Mantenimiento, Descripción Actividades = Suscribir contrato por alquiler de IE El supervisor de alquiler de infraestructura eléctrica con el informe de factibilidad, elaborara el Contrato por alquiler de Infraestructura Eléctrica, para la suscripción respectiva.. Supervisor Mantenimiento, Salidas = Contrato de alquiler de IE. Supervisor Mantenimiento, Clientes = Supervisor de Alquiler de IE e Interesado. Supervisor Mantenimiento, Ejecutor de la Actividad = Supervisor de Alquiler de IE. Supervisor Mantenimiento, Sistema que soporta la Actividad = SIELSE. Supervisor Mantenimiento, ¿Es control Cable? (Sí=x) = . Supervisor Mantenimiento, Entradas = -. Supervisor Mantenimiento, N° = 8. Supervisor Mantenimiento, Descripción Actividades = Informar la no factibilidad de alquiler de IE El supervisor de mantenimiento informa la no factibilidad al supervisor de infraestructura eléctrica.. Supervisor Mantenimiento, Salidas = CMA-RE-002 Informe Factibilidad IE. Supervisor Mantenimiento, Clientes = Interesado. Supervisor Mantenimiento, Ejecutor de la Actividad = Supervisor Mantenimiento. Supervisor Mantenimiento, Sistema que soporta la Actividad = SIELSE. Supervisor Mantenimiento, ¿Es control Cable? (Sí=x) = 
+Prohibido reproducir sin autorización de la Alta Dirección de  ELSE
+Código
+Versión
+Aprobado
+Fecha
+Página
+: CMA-PR-001
+: 00
+: CSIG
+: 28-06-2018
+: 7 de 16
+
+================================================================================
+Chunk: 13 / 22
+Páginas: [8]
+Sección: Flujo Nº2: Ampliación o Reducción por Alquiler de Infraestructura Eléctrica
+Tipo: text
+--------------------------------------------------------------------------------
+Código
+Versión
+Aprobado
+Fecha
+Página
+: CMA-PR-001
+: 00
+: CSIG
+: 28-06-2018
+: 8 de 16
+
+================================================================================
+Chunk: 14 / 22
+Páginas: [8, 9]
+Sección: ALQUILER DE INFRAESTRUCTURA ELÉCTRICA
+Tipo: mixto: table, text
+--------------------------------------------------------------------------------
+-, Entradas = -. -, N° = 9. -, Descripción Actividades = Solicitar ampliación o reducción de alquiler de IE.. -, Salidas = Solicitud. -, Clientes = Supervisor de Alquiler de IE. -, Ejecutor de la Actividad = Arrendatario. -, Sistema que soporta la Actividad = No aplica. -, ¿Es control Cable? (Sí=x) = . Arrendatario, Entradas = Solicitud. Arrendatario, N° = 10. Arrendatario, Descripción Actividades = Registrar solicitud de ampliación o reducción de alquiler de IE . Registra en módulo de alquiler de infraestructura eléctrica del sistema comercial, solicitud del interesado, pidiendo ampliación o reducción de alquiler de infraestructura eléctrica de acuerdo al contrato suscrito, registrando: Datos técnicos. Ubicación con Planos.. Arrendatario, Salidas = -. Arrendatario, Clientes = Supervisor Mantenimiento. Arrendatario, Ejecutor de la Actividad = Supervisor Alquiler IE. Arrendatario, Sistema que soporta la Actividad = SIELSE. Arrendatario, ¿Es control Cable? (Sí=x) = . Supervisor Alquiler IE, Entradas = -. Supervisor Alquiler IE, N° = 11. Supervisor Alquiler IE, Descripción Actividades = Ejecutar inspección conjunta de ampliación o reducción de alquiler de IE, Ejecuta inspección en forma conjunta, con el supervisor de alquiler de infraestructura eléctrica y el arrendatario. Realiza un informe técnico de inspección de ampliación o reducción por alquiler de Infraestructura Eléctrica.. Supervisor Alquiler IE, Salidas = CMA-RE-003 Inspección conjunta para ampliación o reducción de Alquiler de IE. Supervisor Alquiler IE, Clientes = Supervisor Mantenimiento. Supervisor Alquiler IE, Ejecutor de la Actividad = Supervisor Mantenimiento. Supervisor Alquiler IE, Sistema que soporta la Actividad = SIELSE. Supervisor Alquiler IE, ¿Es control Cable? (Sí=x) = . Supervisor Mantenimiento CMA-RE-003 Inspección conjunta para ampliación o reducción de Alquiler de IE, Entradas = . Supervisor Mantenimiento CMA-RE-003 Inspección conjunta para ampliación o reducción de Alquiler de IE, N° = 12. Supervisor Mantenimiento CMA-RE-003 Inspección conjunta para ampliación o reducción de Alquiler de IE, Descripción Actividades = ¿Es factible? Si: Va a la actividad 13 No: Va a la actividad 15. Supervisor Mantenimiento CMA-RE-003 Inspección conjunta para ampliación o reducción de Alquiler de IE, Salidas = -. Supervisor Mantenimiento CMA-RE-003 Inspección conjunta para ampliación o reducción de Alquiler de IE, Clientes = Supervisor Mantenimiento. Supervisor Mantenimiento CMA-RE-003 Inspección conjunta para ampliación o reducción de Alquiler de IE, Ejecutor de la Actividad = Supervisor Mantenimiento. Supervisor Mantenimiento CMA-RE-003 Inspección conjunta para ampliación o reducción de Alquiler de IE, Sistema que soporta la Actividad = No aplica. Supervisor Mantenimiento CMA-RE-003 Inspección conjunta para ampliación o reducción de Alquiler de IE, ¿Es control Cable? (Sí=x) = . Supervisor Mantenimiento, Entradas = -. Supervisor Mantenimiento, N° = 13. Supervisor Mantenimiento, Descripción Actividades = Informar la factibilidad de alquiler de IE. Informa factibilidad al supervisor de alquiler de infraestructura eléctrica.. Supervisor Mantenimiento, Salidas = CMA-RE-002 Informe Factibilidad IE. Supervisor Mantenimiento, Clientes = Supervisor Mantenimiento. Supervisor Mantenimiento, Ejecutor de la Actividad = Supervisor Mantenimiento. Supervisor Mantenimiento, Sistema que soporta la Actividad = SIELSE. Supervisor Mantenimiento, ¿Es control Cable? (Sí=x) = . Supervisor Alquiler IE, Entradas = CMA-RE-002 Informe Factibilidad IE. Supervisor Alquiler IE, N° = 14. Supervisor Alquiler IE, Descripción Actividades = Actualizar de infraestructura por alquiler de IE. El supervisor de alquiler de infraestructura eléctrica, con el informe de factibilidad, elaborara la actualización en cantidad por alquiler de Infraestructura Eléctrica, para la emisión de factura.. Supervisor Alquiler IE, Salidas = CMA-RE-004 Actualización Infraestructura por Alquiler IE. Supervisor Alquiler IE, Clientes = Supervisor Alquiler IE y Arrendatario. Supervisor Alquiler IE, Ejecutor de la Actividad = Supervisor Alquiler IE. Supervisor Alquiler IE, Sistema que soporta la Actividad = SIELSE. Supervisor Alquiler IE, ¿Es control Cable? (Sí=x) = . Supervisor Mantenimiento, Entradas = -. Supervisor Mantenimiento, N° = 15. Supervisor Mantenimiento, Descripción Actividades = Informar la no factibilidad de alquiler de IE. El supervisor de mantenimiento informa la no factibilidad al supervisor de infraestructura eléctrica.. Supervisor Mantenimiento, Salidas = CMA-RE-002 Informe Factibilidad IE. Supervisor Mantenimiento, Clientes = Arrendatario. Supervisor Mantenimiento, Ejecutor de la Actividad = Supervisor Mantenimiento. Supervisor Mantenimiento, Sistema que soporta la Actividad = SIELSE. Supervisor Mantenimiento, ¿Es control Cable? (Sí=x) = 
+Prohibido reproducir sin autorización de la Alta Dirección de  ELSE
+Código
+Versión
+Aprobado
+Fecha
+Página
+: CMA-PR-001
+: 00
+: CSIG
+: 28-06-2018
+: 9 de 16
+
+================================================================================
+Chunk: 15 / 22
+Páginas: [10]
+Sección: Flujo Nº3: Inspección al Alquiler de Infraestructura Eléctrica
+Tipo: text
+--------------------------------------------------------------------------------
+Código
+Versión
+Aprobado
+Fecha
+Página
+: CMA-PR-001
+: 00
+: CSIG
+: 28-06-2018
+: 10 de 16
+
+================================================================================
+Chunk: 16 / 22
+Páginas: [10, 11, 12]
+Sección: ALQUILER DE INFRAESTRUCTURA ELÉCTRICA
+Tipo: mixto: caption, table, text
+--------------------------------------------------------------------------------
+-, Entradas = -. -, N° = 16. -, Descripción Actividades = Solicitar inspección de alquiler de IE.. -, Salidas = Solicitud. -, Clientes = Supervisor Alquiler IE. -, Ejecutor de la Actividad = Supervisor Alquiler IE. -, Sistema que soporta la Actividad = No aplica. -, ¿Es control Cable? (Sí=x) = . Supervisor Alquiler IE, Entradas = Solicitud. Supervisor Alquiler IE, N° = 17. Supervisor Alquiler IE, Descripción Actividades = Registrar solicitud de inspección de IE. Registra en módulo de alquiler de infraestructura eléctrica del sistema comercial, solicitud de inspección de alquiler de infraestructura eléctrica, registrando: Datos técnicos. Ubicación con Planos. Informa al SIELSE.. Supervisor Alquiler IE, Salidas = -. Supervisor Alquiler IE, Clientes = Supervisor Mantenimiento. Supervisor Alquiler IE, Ejecutor de la Actividad = Supervisor Alquiler IE. Supervisor Alquiler IE, Sistema que soporta la Actividad = SIELSE. Supervisor Alquiler IE, ¿Es control Cable? (Sí=x) = . Supervisor Alquiler IE, Entradas = -. Supervisor Alquiler IE, N° = 18. Supervisor Alquiler IE, Descripción Actividades = Ejecutar inspección conjunta de inspección de alquiler de IE Ejecuta inspección en forma conjunta, con el supervisor de alquiler de infraestructura eléctrica y el arrendatario y/o anónimo. Informa a SIELSE.. Supervisor Alquiler IE, Salidas = -. Supervisor Alquiler IE, Clientes = Supervisor Mantenimiento. Supervisor Alquiler IE, Ejecutor de la Actividad = Supervisor Mantenimiento. Supervisor Alquiler IE, Sistema que soporta la Actividad = SIELSE. Supervisor Alquiler IE, ¿Es control Cable? (Sí=x) = . Supervisor Mantenimiento, Entradas = -. Supervisor Mantenimiento, N° = 19. Supervisor Mantenimiento, Descripción Actividades = Informe de inspección de alquiler de IE. Realiza un informe técnico de inspección de alquiler de Infraestructura Eléctrica. Informa a SIELSE. Supervisor Mantenimiento, Salidas = CMA-RE-005 Inspección conjunta por Alquiler de IE. Supervisor Mantenimiento, Clientes = Supervisor Alquiler IE. Supervisor Mantenimiento, Ejecutor de la Actividad = Supervisor Mantenimiento. Supervisor Mantenimiento, Sistema que soporta la Actividad = SIELSE. Supervisor Mantenimiento, ¿Es control Cable? (Sí=x) = . Supervisor Mantenimiento, Entradas = CMA-RE-005 Inspección conjunta por Alquiler de IE. Supervisor Mantenimiento, N° = 20. Supervisor Mantenimiento, Descripción Actividades = Actualizar infraestructura por inspección de alquiler de IE El supervisor de alquiler de infraestructura eléctrica, con el informe de inspección, elaborara la actualización en cantidad por alquiler de Infraestructura Eléctrica; en caso de anónimo, dispone el retiro de infraestructura conforme establece la Ley. Informa a SIELSE. Supervisor Mantenimiento, Salidas = CMA-RE-005 Inspección conjunta por Alquiler de IE. Supervisor Mantenimiento, Clientes = Arrendatario y/o Anónimo. Supervisor Mantenimiento, Ejecutor de la Actividad = Supervisor Alquiler IE. Supervisor Mantenimiento, Sistema que soporta la Actividad = SIELSE. Supervisor Mantenimiento, ¿Es control Cable? (Sí=x) = 
+Prohibido reproducir sin autorización de la Alta Dirección de  ELSE
+Código
+Versión
+Aprobado
+Fecha
+Página
+: CMA-PR-001
+: 00
+: CSIG
+: 28-06-2018
+: 11 de 16
+Flujo Nº4: Actualización de Precios al Alquiler de Infraestructura Eléctrica
+Código
+Versión
+Aprobado
+Fecha
+Página
+: CMA-PR-001
+: 00
+: CSIG
+: 28-06-2018
+: 12 de 16
+-, Entradas = -. -, N° = 21. -, Descripción Actividades = Solicitar actualización de precios al alquiler de infraestructura eléctrica.. -, Salidas = Solicitud. -, Clientes = . -, Ejecutor de la Actividad = Supervisor Alquiler IE. -, Sistema que soporta la Actividad = Supervisor Alquiler IE. -,  = No aplica. -, ¿Es control Cable? (Sí=x) = . Supervisor Alquiler IE, Entradas = Solicitud. Supervisor Alquiler IE, N° = 22. Supervisor Alquiler IE, Descripción Actividades = Registrar solicitud de actualización de precios al alquiler de infraestructura eléctrica. Registra en módulo de alquiler de infraestructura eléctrica del sistema comercial, solicitud de actualización de precios al alquiler de infraestructura eléctrica. Informa al SIELSE.. Supervisor Alquiler IE, Salidas = -. Supervisor Alquiler IE, Clientes = . Supervisor Alquiler IE, Ejecutor de la Actividad = Gerencia de Planeamiento y Desarrollo. Supervisor Alquiler IE, Sistema que soporta la Actividad = Supervisor Alquiler. Supervisor Alquiler IE,  = SIELSE. Supervisor Alquiler IE, ¿Es control Cable? (Sí=x) = . Supervisor Alquiler IE, Entradas = -. Supervisor Alquiler IE, N° = 23. Supervisor Alquiler IE, Descripción Actividades = Realizar actualización de precios al alquiler de infraestructura eléctrica. Ejecuta la actualización de precios en forma conjunta, con el supervisor de alquiler de infraestructura eléctrica. Informa a SIELSE.. Supervisor Alquiler IE, Salidas = -. Supervisor Alquiler IE, Clientes = . Supervisor Alquiler IE, Ejecutor de la Actividad = Gerencia de Planeamiento y Desarrollo. Supervisor Alquiler IE, Sistema que soporta la Actividad = Gerencia de Planeamiento y Desarrollo. Supervisor Alquiler IE,  = SIELSE. Supervisor Alquiler IE, ¿Es control Cable? (Sí=x) = . Gerencia de Planeamiento y Desarrollo, Entradas = -. Gerencia de Planeamiento y Desarrollo, N° = 24. Gerencia de Planeamiento y Desarrollo, Descripción Actividades = Informar la actualización de precios de alquiler de infraestructura eléctrica. De acuerdo a fórmulas establecidas, informara la actualización de precios al alquiler de Infraestructura Eléctrica. Informa a SIELSE. Gerencia de Planeamiento y Desarrollo, Salidas = CMA-RE-006 Informe Actualización de precios por alquiler de IE. Gerencia de Planeamiento y Desarrollo, Clientes = . Gerencia de Planeamiento y Desarrollo, Ejecutor de la Actividad = Supervisor Alquiler IE. Gerencia de Planeamiento y Desarrollo, Sistema que soporta la Actividad = Gerencia de Planeamiento y Desarrollo. Gerencia de Planeamiento y Desarrollo,  = SIELSE. Gerencia de Planeamiento y Desarrollo, ¿Es control Cable? (Sí=x) = . Gerencia de Planeamiento y Desarrollo, Entradas = CMA-RE-006 Informe Actualización de precios por alquiler de IE. Gerencia de Planeamiento y Desarrollo, N° = 25. Gerencia de Planeamiento y Desarrollo, Descripción Actividades = Actualizar precios al alquiler de infraestructura eléctrica. El supervisor de alquiler de infraestructura eléctrica, con el informe de actualización, comunica la actualización en precios al arrendatario por alquiler de Infraestructura Eléctrica. Informa a SIELSE. Gerencia de Planeamiento y Desarrollo, Salidas = CMA-RE-006 Informe Actualización de precios por alquiler de IE. Gerencia de Planeamiento y Desarrollo, Clientes = . Gerencia de Planeamiento y Desarrollo, Ejecutor de la Actividad = Arrendatario. Gerencia de Planeamiento y Desarrollo, Sistema que soporta la Actividad = Supervisor de Alquiler de IE. Gerencia de Planeamiento y Desarrollo,  = SIELSE. Gerencia de Planeamiento y Desarrollo, ¿Es control Cable? (Sí=x) = 
+Copia
+
+================================================================================
+Chunk: 17 / 22
+Páginas: [12, 13]
+Sección: ALQUILER DE INFRAESTRUCTURA ELÉCTRICA
+Tipo: text
+--------------------------------------------------------------------------------
+Prohibido reproducir sin autorización de la Alta Dirección de  ELSE
+Código
+Versión
+Aprobado
+Fecha
+Página
+: CMA-PR-001
+: 00
+: CSIG
+: 28-06-2018
+: 13 de 16
+
+================================================================================
+Chunk: 18 / 22
+Páginas: [14]
+Sección: Flujo Nº5: Emisión de Facturas de Alquiler de Infraestructura Eléctrica
+Tipo: text
+--------------------------------------------------------------------------------
+Código
+Versión
+Aprobado
+Fecha
+Página
+: CMA-PR-001
+: 00
+: CSIG
+: 28-06-2018
+: 14 de 16
+
+================================================================================
+Chunk: 19 / 22
+Páginas: [14, 15]
+Sección: ALQUILER DE INFRAESTRUCTURA ELÉCTRICA
+Tipo: mixto: table, text
+--------------------------------------------------------------------------------
+-, Entradas = -. -, N° = 26. -, Descripción Actividades = Informar mensualmente la cantidad y precios de alquiler de IE.. -, Salidas = -. -, Clientes = Supervisor de Alquiler de IE. -, Ejecutor de la Actividad = Supervisor Alquiler IE. -, Sistema que soporta la Actividad = No aplica. -, ¿Es control Cable? (Sí=x) = . Supervisor Alquiler IE, Entradas = -. Supervisor Alquiler IE, N° = 27. Supervisor Alquiler IE, Descripción Actividades = Efectuar solicitud de emisión de facturas de alquiler de IE. Efectúa en el módulo de alquiler de infraestructura eléctrica del sistema comercial, la emisión de facturas de alquiler de infraestructura eléctrica. Informa al SIELSE.. Supervisor Alquiler IE, Salidas = -. Supervisor Alquiler IE, Clientes = Supervisor Comercial. Supervisor Alquiler IE, Ejecutor de la Actividad = Supervisor Alquiler IE. Supervisor Alquiler IE, Sistema que soporta la Actividad = SIELSE. Supervisor Alquiler IE, ¿Es control Cable? (Sí=x) = . Supervisor Alquiler IE, Entradas = -. Supervisor Alquiler IE, N° = 28. Supervisor Alquiler IE, Descripción Actividades = Emitir facturas de alquiler de IE. Atención al Cliente, emite facturas en el módulo de alquiler de infraestructura eléctrica del sistema comercial, por alquiler de infraestructura eléctrica. Realiza informe de facturas de alquiler de Infraestructura Eléctrica. Informa a SUNAT Informa a SIELSE.. Supervisor Alquiler IE, Salidas = CMA-RE-007 Factura por Alquiler de IE, CMA-RE-008 Informe Técnico de Cálculo por Alquiler de IE. Supervisor Alquiler IE, Clientes = Supervisor Alquiler IE. Supervisor Alquiler IE, Ejecutor de la Actividad = Supervisor Comercial. Supervisor Alquiler IE, Sistema que soporta la Actividad = SIELSE, SUNAT. Supervisor Alquiler IE, ¿Es control Cable? (Sí=x) = . Supervisor Comercial, Entradas = CMA-RE-007 Factura por Alquiler de IE, CMA-RE-008 Informe Técnico de Cálculo por Alquiler de IE. Supervisor Comercial, N° = 29. Supervisor Comercial, Descripción Actividades = Verificar facturas por alquiler de IE. El supervisor de alquiler de infraestructura eléctrica, con informe de facturas, verifica la emisión de facturas por alquiler de Infraestructura Eléctrica. Comunica factura e informe técnico por alquiler infraestructura eléctrica al arrendatario. Informa a SIELSE. Supervisor Comercial, Salidas = el de Comunica Factura e Informe técnico de Alquiler de IE. Supervisor Comercial, Clientes = Arrendatario. Supervisor Comercial, Ejecutor de la Actividad = Supervisor Alquiler IE. Supervisor Comercial, Sistema que soporta la Actividad = SIELSE. Supervisor Comercial, ¿Es control Cable? (Sí=x) = 
+Copie
+Prohibido reproducir sin autorización de la Alta Dirección de  ELSE
+Código
+Versión
+Aprobado
+Fecha
+Página
+: CMA-PR-001
+: 00
+: CSIG
+: 28-06-2018
+: 15 de 16
+
+================================================================================
+Chunk: 20 / 22
+Páginas: [16]
+Sección: Flujo Nº6: Cobranza por Alquiler de Infraestructura Eléctrica
+Tipo: text
+--------------------------------------------------------------------------------
+Código
+Versión
+Aprobado
+Fecha
+Página
+: CMA-PR-001
+: 00
+: CSIG
+: 28-06-2018
+: 16 de 16
+
+================================================================================
+Chunk: 21 / 22
+Páginas: [16]
+Sección: ALQUILER DE INFRAESTRUCTURA ELÉCTRICA
+Tipo: mixto: table, text
+--------------------------------------------------------------------------------
+-, Entradas = -. -, N° = 30. -, Descripción Actividades = Realizar arqueo de facturas por alquiler de IE Cobranzas, realiza el arqueo de facturas con pago por alquiler de infraestructura eléctrica.. -, Salidas = -. -, Clientes = Supervisor Comercial. -, Ejecutor de la Actividad = Supervisor Comercial. -, Sistema que soporta la Actividad = No aplica. -, ¿Es control Cable? (Sí=x) = . Supervisor Comercial, Entradas = -. Supervisor Comercial, N° = 31. Supervisor Comercial, Descripción Actividades = ¿Se retrasó el pago? Si: Va a la actividad 32 No: Va a la actividad 35. Supervisor Comercial, Salidas = -. Supervisor Comercial, Clientes = Supervisor Comercial. Supervisor Comercial, Ejecutor de la Actividad = Supervisor Comercial. Supervisor Comercial, Sistema que soporta la Actividad = No aplica. Supervisor Comercial, ¿Es control Cable? (Sí=x) = . Supervisor Comercial, Entradas = -. Supervisor Comercial, N° = 32. Supervisor Comercial, Descripción Actividades = Informe de retraso de pago de alquiler de IE Cobranzas, realiza Informe de retraso de pago de alquiler de infraestructura eléctrica. Informa a SIELSE. Supervisor Comercial, Salidas = Informe de retraso de pago por Alquiler IE. Supervisor Comercial, Clientes = Supervisor Alquiler IE. Supervisor Comercial, Ejecutor de la Actividad = Supervisor Comercial. Supervisor Comercial, Sistema que soporta la Actividad = SIELSE. Supervisor Comercial, ¿Es control Cable? (Sí=x) = . Supervisor Comercial, Entradas = Informe de retraso de pago por Alquiler IE. Supervisor Comercial, N° = 33. Supervisor Comercial, Descripción Actividades = Efectúa notificación por retraso de pago de alquiler de IE En módulo de alquiler de infraestructura eléctrica del sistema comercial, efectúa notificación por retraso de pago de factura por alquiler de infraestructura eléctrica. Notifica al arrendatario, el retraso de pago de la factura por alquiler de infraestructura eléctrica. Informa al SIELSE.. Supervisor Comercial, Salidas = CMA-RE-009 Notificación por Retraso de Pago por Alquiler IE. Supervisor Comercial, Clientes = Supervisor Alquiler IE. Supervisor Comercial, Ejecutor de la Actividad = Supervisor Alquiler IE. Supervisor Comercial, Sistema que soporta la Actividad = SIELSE. Supervisor Comercial, ¿Es control Cable? (Sí=x) = . Supervisor Alquiler IE, Entradas = CMA-RE-009 Notificación por Retraso de Pago por Alquiler IE. Supervisor Alquiler IE, N° = 34. Supervisor Alquiler IE, Descripción Actividades = Realiza emisión de facturas incluyendo intereses por alquiler de IE En módulo de alquiler de infraestructura eléctrica del sistema comercial, realiza emisión de facturas incluyendo intereses por retraso de pago en el alquiler de infraestructura eléctrica. Informa facturas con intereses por alquiler de infraestructura eléctrica. Informa al SIELSE.. Supervisor Alquiler IE, Salidas = Informe de facturas con intereses de Alquiler de IE. Supervisor Alquiler IE, Clientes = Supervisor Comercial. Supervisor Alquiler IE, Ejecutor de la Actividad = Supervisor Alquiler IE. Supervisor Alquiler IE, Sistema que soporta la Actividad = SIELSE. Supervisor Alquiler IE, ¿Es control Cable? (Sí=x) = . Supervisor Comercial, Entradas = Informe de facturas con intereses de Alquiler de IE. Supervisor Comercial, N° = 35. Supervisor Comercial, Descripción Actividades = Realiza informe de pago por alquiler de IE Informa el pago de la factura por alquiler de infraestructura eléctrica. Informa al SIELSE.. Supervisor Comercial, Salidas = Informe de pago de alquiler de IE. Supervisor Comercial, Clientes = . Supervisor Comercial, Ejecutor de la Actividad = Supervisor Comercial. Supervisor Comercial, Sistema que soporta la Actividad = SIELSE. Supervisor Comercial, ¿Es control Cable? (Sí=x) = 
+Prohibido reproducir sin autorización de la Alta Dirección de  ELSE
+

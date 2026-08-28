@@ -1,0 +1,616 @@
+================================================================================
+Chunk: 0 / 47
+Páginas: [1]
+Sección: None
+Tipo: text
+--------------------------------------------------------------------------------
+Código
+Versión
+Aprobado
+Fecha
+Página
+: RP-PR-003
+: 00
+: CSIG
+: 22/12/2025
+: 1 de 1
+
+================================================================================
+Chunk: 1 / 47
+Páginas: [1]
+Sección: COMUNICACIÓN DE CRISIS
+Tipo: mixto: table, text
+--------------------------------------------------------------------------------
+Dueño del proceso Nivel 0:, 1 = Gerente General. Nombre del proceso Nivel 1:, 1 = Jefe de Relaciones Corporativas Empresariales (E5-1). Nombre del proceso Nivel 2:, 1 = Gestión de comunicación Externa (E5-1-2)
+clada
+
+================================================================================
+Chunk: 2 / 47
+Páginas: [1, 2]
+Sección: COMUNICACIÓN DE CRISIS DE ELECTRO SUR ESTE S.A.A.
+Tipo: table
+--------------------------------------------------------------------------------
+Elaborado por:, Responsable = Jefe de Relaciones Corporativas. Elaborado por:, Fecha = 17/12/2025. Revisado por:, Responsable = Gerente General. Revisado por:, Fecha = 18/12/2025. Homologado por:, Responsable = Especialista en Sistemas de Gestión. Homologado por:, Fecha = 19/12/2025. Aprobado por:, Responsable = Comité del Sistema Integrado de Gestión. Aprobado por:, Fecha = 22/12/2025
+PROCEDIMIENTO COMUNICACIÓN DE CRISIS, 1 = Código Versión Aprobado Fecha Página. PROCEDIMIENTO COMUNICACIÓN DE CRISIS, 2 = : RP-PR-003 : 00 : CSIG : 22/12/2025 : 2 de 15
+00, Control de cambios.Descripción del cambio = Versión inicial del documento. 00, Control de cambios.Fecha de aprobación = 22/12/2025
+Acta de comité SIG, Fecha = 22/12/2025
+
+================================================================================
+Chunk: 3 / 47
+Páginas: [3]
+Sección: 1. OBJETIVO
+Tipo: mixto: list_item, text
+--------------------------------------------------------------------------------
+El  objetivo  del  presente  procedimiento  es  definir  el  conjunto  completo  de  acciones  de comunicación interna y externa que Electro Sur Este S.A.A. debe ejecutar antes, durante y después de un incidente, emergencia o crisis, a fin de minimizar el  impacto reputacional, mantener la confianza de los grupos de interés y apoyar la continuidad y recuperación del servicio,  asegurando  que  la  información  institucional  sea  veraz,  oportuna,  coherente  y centralizada, cubriendo a todos los públicos de interés con independencia del tipo de evento disruptivo que se produzca. Sus objetivos específicos son:
+- Establecer  lineamientos  generales  que  orienten  la  gestión  de  la  comunicación  de crisis en Electro Sur Este S.A.A., de  manera  coherente  con  su  estructura organizacional y su marco normativo vigente.
+- Proporcionar un marco de referencia común que permita articular la comunicación institucional  durante  situaciones  de  crisis,  considerando  la  participación  de  las instancias, roles y responsables que correspondan según el nivel y naturaleza del evento.
+- Facilitar  un  manejo  ordenado  de  la  información  institucional  ante  situaciones  de crisis, a fin de contribuir a una comunicación consistente con los grupos de interés, de acuerdo con las decisiones adoptadas por las instancias competentes en cada nivel.
+
+================================================================================
+Chunk: 4 / 47
+Páginas: [3]
+Sección: 2. ALCANCE
+Tipo: text
+--------------------------------------------------------------------------------
+Este  procedimiento  es  de  aplicación  obligatoria  para  todos  los  procesos  y  divisiones  de Electro Sur Este S.A.A., y para todos los trabajadores que, por función, rol o designación, participen o brinden soporte en la gestión de la comunicación ante situaciones de crisis, en cualquiera  de  sus  etapas,  incluyendo  la  coordinación  interna,  la  vocería,  la  atención  de requerimientos  de  información  y  el  uso  de  canales  institucionales  para  la  difusión  de mensajes.
+
+================================================================================
+Chunk: 5 / 47
+Páginas: [3]
+Sección: 3. DEFINICIONES
+Tipo: list_item
+--------------------------------------------------------------------------------
+- 3.1  Comunicación  en  Crisis: Conjunto  de  lineamientos,  estrategias  y  acciones  orientadas  a ordenar,  gestionar  y  difundir  información  institucional  ante  incidentes,  emergencias  o  crisis que puedan afectar el funcionamiento, la reputación o la imagen de la organización. Tiene por  finalidad  contribuir  a  una  gestión  informada,  reducir  la  incertidumbre  y  mantener  la confianza de los públicos de interés, mediante mensajes veraces, oportunos y coherentes.
+- 3.2  Comunicación Interna: Intercambio de información dentro de la organización. En el contexto de  una  crisis,  comprende  la  transmisión  de  mensajes  institucionales  a  los  trabajadores  y equipos  involucrados,  con  el  objetivo  de  mantenerlos  informados  y  alineados  con  las decisiones adoptadas, conforme al nivel y naturaleza del evento.
+- 3.3  Comunicación Externa: Interacción comunicacional de la organización con públicos externos, tales como usuarios, comunidades, medios de comunicación, autoridades, accionistas y otras partes  interesadas.  Durante  una  crisis,  comprende  la  emisión  de  información  institucional dirigida a dichos públicos, de acuerdo con los lineamientos y vocerías establecidas.
+- 3.4  Monitoreo de Medios: Proceso de observación y seguimiento de la información difundida en medios  de  comunicación,  redes  sociales  y  otros  canales  informativos,  relacionada  con  la organización.  Durante  una  crisis,  permite  identificar  tendencias,  percepciones,  posibles riesgos comunicacionales y oportunidades de ajuste en la estrategia de comunicación.
+- 3.5  Incidente: Evento  o  situación  no  deseada  que  puede  afectar  parcial  o  temporalmente  las operaciones, procesos o imagen de la organización,  y que, dependiendo de su evolución, podría escalar a una crisis.
+- 3.6  Crisis: Situación  extraordinaria  que  genera  un  alto  nivel  de  atención  pública,  institucional  o mediática, y que puede comprometer la continuidad operativa, la reputación o la confianza de
+
+================================================================================
+Chunk: 6 / 47
+Páginas: [3, 4]
+Sección: COMUNICACIÓN DE CRISIS
+Tipo: mixto: list_item, text
+--------------------------------------------------------------------------------
+Aprobado
+Página
+: RP-PR-003
+: 00
+: CSIG
+: 22/12/2025
+: 3 de 15
+Código
+Aprobado
+Fecha
+Página
+: RP-PR-003
+: 00
+: CSIG
+: 22/12/2025
+: 4 de 15
+los grupos de interés, requiriendo una gestión comunicacional diferenciada según su nivel.
+- 3.7  Vocero: Persona autorizada para emitir declaraciones o mensajes institucionales durante una situación  de  crisis,  conforme  a  los  lineamientos  y  decisiones  adoptadas  por  las  instancias competentes.
+- 3.8  Grupos  de  Interés: Personas,  grupos  u  organizaciones  que  pueden  verse  directa  o indirectamente  afectados  por  una  situación  de  crisis,  o  que  tienen  interés  legítimo  en  la información  institucional  que  emita  Electro  Sur  Este  S.A.A.,  tales  como  trabajadores, usuarios,  comunidades,  autoridades,  regulador,  medios  de  comunicación,  proveedores, contratistas, accionistas, entre otros.
+
+================================================================================
+Chunk: 7 / 47
+Páginas: [4]
+Sección: 4. MARCO NORMATIVO Y/O DOCUMENTOS RELACIONADOS
+Tipo: list_item
+--------------------------------------------------------------------------------
+- Lineamiento Corporativo de FONAFE (2025): 'Lineamiento de Gestión Integral de Riesgos'.
+- Manual Corporativo de FONAFE (2025): 'Guía para la Gestión Integral de Riesgos'
+- Manual de Gestión Integral de Riesgos y Oportunidades de Electro Sur Este S.A.A.
+- Principio  25:  Comunicación  con  Grupos  de  Interés  -  Código  de  Buen  Gobierno Corporativo  para  las  Empresas  bajo  el  ámbito  de  FONAFE,  aprobado  mediante Acuerdo de Directorio Nº 002-2025/007-FONAFE de fecha 26.11.2025.O.D. 725.03 - Política de comunicación de Electro Sur Este S.A.A. (21.01.2015)
+- IFC  Stakeholder  Engagement:  A  Good  Practice  Handbook  for  Companies  Doing Business in Emerging Markets (30.04.2007)
+- Norma ISO 26000 - Guía de Responsabilidad Social.
+- Criterios ESG de Objetivos de Desarrollo Sostenible (ODS).
+- Política de Comunicaciones de ELSE.
+
+================================================================================
+Chunk: 8 / 47
+Páginas: [4]
+Sección: 5. DESARROLLO / PROCEDIMIENTO
+Tipo: text
+--------------------------------------------------------------------------------
+El procedimiento se encuentra desarrollado en Flujo N°1
+
+================================================================================
+Chunk: 9 / 47
+Páginas: [4]
+Sección: 5.1.1  Estructura del Comité de Gestión de Crisis
+Tipo: text
+--------------------------------------------------------------------------------
+De  manera  informativa  a  continuación  se  muestra  la  conformación  del  Comité  de Gestión de Crisis de Electro Sur Este S.A.A.; el mismo que identifica al Coordinador de Comunicaciones como parte integrante de este Comité:
+Gráfico 1: Estructura del Comité de Gestión de Crisis de Electro Sur Este S.A.A.
+
+================================================================================
+Chunk: 10 / 47
+Páginas: [5]
+Sección: PROCEDIMIENTO COMUNICACIÓN DE CRISIS
+Tipo: mixto: caption, text
+--------------------------------------------------------------------------------
+Código
+Versión
+Aprobado
+Fecha
+Página
+: RP-PR-003
+: 00
+: CSIG
+: 22/12/2025
+: 5 de 15
+slada
+Fuente: Elaboración propia
+Y a continuación, se muestra el esquema de la estructura organizacional del equipo de comunicaciones en crisis.
+Gráfico 2: Estructura organizativa del equipo de comunicación en crisis en Electro Sur Este
+S.A.A.
+Fuente: Desarrollo propio
+
+================================================================================
+Chunk: 11 / 47
+Páginas: [5]
+Sección: Personal Designado
+Tipo: text
+--------------------------------------------------------------------------------
+La estructura del  Equipo de Comunicación en Crisis está conformada por los siguientes roles asignados en función de sus responsabilidades y áreas de especialización: Equipo de Comunicación en Crisis:
+
+================================================================================
+Chunk: 12 / 47
+Páginas: [6]
+Sección: 5.1.2
+Tipo: text
+--------------------------------------------------------------------------------
+Código
+Versión
+Aprobado
+Fecha
+Página
+: RP-PR-003
+: 00
+: CSIG
+: 22/12/2025
+: 6 de 15
+
+================================================================================
+Chunk: 13 / 47
+Páginas: [6]
+Sección: COMUNICACIÓN DE CRISIS
+Tipo: table
+--------------------------------------------------------------------------------
+Presidente del Comité de Gestión de Crisis, ASIGNACIÓN = Titular. Presidente del Comité de Gestión de Crisis, CARGO = Gerente General. Presidente del Comité de Gestión de Crisis, ASIGNACIÓN = Suplente. Presidente del Comité de Gestión de Crisis, CARGO = Gerente de Administración y Finanzas. Coordinador Legal, ASIGNACIÓN = Titular. Coordinador Legal, CARGO = Gerente Legal. Coordinador Legal, ASIGNACIÓN = Suplente. Coordinador Legal, CARGO = Especialista de procesos Judiciales. Coordinador de Comunicación e Imagen, ASIGNACIÓN = Titular. Coordinador de Comunicación e Imagen, CARGO = Jefe de Relaciones Corporativas Empresariales. Coordinador de Comunicación e Imagen, ASIGNACIÓN = Suplente. Coordinador de Comunicación e Imagen, CARGO = Jefe de Marketing. Vocero Interno, ASIGNACIÓN = Titular. Vocero Interno, CARGO = Gerente de Administración y Finanzas. Vocero Interno, ASIGNACIÓN = Suplente. Vocero Interno, CARGO = Jefe de Gestión del Talento Humano. Vocero Externo, ASIGNACIÓN = Titular. Vocero Externo, CARGO = Gerente General. Vocero Externo, ASIGNACIÓN = Suplente. Vocero Externo, CARGO = Jefe de Imagen y Responsabilidad Social
+
+================================================================================
+Chunk: 14 / 47
+Páginas: [6, 7]
+Sección: 5.1.3 Principales responsabilidades
+Tipo: mixto: table, text
+--------------------------------------------------------------------------------
+Los  roles  y  responsabilidades  que  se  detallan  a  continuación  establecen  el  marco  de actuación para la gestión de la comunicación ante situaciones de crisis en Electro Sur Este S.A.A.,  con  el  propósito  de  asegurar  coordinación,  orden  y  coherencia  en  la  toma  de decisiones y en la emisión de mensajes institucionales.
+Sin perjuicio de lo anterior, en función de la naturaleza, nivel y evolución de la crisis, estas responsabilidades podrán ampliarse, redistribuirse o complementarse con la participación de otras instancias o responsables, según lo determinen las instancias competentes y el Comité de Gestión de Crisis.
+Presidente del Comité, Responsabilidades = • Dirección y toma de decisiones: conduce las deliberaciones del Comité, define lineamientos y prioridades, y dispone acciones conforme a la información disponible. • Coordinación institucional: articula con Gerencia General y las áreas involucradas para asegurar coherencia entre la respuesta operativa y la comunicación institucional. • Representación institucional: ejerce la representación institucional ante instancias que correspondan, conforme al nivel del evento y la vocería definida. • Aprobación de medidas clave: valida decisiones estratégicas y define. Coordinador Legal, Responsabilidades = responsables para su implementación y seguimiento. • Análisis de riesgos legales: evalúa implicancias legales y regulatorias del evento y de los mensajes institucionales propuestos. • Revisión de comunicaciones sensibles: revisa comunicados, declaraciones, respuestas a requerimientos y otros contenidos cuando corresponda, para reducir contingencias. • Soporte en gestión con autoridades: brinda soporte en comunicaciones vinculadas a investigaciones, fiscalizaciones o requerimientos formales, según el caso. • Lineamientos de confidencialidad: orienta sobre información reservada, sensible o en verificación, conforme a normativa aplicable.. Coordinador de Comunicación e Imagen, Responsabilidades = • Conducción de la estrategia comunicacional: propone la estrategia de comunicación de acuerdo con el nivel del evento y coordina su implementación, previa autorización de la instancia competente. • Elaboración de mensajes: prepara mensajes base, comunicados, preguntas y respuestas y piezas de comunicación, alineadas a información verificada.
+Código
+Versión
+Aprobado
+Fecha
+Página
+: RP-PR-003
+: 00
+: CSIG
+: 22/12/2025
+: 7 de 15
+
+================================================================================
+Chunk: 15 / 47
+Páginas: [7]
+Sección: COMUNICACIÓN DE CRISIS
+Tipo: table
+--------------------------------------------------------------------------------
+, Responsabilidades = • Gestión de canales y cobertura: coordina la difusión por canales institucionales, así como el monitoreo de medios y redes sociales, informando hallazgos relevantes al Comité. • Gestión de reputación e imagen: orienta sobre enfoque de mensaje, tono institucional e identidad visual, según corresponda.. Vocero Interno, Responsabilidades = • Comunicación al personal: transmite mensajes institucionales al personal, manteniendo alineamiento interno y claridad sobre acciones adoptadas. • Canal de retroalimentación interna: recoge consultas recurrentes y necesidades de información para su canalización y respuesta institucional.. Vocero Externo, Responsabilidades = • Declaraciones públicas: emite declaraciones y atiende requerimientos de información dirigidos al público externo, conforme a la vocería autorizada y mensajes aprobados. • Relación con medios y entrevistas: participa en entrevistas o conferencias cuando corresponda, manteniendo coherencia con la posición institucional. • Mensajes clave: refuerza mensajes institucionales priorizados para los grupos de interés externos, de acuerdo con la evolución del evento.
+
+================================================================================
+Chunk: 16 / 47
+Páginas: [7]
+Sección: 5.2 Valoración de eventos y niveles de crisis
+Tipo: text
+--------------------------------------------------------------------------------
+Es  importante  tener  en  cuenta  que,  independientemente  de  que,  aunque  un  evento  se encuentre resuelto o controlado desde el punto de vista operativo, su gestión deberá ser valorada considerando su repercusión mediática, su impacto en los grupos de interés y su potencial  efecto  en  la  reputación  e  imagen  institucional  de  Electro  Sur  Este  S.A.A.  La valoración permitirá determinar el nivel del evento y, en función de ello, la activación de instancias, vocerías, coordinación interna y medidas de comunicación que correspondan.
+
+================================================================================
+Chunk: 17 / 47
+Páginas: [7, 8]
+Sección: 5.2.1  Niveles de Valoración de Gestión de Crisis
+Tipo: mixto: table, text
+--------------------------------------------------------------------------------
+La valoración de niveles se realiza de manera referencial, considerando la naturaleza del evento, su alcance y su evolución:
+Impacto, Nivel 1 = Menor / controlable. Impacto, Nivel 2 = Moderado. Impacto, Nivel 3 = Alto. Impacto, Nivel 4 = Crítico. Probabilidad / recurrencia, Nivel 1 = Frecuente. Probabilidad / recurrencia, Nivel 2 = Infrecuente. Probabilidad / recurrencia, Nivel 3 = Muy infrecuente. Probabilidad / recurrencia, Nivel 4 = Extraordinaria. Criterios para calificar el incidente (referencial), Nivel 1 = Afectación acotada y local. Criterios para calificar el incidente (referencial), Nivel 2 = Afectación relevante en una zona/servicio. Criterios para calificar el incidente (referencial), Nivel 3 = Afectación regional o multisede. Criterios para calificar el incidente (referencial), Nivel 4 = Afectación mayor, con alta exposición nacional. Responsable de proponer criterios/umbrales (referencial), Nivel 1 = Área afectada. Responsable de proponer criterios/umbrales (referencial), Nivel 2 = Área afectada + Comunicación. Responsable de proponer criterios/umbrales (referencial), Nivel 3 = Comité de Gestión de Crisis. Responsable de proponer criterios/umbrales (referencial), Nivel 4 = Comité de Gestión de Crisis. Responsable de calificar el evento (según nivel), Nivel 1 = Responsable local / jefatura del área. Responsable de calificar el evento (según nivel), Nivel 2 = Jefatura/gerencia del área con apoyo de Comunicación. Responsable de calificar el evento (según nivel), Nivel 3 = Comité de Gestión de Crisis. Responsable de calificar el evento (según nivel), Nivel 4 = Comité de Gestión de Crisis. Repercusión, Nivel 1 = Muy reducida. Repercusión, Nivel 2 = Medios regionales y/o RRSS. Repercusión, Nivel 3 = Medios nacionales y RRSS. Repercusión, Nivel 4 = Medios nacionales/inter nacionales y alta viralidad. Declaración de crisis, Nivel 1 = No corresponde. Declaración de crisis, Nivel 2 = Puede corresponder a. Declaración de crisis, Nivel 3 = Corresponde a nivel corporativo. Declaración de crisis, Nivel 4 = Corresponde a nivel
+Código
+Versión
+Aprobado
+Fecha
+Página
+: RP-PR-003
+: 00
+: CSIG
+: 22/12/2025
+: 8 de 15
+
+================================================================================
+Chunk: 18 / 47
+Páginas: [8]
+Sección: COMUNICACIÓN DE CRISIS
+Tipo: table
+--------------------------------------------------------------------------------
+, 1 = . , 2 = nivel de área. , 3 = . Instancia de gestión, 1 = Gestión local / área. Instancia de gestión, 2 = Comité operativo del evento (según corresponda). Instancia de gestión, 3 = Comité de Gestión de Crisis
+
+================================================================================
+Chunk: 19 / 47
+Páginas: [8]
+Sección: 5.3 Estrategias de comunicación en crisis
+Tipo: mixto: table, text
+--------------------------------------------------------------------------------
+Ante situaciones adversas, Electro Sur Este S.A.A. podrá adoptar distintas estrategias de comunicación,  de  manera  no  excluyente  ni  automática,  considerando  la  naturaleza  del evento,  su  nivel,  el  contexto  institucional  y  las  decisiones  que  adopten  las  instancias competentes. Estas estrategias buscan ordenar la narrativa institucional, mitigar impactos negativos y preservar la credibilidad de la organización ante sus grupos de interés.
+Estrategia de Silencio, OBJETIVO = Evitar pronunciamientos mientras se verifica información o se evalúa el contexto del evento.. Estrategia de Silencio, USO = Se considera cuando una respuesta inmediata podría generar mayor confusión, exposición innecesaria o afectar procesos en curso. Esta estrategia solo debe de utilizarse en casos de menor impacto debido a que en una crisis mayor evitar pronunciamientos puede dar pie a especulaciones que afecten la reputación por parte de medios tradicionales y redes sociales.. Estrategia de Negación, OBJETIVO = Descartar información inexacta o afirmaciones que no se ajustan a los hechos verificados.. Estrategia de Negación, USO = Se utiliza cuando la información difundida es falsa, errónea o no guarda relación con la responsabilidad de la empresa.. Estrategia de Aclaración, OBJETIVO = Precisar hechos, alcances o contextos para evitar interpretaciones incorrectas.. Estrategia de Aclaración, USO = Se aplica cuando existe información parcial, ambigua o mal interpretada por los grupos de interés.. Estrategia de Minimización, OBJETIVO = Contextualizar el evento para dimensionar adecuadamente su impacto real.. Estrategia de Minimización, USO = Se emplea cuando el evento no compromete significativamente la operación, la seguridad o la reputación institucional.. Estrategia de Justificación, OBJETIVO = Explicar las razones técnicas, operativas o normativas asociadas al evento.. Estrategia de Justificación, USO = Se utiliza cuando resulta necesario brindar contexto para comprender decisiones o acciones adoptadas.. Estrategia de Corrección, OBJETIVO = Comunicar acciones adoptadas o en curso para atender el evento y prevenir su recurrencia.. Estrategia de Corrección, USO = Se aplica cuando corresponde informar medidas de ajuste, mejora o recuperación relacionadas con la situación.. Estrategia de Reconocimiento, OBJETIVO = Reconocer la ocurrencia del evento y la responsabilidad institucional cuando corresponda.. Estrategia de Reconocimiento, USO = Se utiliza cuando el contexto lo amerita y contribuye a preservar la confianza y credibilidad de la empresa.
+La  selección,  combinación  y  aplicación  de  las  estrategias  de  comunicación  en  crisis deberá  ser  definida  y  autorizada  por  el  Comité  de  Gestión  de  Crisis  o  por  la  instancia competente que corresponda, según el nivel del evento. En consecuencia, no constituye una  decisión  individual,  y  su  ejecución  deberá  mantenerse  alineada  con  las  decisiones institucionales y la información verificada disponible .
+
+================================================================================
+Chunk: 20 / 47
+Páginas: [9]
+Sección: 5.3.1  Etapa previa a la ocurrencia de una crisis (ANTES)
+Tipo: text
+--------------------------------------------------------------------------------
+Página
+: RP-PR-003
+: 00
+: CSIG
+: 22/12/2025
+: 9 de 15
+
+================================================================================
+Chunk: 21 / 47
+Páginas: [9]
+Sección: COMUNICACIÓN DE CRISIS
+Tipo: mixto: list_item, text
+--------------------------------------------------------------------------------
+En esta fase,  se  debe  de  asegurar  medidas  preventivas  y  estrategias  de  comunicación proactivas  para  mitigar  potenciales  crisis  en  Electro  Sur  Este.  La clave  radica  en anticiparse a posibles eventualidades y fortalecer la capacidad de respuesta. A continuación, se detallan las acciones específicas:
+- Mantenimiento de Información Actualizada:
+- Revisar  periódicamente  la  matriz  de  identificación,  análisis,  evaluación  de riesgos y controles de continuidad operativa, que incluye el mapa de riesgos.
+- He de asegurar que la información contenida en el plan de comunicación en crisis  esté  actualizada  y  refleje  la  realidad  operativa  de  Electro  Sur  Este S.A.A.
+- Actualización  y  Disponibilidad  de  Datos  de  Contacto: El  Coordinador  de Comunicación  e  Imagen  mantiene  actualizada  y  disponible  la  información  de contacto de los responsables de la Gestión de Crisis de ELSE.
+- Monitoreo  de  Riesgos  Reputacionales: El  Coordinador  de  Comunicación  e Imagen en Electro Sur Este S.A.A. monitorea de manera constante la ocurrencia de cualquier  riesgo  reputacional  que  pudiera  afectar  a  la  empresa,  anticipándose  a posibles situaciones críticas.
+- Aseguramiento  de  la  Comprensión  del  Plan  de  Comunicación  en  Crisis: El presidente del Comité  de  Gestión de Crisis se asegura  de que  todos los involucrados en la comunicación en crisis en Electro Sur Este S.A.A. comprendan completamente el plan, facilitando su ejecución efectiva cuando sea necesario.
+- Programación de Ejercicios y Pruebas Periódicas: Se podrá programar ejercicios  y  pruebas  del  Plan  de  Comunicación  en  Crisis,  según  la  priorización  y disponibilidad  institucional,  con  el  propósito  de  fortalecer  la  preparación  ante posibles escenarios.
+- Capacitación  a  Voceros  y  Seguimiento  de  Cumplimiento: El  Coordinador  de Comunicación  e  Imagen  gestiona  la  capacitación  de  los  voceros  designados  y verifica su alineamiento con las directrices establecidas.
+- Articulación  con  otros  sistemas  de  gestión: las  acciones  de  esta  etapa  se articularán,  cuando  corresponda,  con  herramientas  institucionales  vinculadas  a  la Gestión Integral de Riesgos, la Continuidad Operativa y la Gestión de Crisis, a fin de asegurar coherencia y alineamiento institucional.
+
+================================================================================
+Chunk: 22 / 47
+Páginas: [9, 10]
+Sección: 5.3.1.1 Preparación de Voceros
+Tipo: mixto: list_item, text
+--------------------------------------------------------------------------------
+La  preparación  de  voceros  en  Electro  Sur  Este  S.A.A.  se  fundamenta  en  la construcción de mensajes coherentes, transparentes y adaptados a las circunstancias  de  una  crisis,  garantizando  una  representación  efectiva  ante  los medios y partes interesadas. A continuación, se detallan los aspectos fundamentales para todas las comunicaciones de los voceros designados:
+- Sinceridad  como  Pilar  Fundamental: Enfatizar  la  importancia  de  la  sinceridad como base fundamental de la comunicación en situaciones de crisis. Los voceros de Electro Sur Este S.A.A. deben ofrecer información veraz sin necesidad de revelar todos los detalles.
+- Estructuración de Mensajes Claros, Concisos y Oportunos: Establecer pautas para  la  estructuración  de  mensajes  que  sean  claros,  concisos  y  oportunos.  La información debe ser comprensible para todo tipo de receptores, asegurando una comunicación efectiva.
+Página
+: RP-PR-003
+: 00
+: CSIG
+: 22/12/2025
+: 10 de 15
+
+================================================================================
+Chunk: 23 / 47
+Páginas: [10]
+Sección: COMUNICACIÓN DE CRISIS
+Tipo: list_item
+--------------------------------------------------------------------------------
+- Disponibilidad  y  Canalización  de  Llamadas: Promover  la  disponibilidad  de  los voceros para atender llamadas de los medios de manera inmediata. Si un vocero no está disponible, se debe canalizar la llamada al Jefe de Imagen y Responsabilidad Social en Electro Sur Este S.A.A.
+- Identificación del Medio y Periodista: Capacitar a los voceros para identificar al periodista  y  su  medio  antes  de  responder.  Conocer  el  enfoque  del  medio  y prepararse para orientar las respuestas según la audiencia.
+- Respuestas  Orientadas  a  Satisfacer  al  Periodista: Instruir  a  los  voceros  para que,  en  sus  respuestas,  consideren  la  reacción  que  busca  obtener  el  periodista. Partir  del  posicionamiento  de  Electro  Sur  Este  S.A.A.  y  reflejar  el  mejor  punto  de vista para el mensaje.
+- Claridad  en  las  Respuestas: Fomentar  la  claridad  en  las  respuestas  de  los voceros.  Ofrecer  ideas  clave  independientemente  de  las  preguntas  formuladas, manteniendo un enfoque transparente y comprensible.
+- Explicación en Caso de Desconocimiento: Enseñar a los voceros a explicar las razones si se enfrentan a preguntas que no pueden contestar. La transparencia es esencial para mantener la confianza en la comunicación de Electro Sur Este S.A.A.
+- Comportamiento Profesional y Atenciones: Promover un comportamiento profesional  por  parte  de  los  voceros.  Cuidar  aspectos  físicos,  limitar  gestos  al mínimo y tratar con amabilidad a los entrevistadores.
+- Evitar Actuaciones Inadecuadas: Advertir sobre actuaciones inadecuadas, como especular,  ocultar  información,  mostrarse  hostil,  entre  otras.  La  accesibilidad, sinceridad  y  serenidad  son  claves  para  el  desempeño  efectivo  de  los  voceros  de Electro Sur Este S.A.A.
+
+================================================================================
+Chunk: 24 / 47
+Páginas: [10]
+Sección: Comportamientos inapropiados de los voceros:
+Tipo: list_item
+--------------------------------------------------------------------------------
+- Especular  o  realizar  conjeturas.  En  caso  de  desconocimiento,  es  preferible admitirlo.
+- Responder sin certeza a las solicitudes informativas de los periodistas.
+- Ocultar información y ofrecer respuestas falsas.
+- Mostrar hostilidad. La accesibilidad y sinceridad son elementos clave.
+- Vetar ciertos medios o periodistas.
+- Negar  errores.  En  su  lugar,  explicar  el  origen  del  problema,  cómo  ha  sido controlado y las medidas para evitar su repetición.
+- Mostrar excesiva desmoralización. Se busca construir serenidad y preocupación.
+- Esperar  a  que  otras  fuentes  relacionadas  con  una  crisis  se  adelanten.  Ser proactivo y ser el primero en informar.
+- Trabajar de manera aislada. La colaboración de todo el Comité de Gestión de la Comunicación en Situaciones de Crisis es esencial.
+
+================================================================================
+Chunk: 25 / 47
+Páginas: [10]
+Sección: 5.3.2 Etapa durante la crisis (DURANTE)
+Tipo: text
+--------------------------------------------------------------------------------
+Durante la etapa operativa de una crisis, la gestión de la comunicación se desarrollará de manera coordinada y progresiva, considerando la información disponible y la evolución del evento.  Toda  comunicación  externa  relevante  deberá  contar  con  la  validación  de  la instancia competente que corresponda, de acuerdo con el nivel de la crisis. Las siguientes consideraciones se destacan como elementos esenciales durante este periodo crítico:
+
+================================================================================
+Chunk: 26 / 47
+Páginas: [11]
+Sección: 5.3.2.1 Identificar la situación de crisis
+Tipo: text
+--------------------------------------------------------------------------------
+Fecha
+Página
+: RP-PR-003
+: 00
+: CSIG
+: 22/12/2025
+: 11 de 15
+
+================================================================================
+Chunk: 27 / 47
+Páginas: [11]
+Sección: COMUNICACIÓN DE CRISIS
+Tipo: text
+--------------------------------------------------------------------------------
+Durante  esta  etapa,  se  debe  realizar  una  identificación  precisa  y  rápida  de  la situación de crisis en Electro Sur Este S.A.A. Esto implica reconocer y comprender la naturaleza del incidente disruptivo y/o circunstancias que desvíen la normalidad y amenacen la integridad de la imagen corporativa.
+
+================================================================================
+Chunk: 28 / 47
+Páginas: [11]
+Sección: 5.3.2.2 Convocatoria del Comité de Gestión Crisis
+Tipo: text
+--------------------------------------------------------------------------------
+Se debe activar el protocolo establecido para la convocatoria del Comité de Gestión de  Crisis  de  Electro  Sur  Este  S.A.A.  según  lo  descrito  en  el  Plan  de  Gestión  de Crisis. Este paso es crucial para reunir a los responsables y expertos pertinentes, facilitando la toma de decisiones coordinada y efectiva.
+
+================================================================================
+Chunk: 29 / 47
+Páginas: [11]
+Sección: 5.3.2.3 Activación del monitoreo
+Tipo: text
+--------------------------------------------------------------------------------
+El  Coordinador  de  Gestión  de  Crisis  desempeña  un  papel  central  al  activar  el monitoreo continuo de la situación desde su inicio hasta su resolución. Esto implica seguimiento  en  fuentes  de  origen  de  información  y  medios,  permitiendo  una comprensión  completa  del  desarrollo  de  la  crisis.  Determinación  de  las  primeras medidas.
+
+================================================================================
+Chunk: 30 / 47
+Páginas: [11]
+Sección: 5.3.2.4 Análisis de partes interesadas afectados
+Tipo: text
+--------------------------------------------------------------------------------
+El Coordinador de Comunicación e Imagen lleva a cabo un análisis detallado de los grupos  de  interés  internos  y  externos  que  se  ven  afectados  por  la  crisis.  Se determinan tratamientos y mensajes destinados a abordar las reacciones de estos grupos de interés durante y después de la crisis. El análisis de los grupos de interés afectados podrá  actualizarse conforme  evolucione  la situación,  considerando cambios en el alcance, impacto o percepción del evento.
+
+================================================================================
+Chunk: 31 / 47
+Páginas: [11]
+Sección: 5.3.2.5 Designación de voceros:
+Tipo: list_item
+--------------------------------------------------------------------------------
+- Los  únicos  voceros  autorizados  para  brindar  declaraciones  y  conceder entrevistas a profundidad ante medios de comunicación del ámbito nacional y regional son, por mandato  institucional, el Gerente General y el Presidente del Directorio de Electro Sur Este.
+- El  Jefe  de  Imagen  y  Responsabilidad  Social  es  el  responsable  de  emitir pronunciamientos  institucionales  sobre  temas  operativos  y  declaraciones puntuales  en  medios  de  comunicación  locales,  referidos  a  situaciones cotidianas o eventos imprevistos del servicio, debiendo contar para ello con el  respaldo técnico de las gerencias o jefaturas competentes involucradas en la atención del hecho que motive la interacción con los medios.
+- De  manera  excepcional  y  previa  autorización  expresa  de  la  Gerencia General  y  de  la  Jefatura  de  Imagen  y  Responsabilidad  Social,  podrán designarse voceros técnicos especializados, entre los gerentes de división, gerentes regionales y jefes de sector, con una vigencia temporal definida y para temas específicos.
+- En todos los casos, los funcionarios designados como voceros deben contar obligatoriamente con capacitación especializada en media training y deben coordinar previamente los mensajes estratégicos con la Jefatura de Imagen y Responsabilidad Social.
+- Se prohíbe de manera expresa que cualquier otro colaborador o funcionario brinde declaraciones públicas en nombre de Electro Sur Este, en medios de comunicación  tradicionales  o  digitales,  en  entornos  online  u  offline,  bajo ninguna circunstancia.
+- El  incumplimiento  de  esta  disposición  constituye  falta  administrativa  y  es pasible de sanción conforme a la normativa interna vigente.
+
+================================================================================
+Chunk: 32 / 47
+Páginas: [11, 12]
+Sección: 5.3.2.6 Contenido de los mensajes emitidos
+Tipo: text
+--------------------------------------------------------------------------------
+Durante  la  gestión  de  la  crisis  se  mantendrá  un  registro  de  hechos  relevantes, decisiones, comunicaciones emitidas y coordinaciones principales, con la finalidad
+Página
+: RP-PR-003
+: 00
+: CSIG
+: 22/12/2025
+: 12 de 15
+
+================================================================================
+Chunk: 33 / 47
+Páginas: [12]
+Sección: COMUNICACIÓN DE CRISIS
+Tipo: mixto: list_item, text
+--------------------------------------------------------------------------------
+de  asegurar  orden  interno  y  facilitar  la  evaluación  posterior.  El  responsable  del registro será definido por la instancia competente según el nivel del evento:
+- Conocimiento  y  Evaluación  de  los  Hechos: El  mensaje  inicial  debe reflejar un profundo conocimiento y evaluación de los hechos que rodean la crisis  en  Electro  Sur  Este  S.A.A.  Proporcionar  información  precisa  y detallada  sobre  la  situación  actual,  resaltando  la  comprensión  clara  de  la magnitud y la naturaleza del incidente.
+- Ampliación  de  Información  y  Monitoreo  Continuo: Se  enfocará  en  la ampliación  progresiva  de  la  información  a  medida  que  se  desarrolla  la crisis.  Electro  Sur  Este  S.A.A.  se  comprometerá  a  mantener  a  las  partes interesadas informadas de manera constante, demostrando transparencia y disposición para abordar los acontecimientos en tiempo real.
+- Elaboración  de  una  Declaración Preliminar: Se  proporcionará una declaración  preliminar  que  establecerá  la  posición  de  Electro  Sur  Este S.A.A.  frente  a  la  crisis.  Esta  declaración  deberá  ser  cuidadosamente redactada  para  transmitir  confianza,  calma  y  la  intención  de  abordar  de manera efectiva la situación.
+- Distribución Proactiva o Reactiva de Declaraciones: Se establecerá una estrategia para la distribución proactiva o reactiva de declaraciones. Electro Sur Este S.A.A. se comprometerá a responder de manera oportuna a las consultas y preocupaciones de las partes interesadas, evitando la propagación de información errónea y brindando claridad sobre los pasos tomados para resolver la crisis.
+
+================================================================================
+Chunk: 34 / 47
+Páginas: [12]
+Sección: A. Preguntas fundamentales para considerar para la formulación de mensajes comunicativos, establecidas por la Coordinación de Comunicación e Imagen:
+Tipo: mixto: list_item, text
+--------------------------------------------------------------------------------
+- ·
+- ·
+- ·
+·
+- ·
+- ¿Cuál fue el suceso? (considerando la causa del evento)
+Identificar de manera precisa y detallada el evento o incidente en cuestión.
+- ¿Quién o qué fue responsable del evento?
+Determinar la entidad o factor responsable del suceso, enfocándose en la claridad y responsabilidad.
+- ¿Hubo víctimas fatales o heridos?
+Evaluar si el evento resultó en pérdidas humanas o lesiones, destacando la dimensión humana de la situación.
+
+================================================================================
+Chunk: 35 / 47
+Páginas: [12, 13]
+Sección: ¿Quiénes y cuántos fueron los afectados?
+Tipo: mixto: list_item, text
+--------------------------------------------------------------------------------
+Identificar las partes afectadas y cuantificar el alcance del impacto, proporcionando una visión completa de las dimensiones del evento.
+- ¿Cuál es el tipo de influencia del afectado?
+Analizar la naturaleza de la influencia que las partes afectadas tienen en la situación, considerando su relevancia y poder de influencia.
+- ¿Qué  consecuencias  se  han  generado  o  podrían  generarse  para  la Empresa a corto y largo plazo?
+- Evaluar las repercusiones actuales y potenciales del evento en la empresa, considerando tanto el impacto inmediato como las posibles consecuencias
+a largo plazo.
+- ¿Qué medidas se han implementado o están en proceso de implementación?
+Informar  sobre  las  acciones  concretas  que  se  han  tomado  o  están  en marcha para abordar y gestionar la situación.
+Página
+: RP-PR-003
+: 00
+: CSIG
+: 22/12/2025
+: 13 de 15
+
+================================================================================
+Chunk: 36 / 47
+Páginas: [13]
+Sección: COMUNICACIÓN DE CRISIS
+Tipo: mixto: list_item, text
+--------------------------------------------------------------------------------
+- ¿En qué medida se verá afectado el servicio brindado a los clientes? Evaluar el impacto en la prestación de servicios a los clientes, asegurando una comprensión clara de cómo la situación afectará a los usuarios.
+- ¿En  qué  medida  se  verá  afectada  la  dinámica  de  trabajo  de  los trabajadores?
+Analizar  cómo  la  dinámica  laboral  de  los  trabajadores  se  verá  afectada, destacando los posibles cambios operativos y organizativos.
+
+================================================================================
+Chunk: 37 / 47
+Páginas: [13]
+Sección: 5.2.3 Etapa posterior a la finalización de la crisis (DESPUÉS)
+Tipo: mixto: list_item, text
+--------------------------------------------------------------------------------
+La fase posterior a la conclusión de una crisis marca el inicio de un proceso reflexivo y de mejora continua en Electro Sur Este S.A.A. En esta etapa, se implementarán estrategias específicas  para  la  gestión  de  la  comunicación  y  la  reparación  de  la  reputación  de  la empresa. A continuación, se detallan las acciones a llevar a cabo:
+- Evaluación y Lecciones Aprendidas: Se realizará una exhaustiva evaluación de la gestión  de  las  comunicaciones  durante  la  crisis.  Este  análisis  comprenderá  la revisión  de  cada  paso  tomado,  identificando  las  fortalezas  y  debilidades.  Las lecciones aprendidas se incorporarán al plan actual, mejorando la capacidad de respuesta de Electro Sur Este S.A.A. ante situaciones similares en el futuro.
+- Seguimiento de la Repercusión de la Crisis: La monitorización del impacto que la crisis ha causado en las partes interesadas será una prioridad. Electro Sur Este S.A.A. buscará comprender  completamente  las percepciones y reacciones posteriores a la resolución de la crisis, identificando cualquier área que requiera atención adicional.
+- Implementación de acciones institucionales posteriores: Cuando corresponda, se podrán considerar acciones institucionales orientadas a reconocer las contribuciones  realizadas  durante  la  gestión  de  la  crisis,  de  acuerdo  con  el contexto y la naturaleza del evento.
+- Evaluación de acciones para la recuperación de la imagen institucional: De ser necesario,  se  evaluará  el  diseño  de  acciones  comunicacionales  orientadas  a  la recuperación de la imagen y reputación institucional, conforme al contexto y a las lecciones aprendidas.
+
+================================================================================
+Chunk: 38 / 47
+Páginas: [13]
+Sección: 5.4.1 Protocolos por tipos de Crisis
+Tipo: text
+--------------------------------------------------------------------------------
+Electro  Sur  Este  S.A.A.  podrá  desarrollar,  complementar  y  mantener  protocolos,  guías  o lineamientos de comunicación específicos por tipo de crisis identificado en la organización, con la finalidad de orientar, de manera práctica y ordenada, la preparación y la respuesta comunicacional según la naturaleza del evento, su nivel, los grupos de interés involucrados y el contexto institucional.
+Dichos protocolos podrán incluir, entre otros, criterios de activación, roles y responsabilidades, vocería aplicable, mensajes base, canales recomendados y mecanismos de  coordinación  interna,  sin  perjuicio  de  que  su  aplicación  se  ajuste  a  la  información disponible y a la evolución del evento. La elaboración, actualización y priorización de estos protocolos  se  realizará  de  forma  progresiva  y  según  corresponda,  en  función  de  las necesidades institucionales y las decisiones adoptadas por las instancias competentes.
+
+================================================================================
+Chunk: 39 / 47
+Páginas: [13, 14]
+Sección: 5.4.2 Recursos requeridos parala comunicación en crisis
+Tipo: text
+--------------------------------------------------------------------------------
+La  implementación  efectiva  de  la  comunicación  en  crisis  demanda  la  asignación  de recursos que garanticen una respuesta ágil y precisa por ello se identifica y moviliza los
+Código
+Versión
+Aprobado
+Fecha
+Página
+: RP-PR-003
+: 00
+: CSIG
+: 22/12/2025
+: 14 de 15
+
+================================================================================
+Chunk: 40 / 47
+Páginas: [14, 15]
+Sección: COMUNICACIÓN DE CRISIS
+Tipo: mixto: caption, table, text
+--------------------------------------------------------------------------------
+siguientes  recursos  necesarios  para  gestionar  la  comunicación  durante  situaciones críticas:
+Laptops habilitadas, DESCRIPCIÓN = Equipos portátiles disponibles para uso inmediato, con accesos institucionales autorizados y configuraciones que permitan continuidad de comunicaciones.. Radio AM/FM, DESCRIPCIÓN = Proporciona acceso a las emisoras de radio AM/FM, lo que puede ser crucial para mantenerse actualizado con información en tiempo real, especialmente en situaciones de emergencia.. Televisión con cable, DESCRIPCIÓN = Con acceso a canales por cable, permitiendo el seguimiento de noticias y actualizaciones relevantes para la crisis.. Teléfono, DESCRIPCIÓN = Teléfonos disponibles para la comunicación interna y externa, facilitando la coordinación y la conexión con partes interesadas clave.. Celulares, DESCRIPCIÓN = Teléfonos celulares adicionales, proporcionando movilidad y flexibilidad para la comunicación en situaciones de crisis.. Internet (fijo e inalámbrico), DESCRIPCIÓN = Una conexión a Internet tanto fija como inalámbrica, permitiendo el acceso rápido a información en línea, comunicación por correo electrónico y actualizaciones en tiempo real.. Correo electrónico corporativo, DESCRIPCIÓN = Cuentas de correo electrónico corporativo para la comunicación formal y documentación de la información relacionada con la crisis.. Plan de comunicación en crisis impreso, DESCRIPCIÓN = Copias impresas del plan de comunicación en crisis para referencia rápida y acceso en caso de interrupciones en los medios electrónicos.. Pizarra blanca con caballete y proyector multimedia, DESCRIPCIÓN = Una pizarra blanca montada en un caballete junto con un proyector multimedia, facilitando la presentación visual de información clave durante las reuniones.. Impresora Multifuncional, DESCRIPCIÓN = Impresora multifuncional para la producción de documentos necesarios durante la gestión de crisis.. Kit de Oficina (Lápiz, plumón, lapicero, papeles bond), DESCRIPCIÓN = Un conjunto de suministros de oficina básicos que incluye lápices, plumones, lapiceros y papeles bond para facilitar la toma de notas y la documentación durante la crisis.. Mesas y Sillas, DESCRIPCIÓN = Designadas para ser utilizadas como estaciones de trabajo durante la gestión de la crisis, proporcionando un espacio centralizado para la coordinación.
+Código
+Versión
+Aprobado
+Fecha
+Página
+: RP-PR-003
+: 00
+: CSIG
+: 22/12/2025
+: 15 de 15
+Flujo 1: Comunicación de Crisis
+
+================================================================================
+Chunk: 41 / 47
+Páginas: [16]
+Sección: PROCEDIMIENTO
+Tipo: text
+--------------------------------------------------------------------------------
+Código
+Versión
+Aprobado
+Fecha
+Página
+: RP-PR-003
+: 00
+: CSIG
+: 22/12/2025
+: 16 de 3
+
+================================================================================
+Chunk: 42 / 47
+Páginas: [16]
+Sección: COMUNICACIÓN DE CRISIS
+Tipo: table
+--------------------------------------------------------------------------------
+-, Entradas = -. -, N° = 1. -, Descripción Actividades = Comunicar incidente. -, Salidas = Incidente comunicado. -, Clientes = Jefe de Imagen. -, Ejecutor de la Actividad = Medios de comunicació n y redes sociales. -, Sistema que soporta la Actividad = Medios de comunicac ión. -, ¿Es control Cable? (Sí=x) = -. Medios de comunicació n y redes sociales, Entradas = Incidente comunicado. Medios de comunicació n y redes sociales, N° = 2. Medios de comunicació n y redes sociales, Descripción Actividades = Tomar conocimiento del incidente. Medios de comunicació n y redes sociales, Salidas = -. Medios de comunicació n y redes sociales, Clientes = Jefe de Imagen. Medios de comunicació n y redes sociales, Ejecutor de la Actividad = Jefe de Imagen. Medios de comunicació n y redes sociales, Sistema que soporta la Actividad = --. Medios de comunicació n y redes sociales, ¿Es control Cable? (Sí=x) = -. Jefe de Imagen, Entradas = Incidente. Jefe de Imagen, N° = 3. Jefe de Imagen, Descripción Actividades = Comunicar al Jefe inmediato. Jefe de Imagen, Salidas = Comunicación. Jefe de Imagen, Clientes = Jefe de Imagen/ Jefe inmediato. Jefe de Imagen, Ejecutor de la Actividad = Jefe de Imagen. Jefe de Imagen, Sistema que soporta la Actividad = -. Jefe de Imagen, ¿Es control Cable? (Sí=x) = -. Contac center/ Colaboradore s en campo u oficinas, Entradas = Comunicación. Contac center/ Colaboradore s en campo u oficinas, N° = 4. Contac center/ Colaboradore s en campo u oficinas, Descripción Actividades = Comunicar incidente. Contac center/ Colaboradore s en campo u oficinas, Salidas = Comunicación. Contac center/ Colaboradore s en campo u oficinas, Clientes = Jefe inmediato. Contac center/ Colaboradore s en campo u oficinas, Ejecutor de la Actividad = Contac center/ Colaboradore s en campo u oficinas. Contac center/ Colaboradore s en campo u oficinas, Sistema que soporta la Actividad = -. Contac center/ Colaboradore s en campo u oficinas, ¿Es control Cable? (Sí=x) = -. Contac center/ Colaboradore s en campo u oficinas, Entradas = Comunicación. Contac center/ Colaboradore s en campo u oficinas, N° = 5. Contac center/ Colaboradore s en campo u oficinas, Descripción Actividades = Tomar conocimiento de incidente. Contac center/ Colaboradore s en campo u oficinas, Salidas = Conocimiento de incidente. Contac center/ Colaboradore s en campo u oficinas, Clientes = Jefe inmediato. Contac center/ Colaboradore s en campo u oficinas, Ejecutor de la Actividad = Jefe inmediato. Contac center/ Colaboradore s en campo u oficinas, Sistema que soporta la Actividad = -. Contac center/ Colaboradore s en campo u oficinas, ¿Es control Cable? (Sí=x) = -. Jefe inmediato, Entradas = Conocimiento de incidente. Jefe inmediato, N° = 6. Jefe inmediato, Descripción Actividades = Comunicar al Jefe inmediato del área afectada. Jefe inmediato, Salidas = . Jefe inmediato, Clientes = Jefe de Imagen/ Jefe inmediato. Jefe inmediato, Ejecutor de la Actividad = Jefe inmediato. Jefe inmediato, Sistema que soporta la Actividad = -. Jefe inmediato, ¿Es control Cable? (Sí=x) = -. Jefe inmediato, Entradas = Conocimiento de incidente. Jefe inmediato, N° = 7. Jefe inmediato, Descripción Actividades = Realizar la valoración del nivel de Gestión de Crisis. Jefe inmediato, Salidas = Nivel de Gestión de crisis. Jefe inmediato, Clientes = Jefe de Imagen/ Jefe inmediato. Jefe inmediato, Ejecutor de la Actividad = Jefe de Imagen/ Jefe inmediato. Jefe inmediato, Sistema que soporta la Actividad = -. Jefe inmediato, ¿Es control Cable? (Sí=x) = X
+
+================================================================================
+Chunk: 43 / 47
+Páginas: [17]
+Sección: PROCEDIMIENTO
+Tipo: text
+--------------------------------------------------------------------------------
+Código
+Versión
+Aprobado
+Fecha
+Página
+: RP-PR-003
+: 00
+: CSIG
+: 22/12/2025
+: 17 de 3
+
+================================================================================
+Chunk: 44 / 47
+Páginas: [17]
+Sección: COMUNICACIÓN DE CRISIS
+Tipo: table
+--------------------------------------------------------------------------------
+Jefe de Imagen/ Jefe inmediato, Entradas = Nivel de Gestión de crisis. Jefe de Imagen/ Jefe inmediato, N° = 8. Jefe de Imagen/ Jefe inmediato, Descripción Actividades = ¿Nivel de crisis es 1? Si: ir a la actividad 9 No: Ir a la actividad 11. Jefe de Imagen/ Jefe inmediato, Salidas = Tipo de comité. Jefe de Imagen/ Jefe inmediato, Clientes = Gerente o responsable del área afectada/ Comité de crisis ordinario. Jefe de Imagen/ Jefe inmediato, Ejecutor de la Actividad = Jefe de Imagen/ Jefe inmediato. Jefe de Imagen/ Jefe inmediato, Sistema que soporta la Actividad = -. Jefe de Imagen/ Jefe inmediato, ¿Es control Cable? (Sí=x) = X. Jefe de Imagen/ Jefe inmediato, Entradas = Nivel de crisis 1. Jefe de Imagen/ Jefe inmediato, N° = 9. Jefe de Imagen/ Jefe inmediato, Descripción Actividades = Tomar conocimiento. Jefe de Imagen/ Jefe inmediato, Salidas = Comunicar al Gerente dueño del área afectada. Jefe de Imagen/ Jefe inmediato, Clientes = Jefe de Imagen/ Jefe inmediato. Jefe de Imagen/ Jefe inmediato, Ejecutor de la Actividad = Gerente o responsable del área afectada. Jefe de Imagen/ Jefe inmediato, Sistema que soporta la Actividad = -. Jefe de Imagen/ Jefe inmediato, ¿Es control Cable? (Sí=x) = -. Gerente o responsable del área afectada, Entradas = Comunicar al Gerente dueño del área afectada. Gerente o responsable del área afectada, N° = 10. Gerente o responsable del área afectada, Descripción Actividades = Tomar acciones para la atención. Gerente o responsable del área afectada, Salidas = Acciones para atención. Gerente o responsable del área afectada, Clientes = -. Gerente o responsable del área afectada, Ejecutor de la Actividad = Gerente o responsable del área afectada. Gerente o responsable del área afectada, Sistema que soporta la Actividad = -. Gerente o responsable del área afectada, ¿Es control Cable? (Sí=x) = -. Jefe de Imagen/ Jefe inmediato, Entradas = -. Jefe de Imagen/ Jefe inmediato, N° = 11. Jefe de Imagen/ Jefe inmediato, Descripción Actividades = ¿Nivel de crisis es 2 o 3? Si: Ir a la actividad 12 No: Ir a la actividad 14. Jefe de Imagen/ Jefe inmediato, Salidas = -. Jefe de Imagen/ Jefe inmediato, Clientes = Comité de Crisis ordinario/ Comité de crisis extraordinario. Jefe de Imagen/ Jefe inmediato, Ejecutor de la Actividad = Jefe de Imagen/ Jefe inmediato. Jefe de Imagen/ Jefe inmediato, Sistema que soporta la Actividad = -. Jefe de Imagen/ Jefe inmediato, ¿Es control Cable? (Sí=x) = x. Jefe de Imagen/ Jefe inmediato, Entradas = Nivel de crisis 2 o 3. Jefe de Imagen/ Jefe inmediato, N° = 12. Jefe de Imagen/ Jefe inmediato, Descripción Actividades = Convocar al Comité operativo del evento. Jefe de Imagen/ Jefe inmediato, Salidas = Convocatoria. Jefe de Imagen/ Jefe inmediato, Clientes = comité de Crisis ordinario. Jefe de Imagen/ Jefe inmediato, Ejecutor de la Actividad = Jefe de Imagen/ Jefe inmediato. Jefe de Imagen/ Jefe inmediato, Sistema que soporta la Actividad = -. Jefe de Imagen/ Jefe inmediato, ¿Es control Cable? (Sí=x) = -. Jefe de Imagen/ Jefe inmediato, Entradas = Convocatoria. Jefe de Imagen/ Jefe inmediato, N° = 13. Jefe de Imagen/ Jefe inmediato, Descripción Actividades = Tomar acciones para la atención Finalizar actividad. Jefe de Imagen/ Jefe inmediato, Salidas = Acciones. Jefe de Imagen/ Jefe inmediato, Clientes = Jefe de Imagen/ Jefe inmediato -. Jefe de Imagen/ Jefe inmediato, Ejecutor de la Actividad = Jefe de Imagen/ Jefe inmediato. Jefe de Imagen/ Jefe inmediato, Sistema que soporta la Actividad = -. Jefe de Imagen/ Jefe inmediato, ¿Es control Cable? (Sí=x) = -. Jefe de Imagen/ Jefe inmediato, Entradas = Nivel de crisis 3. Jefe de Imagen/ Jefe inmediato, N° = 14. Jefe de Imagen/ Jefe inmediato, Descripción Actividades = ¿Nivel de crisis es 3? Si: Pasar a la actividad 15 No: Pasar a la actividad 17. Jefe de Imagen/ Jefe inmediato, Salidas = -. Jefe de Imagen/ Jefe inmediato, Clientes = Jefe de Imagen/ Jefe inmediato/ Comité de Gestión de Crisis. Jefe de Imagen/ Jefe inmediato, Ejecutor de la Actividad = Jefe de Imagen/ Jefe inmediato. Jefe de Imagen/ Jefe inmediato, Sistema que soporta la Actividad = . Jefe de Imagen/ Jefe inmediato, ¿Es control Cable? (Sí=x) = 
+
+================================================================================
+Chunk: 45 / 47
+Páginas: [18]
+Sección: PROCEDIMIENTO
+Tipo: text
+--------------------------------------------------------------------------------
+Código
+Versión
+Aprobado
+Fecha
+Página
+: RP-PR-003
+: 00
+: CSIG
+: 22/12/2025
+: 18 de 3
+
+================================================================================
+Chunk: 46 / 47
+Páginas: [18, 19]
+Sección: COMUNICACIÓN DE CRISIS
+Tipo: mixto: table, text
+--------------------------------------------------------------------------------
+Jefe de Imagen/ Jefe inmediato, Entradas = -. Jefe de Imagen/ Jefe inmediato, N° = 15. Jefe de Imagen/ Jefe inmediato, Descripción Actividades = Convocar al Comité de Gestión de Crisis. Jefe de Imagen/ Jefe inmediato, Salidas = Convocatoria. Jefe de Imagen/ Jefe inmediato, Clientes = Comité de Gestión de Crisis. Jefe de Imagen/ Jefe inmediato, Ejecutor de la Actividad = Jefe de Imagen/ Jefe inmediato. Jefe de Imagen/ Jefe inmediato, Sistema que soporta la Actividad = -. Jefe de Imagen/ Jefe inmediato, ¿Es control Cable? (Sí=x) = -. Jefe de Imagen/ Jefe inmediato, Entradas = Convocatoria. Jefe de Imagen/ Jefe inmediato, N° = 16. Jefe de Imagen/ Jefe inmediato, Descripción Actividades = Tomar acciones para la atención Finalizar actividad. Jefe de Imagen/ Jefe inmediato, Salidas = Acciones tomadas. Jefe de Imagen/ Jefe inmediato, Clientes = -. Jefe de Imagen/ Jefe inmediato, Ejecutor de la Actividad = Comité de Gestión de Crisis. Jefe de Imagen/ Jefe inmediato, Sistema que soporta la Actividad = -. Jefe de Imagen/ Jefe inmediato, ¿Es control Cable? (Sí=x) = -. Jefe de Imagen/ Jefe inmediato, Entradas = Nivel de crisis 4. Jefe de Imagen/ Jefe inmediato, N° = 17. Jefe de Imagen/ Jefe inmediato, Descripción Actividades = Convocar al Comité de crisis ampliado de corresponder. Jefe de Imagen/ Jefe inmediato, Salidas = Convocatoria. Jefe de Imagen/ Jefe inmediato, Clientes = Comité de crisis ampliado. Jefe de Imagen/ Jefe inmediato, Ejecutor de la Actividad = Jefe de Imagen/ Jefe inmediato. Jefe de Imagen/ Jefe inmediato, Sistema que soporta la Actividad = -. Jefe de Imagen/ Jefe inmediato, ¿Es control Cable? (Sí=x) = -. Jefe de Imagen/ Jefe inmediato, Entradas = Convocatoria. Jefe de Imagen/ Jefe inmediato, N° = 18. Jefe de Imagen/ Jefe inmediato, Descripción Actividades = Tomar acciones para la atención. Jefe de Imagen/ Jefe inmediato, Salidas = Acciones para la atención. Jefe de Imagen/ Jefe inmediato, Clientes = -. Jefe de Imagen/ Jefe inmediato, Ejecutor de la Actividad = Comité de crisis ampliado. Jefe de Imagen/ Jefe inmediato, Sistema que soporta la Actividad = -. Jefe de Imagen/ Jefe inmediato, ¿Es control Cable? (Sí=x) = -
+Copia
+: RP-PR-003
+: CSIG
+: 22/12/2025
+: 19 de 1
+Controlada
+No
+Copia
+

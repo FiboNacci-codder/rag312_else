@@ -1,0 +1,120 @@
+================================================================================
+Chunk: 0 / 10
+Páginas: [1]
+Sección: None
+Tipo: table
+--------------------------------------------------------------------------------
+PROCEDIMIENTO REGISTRO Y CIERRE DE LAS COMUNICACIONES DE OSINERGMIN, 1 = Código Versión Aprobado Fecha Página. PROCEDIMIENTO REGISTRO Y CIERRE DE LAS COMUNICACIONES DE OSINERGMIN, 2 = : RP-PR-002 : 01 : CSIG : 20/12/2018 : 1 de 4
+Dueño del proceso Nivel 0:, 1 = Gerente General. Nombre del proceso Nivel 1:, 1 = Gestión de Comunicaciones. Nombre del proceso Nivel 2:, 1 = No Corresponde
+
+================================================================================
+Chunk: 1 / 10
+Páginas: [1]
+Sección: PROCEDIMIENTO DE REGISTRO Y CIERRE DE LAS COMUNICACIONES DE OSINERGMIN
+Tipo: table
+--------------------------------------------------------------------------------
+Jefe de Relaciones Corporativas Empre- sariales, Revisado por: = Jefe de Relaciones Corporativas Empre- sariales. Jefe de Relaciones Corporativas Empre- sariales, Homologado por: = Especialista en Sistemas de Gestión Área de Planeamiento y Desarrollo. Jefe de Relaciones Corporativas Empre- sariales, Aprobado por: = Comité del Sistema Integrado de Gestión. 05/11/2018, Revisado por: = 05/11/2018. 05/11/2018, Homologado por: = 17/12/2018. 05/11/2018, Aprobado por: = 20/12/2018
+
+================================================================================
+Chunk: 2 / 10
+Páginas: [2]
+Sección: 1. OBJETIVO Y ALCANCE
+Tipo: text
+--------------------------------------------------------------------------------
+El presente procedimiento tiene como objetivo describir las acciones para el registro y cierre correcto de las comunicaciones por parte de Osinergmin.
+El ámbito de aplicación es para todas las comunicaciones de Osinergmin hacia ELSE.
+
+================================================================================
+Chunk: 3 / 10
+Páginas: [2]
+Sección: 2. DEFINICIONES
+Tipo: list_item
+--------------------------------------------------------------------------------
+- 2.1. Tukuy Rikuy: Herramienta tecnológica desarrollada por Osinergmin e implementada a nivel nacional con el objetivo de canalizar las denuncias y requerimientos de la población con relación a los servicios energéticos y al Fondo de Inclusión Social Energético.
+- 2.2. Solicitud: Pedido realizado por el usuario, titular de un suministro, o tercero con legítimo interés ante la concesionaria, tendiente a obtener información o el  otorgamiento de un derecho referido a la prestación del servicio público de electricidad o gas natural, que no implique controversia entre las partes. Se distingue del reclamo por su naturaleza no contenciosa.
+- 2.3. RHD (Registro Histórico de Denuncias por deficiencias en el servicio de electricidad): Relación de denuncias que se encuentran registradas en el portal de Internet de la empresa distribuidora, en una de base de datos, referida a la recepción y atención de denuncias del servicio público de electricidad.
+- 2.4. Usuario: Persona natural o jurídica que se encuentra en posesión de un predio y está en posibilidad de hacer uso legal del suministro correspondiente.
+
+================================================================================
+Chunk: 4 / 10
+Páginas: [2]
+Sección: 3. MARCO NORMATIVO Y/O DOCUMENTOS RELACIONADOS
+Tipo: list_item
+--------------------------------------------------------------------------------
+- 3.1. Resolución de Consejo Directivo N° 269-2014-OS/CD 'Procedimiento Administrativo de Reclamos de los Usuarios de los Servicios Públicos de. Electricidad y Gas Natural'.
+- 3.2. Norma Técnica de Calidad de los Servicios Eléctricos, aprobado por Decreto Supremo N° 020-97-EM y sus respectivas modificaciones.
+- 3.3. Resolución de Consejo Directivo N° 028-2003-0S/CD Tipificación de Infracciones Generales y Escala de Multas y Sanciones.
+- 3.4. Resolución de consejo directivo N°094-2017-OS/CD 'Procedimiento para la supervisión de la  atención  de  denuncias  por  deficiencias  de  alcance  general  en  la prestación del servicio público de electricidad'.
+
+================================================================================
+Chunk: 5 / 10
+Páginas: [2]
+Sección: 4. RECURSOS HUMANOS Y RESPONSABILIDADES
+Tipo: list_item
+--------------------------------------------------------------------------------
+- 4.1. El  Comité  del  Sistema  Integrado de Gestión (CSIG) es  responsable  de  aprobar  el presente procedimiento.
+- 4.2. Personal de Call Center, es responsable de la aplicación del presente procedimiento.
+
+================================================================================
+Chunk: 6 / 10
+Páginas: [2]
+Sección: 5. INFRAESTRUCTURA, RECURSOS Y AMBIENTE
+Tipo: list_item
+--------------------------------------------------------------------------------
+- 5.1. SIELSE.
+- 5.2. Oficinas / Instalaciones / Zona de concesión de Electro Sur Este S.A.A.
+
+================================================================================
+Chunk: 7 / 10
+Páginas: [2]
+Sección: 6. DESARROLLO / PROCEDIMIENTO
+Tipo: text
+--------------------------------------------------------------------------------
+El presente procedimiento se encuentra desarrollado en flujo N°1 adjunto.
+
+================================================================================
+Chunk: 8 / 10
+Páginas: [2, 3]
+Sección: 7. REGISTROS Y ANEXOS
+Tipo: text
+--------------------------------------------------------------------------------
+No Aplica.
+Código
+Versión
+Aprobado
+Fecha
+Página
+: RP-PR-002
+: 01
+: CSIG
+: 20/12/2018
+: 2 de 4
+Código
+Versión
+Aprobado
+Fecha
+Página
+: RP-PR-002
+: 01
+: CSIG
+: 20/12/2018
+: 3 de 4
+
+================================================================================
+Chunk: 9 / 10
+Páginas: [4]
+Sección: REGISTRO Y CIERRE DE LAS COMUNICACIONES DE OSINERGMIN
+Tipo: mixto: table, text
+--------------------------------------------------------------------------------
+Código
+Versión
+Aprobado
+Fecha
+Página
+: RP-PR-002
+: 01
+: CSIG
+: 20/12/2018
+: 4 de 4
+Osinergmin, Entradas = -. Osinergmin, N° = 1. Osinergmin, Descripción Actividades = Revisar aplicativo de OSINERGMIN - Tukuy Rikuy. Osinergmin, Salidas = -. Osinergmin, Clientes = Supervisor de Call Cen- ter. Osinergmin, Ejecutor de la Actividad = Supervisor de Call Cen- ter. Osinergmin, Sistema que soporta la Actividad = Aplicativo Osinergmin. Osinergmin, ¿Es control Cable? (Sí=x) = . Supervisor de Call Cen- ter, Entradas = -. Supervisor de Call Cen- ter, N° = 2. Supervisor de Call Cen- ter, Descripción Actividades = Registrar Solicitud de Atención en SIELSE Medio: Tukuy Rikuy. Supervisor de Call Cen- ter, Salidas = -. Supervisor de Call Cen- ter, Clientes = Supervisor de Call Cen- ter. Supervisor de Call Cen- ter, Ejecutor de la Actividad = Supervisor de Call Cen- ter. Supervisor de Call Cen- ter, Sistema que soporta la Actividad = SIELSE. Supervisor de Call Cen- ter, ¿Es control Cable? (Sí=x) = . Supervisor de Call Cen- ter, Entradas = -. Supervisor de Call Cen- ter, N° = 3. Supervisor de Call Cen- ter, Descripción Actividades = Atender y Cerrar (SIELSE) Solicitud de Atención se- gún corresponda: - CVA-PR-001 Atención de reclamos Atención de denuncias por: - CVF-PR-004 Procesos de facturación irregular - OCC-PR-005 Interrupción de suministro - OCC-PR-006 Deterioro de artefactos eléctricos - OCC-PR-007 Deficiencias típicas del servicio de AP - OCC-PR-008 Riesgo eléctrico grave. Supervisor de Call Cen- ter, Salidas = -. Supervisor de Call Cen- ter, Clientes = Supervisor de corres- ponda. Supervisor de Call Cen- ter, Ejecutor de la Actividad = Supervisor de corres- ponda. Supervisor de Call Cen- ter, Sistema que soporta la Actividad = No Aplica. Supervisor de Call Cen- ter, ¿Es control Cable? (Sí=x) = . Supervisor de corres- ponda, Entradas = -. Supervisor de corres- ponda, N° = 4. Supervisor de corres- ponda, Descripción Actividades = Hacer el seguimiento a las Solicitudes de Atención en el SIELSE. Supervisor de corres- ponda, Salidas = -. Supervisor de corres- ponda, Clientes = Supervisor de Call Cen- ter. Supervisor de corres- ponda, Ejecutor de la Actividad = Supervisor de Call Cen- ter. Supervisor de corres- ponda, Sistema que soporta la Actividad = SIELSE. Supervisor de corres- ponda, ¿Es control Cable? (Sí=x) = . Supervisor de Call Cen- ter, Entradas = -. Supervisor de Call Cen- ter, N° = 5. Supervisor de Call Cen- ter, Descripción Actividades = Cerrar en el aplicativo de Osinergmin aquellas solici- tudes que ya fueron atendidas Describiendo la atención y el código con el que fue aten- dido.. Supervisor de Call Cen- ter, Salidas = -. Supervisor de Call Cen- ter, Clientes = Supervisor de Call Cen- ter. Supervisor de Call Cen- ter, Ejecutor de la Actividad = Supervisor de Call Cen- ter. Supervisor de Call Cen- ter, Sistema que soporta la Actividad = Aplicativo Osinergmin. Supervisor de Call Cen- ter, ¿Es control Cable? (Sí=x) = 
+
