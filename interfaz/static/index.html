@@ -7,70 +7,67 @@
   <link rel="stylesheet" href="/static/style.css" />
 </head>
 <body>
-  <header class="app-header">
-    <div class="app-header__brand">
-      <span class="app-header__logo">⚡</span>
-      <h1>Asistente de Procedimientos SIELSE</h1>
-    </div>
-    <div class="app-header__actions">
-      <button id="btn-historial" class="btn btn--ghost" type="button">
-        🕘 Conversaciones anteriores
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="sidebar__head">
+        <h2>Conversaciones anteriores</h2>
+      </div>
+      <button id="btn-nueva-conversacion" class="btn btn--primary sidebar__nueva" type="button">
+        + Nueva conversación
       </button>
-      <button id="btn-tema" class="btn btn--icon" type="button" title="Cambiar modo día/noche">
-        🌙
-      </button>
-    </div>
-  </header>
-
-  <aside id="panel-historial" class="panel-historial" hidden>
-    <div class="panel-historial__head">
-      <h2>Conversaciones anteriores</h2>
-      <button id="btn-cerrar-historial" class="btn btn--icon" type="button" title="Cerrar">✕</button>
-    </div>
-    <button id="btn-nueva-conversacion" class="btn btn--primary panel-historial__nueva" type="button">
-      + Nueva conversación
-    </button>
-    <ul id="lista-historial" class="panel-historial__lista"></ul>
-  </aside>
-  <div id="overlay-historial" class="overlay" hidden></div>
-
-  <main class="app-main">
-    <section id="preguntas-sugeridas" class="sugeridas">
-      <button class="tarjeta-sugerida" type="button" data-pregunta="¿Cuál es el procedimiento para solicitar vacaciones?">
-        <span class="tarjeta-sugerida__etiqueta">Pregunta sugerida</span>
-        <span class="tarjeta-sugerida__texto">¿Cuál es el procedimiento para solicitar vacaciones?</span>
-      </button>
-      <button class="tarjeta-sugerida" type="button" data-pregunta="¿Cómo se tramita un cambio de razón social?">
-        <span class="tarjeta-sugerida__etiqueta">Pregunta sugerida</span>
-        <span class="tarjeta-sugerida__texto">¿Cómo se tramita un cambio de razón social?</span>
-      </button>
-      <button class="tarjeta-sugerida" type="button" data-pregunta="¿Qué pasos sigue una atención de reclamo por consumo excesivo?">
-        <span class="tarjeta-sugerida__etiqueta">Pregunta sugerida</span>
-        <span class="tarjeta-sugerida__texto">¿Qué pasos sigue una atención de reclamo por consumo excesivo?</span>
-      </button>
-    </section>
-
-    <section id="chat" class="chat" aria-live="polite"></section>
-  </main>
-
-  <footer class="app-input">
-    <form id="form-pregunta" class="app-input__form">
+      <ul id="lista-historial" class="sidebar__lista"></ul>
       <button
         id="btn-adjuntar"
-        class="btn btn--icon"
+        class="btn btn--ghost sidebar__adjuntar"
         type="button"
         disabled
         title="Función en desarrollo"
-      >📎</button>
-      <textarea
-        id="input-pregunta"
-        class="app-input__textarea"
-        placeholder="Escribe tu pregunta sobre un procedimiento institucional..."
-        rows="1"
-      ></textarea>
-      <button id="btn-enviar" class="btn btn--primary" type="submit">Enviar</button>
-    </form>
-  </footer>
+      >📎 Subir archivo</button>
+    </aside>
+
+    <div class="app-content">
+      <header class="app-header">
+        <div class="app-header__brand">
+          <span class="app-header__logo">⚡</span>
+          <h1>Asistente de Procedimientos SIELSE</h1>
+        </div>
+        <button id="btn-tema" class="btn btn--icon" type="button" title="Cambiar modo día/noche">
+          🌙 Modo día/noche
+        </button>
+      </header>
+
+      <main class="app-main">
+        <section id="preguntas-sugeridas" class="sugeridas">
+          <button class="tarjeta-sugerida" type="button" data-pregunta="¿Cuál es el procedimiento para solicitar vacaciones?">
+            <span class="tarjeta-sugerida__etiqueta">Pregunta sugerida</span>
+            <span class="tarjeta-sugerida__texto">¿Cuál es el procedimiento para solicitar vacaciones?</span>
+          </button>
+          <button class="tarjeta-sugerida" type="button" data-pregunta="¿Cómo se tramita un cambio de razón social?">
+            <span class="tarjeta-sugerida__etiqueta">Pregunta sugerida</span>
+            <span class="tarjeta-sugerida__texto">¿Cómo se tramita un cambio de razón social?</span>
+          </button>
+          <button class="tarjeta-sugerida" type="button" data-pregunta="¿Qué pasos sigue una atención de reclamo por consumo excesivo?">
+            <span class="tarjeta-sugerida__etiqueta">Pregunta sugerida</span>
+            <span class="tarjeta-sugerida__texto">¿Qué pasos sigue una atención de reclamo por consumo excesivo?</span>
+          </button>
+        </section>
+
+        <section id="chat" class="chat" aria-live="polite"></section>
+      </main>
+
+      <footer class="app-input">
+        <form id="form-pregunta" class="app-input__form">
+          <textarea
+            id="input-pregunta"
+            class="app-input__textarea"
+            placeholder="Escribe tu pregunta sobre un procedimiento institucional..."
+            rows="1"
+          ></textarea>
+          <button id="btn-enviar" class="btn btn--primary" type="submit">Enviar</button>
+        </form>
+      </footer>
+    </div>
+  </div>
 
   <script src="/static/script.js"></script>
 </body>

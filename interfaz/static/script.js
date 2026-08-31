@@ -8,11 +8,7 @@
   const inputEl = document.getElementById("input-pregunta");
   const btnEnviar = document.getElementById("btn-enviar");
   const btnTema = document.getElementById("btn-tema");
-  const btnHistorial = document.getElementById("btn-historial");
-  const btnCerrarHistorial = document.getElementById("btn-cerrar-historial");
   const btnNuevaConversacion = document.getElementById("btn-nueva-conversacion");
-  const panelHistorial = document.getElementById("panel-historial");
-  const overlayHistorial = document.getElementById("overlay-historial");
   const listaHistorial = document.getElementById("lista-historial");
 
   let conversacionId = crypto.randomUUID();
@@ -38,6 +34,7 @@
       mensajes,
     };
     localStorage.setItem(STORAGE_CONVERSACIONES, JSON.stringify(todas));
+    renderListaHistorial();
   }
 
   function iniciarNuevaConversacion() {
@@ -45,7 +42,6 @@
     mensajes = [];
     chatEl.innerHTML = "";
     sugeridasEl.hidden = false;
-    cerrarHistorial();
   }
 
   function cargarConversacion(id) {
@@ -57,7 +53,6 @@
     chatEl.innerHTML = "";
     sugeridasEl.hidden = mensajes.length > 0;
     mensajes.forEach((m) => renderMensaje(m));
-    cerrarHistorial();
   }
 
   // ---------- Tema día/noche ----------
@@ -83,7 +78,7 @@
     aplicarTema(actual === "dark" ? "light" : "dark");
   });
 
-  // ---------- Panel de historial ----------
+  // ---------- Lista de conversaciones anteriores (sidebar) ----------
 
   function renderListaHistorial() {
     const todas = leerConversaciones();
@@ -93,7 +88,7 @@
     listaHistorial.innerHTML = "";
     if (ids.length === 0) {
       const vacio = document.createElement("li");
-      vacio.className = "panel-historial__vacio";
+      vacio.className = "sidebar__vacio";
       vacio.textContent = "Todavía no hay conversaciones guardadas.";
       listaHistorial.appendChild(vacio);
       return;
@@ -102,6 +97,7 @@
       const conv = todas[id];
       const li = document.createElement("li");
       li.className = "item-historial";
+      if (id === conversacionId) li.classList.add("item-historial--activo");
       const fecha = new Date(conv.fecha);
       li.innerHTML = `
         <span class="item-historial__titulo"></span>
@@ -114,20 +110,6 @@
     });
   }
 
-  function abrirHistorial() {
-    renderListaHistorial();
-    panelHistorial.hidden = false;
-    overlayHistorial.hidden = false;
-  }
-
-  function cerrarHistorial() {
-    panelHistorial.hidden = true;
-    overlayHistorial.hidden = true;
-  }
-
-  btnHistorial.addEventListener("click", abrirHistorial);
-  btnCerrarHistorial.addEventListener("click", cerrarHistorial);
-  overlayHistorial.addEventListener("click", cerrarHistorial);
   btnNuevaConversacion.addEventListener("click", iniciarNuevaConversacion);
 
   // ---------- Formateo ligero de texto ----------
@@ -273,4 +255,5 @@
   // ---------- Inicialización ----------
 
   inicializarTema();
+  renderListaHistorial();
 })();
