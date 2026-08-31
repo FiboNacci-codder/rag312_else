@@ -77,7 +77,7 @@ CUDA_VISIBLE_DEVICES=5 apptainer exec --nv \
     --host 0.0.0.0 \
     --port 8002 \
     --gpu-memory-utilization 0.6 \
-    --max-model-len 8192 \
+    --max-model-len 16384 \
     --reasoning-parser qwen3 \
     --language-model-only
 
@@ -757,30 +757,108 @@ Requiere: vLLM embeddings (8001), vLLM normalizador (8003, salvo con
 `--sin-normalizar`) y Qdrant (6333), con la colección
 `procedimientos_sielse` ya indexada.
 
+### Generación del golden set — nivel chunk vs. nivel sección markdown
+
+Hay dos formas de generar las **preguntas** del golden set, que después
+pasan por el mismo pipeline de filtrado/revisión:
+
+- **`generar_golden_set.py`** (original, nivel chunk): genera preguntas
+  ancladas a un chunk puntual de `datos/chunks_data.json`. `fuente_esperada`
+  queda 100% alineada con lo indexado en Qdrant porque la pregunta se generó
+  a partir de ese chunk exacto. Guarda `chunk_origen_index` para poder
+  reconstruir el fragmento de origen en los pasos siguientes.
+- **`generar_golden_set_md.py`** (nivel sección): parte cada `.md` de
+  `salida_md/` en secciones por heading y genera preguntas por sección
+  **completa**, no por chunk. Útil para preguntas que necesitan ver más
+  contexto que un solo chunk (procedimientos con pasos repartidos en varios
+  chunks, tablas largas). Como no hay un chunk único de origen, cada item
+  guarda directamente el texto de la sección en el campo `texto_seccion`
+  (en vez de `chunk_origen_index`) — así los pasos siguientes no dependen de
+  volver a parsear `salida_md/` ni de un matching por heading.
+
+Ambos alimentan el **mismo** pipeline de filtrado y revisión:
+
+```
+generar_golden_set.py / generar_golden_set_md.py
+    → filtrar_golden_set.py       (juez LLM: autocontenida / respondible / natural)
+    → revisar_golden_set.py       (revisión manual de dudosas/rechazadas, opcional)
+    → consolidar_golden_set.py    (une los 3 archivos en un golden set final)
+```
+
+`filtrar_golden_set.py` reconoce automáticamente si un item tiene
+`texto_seccion` (nivel sección) o `chunk_origen_index` (nivel chunk) para
+resolver el fragmento a evaluar; `revisar_golden_set.py` hace lo mismo al
+mostrar el contexto. Tiene un flag `--prefijo` para que las salidas
+(`{prefijo}_aceptadas.json`, `{prefijo}_dudosas.json`,
+`{prefijo}_rechazadas.json`) no pisen las del golden set de chunks:
+
+```bash
+# Golden set a nivel chunk (comportamiento original)
+python generar_golden_set.py --n-chunks 60 --por-categoria
+python filtrar_golden_set.py                       # usa golden_set.json y prefijo "golden_set" por defecto
+python revisar_golden_set.py --golden golden_set_dudosas.json
+python revisar_golden_set.py --golden golden_set_rechazadas.json
+python revisar_golden_set.py --golden golden_set_aceptadas.json --solo-pendientes
+python consolidar_golden_set.py --out golden_set.json
+
+# Golden set a nivel sección markdown (archivos separados, no pisa lo anterior)
+python generar_golden_set_md.py --n-secciones 40 --por-categoria --out golden_set_md_raw.json
+python filtrar_golden_set.py --golden golden_set_md_raw.json --prefijo golden_set_md
+python revisar_golden_set.py --golden golden_set_md_dudosas.json
+python revisar_golden_set.py --golden golden_set_md_rechazadas.json
+python revisar_golden_set.py --golden golden_set_md_aceptadas.json --solo-pendientes
+python consolidar_golden_set.py \
+    --archivos golden_set_md_aceptadas.json golden_set_md_dudosas.json golden_set_md_rechazadas.json \
+    --out golden_set_md_final.json
+```
+
+**Para saltar la revisión manual de preguntas** (tandas grandes, 40+
+secciones): `filtrar_golden_set.py --muestra-aceptadas 0` confía 100% en el
+juez automático para las "aceptadas" (no fuerza ninguna revisión de
+control) y directamente no se corre `revisar_golden_set.py` — las "dudosas"
+quedan con `revisado: false` y `consolidar_golden_set.py` las excluye solas
+al consolidar solo el archivo de aceptadas:
+
+```bash
+python filtrar_golden_set.py --golden golden_set_md_raw.json --prefijo golden_set_md --muestra-aceptadas 0
+python consolidar_golden_set.py --archivos golden_set_md_aceptadas.json --out golden_set_md_final.json
+```
+
+Requiere: vLLM generador (8002) para generar preguntas; vLLM 4B (8003) para
+el juez de `filtrar_golden_set.py` (configurable con `JUDGE_LLM_URL`/`JUDGE_LLM_MODEL`).
+No requiere Qdrant.
+
 ### `generar_ground_truth.py` + `revisar_ground_truth.py` — ground truth del golden set
 
-Paso previo requerido por `eval_generation.py`. El golden set original
-(`generar_golden_set.py` → `filtrar_golden_set.py` → `revisar_golden_set.py`
-→ `consolidar_golden_set.py`) solo genera y valida **preguntas**, nunca
+Paso previo requerido por `eval_generation.py`. El golden set (chunk o
+sección markdown, ver arriba) solo genera y valida **preguntas**, nunca
 respuestas de referencia. Sin eso, RAGAS no puede calcular
 `context_precision`/`context_recall` (exigen comparar contra una respuesta
 "ideal").
 
-- **`generar_ground_truth.py`**: para cada pregunta reconstruye el chunk de
-  origen (`chunk_origen_index` + `fuente_esperada.documento` →
-  `datos/chunks_data.json`, mapeo 1:1 sin trabajo manual) y le pide al LLM
-  (`qwen35-9b`, igual que `generar_golden_set.py`) una respuesta basada
-  ÚNICAMENTE en ese fragmento. Guarda el resultado en el campo
-  `ground_truth` de `golden_set.json`, marcado con
-  `"ground_truth_revisado": false` — **no es confiable hasta revisarlo**.
+- **`generar_ground_truth.py`**: para cada pregunta resuelve el fragmento de
+  origen — `texto_seccion` si el item viene de `generar_golden_set_md.py`,
+  o `chunk_origen_index` + `fuente_esperada.documento` →
+  `datos/chunks_data.json` si viene de `generar_golden_set.py` — y le pide
+  al LLM (`qwen35-9b`, igual que `generar_golden_set.py`) una respuesta
+  basada ÚNICAMENTE en ese fragmento. Guarda el resultado en el campo
+  `ground_truth`, marcado con `"ground_truth_revisado": false` — **no es
+  confiable hasta revisarlo**. Con `--auto-aprobar` marca
+  `ground_truth_revisado: true` directamente, sin pasar por
+  `revisar_ground_truth.py` (confía 100% en el LLM; ahorra la revisión
+  manual a costa de no tener chequeo humano sobre las respuestas que usa
+  RAGAS como referencia — usar con criterio).
 - **`revisar_ground_truth.py`**: revisión manual interactiva (aceptar /
   editar / saltar), igual patrón que `revisar_golden_set.py`. Marca
   `ground_truth_revisado: true` por pregunta.
 
 ```bash
-python generar_ground_truth.py
-python revisar_ground_truth.py          # obligatorio antes de confiar en el ground truth
-python revisar_ground_truth.py --solo-pendientes
+python generar_ground_truth.py --golden golden_set.json --out golden_set.json
+python revisar_ground_truth.py --golden golden_set.json --out golden_set.json   # obligatorio antes de confiar en el ground truth
+python revisar_ground_truth.py --golden golden_set.json --solo-pendientes
+
+# o, para saltar la revisión manual del ground truth también:
+python generar_ground_truth.py --golden golden_set_md_final.json --out golden_set_md_final.json --auto-aprobar
 ```
 
 Requiere: vLLM generador (8002). No requiere Qdrant.
@@ -813,9 +891,19 @@ se agregan promedios por `categoria` y tiempos de ejecución.
 ```bash
 pip install ragas --break-system-packages   # una sola vez (ya está en requirements.txt)
 python generar_ground_truth.py && python revisar_ground_truth.py   # una sola vez por golden set
+
+# golden set de chunks (default)
 python eval_generation.py
 python eval_generation.py --n-muestra 15
+
+# golden set de secciones markdown — nombres de salida distintos para no
+# pisar resultados_generation.json del golden set de chunks
+python eval_generation.py --golden golden_set_md_final.json --out resultados_generation_md.json
 ```
+
+`--golden`/`--out` son genéricos: `eval_generation.py` no distingue si el
+golden set viene de chunks o de secciones markdown, solo necesita que cada
+item tenga `pregunta`, `ground_truth` y `ground_truth_revisado: true`.
 
 Requiere: vLLM embeddings (8001), normalizador (8003), generador (8002) y
 Qdrant (6333) — las cuatro dependencias, porque corre el pipeline

@@ -78,8 +78,11 @@ def main():
         print("-" * 70)
         print(f"PREGUNTA: {item['pregunta']}")
 
-        clave = (item['fuente_esperada'].get('documento'), item.get('chunk_origen_index'))
-        contexto = chunks_map.get(clave)
+        if item.get("texto_seccion"):
+            contexto = item["texto_seccion"]
+        else:
+            clave = (item['fuente_esperada'].get('documento'), item.get('chunk_origen_index'))
+            contexto = chunks_map.get(clave)
         if contexto:
             print("-" * 70)
             print("Fragmento origen (primeros 500 caracteres):")

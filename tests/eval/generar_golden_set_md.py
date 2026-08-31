@@ -200,6 +200,11 @@ def main():
                     "seccion_contiene": sec["seccion"],
                 },
                 "origen_generacion": "markdown_seccion",  # para diferenciar del origen chunk
+                # Texto completo de la sección que originó la pregunta. Se guarda acá
+                # (y no solo el heading) porque filtrar_golden_set.py / generar_ground_truth.py
+                # necesitan el fragmento de origen y no pueden resolverlo vía chunk_origen_index
+                # (este golden set es a nivel sección, no a nivel chunk).
+                "texto_seccion": sec["texto"],
                 "revisado": False,
             })
             contador_id += 1

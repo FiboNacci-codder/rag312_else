@@ -77,6 +77,19 @@ def cargar_chunks_por_indice() -> dict:
     return mapa
 
 
+def obtener_contexto(item: dict, chunks_map: dict) -> str | None:
+    """Fragmento de origen para juzgar la pregunta.
+
+    Los items generados por generar_golden_set_md.py (nivel sección) traen su
+    propio "texto_seccion" y no tienen chunk_origen_index; los generados por
+    generar_golden_set.py (nivel chunk) se resuelven vía chunks_data.json.
+    """
+    if item.get("texto_seccion"):
+        return item["texto_seccion"]
+    clave = (item["fuente_esperada"].get("documento"), item.get("chunk_origen_index"))
+    return chunks_map.get(clave)
+
+
 def evaluar_pregunta(client: OpenAI, pregunta: str, chunk_texto: str) -> dict:
     user_prompt = f"FRAGMENTO:\n{chunk_texto[:1500]}\n\nPREGUNTA:\n{pregunta}"
     respuesta = client.chat.completions.create(
@@ -134,11 +147,19 @@ def main():
     parser = argparse.ArgumentParser(description="Filtro LLM-as-judge para golden_set.json")
     parser.add_argument("--golden", type=str, default=str(Path(__file__).parent / "golden_set.json"))
     parser.add_argument("--outdir", type=str, default=str(Path(__file__).parent))
+    parser.add_argument("--prefijo", type=str, default="golden_set",
+                         help="Prefijo de los archivos de salida (aceptadas/dudosas/rechazadas). "
+                              "Usar uno distinto (p.ej. golden_set_md) para no pisar los del otro pipeline.")
     parser.add_argument("--muestra-aceptadas", type=float, default=0.2,
                          help="Fracción de las aceptadas a marcar para revisión manual de control (0-1)")
     parser.add_argument("--seed", type=int, default=42)
     args = parser.parse_args()
     outdir = Path(args.outdir)
+    prefijo = args.prefijo
+    nombre_aceptadas = f"{prefijo}_aceptadas.json"
+    nombre_dudosas = f"{prefijo}_dudosas.json"
+    nombre_rechazadas = f"{prefijo}_rechazadas.json"
+    nombre_reporte = "filtrado_reporte.json" if prefijo == "golden_set" else f"filtrado_reporte_{prefijo}.json"
 
     with open(args.golden, "r", encoding="utf-8") as f:
         golden_set = json.load(f)
@@ -152,12 +173,11 @@ def main():
     aceptadas, dudosas, rechazadas = [], [], []
 
     for i, item in enumerate(golden_set, start=1):
-        clave = (item["fuente_esperada"].get("documento"), item.get("chunk_origen_index"))
-        chunk_texto = chunks_map.get(clave)
+        chunk_texto = obtener_contexto(item, chunks_map)
 
         if not chunk_texto:
             veredicto = {"autocontenida": False, "respondible_con_chunk": False,
-                         "suena_natural": False, "error": "No se encontró el chunk origen"}
+                         "suena_natural": False, "error": "No se encontró el fragmento de origen (texto_seccion o chunk)"}
         else:
             veredicto = evaluar_pregunta(client, item["pregunta"], chunk_texto)
 
@@ -180,8 +200,13 @@ def main():
         print(f"[{i}/{len(golden_set)}] {estado.upper():10s} | {item['pregunta'][:70]}")
 
     # --- Marcar una submuestra de las aceptadas para control manual ---
+    # (con --muestra-aceptadas 0 no se fuerza ninguna revisión manual: se
+    # confía 100% en el filtro automático para las aceptadas)
     random.seed(args.seed)
-    n_muestra = max(1, round(len(aceptadas) * args.muestra_aceptadas)) if aceptadas else 0
+    if args.muestra_aceptadas <= 0 or not aceptadas:
+        n_muestra = 0
+    else:
+        n_muestra = max(1, round(len(aceptadas) * args.muestra_aceptadas))
     muestra_control = set(random.sample(range(len(aceptadas)), n_muestra)) if aceptadas else set()
     for idx in muestra_control:
         aceptadas[idx]["revisado"] = False  # forzar que pase por revisión manual de control
@@ -190,13 +215,13 @@ def main():
             item["revisado"] = True  # se confía en el filtro automático
 
     # --- Guardar salidas ---
-    with open(outdir / "golden_set_aceptadas.json", "w", encoding="utf-8") as f:
+    with open(outdir / nombre_aceptadas, "w", encoding="utf-8") as f:
         json.dump(aceptadas, f, ensure_ascii=False, indent=2)
-    with open(outdir / "golden_set_dudosas.json", "w", encoding="utf-8") as f:
+    with open(outdir / nombre_dudosas, "w", encoding="utf-8") as f:
         json.dump(dudosas, f, ensure_ascii=False, indent=2)
-    with open(outdir / "golden_set_rechazadas.json", "w", encoding="utf-8") as f:
+    with open(outdir / nombre_rechazadas, "w", encoding="utf-8") as f:
         json.dump(rechazadas, f, ensure_ascii=False, indent=2)
-    with open(outdir / "filtrado_reporte.json", "w", encoding="utf-8") as f:
+    with open(outdir / nombre_reporte, "w", encoding="utf-8") as f:
         json.dump(reporte, f, ensure_ascii=False, indent=2)
 
     print("\n" + "=" * 60)
@@ -207,14 +232,14 @@ def main():
     print(f"Dudosas           : {len(dudosas)}  (revisar el 100%)")
     print(f"Rechazadas        : {len(rechazadas)}  (revisar el 100%, por si el juez se equivocó)")
     print(f"\nArchivos generados en {outdir}:")
-    print("  golden_set_aceptadas.json")
-    print("  golden_set_dudosas.json")
-    print("  golden_set_rechazadas.json")
-    print("  filtrado_reporte.json")
+    print(f"  {nombre_aceptadas}")
+    print(f"  {nombre_dudosas}")
+    print(f"  {nombre_rechazadas}")
+    print(f"  {nombre_reporte}")
     print("\nSiguiente paso sugerido:")
-    print("  python revisar_golden_set.py --golden golden_set_dudosas.json")
-    print("  python revisar_golden_set.py --golden golden_set_rechazadas.json")
-    print("  python revisar_golden_set.py --golden golden_set_aceptadas.json --solo-pendientes")
+    print(f"  python revisar_golden_set.py --golden {nombre_dudosas}")
+    print(f"  python revisar_golden_set.py --golden {nombre_rechazadas}")
+    print(f"  python revisar_golden_set.py --golden {nombre_aceptadas} --solo-pendientes")
 
 
 if __name__ == "__main__":

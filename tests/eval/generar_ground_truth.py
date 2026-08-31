@@ -69,6 +69,18 @@ def cargar_chunks_por_indice() -> dict:
     return mapa
 
 
+def obtener_contexto(item: dict, chunks_map: dict) -> str | None:
+    """Fragmento de origen para generar el ground truth.
+
+    Items de generar_golden_set_md.py (nivel sección) traen "texto_seccion";
+    items de generar_golden_set.py (nivel chunk) se resuelven vía chunk_origen_index.
+    """
+    if item.get("texto_seccion"):
+        return item["texto_seccion"]
+    clave = (item.get("fuente_esperada", {}).get("documento"), item.get("chunk_origen_index"))
+    return chunks_map.get(clave)
+
+
 def generar_ground_truth_llm(client: OpenAI, system_prompt: str, pregunta: str, chunk_texto: str) -> str:
     user_prompt = f"FRAGMENTO:\n{chunk_texto}\n\nPREGUNTA:\n{pregunta}"
     respuesta = client.chat.completions.create(
@@ -89,6 +101,11 @@ def main():
     parser = argparse.ArgumentParser(description="Generar ground truth para golden_set.json")
     parser.add_argument("--golden", type=str, default=str(Path(__file__).parent / "golden_set.json"))
     parser.add_argument("--out", type=str, default=None, help="Por defecto sobreescribe --golden")
+    parser.add_argument("--auto-aprobar", action="store_true",
+                         help="Marca ground_truth_revisado=true directamente, sin pasar por "
+                              "revisar_ground_truth.py (se confía 100% en el LLM generador). "
+                              "Ahorra la revisión manual, a costa de no tener un chequeo humano "
+                              "sobre las respuestas de referencia que usa RAGAS.")
     args = parser.parse_args()
     out_path = Path(args.out) if args.out else Path(args.golden)
 
@@ -109,11 +126,10 @@ def main():
         pregunta = item["pregunta"]
         print(f"[{i}/{len(golden_set)}] {pregunta[:70]}")
 
-        clave = (item.get("fuente_esperada", {}).get("documento"), item.get("chunk_origen_index"))
-        chunk_texto = chunks_map.get(clave)
+        chunk_texto = obtener_contexto(item, chunks_map)
 
         if not chunk_texto:
-            print("    AVISO: no se encontró el chunk origen, se omite (sin ground_truth)")
+            print("    AVISO: no se encontró el fragmento de origen (texto_seccion o chunk), se omite (sin ground_truth)")
             n_sin_chunk += 1
             continue
 
@@ -130,7 +146,7 @@ def main():
             continue
 
         item["ground_truth"] = ground_truth
-        item["ground_truth_revisado"] = False
+        item["ground_truth_revisado"] = bool(args.auto_aprobar)
         n_generadas += 1
 
     with open(out_path, "w", encoding="utf-8") as f:
@@ -143,9 +159,13 @@ def main():
     print(f"Sin chunk resoluble    : {n_sin_chunk}")
     print(f"Errores del LLM        : {n_errores}")
     print(f"\nGuardado en: {out_path}")
-    print("\nIMPORTANTE: revisar manualmente antes de usarlo para evaluación con RAGAS.")
-    print("Cada entrada generada tiene 'ground_truth_revisado': false — corré:")
-    print("  python revisar_ground_truth.py")
+    if args.auto_aprobar:
+        print("\nAVISO: --auto-aprobar activo, se marcó 'ground_truth_revisado': true sin revisión")
+        print("humana. Las respuestas de referencia no fueron chequeadas por una persona.")
+    else:
+        print("\nIMPORTANTE: revisar manualmente antes de usarlo para evaluación con RAGAS.")
+        print("Cada entrada generada tiene 'ground_truth_revisado': false — corré:")
+        print("  python revisar_ground_truth.py")
 
 
 if __name__ == "__main__":

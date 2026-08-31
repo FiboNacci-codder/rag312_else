@@ -1,0 +1,17 @@
+# Entornos y ejecutables pesados
+conda/
+
+# Contenedores Apptainer (binarios muy grandes)
+containers/*.sif
+
+# Datos de la base vectorial (regenerables)
+qdrant_storage/
+
+# Modelos descargados (HF cache, fastembed cache)
+modelos/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.ipynb_checkpoints/
