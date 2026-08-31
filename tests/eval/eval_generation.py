@@ -41,6 +41,7 @@ indexada.
 """
 
 import argparse
+import asyncio
 import json
 import math
 import os
@@ -75,13 +76,15 @@ if "langchain_community.chat_models.vertexai" not in sys.modules:
     sys.modules["langchain_community.chat_models.vertexai"] = _stub
 
 try:
-    from datasets import Dataset
-    from ragas import evaluate
-    from ragas.run_config import RunConfig
-    from ragas.metrics import faithfulness, answer_relevancy, LLMContextPrecisionWithReference, LLMContextRecall
-    from ragas.llms import LangchainLLMWrapper
-    from ragas.embeddings import LangchainEmbeddingsWrapper
-    from langchain_openai import ChatOpenAI, OpenAIEmbeddings
+    from openai import AsyncOpenAI
+    from ragas.llms import llm_factory
+    from ragas.embeddings import OpenAIEmbeddings
+    from ragas.metrics.collections import (
+        Faithfulness,
+        AnswerRelevancy,
+        ContextPrecisionWithReference,
+        ContextRecall,
+    )
 except ImportError:
     print("ERROR: falta instalar ragas. Corré:")
     print("  pip install ragas --break-system-packages")
@@ -97,21 +100,27 @@ METRICAS = ["faithfulness", "answer_relevancy", "context_precision", "context_re
 
 
 def build_ragas_llm_embeddings():
-    chat = ChatOpenAI(
+    judge_client = AsyncOpenAI(
         base_url=JUDGE_LLM_URL,
         api_key="no-necesaria",
-        model=JUDGE_LLM_MODEL,
+        timeout=600,
+        max_retries=3,
+    )
+    llm = llm_factory(
+        JUDGE_LLM_MODEL,
+        client=judge_client,
         temperature=0.0,
         max_tokens=4096,
         extra_body={"chat_template_kwargs": {"enable_thinking": False}},  # <-- clave
     )
-    embed = OpenAIEmbeddings(
+    embed_client = AsyncOpenAI(
         base_url=EMBED_URL,
         api_key="no-necesaria",
-        model=EMBED_MODEL,
-        check_embedding_ctx_length=False,
+        timeout=600,
+        max_retries=3,
     )
-    return LangchainLLMWrapper(chat), LangchainEmbeddingsWrapper(embed)
+    embeddings = OpenAIEmbeddings(client=embed_client, model=EMBED_MODEL)
+    return llm, embeddings
 
 
 def promedio_valido(valores: list[float]):
@@ -211,58 +220,53 @@ def main():
         print("No se pudo generar ninguna respuesta válida. Verificá que Qdrant/vLLM estén arriba.")
         sys.exit(1)
 
-    dataset = Dataset.from_dict({
-        "user_input": preguntas,
-        "response": respuestas,
-        "retrieved_contexts": contextos,
-        "reference": referencias,
-    })
-
     print(f"\nEvaluando con RAGAS ({', '.join(METRICAS)}) usando {JUDGE_LLM_MODEL} como juez...")
     ragas_llm, ragas_embeddings = build_ragas_llm_embeddings()
-    context_precision = LLMContextPrecisionWithReference(llm=ragas_llm)
-    context_recall = LLMContextRecall(llm=ragas_llm)
-
-    # ragas nombra las columnas del resultado según el atributo `.name` de cada
-    # métrica, que no siempre coincide con el nombre "amigable" que usamos en
-    # METRICAS (p.ej. LLMContextPrecisionWithReference.name ==
-    # "llm_context_precision_with_reference", no "context_precision" — ragas
-    # 0.4.3). Mapeamos leyendo el atributo real en vez de asumir el nombre,
-    # para no repetir el desajuste si ragas lo vuelve a renombrar.
     metricas_obj = {
-        "faithfulness": faithfulness,
-        "answer_relevancy": answer_relevancy,
-        "context_precision": context_precision,
-        "context_recall": context_recall,
+        "faithfulness": Faithfulness(llm=ragas_llm),
+        "answer_relevancy": AnswerRelevancy(llm=ragas_llm, embeddings=ragas_embeddings),
+        "context_precision": ContextPrecisionWithReference(llm=ragas_llm),
+        "context_recall": ContextRecall(llm=ragas_llm),
     }
-    columna_ragas = {metrica: obj.name for metrica, obj in metricas_obj.items()}
 
-    run_config = RunConfig(
-        max_workers=1,
-        timeout=600,
-        max_retries=3,
-        max_wait=60,
-    )
+    async def _score(metrica: str, i: int, **kwargs):
+        try:
+            resultado = await metricas_obj[metrica].ascore(**kwargs)
+            return resultado.value
+        except Exception as e:
+            print(f"    AVISO: falló '{metrica}' en la pregunta {i + 1}/{len(preguntas)}: {e}")
+            return None
 
-    resultado_ragas = evaluate(
-        dataset,
-        metrics=[faithfulness, answer_relevancy, context_precision, context_recall],
-        llm=ragas_llm,
-        embeddings=ragas_embeddings,
-        run_config=run_config,
-        raise_exceptions=True,   # <-- agregar temporalmente
-    )
+    async def _evaluar_todas():
+        valores = {metrica: [] for metrica in METRICAS}
+        for i, (pregunta, respuesta, chunks, referencia) in enumerate(
+            zip(preguntas, respuestas, contextos, referencias)
+        ):
+            valores["faithfulness"].append(await _score(
+                "faithfulness", i,
+                user_input=pregunta, response=respuesta, retrieved_contexts=chunks,
+            ))
+            valores["answer_relevancy"].append(await _score(
+                "answer_relevancy", i,
+                user_input=pregunta, response=respuesta,
+            ))
+            valores["context_precision"].append(await _score(
+                "context_precision", i,
+                user_input=pregunta, reference=referencia, retrieved_contexts=chunks,
+            ))
+            valores["context_recall"].append(await _score(
+                "context_recall", i,
+                user_input=pregunta, retrieved_contexts=chunks, reference=referencia,
+            ))
+        return valores
 
-    df = resultado_ragas.to_pandas()
+    valores_metricas = asyncio.run(_evaluar_todas())
+
     for i, fila in enumerate(detalle_por_pregunta):
         for metrica in METRICAS:
-            columna = columna_ragas[metrica]
-            if columna in df.columns:
-                valor = df.iloc[i][columna]
-                es_nan = isinstance(valor, float) and math.isnan(valor)
-                fila[metrica] = float(valor) if valor is not None and not es_nan else None
-            else:
-                fila[metrica] = None
+            valor = valores_metricas[metrica][i]
+            es_nan = isinstance(valor, float) and math.isnan(valor)
+            fila[metrica] = float(valor) if valor is not None and not es_nan else None
 
     resumen = {
         "n_preguntas_golden": n_total,
@@ -274,15 +278,11 @@ def main():
         "por_categoria": resumen_por_categoria(detalle_por_pregunta),
     }
     for metrica in METRICAS:
-        columna = columna_ragas[metrica]
-        if columna in df.columns:
-            valores = df[columna].tolist()
-            resumen[f"{metrica}_promedio"] = promedio_valido(valores)
-            resumen[f"{metrica}_n_validas"] = sum(1 for v in valores if v is not None and not math.isnan(v))
-        else:
-            resumen[f"{metrica}_promedio"] = None
-            resumen[f"{metrica}_n_validas"] = 0
-            print(f"AVISO: la métrica '{metrica}' no se pudo calcular (falló toda la columna).")
+        valores = valores_metricas[metrica]
+        resumen[f"{metrica}_promedio"] = promedio_valido(valores)
+        resumen[f"{metrica}_n_validas"] = sum(
+            1 for v in valores if v is not None and not (isinstance(v, float) and math.isnan(v))
+        )
     print("\n" + "=" * 60)
     print("RESUMEN — CALIDAD DE GENERACIÓN")
     print("=" * 60)
