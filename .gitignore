@@ -15,3 +15,7 @@ __pycache__/
 *.pyc
 *.pyo
 .ipynb_checkpoints/
+
+# Archivos de caché de pruebas (opcional, pero recomendado)
+tests/**/__pycache__/
+tests/**/*.pyc
