@@ -42,6 +42,7 @@ indexada.
 
 import argparse
 import json
+import logging
 import math
 import os
 import random
@@ -163,6 +164,9 @@ def main():
     if args.n_muestra:
         random.seed(args.seed)
         golden_set = random.sample(golden_set, min(args.n_muestra, len(golden_set)))
+
+    logging.basicConfig(level=logging.WARNING, format="%(name)s: %(message)s")
+    logging.getLogger("ragas").setLevel(logging.DEBUG)
 
     print(f"Corriendo pipeline RAG completo sobre {len(golden_set)} preguntas...\n")
 
