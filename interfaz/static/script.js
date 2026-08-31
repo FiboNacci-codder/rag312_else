@@ -127,6 +127,15 @@
     return html;
   }
 
+  function formatearNumero(valor, decimales) {
+    return typeof valor === "number" ? valor.toFixed(decimales) : "—";
+  }
+
+  function formatearRank(rank, fueraTop) {
+    if (rank != null) return `#${rank}`;
+    return fueraTop ? "fuera del top-20" : "—";
+  }
+
   // ---------- Render de mensajes ----------
 
   function renderMensaje(mensaje) {
@@ -158,7 +167,32 @@
           <summary>${escaparHtml(f.documento || "Documento")} (pág. ${escaparHtml(
           String(paginaTxt ?? "-")
         )}${escaparHtml(seccionTxt)})</summary>
+          ${f.ruta ? `<div class="fuente__ruta">📁 ${escaparHtml(f.ruta)}</div>` : ""}
           <div class="fuente__chunk"></div>
+          <details class="fuente__tecnico">
+            <summary>Detalles técnicos</summary>
+            <ul class="fuente__scores">
+              <li><span>Score fusión (RRF)</span><span>${escaparHtml(
+                formatearNumero(f.score_fusion, 4)
+              )} · rank ${escaparHtml(formatearRank(f.rank_fusion))}</span></li>
+              <li><span>Similitud embedding</span><span>${
+                f.similitud_dense != null ? escaparHtml(formatearNumero(f.similitud_dense, 1)) + "%" : "—"
+              } · rank ${escaparHtml(formatearRank(f.rank_dense, f.fuera_top20_dense))}</span></li>
+              <li><span>Score BM25</span><span>${escaparHtml(
+                formatearNumero(f.score_bm25, 4)
+              )} · rank ${escaparHtml(formatearRank(f.rank_bm25, true))}</span></li>
+              ${
+                f.chunk_index != null && f.num_chunks != null
+                  ? `<li><span>Posición del fragmento</span><span>${escaparHtml(
+                      String(f.chunk_index + 1)
+                    )} de ${escaparHtml(String(f.num_chunks))}</span></li>`
+                  : ""
+              }
+              ${f.tipo ? `<li><span>Tipo de contenido</span><span>${escaparHtml(f.tipo)}</span></li>` : ""}
+              ${f.categoria ? `<li><span>Categoría</span><span>${escaparHtml(f.categoria)}</span></li>` : ""}
+              ${f.chunk_id != null ? `<li><span>ID del chunk</span><span>${escaparHtml(String(f.chunk_id))}</span></li>` : ""}
+            </ul>
+          </details>
         `;
         detalle.querySelector(".fuente__chunk").textContent = f.chunk || "";
         fuentesWrap.appendChild(detalle);
