@@ -334,6 +334,12 @@ body {
   color: var(--else-blue);
 }
 
+.fuente summary .fuente__ruta {
+  display: block;
+  margin-top: 0.2rem;
+  font-weight: 400;
+}
+
 [data-theme="dark"] .fuente summary {
   color: var(--else-yellow);
 }

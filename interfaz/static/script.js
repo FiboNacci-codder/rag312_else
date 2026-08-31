@@ -164,10 +164,12 @@
         const paginaTxt = Array.isArray(f.pagina) ? f.pagina.join(", ") : f.pagina;
         const seccionTxt = f.seccion ? ` — ${f.seccion}` : "";
         detalle.innerHTML = `
-          <summary>${escaparHtml(f.documento || "Documento")} (pág. ${escaparHtml(
+          <summary>
+            ${escaparHtml(f.documento || "Documento")} (pág. ${escaparHtml(
           String(paginaTxt ?? "-")
-        )}${escaparHtml(seccionTxt)})</summary>
-          ${f.ruta ? `<div class="fuente__ruta">📁 ${escaparHtml(f.ruta)}</div>` : ""}
+        )}${escaparHtml(seccionTxt)})
+            ${f.ruta ? `<span class="fuente__ruta">📁 ${escaparHtml(f.ruta)}</span>` : ""}
+          </summary>
           <div class="fuente__chunk"></div>
           <details class="fuente__tecnico">
             <summary>Detalles técnicos</summary>
