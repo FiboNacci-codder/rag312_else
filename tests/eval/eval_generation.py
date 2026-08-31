@@ -42,7 +42,6 @@ indexada.
 
 import argparse
 import json
-import logging
 import math
 import os
 import random
@@ -165,9 +164,6 @@ def main():
         random.seed(args.seed)
         golden_set = random.sample(golden_set, min(args.n_muestra, len(golden_set)))
 
-    logging.basicConfig(level=logging.WARNING, format="%(name)s: %(message)s")
-    logging.getLogger("ragas").setLevel(logging.DEBUG)
-
     print(f"Corriendo pipeline RAG completo sobre {len(golden_set)} preguntas...\n")
 
     preguntas, respuestas, contextos, referencias = [], [], [], []
@@ -227,6 +223,20 @@ def main():
     context_precision = LLMContextPrecisionWithReference(llm=ragas_llm)
     context_recall = LLMContextRecall(llm=ragas_llm)
 
+    # ragas nombra las columnas del resultado según el atributo `.name` de cada
+    # métrica, que no siempre coincide con el nombre "amigable" que usamos en
+    # METRICAS (p.ej. LLMContextPrecisionWithReference.name ==
+    # "llm_context_precision_with_reference", no "context_precision" — ragas
+    # 0.4.3). Mapeamos leyendo el atributo real en vez de asumir el nombre,
+    # para no repetir el desajuste si ragas lo vuelve a renombrar.
+    metricas_obj = {
+        "faithfulness": faithfulness,
+        "answer_relevancy": answer_relevancy,
+        "context_precision": context_precision,
+        "context_recall": context_recall,
+    }
+    columna_ragas = {metrica: obj.name for metrica, obj in metricas_obj.items()}
+
     run_config = RunConfig(
         max_workers=1,
         timeout=600,
@@ -246,8 +256,9 @@ def main():
     df = resultado_ragas.to_pandas()
     for i, fila in enumerate(detalle_por_pregunta):
         for metrica in METRICAS:
-            if metrica in df.columns:
-                valor = df.iloc[i][metrica]
+            columna = columna_ragas[metrica]
+            if columna in df.columns:
+                valor = df.iloc[i][columna]
                 es_nan = isinstance(valor, float) and math.isnan(valor)
                 fila[metrica] = float(valor) if valor is not None and not es_nan else None
             else:
@@ -263,8 +274,9 @@ def main():
         "por_categoria": resumen_por_categoria(detalle_por_pregunta),
     }
     for metrica in METRICAS:
-        if metrica in df.columns:
-            valores = df[metrica].tolist()
+        columna = columna_ragas[metrica]
+        if columna in df.columns:
+            valores = df[columna].tolist()
             resumen[f"{metrica}_promedio"] = promedio_valido(valores)
             resumen[f"{metrica}_n_validas"] = sum(1 for v in valores if v is not None and not math.isnan(v))
         else:
