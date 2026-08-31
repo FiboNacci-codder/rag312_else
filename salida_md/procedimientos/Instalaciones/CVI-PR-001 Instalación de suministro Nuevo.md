@@ -114,7 +114,7 @@ Según el reglamento de usuarios libres de electricidad: En concordancia con el 
 
 Según  el  reglamento  de  usuarios  libres  de  electricidad:  Los  Usuarios  cuya  máxima demanda anual sea mayor de 200 kW, hasta 2500 kW, tienen derecho a elegir entre la condición  de  Usuario  Regulado  o  de  Usuario  Libre,  cumpliendo  los  requisitos  y condiciones establecidos en el Reglamento.
 
-- 2.3. Cliente Mayor. Persona natural o jurídica que se encuentra en posesión de un predio y  está en posibilidad de hacer uso legal del suministro de energía eléctrica con fines productivos, siendo atendidos mediante opciones tarifarias binomios, con una potencia contratada mayor a 20kW en hora punta.
+- 2.3. Cliente Mayor. - Persona natural o jurídica que se encuentra en posesión de un predio y  está en posibilidad de hacer uso legal del suministro de energía eléctrica con fines productivos, siendo atendidos mediante opciones tarifarias binomios, con una potencia contratada mayor a 20kW en hora punta.
 
 *Este tipo de clientes es para efectos de segmentación.
 
@@ -126,7 +126,7 @@ El costo de la conexión temporal será cubierto por el usuario y  dicho costo n
 
 - 2.5. Clientes  con  Celdas  Fotovoltaicas: Son  aquellos  usuarios  ubicados  en  sistemas eléctricos rurales (SER) establecidos por la LGER y cuyos suministros son alimentados mediante sistemas fotovoltaicos.
 - 2.6. Clientes provisionales (Usuarios provisionales): Se define como usuarios provisionales del servicio eléctrico, de acuerdo, al artículo 85 de la ley de Concesiones Eléctricas,  a  aquellos  usuarios  ubicados  en  zonas  habitadas  que  no  cuentan  con habilitación urbana, conectados en BT en forma colectiva.
-- 2.7. Propiedad del Cliente. Materiales y/o equipos definidos en el presupuesto y vendidos por ELSE a la firma del Contrato, los que son empleados en la instalación del suministro eléctrico. Antes de la instalación del suministro eléctrico, ELSE verifica su funcionamiento, asegura su integridad durante el almacenamiento y traslado hasta la instalación en el predio del Cliente.
+- 2.7. Propiedad del Cliente. - Materiales y/o equipos definidos en el presupuesto y vendidos por ELSE a la firma del Contrato, los que son empleados en la instalación del suministro eléctrico. Antes de la instalación del suministro eléctrico, ELSE verifica su funcionamiento, asegura su integridad durante el almacenamiento y traslado hasta la instalación en el predio del Cliente.
 
 Página
 

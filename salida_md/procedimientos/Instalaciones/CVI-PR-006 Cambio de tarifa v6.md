@@ -75,7 +75,7 @@ Establecer el procedimiento de Cambio de TARIFA, aplicado todas las sedes de Ele
 
 ## 2. DEFINICIONES
 
-- 2.1. Cliente Mayor.Persona natural o jurídica que se encuentra en posesión de un predio y está  en  posibilidad  de  hacer  uso  legal  del  suministro  de  energía  eléctrica  con  fines productivos,  siendo  atendidos  mediante  opciones  tarifarias  binomias,  con  una  potencia contratada mayor a 20kW en hora punta.
+- 2.1. Cliente Mayor.- Persona natural o jurídica que se encuentra en posesión de un predio y está  en  posibilidad  de  hacer  uso  legal  del  suministro  de  energía  eléctrica  con  fines productivos,  siendo  atendidos  mediante  opciones  tarifarias  binomias,  con  una  potencia contratada mayor a 20kW en hora punta.
 
 ## 3. MARCO NORMATIVO Y/O DOCUMENTOS RELACIONADOS
 

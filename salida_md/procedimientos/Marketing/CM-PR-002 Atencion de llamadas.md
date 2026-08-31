@@ -152,14 +152,14 @@ El presente procedimiento se encuentra desarrollado en flujo N°1  IVR de Fonafe
 
 En la atención de las llamadas telefónicas se debe:
 
-- -Primar el trato cortes y adecuado tono de voz
-- -Mantener una actitud positiva
-- -Ponerse en lugar del cliente
-- -Preocupación por superar las expectativas del cliente
-- -Brindar información adecuada
-- -Comprobar que la información brindada fue comprendida
-- -Muestre respeto
-- -Responder con profesionalismo
+- Primar el trato cortes y adecuado tono de voz
+- Mantener una actitud positiva
+- Ponerse en lugar del cliente
+- Preocupación por superar las expectativas del cliente
+- Brindar información adecuada
+- Comprobar que la información brindada fue comprendida
+- Muestre respeto
+- Responder con profesionalismo
 
 ## 6.2. Información para solicitar o confirmar a la persona que llama
 

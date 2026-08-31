@@ -14,14 +14,23 @@ Reglas:
 - Si el texto ya está bien escrito, devuélvelo exactamente igual.
 - Responde ÚNICAMENTE con el texto corregido, nada más."""
 
-SYSTEM_PROMPT_REWRITING = """Eres un asistente que reformula preguntas de usuarios a un lenguaje formal y técnico, como el usado en manuales de procedimientos institucionales.
+SYSTEM_PROMPT_REWRITING = """ROL
+Eres un asistente con 10 años de experiencia en sistemas RAG, encargado de normalizar \
+queries antes de la etapa de retrieval.
 
-Reglas:
+DESCRIPCIÓN DE LA ENTRADA
+Una pregunta de usuario en lenguaje coloquial.
+
+OBJETIVO
+Reformular la pregunta a un lenguaje formal y técnico, como el usado en manuales de \
+procedimientos institucionales.
+
+REGLAS
 - Mantén el significado exacto de la pregunta original, no agregues ni quites información.
-- Usa terminología formal/técnica en vez de coloquial (ej: "reclamo por consumo excesivo" en vez de "me llegó carísimo el recibo").
+- Usa terminología formal/técnica en vez de coloquial (ej: "reclamo por consumo excesivo" en \
+vez de "me llegó carísimo el recibo").
 - No respondas la pregunta, solo reformúlala.
 - Responde ÚNICAMENTE con la pregunta reformulada, nada más."""
-
 
 def normalizar_basico(texto: str) -> str:
     texto = texto.strip()

@@ -81,8 +81,8 @@ Página
 
 <!-- image -->
 
-- 6.1. Plan de mantenimiento.El  plan de mantenimiento debe cubrir todos los equipos y definir  las  actividades  a  realizar  y  su  periodicidad.  Las  actividades  u  operaciones  a realizar  deben  ir  encaminadas  a  prevenir,  o  en  su  caso  corregir,  fallos,  deterioros, averías  o  un  mal  funciona-  miento  de  los  equipos.  Este  plan  debe  incluir  tanto  el mantenimiento  interno  por  parte  de  la  propia  Empresa,  como  el  externo  (servicio externo de mantenimiento preventivo, en los casos que sea necesario o posible).
-- 6.2. Plan  de  calibración  o  verificación.  Se  debe  implantar  un  'Plan  de  calibración  o verificación' de sus equipos que asegure la fiabilidad de los mismos con un grado de incertidumbre apropiado al rigor que la medición requiera.
+- 6.1. Plan de mantenimiento.- El  plan de mantenimiento debe cubrir todos los equipos y definir  las  actividades  a  realizar  y  su  periodicidad.  Las  actividades  u  operaciones  a realizar  deben  ir  encaminadas  a  prevenir,  o  en  su  caso  corregir,  fallos,  deterioros, averías  o  un  mal  funciona-  miento  de  los  equipos.  Este  plan  debe  incluir  tanto  el mantenimiento  interno  por  parte  de  la  propia  Empresa,  como  el  externo  (servicio externo de mantenimiento preventivo, en los casos que sea necesario o posible).
+- 6.2. Plan  de  calibración  o  verificación.  - Se  debe  implantar  un  'Plan  de  calibración  o verificación' de sus equipos que asegure la fiabilidad de los mismos con un grado de incertidumbre apropiado al rigor que la medición requiera.
 - 6.2.1. Equipos a calibrar o verificar: Los equipos que están sujetos al plan de calibración o verificación son: pinzas amperimetricas y multímetros
 - 6.2.2. Quién  realiza  las  calibraciones  o  verificaciones: Los  equipos  de  calibración  o verificación  interna  estarán  a  cargo  de  la  persona  responsable  del  laboratorio  de contrastación  de  medidores  y  los  equipos  de  calibración;  en  caso  de  la  verificación externa estarán a cargo de INACAL.
 - 6.2.3. Periodicidad: La verificación de los equipos patrones de medida deberán ser verificados  por  INACAL  con  una  periodicidad  anual,  en  caso  que  se  detecten  fallas evidenciantes el responsable del área solicitará la verificación en forma inmediata al laboratorio  de  la  sede  Cusco,  el  que  realizara  la  contrastación  con  patrón  de  mayor clase de precisión, emitirá un informe del estado del equipo.
@@ -173,8 +173,6 @@ Cuando  se  trate  de  verificaciones  o  comprobaciones  de  un  equipo  el  ce
 
 <!-- image -->
 
-Página
-
 : CVI-IN-005
 
 : 04
@@ -262,16 +260,16 @@ Una vez realizada el doble clic en el icono de archivo nuevo, seleccionamos la o
 
 Se debe seleccionar y digitar los siguientes campos:
 
-- -Estado :  No  determinado,  bueno,  malo,  regular,  antiguo,  nuevo averiado, mica opaca.
-- -Descripción : se debe ingresar la descripción del equipo.
-- -Patrón : se debe poner check.
-- -Sucursal : se debe seleccionar la Sucursal de procedencia del equipo patrón.
-- -Área  Administrativa: se  debe  seleccionar  el  área  de  procedencia, (Instalaciones y Mediciones).
-- -Clase: se debe seleccionar Equipo patrón, Pinza.
-- -Marca: se debe seleccionar la marca del instrumento de medición.
-- -Modelo: se selecciona el modelo del instrumento de medición de la bandeja.
-- -Serie: ingresar la serie del equipo de medición.
-- -Año de Fabricación: se digita el año de fabricación del instrumento de medición.
+- Estado :  No  determinado,  bueno,  malo,  regular,  antiguo,  nuevo averiado, mica opaca.
+- Descripción : se debe ingresar la descripción del equipo.
+- Patrón : se debe poner check.
+- Sucursal : se debe seleccionar la Sucursal de procedencia del equipo patrón.
+- Área  Administrativa: se  debe  seleccionar  el  área  de  procedencia, (Instalaciones y Mediciones).
+- Clase: se debe seleccionar Equipo patrón, Pinza.
+- Marca: se debe seleccionar la marca del instrumento de medición.
+- Modelo: se selecciona el modelo del instrumento de medición de la bandeja.
+- Serie: ingresar la serie del equipo de medición.
+- Año de Fabricación: se digita el año de fabricación del instrumento de medición.
 
 Versión
 
@@ -317,8 +315,8 @@ Página
 
 ## MANTENIMIENTO Y VERIFICACIÓN DE EQUIPOS DE MEDICIÓN
 
-- -Procedencia: se debe ingresar oficina o área administrativa a la que pertenece  el instrumento de medición.
-- -Observaciones: ingresar las observaciones si es que las hubiera.
+- Procedencia: se debe ingresar oficina o área administrativa a la que pertenece  el instrumento de medición.
+- Observaciones: ingresar las observaciones si es que las hubiera.
 
 Una vez ingresado los todos los datos hacer clic en el icono de guardar
 
@@ -338,7 +336,7 @@ y
 
 En esta ventana debemos ingresar y seleccionar ' datos del contraste del equipo' .
 
-- -Fecha de Prueba: ingresar los datos de verificación de la pinza amperimétrica.
+- Fecha de Prueba: ingresar los datos de verificación de la pinza amperimétrica.
 
 -
 
@@ -350,11 +348,11 @@ Prueba Pinza.
 
 Entidad: ingresar  la  entidad  calibración  por  trazabilidad  LABORATORIO INSTALACIONES Y MEDICIONES.
 
-- -Certificado de Calibración: ingresar el certificado de calibración emitido por la entidad correspondiente.
-- -Temperatura: digitar la temperatura de calibración del equipo.
-- -Patrón  Utilizado: ingresar  la  identificación  del  equipo  patrón  debidamente certificado y actualizado en este caso Certificado de calibración vigente emitido por INACAL.
-- -Equipo  Patrón  de  Medición: para el  caso de certificación de pinzas amperimétricas deberá seleccionarse  la opción equipo de medición patrón y elegir la Marca y Modelo
-- -Vigencia: en  este  campo  debemos  ingresar  los  datos  de  vigencia  de calibración del equipo registrado que para el caso de pinzas amperimetricas es
+- Certificado de Calibración: ingresar el certificado de calibración emitido por la entidad correspondiente.
+- Temperatura: digitar la temperatura de calibración del equipo.
+- Patrón  Utilizado: ingresar  la  identificación  del  equipo  patrón  debidamente certificado y actualizado en este caso Certificado de calibración vigente emitido por INACAL.
+- Equipo  Patrón  de  Medición: para el  caso de certificación de pinzas amperimétricas deberá seleccionarse  la opción equipo de medición patrón y elegir la Marca y Modelo
+- Vigencia: en  este  campo  debemos  ingresar  los  datos  de  vigencia  de calibración del equipo registrado que para el caso de pinzas amperimetricas es
 
 <!-- image -->
 
@@ -382,15 +380,15 @@ Para  generar  un  plan  de  mantenimiento,  hacer  clic  en  el  icono nuevo, e
 
 En  esta  ventana  se  debe  ingresar  el  plan  de  mantenimiento  a  realizar  de  la  pinza amperimétrica.
 
-- -Actividad: ingresamos el tipo de actividad a realizar Preventivo / Verificación, Cambio de Batería, Revisión Visual de Operatividad.
+- Actividad: ingresamos el tipo de actividad a realizar Preventivo / Verificación, Cambio de Batería, Revisión Visual de Operatividad.
 
 -
 
 - Fecha  prevista: en  este  campo  se  ingresa  la  fecha  en  que  se  realizará  la actividad.
-- -Responsable: en  este  campo  digitamos  en  nombre  del  responsable  de  la actividad.
-- -Ejecutado: se pone check a la actividad luego de ejecutar la misma.
-- -Fecha Ejecución: se ingresa la fecha en la que se realiza la actividad.
-- -Prox. Mtto: se ingresa la fecha en que se realizará el próximo mantenimiento que depende de la actividad puede ser 03 meses (cambio de batería y revisión visual) o 01 año (Preventivo de verificación).
+- Responsable: en  este  campo  digitamos  en  nombre  del  responsable  de  la actividad.
+- Ejecutado: se pone check a la actividad luego de ejecutar la misma.
+- Fecha Ejecución: se ingresa la fecha en la que se realiza la actividad.
+- Prox. Mtto: se ingresa la fecha en que se realizará el próximo mantenimiento que depende de la actividad puede ser 03 meses (cambio de batería y revisión visual) o 01 año (Preventivo de verificación).
 
 Luego de ingresar los datos respectivos se guarda el registro haciendo clic en el icono de guardar.
 
@@ -436,11 +434,11 @@ Para ingresar un nuevo registro hacemos clic en el icono de nuevo se abre una nu
 
 <!-- image -->
 
-- -Corriente: elegimos el amperaje a la que se realizó la prueba 10 A, 20 A, 50 A, 70 A, 100 A.
-- -Corriente patrón: digitamos la corriente del equipo patrón.
-- -Corriente equipo: digitamos la corriente de la pinza amperimétrica.
-- -Tensión patrón: se ingresa el valor de la tensión del equipo patrón
-- -Tensión equipo: se ingresa el valor de la tensión de la pinza amperimétrica.
+- Corriente: elegimos el amperaje a la que se realizó la prueba 10 A, 20 A, 50 A, 70 A, 100 A.
+- Corriente patrón: digitamos la corriente del equipo patrón.
+- Corriente equipo: digitamos la corriente de la pinza amperimétrica.
+- Tensión patrón: se ingresa el valor de la tensión del equipo patrón
+- Tensión equipo: se ingresa el valor de la tensión de la pinza amperimétrica.
 
 <!-- image -->
 
@@ -456,12 +454,12 @@ Para emitir reportes y formatos hacemos clic en el icono de imprimir,  el cual n
 
 <!-- image -->
 
-- -Listado de equipos de medición.
-- -Ficha de Identificación.
-- -Pruebas de Verificación.
-- -Etiqueta de Verificación.
-- -Programa de Mantenimiento de Equipos.
-- -Programa de Calibración Patrón.
+- Listado de equipos de medición.
+- Ficha de Identificación.
+- Pruebas de Verificación.
+- Etiqueta de Verificación.
+- Programa de Mantenimiento de Equipos.
+- Programa de Calibración Patrón.
 
 ## 6.5.1. Listado de equipos de medición
 
@@ -511,11 +509,11 @@ Página
 
 En esta ventana debemos ingresar los siguientes datos:
 
-- -Fecha inicial: se ingresa la fecha inicial para nuestro reporte.
-- -Fecha final: se ingresa el dato de fecha final para el reporte.
-- -Sucursal: se habilita esta opción para el reporte de equipos por sucursal.
-- -Área  administrativa: se  habilita  esta  opción  para  el  reporte  según  el  área administrativa.
-- -Clase  Equipo: cuando  se  habilita  esta  opción  permite  realizar  el  reporte discriminando entre equipo patrón y pinza amperimétrica.
+- Fecha inicial: se ingresa la fecha inicial para nuestro reporte.
+- Fecha final: se ingresa el dato de fecha final para el reporte.
+- Sucursal: se habilita esta opción para el reporte de equipos por sucursal.
+- Área  administrativa: se  habilita  esta  opción  para  el  reporte  según  el  área administrativa.
+- Clase  Equipo: cuando  se  habilita  esta  opción  permite  realizar  el  reporte discriminando entre equipo patrón y pinza amperimétrica.
 
 <!-- image -->
 
@@ -819,12 +817,12 @@ Elegimos  esta  opción  para  mostrar  el  reporte  del  programa  de  mantenim
 
 Los registros generados son:
 
-- -CVI-RE-025 Pruebas de Verificación de Funcionamiento
-- -CVI-RE-026 Programa de Calibración de Equipos Patrón
-- -CVI-RE-027 Etiqueta de verificación de Equipos de Medición
-- -CVI-RE-028 Plan de Mantenimiento de Equipos de Medición
-- -CVI-RE-012 Ficha de Identificación de Equipos / Instalaciones
-- -CVI-RE-031 Pruebas de Laboratorio
+- CVI-RE-025 Pruebas de Verificación de Funcionamiento
+- CVI-RE-026 Programa de Calibración de Equipos Patrón
+- CVI-RE-027 Etiqueta de verificación de Equipos de Medición
+- CVI-RE-028 Plan de Mantenimiento de Equipos de Medición
+- CVI-RE-012 Ficha de Identificación de Equipos / Instalaciones
+- CVI-RE-031 Pruebas de Laboratorio
 
 ## 8. MATERIALES
 

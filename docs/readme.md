@@ -839,8 +839,37 @@ python inspeccionar_miss.py --sin-normalizar
 
 ---
 
-## 7. Interfaces Gradio
+## 7. Interfaces
+
+### 7.1. Gradio
 
 **`app_gradio.py`** (producción, puerto 7861): chat (`gr.Chatbot`) sobre `rag_query.main()`, sin memoria real (visualmente muestra historial, cada pregunta se procesa aislada). Acceso vía túnel SSH o forwarding automático de VS Code Remote-SSH.
+
+```bash
+cd ~/rag312/interfaz
+python app_gradio.py
+```
+
+### 7.2. Web (HTML/CSS/JS + FastAPI)
+
+**`app_web.py`** (en desarrollo, puerto 8080): interfaz HTML propia (`interfaz/static/`) sobre `rag_query1.main()`, con estilo azul/amarillo (Electro Sur Este), modo día/noche, preguntas sugeridas, historial de conversaciones (guardado en `localStorage` del navegador, no en el servidor) y visualización de fuentes/tiempo de generación. El botón de subir archivo está visible pero deshabilitado ("Función en desarrollo") — todavía no hay ingesta de archivos vía la interfaz.
+
+Requiere el entorno conda `rag312` activo (`fastapi`, `uvicorn` y `python-multipart` ya están en `requirements.txt`) y los servicios vLLM (8001, 8002, 8003) + Qdrant (6333) corriendo, igual que `rag_query1.py`.
+
+```bash
+source ~/rag312/conda/activar.sh
+conda activate rag312
+source ~/rag312/containers/env.sh   # variables de entorno vLLM, si aplica
+
+cd ~/rag312/interfaz
+python app_web.py
+```
+
+Luego abrir `http://localhost:8080/` (o el host/túnel correspondiente si se accede remoto). También se puede levantar con recarga automática durante desarrollo:
+
+```bash
+cd ~/rag312/interfaz
+uvicorn app_web:app --reload --host 0.0.0.0 --port 8080
+```
 
 ---

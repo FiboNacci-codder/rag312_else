@@ -27,7 +27,7 @@ Proporcionar los lineamientos para la ejecución efectiva del procedimiento de r
 
 ## 2. DEFINICIONES
 
-- 2.1. Refacturación.Nueva emisión de la factura de acuerdo a datos verificados.
+- 2.1. Refacturación.- Nueva emisión de la factura de acuerdo a datos verificados.
 
 ## 3. MARCO NORMATIVO Y/O DOCUMENTOS RELACIONADOS
 

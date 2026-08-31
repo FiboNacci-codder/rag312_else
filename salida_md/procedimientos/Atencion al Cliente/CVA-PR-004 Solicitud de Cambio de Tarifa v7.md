@@ -102,7 +102,7 @@ Establecer el procedimiento para atender las solicitudes de cambio de tarifa, ap
 - 2.3. Clientes Libres:
 - 2.3.1. Según  el  reglamento  de  usuarios  libres  de  electricidad:  Los  Usuarios  cuya  máxima demanda anual sea mayor de 200 kW, hasta 2500 kW, tienen derecho a elegir entre la condición  de  Usuario  Regulado  o  de  Usuario  Libre,  cumpliendo  los  requisitos  y condiciones establecidos en el Reglamento.
 - 2.3.2. Según el reglamento de usuarios libres de electricidad: Usuarios conectados al SEIN no sujetos a regulación de precios por la energía o potencia que consumen. Los Usuarios cuya máxima demanda anual sea mayor a 2 500 kW, tienen la condición de Usuarios Libres.
-- 2.4. Cliente Mayor. Persona natural o jurídica que se encuentra en posesión de un predio y  está en posibilidad de hacer uso legal del suministro de energía eléctrica con fines productivos, siendo atendidos mediante opciones tarifarias binomias, con una potencia contratada mayor a 20kW.
+- 2.4. Cliente Mayor. - Persona natural o jurídica que se encuentra en posesión de un predio y  está en posibilidad de hacer uso legal del suministro de energía eléctrica con fines productivos, siendo atendidos mediante opciones tarifarias binomias, con una potencia contratada mayor a 20kW.
 
 ## 3. MARCO NORMATIVO Y/O DOCUMENTOS RELACIONADOS
 

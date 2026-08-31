@@ -165,11 +165,11 @@ Dónde: Días transcurridos = diferencia entre las fechas de lectura del periodo
 
 Consumo de energía proyectado = Consumo de energía por día x días proyectados
 
-Dónde: Días proyectados = última fecha del periodo (n) -fecha de lectura del suministro según cronograma comercial en el periodo (n) más 1.
+Dónde: Días proyectados = última fecha del periodo (n) - fecha de lectura del suministro según cronograma comercial en el periodo (n) más 1.
 
 ## Ejemplo:
 
-Días proyectados = 30/06/2023 -27/06/2023 + 1 = 4 días.
+Días proyectados = 30/06/2023 - 27/06/2023 + 1 = 4 días.
 
 <!-- formula-not-decoded -->
 
@@ -288,7 +288,7 @@ En la hoja se presenta ejemplos para los diferentes rangos de consumo de un sumi
 
 Ejemplo para  la  proyección  de  energía  de  un  cliente  con  tarifa  BT5B:  se  considera  el Consumo en el mes junio (n=06).
 
-- Días proyectados = 5 días (30/06/2023 -26/06/2023 + 1).
+- Días proyectados = 5 días (30/06/2023 - 26/06/2023 + 1).
 - También debemos tomar en cuenta los consumos de energía del mes mayo y abril del 2023.
 
 ## Para un consumo menor y/o igual a 30 kWh:
@@ -414,7 +414,7 @@ cálculo del consumo proyectado deben ser guardados ya que en el proceso de refa
 
 En el ejemplo se considera un Consumo en el mes junio (n=06).
 
-- Días proyectados = 3 días (30/06/2023 -28/06/2023 + 1).
+- Días proyectados = 3 días (30/06/2023 - 28/06/2023 + 1).
 - También debemos tomar en cuenta los consumos de energía en hora punta y hora fuera de punta del mes de mayo del 2023 (n-1) y abril del 2023 (n-2).
 - Por último, tomar en cuenta la fecha de lectura de campaña en el mes abril del 2023 (28/03/2023).
 
@@ -469,7 +469,7 @@ Dónde: Nro. Días transcurridos = periodo entre el mes (n) y (n-3) para montos 
 
 Monto AP proyectado total = Monto AP por día    x días proyectados
 
-Dónde: Días proyectados = última fecha o día del periodo (n) -fecha  de  lectura según  cronograma  del  suministro  en  el  periodo  (n).      Ejemplo:  30/09/2025 -25/09/2025 + 1 = 6 días.
+Dónde: Días proyectados = última fecha o día del periodo (n) - fecha  de  lectura según  cronograma  del  suministro  en  el  periodo  (n).      Ejemplo:  30/09/2025 - 25/09/2025 + 1 = 6 días.
 
 Al utilizar el monto facturado por el concepto de alumbrado público, implícitamente
 

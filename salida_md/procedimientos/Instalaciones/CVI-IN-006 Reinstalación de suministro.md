@@ -20,7 +20,7 @@ Tablero  general  (interno): Tablero  ubicado  en  el interior de la  edificaci�
 
 3. DOCUMENTOS A CONSULTAR
 
-Norma DGE 'Conexiones Eléctricas en Baja Tensión en Zonas de Concesión de Distribución' Código  Nacional  de  Electricidad  -  Suministro  Aprobado por R.M N° 366-2001-EM/VME (2001-0806)
+Norma DGE 'Conexiones Eléctricas en Baja Tensión en Zonas de Concesión de Distribución' Código  Nacional  de  Electricidad  -  Suministro  - Aprobado por R.M N° 366-2001-EM/VME (2001-0806)
 
 NTCSE, y NTCSER
 
@@ -204,58 +204,58 @@ medidor El técnico:
 
 ## mm 2
 
-- -Separador tetra filar PVC, ¾' diam.
-- -Tuboflex, ½ o ¾'
-- -Templador de fierro galvanizado
-- -Armella Tirafón de fierro galvanizado
-- -Tornillo Tirafón
-- -Conector
+- Separador tetra filar PVC, ¾' diam.
+- Tuboflex, ½ o ¾'
+- Templador de fierro galvanizado
+- Armella Tirafón de fierro galvanizado
+- Tornillo Tirafón
+- Conector
 - (bimetálico) : 6-50 mm², 16-120 mm², 10-
 
 120 mm²
 
-- -Tubo 1'' Diam. PVC-SAP
-- -Curva 1'' Diam. PVC-SAP
-- -Cajatoma metálica monofásica/trifásica
-- -Cinta plástica de amarre
-- -Interruptor Termo magnético bipolar /tripolar
-- -Yeso, cemento, grapas, tarugos, herramientas.
+- Tubo 1'' Diam. PVC-SAP
+- Curva 1'' Diam. PVC-SAP
+- Cajatoma metálica monofásica/trifásica
+- Cinta plástica de amarre
+- Interruptor Termo magnético bipolar /tripolar
+- Yeso, cemento, grapas, tarugos, herramientas.
 - Para Acometida Subterránea :
-- -Cable 2-1x10mm   tipo  NYY
-- -Cable 3-1x10mm   tipo  NYY
-- -Cable 2x10mm  tipo  NKY
-- -Cable 3x10mm  tipo  NKY
-- -Tubo 1-1/4' Diam. PVC-SEL
-- -Empalme  monofásico en derivación para cable NYY, 10-35 mm² (incluye dos empalmes unipolar y demás materiales)
+- Cable 2-1x10mm   tipo  NYY
+- Cable 3-1x10mm   tipo  NYY
+- Cable 2x10mm  tipo  NKY
+- Cable 3x10mm  tipo  NKY
+- Tubo 1-1/4' Diam. PVC-SEL
+- Empalme  monofásico en derivación para cable NYY, 10-35 mm² (incluye dos empalmes unipolar y demás materiales)
 - -
 - -Empalme trifásico en derivación para cable
 
 NKY, 10-35 mm², 10-50 mm 2  y 10-70 mm 2
 
 - 8 CONSIDERACIONES DE SEGURIDAD
-- -Zapatos dieléctricos
+- Zapatos dieléctricos
 - 8.1  Equipo de protección personal
-- -Uniforme de trabajo
-- -Guantes de seguridad para baja tensión
-- -Casco
-- -Careta de seguridad o escafandra
-- -Barbiquejo
-- -Correa de seguridad
-- -Lentes o visores protectores.
+- Uniforme de trabajo
+- Guantes de seguridad para baja tensión
+- Casco
+- Careta de seguridad o escafandra
+- Barbiquejo
+- Correa de seguridad
+- Lentes o visores protectores.
 
 ## 8.2  Herramientas
 
-- -Cintas de seguridad/tranqueras/conos
-- -Destornillador de electricista
-- -Alicate de electricista
-- -Pinza amperimetrica
-- -Multímetro
+- Cintas de seguridad/tranqueras/conos
+- Destornillador de electricista
+- Alicate de electricista
+- Pinza amperimetrica
+- Multímetro
 
 ## 8.3  Manipulación
 
-- -Siempre utilizar escalera de fibra de vidrio.
-- -Utilizar las herramientas adecuadas para ejecutar el trabajo
-- -Realizar la charla de 5 minutos
+- Siempre utilizar escalera de fibra de vidrio.
+- Utilizar las herramientas adecuadas para ejecutar el trabajo
+- Realizar la charla de 5 minutos
 
 Contro
 

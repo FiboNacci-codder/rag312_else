@@ -153,14 +153,14 @@ Sección: 6.1. Conductas del personal que atiende las llamadas telefónicas
 Tipo: mixto: list_item, text
 --------------------------------------------------------------------------------
 En la atención de las llamadas telefónicas se debe:
-- -Primar el trato cortes y adecuado tono de voz
-- -Mantener una actitud positiva
-- -Ponerse en lugar del cliente
-- -Preocupación por superar las expectativas del cliente
-- -Brindar información adecuada
-- -Comprobar que la información brindada fue comprendida
-- -Muestre respeto
-- -Responder con profesionalismo
+- Primar el trato cortes y adecuado tono de voz
+- Mantener una actitud positiva
+- Ponerse en lugar del cliente
+- Preocupación por superar las expectativas del cliente
+- Brindar información adecuada
+- Comprobar que la información brindada fue comprendida
+- Muestre respeto
+- Responder con profesionalismo
 
 ================================================================================
 Chunk: 13 / 36

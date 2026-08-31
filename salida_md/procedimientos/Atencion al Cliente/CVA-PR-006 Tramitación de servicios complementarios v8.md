@@ -347,8 +347,6 @@ Página
 
 <!-- image -->
 
-## PROCEDIMIENTO TRAMITACIÓN DE SERVICIOS COMPLEMENTARIOS
-
 Código
 
 Versión
@@ -368,6 +366,10 @@ Página
 : 29/10/2025
 
 : 9 de 4
+
+## PROCEDIMIENTO
+
+## TRAMITACIÓN DE SERVICIOS COMPLEMENTARIOS
 
 | Proveedores                     | Entradas            |   N° | Descripción Actividades                                                                                          | Salidas                        | Clientes                                     | Ejecutor de la Actividad        | Sistema que soporta la Actividad   | ¿Es control Cable? (Sí=x)   |
 |---------------------------------|---------------------|------|------------------------------------------------------------------------------------------------------------------|--------------------------------|----------------------------------------------|---------------------------------|------------------------------------|-----------------------------|

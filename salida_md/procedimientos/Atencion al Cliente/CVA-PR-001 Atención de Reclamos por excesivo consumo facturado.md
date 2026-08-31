@@ -148,6 +148,8 @@ Página
 
 : CSIG
 
+: 29/10/2025
+
 : 4 de 47
 
 ## PROCEDIMIENTO
@@ -202,7 +204,7 @@ Página
 ## ATENCIÓN DE RECLAMOS POR EXCESIVO CONSUMO FACTURADO
 
 - RM Nº 496-2005 -MEM/DM 'Contraste del Sistema de Medición de Energía Eléctrica'
-- Lineamientos Resolutivos de la Junta de Apelaciones de Reclamos de Usuarios  JARU (PARTE I, II y III)
+- Lineamientos Resolutivos de la Junta de Apelaciones de Reclamos de Usuarios  - JARU (PARTE I, II y III)
 - Precedentes de Observancia Obligatoria aprobados en Sesión de Sala Plena de la Junta de Apelaciones de Reclamos de Usuarios - JARU
 - Resolución de Consejo Directivo del Organismo Supervisor de la Inversión en Energía y  Minería  OSINERGMIN  N°079-2020-OS/CD  'Procedimiento  Especial  Para  la Tramitación de los Reclamos de los Usuarios de los Servicios Públicos de Electricidad y  Gas  Natural,  Derivados  de  las  Facturaciones  Emitidas  Durante  el  Estado  de Emergencia Nacional'
 - SIG-PR-004 Administración de Acciones Correctivas.

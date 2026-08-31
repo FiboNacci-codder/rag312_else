@@ -63,9 +63,21 @@ except ImportError as e:
     print(f"ERROR: no se pudo importar rag_query1 desde {CONSULTA_DIR}. Detalle: {e}")
     sys.exit(1)
 
+# --- Parche: ragas importa ChatVertexAI desde una ruta que ya no existe en
+# versiones recientes de langchain_community. No usamos Vertex AI, así que
+# registramos un módulo "stub" para que ese import no rompa la carga de ragas.
+import types as _types
+if "langchain_community.chat_models.vertexai" not in sys.modules:
+    _stub = _types.ModuleType("langchain_community.chat_models.vertexai")
+    class ChatVertexAI:
+        pass
+    _stub.ChatVertexAI = ChatVertexAI
+    sys.modules["langchain_community.chat_models.vertexai"] = _stub
+
 try:
     from datasets import Dataset
     from ragas import evaluate
+    from ragas.run_config import RunConfig
     from ragas.metrics import faithfulness, answer_relevancy, LLMContextPrecisionWithReference, LLMContextRecall
     from ragas.llms import LangchainLLMWrapper
     from ragas.embeddings import LangchainEmbeddingsWrapper
@@ -90,6 +102,8 @@ def build_ragas_llm_embeddings():
         api_key="no-necesaria",
         model=JUDGE_LLM_MODEL,
         temperature=0.0,
+        max_tokens=4096,
+        extra_body={"chat_template_kwargs": {"enable_thinking": False}},  # <-- clave
     )
     embed = OpenAIEmbeddings(
         base_url=EMBED_URL,
@@ -209,17 +223,31 @@ def main():
     context_precision = LLMContextPrecisionWithReference(llm=ragas_llm)
     context_recall = LLMContextRecall(llm=ragas_llm)
 
+    run_config = RunConfig(
+        max_workers=1,
+        timeout=600,
+        max_retries=3,
+        max_wait=60,
+    )
+
     resultado_ragas = evaluate(
         dataset,
         metrics=[faithfulness, answer_relevancy, context_precision, context_recall],
         llm=ragas_llm,
         embeddings=ragas_embeddings,
+        run_config=run_config,
+        raise_exceptions=True,   # <-- agregar temporalmente
     )
 
     df = resultado_ragas.to_pandas()
     for i, fila in enumerate(detalle_por_pregunta):
         for metrica in METRICAS:
-            fila[metrica] = float(df.iloc[i][metrica])
+            if metrica in df.columns:
+                valor = df.iloc[i][metrica]
+                es_nan = isinstance(valor, float) and math.isnan(valor)
+                fila[metrica] = float(valor) if valor is not None and not es_nan else None
+            else:
+                fila[metrica] = None
 
     resumen = {
         "n_preguntas_golden": n_total,
@@ -231,10 +259,14 @@ def main():
         "por_categoria": resumen_por_categoria(detalle_por_pregunta),
     }
     for metrica in METRICAS:
-        valores = df[metrica].tolist()
-        resumen[f"{metrica}_promedio"] = promedio_valido(valores)
-        resumen[f"{metrica}_n_validas"] = sum(1 for v in valores if v is not None and not math.isnan(v))
-
+        if metrica in df.columns:
+            valores = df[metrica].tolist()
+            resumen[f"{metrica}_promedio"] = promedio_valido(valores)
+            resumen[f"{metrica}_n_validas"] = sum(1 for v in valores if v is not None and not math.isnan(v))
+        else:
+            resumen[f"{metrica}_promedio"] = None
+            resumen[f"{metrica}_n_validas"] = 0
+            print(f"AVISO: la métrica '{metrica}' no se pudo calcular (falló toda la columna).")
     print("\n" + "=" * 60)
     print("RESUMEN — CALIDAD DE GENERACIÓN")
     print("=" * 60)

@@ -579,6 +579,8 @@ Página
 
 ## LECTURA DE CONTADORES DE ENERGÍA
 
+<!-- image -->
+
 | Proveedor es                                                             | Entrada s   |   N° | Descripción   | Actividades Salidas                                              | Clientes                                                                | Ejecutor de la Actividad                                                | Sistema que soporta la Actividad   | ¿Es con trol Ca ble ? (Sí= x)   |
 |--------------------------------------------------------------------------|-------------|------|---------------|------------------------------------------------------------------|-------------------------------------------------------------------------|-------------------------------------------------------------------------|------------------------------------|---------------------------------|
 | Ejecutivo de Facturació n / Supervisor Comercial o el que haga sus veces |             |   22 | Si: Va a      | 22.1. ¿Existen observaciones? actividad 22 No: Va a actividad 26 | Ejecutivo de Facturación / Supervisor Comercial o el que haga sus veces | Ejecutivo de Facturación / Supervisor Comercial o el que haga sus veces |                                    |                                 |

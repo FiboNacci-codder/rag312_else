@@ -147,7 +147,7 @@ comparten vínculos de amistad, profesionalismo o algún interés en común. Las
 - Herramientas del Contac Center (según contrato) El área de TIC de ELSE y del Contac Center garantizaran la migración de información del sistema de registro de la contratista y se registre correctamente en el SIELSE.
 - 5.2. Herramientas de gestión del servicio (según contrato).
 - 5.3. Página Web: www.else.com.pe.
-- 5.4. Correo electrónico: atencionclientes@else.com.pe
+- 5.4. [Correo electrónico: atencionclientes@else.com.pe](mailto:atencionclientes@else.com.pe)
 - 5.5. Redes Sociales: Facebook, Twitter e Instagram
 - 5.6. Sistema informático (SIELSE).
 
@@ -163,22 +163,22 @@ El procedimiento de la gestión de Correo Electrónico se describe en el Flujogr
 
 ## 6.1. Conductas del personal que atiende los medios digitales y redes sociales En la atención se debe:
 
-- -Primar el trato cortes y adecuado
-- -Mantener una actitud positiva
-- -Ponerse en lugar del cliente
-- -Preocupación por superar las expectativas del cliente
-- -Comprobar que la información brindada fue comprendida
-- -Muestre respeto
-- -Responder con profesionalismo
+- Primar el trato cortes y adecuado
+- Mantener una actitud positiva
+- Ponerse en lugar del cliente
+- Preocupación por superar las expectativas del cliente
+- Comprobar que la información brindada fue comprendida
+- Muestre respeto
+- Responder con profesionalismo
 
 ## 6.2. Información para solicitar o confirmar a la persona que utiliza nuestros medios digitales y redes sociales
 
-- -Motivo
-- -El nombre de la persona que efectúa la llamada
-- -El código de suministro
-- -La  dirección  o  referencia  de  la  zona  donde  se  ubica  la  instalación  motivo  de  la comunicación
-- -El número telefónico de contacto
-- -Correo electrónico
+- Motivo
+- El nombre de la persona que efectúa la llamada
+- El código de suministro
+- La  dirección  o  referencia  de  la  zona  donde  se  ubica  la  instalación  motivo  de  la comunicación
+- El número telefónico de contacto
+- Correo electrónico
 
 ## 6.3. Información para brindar a la persona que utiliza nuestros medios digitales y redes sociales
 

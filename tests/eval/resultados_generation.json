@@ -1,0 +1,53 @@
+{
+  "resumen": {
+    "n_preguntas_golden": 38,
+    "n_sin_ground_truth": 0,
+    "n_preguntas_evaluadas": 1,
+    "n_errores_pipeline": 0,
+    "tiempo_total_seg": 17.56,
+    "tiempo_promedio_por_pregunta_seg": 17.56,
+    "por_categoria": {
+      "Atencion al Cliente": {
+        "n_preguntas": 1,
+        "faithfulness_promedio": 1.0,
+        "answer_relevancy_promedio": 0.8545971941671144,
+        "context_precision_promedio": null,
+        "context_recall_promedio": 1.0
+      }
+    },
+    "faithfulness_promedio": 1.0,
+    "faithfulness_n_validas": 1,
+    "answer_relevancy_promedio": 0.8545971941671144,
+    "answer_relevancy_n_validas": 1,
+    "context_precision_promedio": null,
+    "context_precision_n_validas": 0,
+    "context_recall_promedio": 1.0,
+    "context_recall_n_validas": 1
+  },
+  "detalle": [
+    {
+      "id": "q0008",
+      "categoria": "Atencion al Cliente",
+      "pregunta": "¿Qué documentos normativos y precedentes de observancia obligatoria se deben considerar en la resolución de un reclamo de usuarios?",
+      "respuesta": "Según la información contenida en los manuales y procedimientos proporcionados, los documentos normativos y precedentes que deben considerarse en la resolución de reclamos de usuarios son los siguientes:\n\n**1. Normativa de Consejo Directivo de OSINERGMIN:**\n*   **Resolución de Consejo Directivo N° 269-2014-OS/CD:** 'Procedimiento Administrativo de Reclamos de los Usuarios de los Servicios Públicos de Electricidad y Gas Natural'.\n*   **Resolución de Consejo Directivo N° 079-2020-OS/CD:** 'Procedimiento Especial Para la Tramitación de los Reclamos de los Usuarios de los Servicios Públicos de Electricidad y Gas Natural, Derivados de las Facturaciones Emitidas Durante el Estado de Emergencia Nacional'.\n*   **Resolución de Consejo Directivo N° 028-2003-OS/CD:** Tipificación de Infracciones Generales y Escala de Multas y Sanciones.\n*   **Resolución de Consejo Directivo N° 094-2017-OS/CD:** 'Procedimiento para la supervisión de la atención de denuncias por deficiencias de alcance general en la prestación del servicio público de electricidad'.\n\n**2. Normativa Técnica y Reglamentaria:**\n*   **Norma Técnica de Calidad de los Servicios Eléctricos:** Aprobada por Decreto Supremo N° 020-97-EM y sus respectivas modificaciones.\n*   **RM Nº 496-2005-MEM/DM:** 'Contraste del Sistema de Medición de Energía Eléctrica'.\n*   **Norma DGE 'Reintegros y Recuperos de Energía Eléctrica':** Aprobada por Resolución Ministerial N° 571-2006-MEM/DM.\n*   **Decreto Ley N° 25844:** Ley de Concesiones Eléctricas (LCE).\n*   **Reglamento de la Ley de Concesiones Eléctricas:** Aprobado por Decreto Supremo N° 009-93-EM (RLCE).\n*   **Reglamento de fiscalización y sanción de las actividades energéticas y mineras a cargo de Osinergmin:** Aprobado por Resolución de Consejo Directivo N° 208-2020-OS/CD.\n\n**3. Precedentes y Lineamientos de la Junta de Apelaciones de Reclamos de Usuarios (JARU):**\n*   **Lineamientos Resolutivos de la JARU:** Parte I, II y III.\n*   **Precedentes de Observancia Obligatoria:** Aprobados en Sesión de Sala Plena de la Junta de Apelaciones de Reclamos de Usuarios - JARU.\n\n**4. Procedimientos Internos Relacionados:**\n*   **SIG-PR-004:** Administración de Acciones Correctivas.\n*   **CVPC-PR-001:** Verificación de suministros y detección de vulneración y/o consumo sin autorización.",
+      "ground_truth": "Para la resolución de un reclamo de usuarios se deben considerar los siguientes documentos normativos y precedentes de observancia obligatoria:\n\n*   RM Nº 496-2005 -MEM/DM \"Contraste del Sistema de Medición de Energía Eléctrica\".\n*   Lineamientos Resolutivos de la Junta de Apelaciones de Reclamos de Usuarios - JARU (Parte I, II y III).\n*   Precedentes de Observancia Obligatoria aprobados en Sesión de Sala Plena de la Junta de Apelaciones de Reclamos de Usuarios - JARU.\n*   Resolución de Consejo Directivo del Organismo Supervisor de la Inversión en Energía y Minería OSINERGMIN N°079-2020-OS/CD \"Procedimiento Especial Para la Tramitación de los Reclamos de los Usuarios de los Servicios Públicos de Electricidad y Gas Natural, Derivados de las Facturaciones Emitidas Durante el Estado de Emergencia Nacional\".\n*   SIG-PR-004 Administración de Acciones Correctivas.",
+      "documentos_recuperados": [
+        "CM-PR-002 Atencion de llamadas.pdf",
+        "CVPC-IN-003 Preparación de la muestra semestral.pdf",
+        "CM-PR-004 Supervisión de atención de contact center.pdf",
+        "CM-PR-002 Atencion de llamadas.pdf",
+        "CVPC-IN-003 Preparación de la muestra semestral.pdf",
+        "RP-PR-002 Registro y Cierre de Comunicaciones de OSINERGMIN.pdf",
+        "CVA-PR-018 Atención de reclamos por daños y perjuicios.pdf",
+        "CVPC-IN-003 Preparación de la muestra semestral.pdf",
+        "CVA-IN-002 Emisión de comprobantes.pdf",
+        "CVA-PR-014 Atención de reclamos por oposición a cambio de Razón Social.pdf"
+      ],
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.8545971941671144,
+      "context_precision": null,
+      "context_recall": 1.0
+    }
+  ],
+  "errores": []
+}

@@ -43,13 +43,13 @@ Según el reglamento de usuarios libres de electricidad: Usuarios conectados al 
 
 Los Usuarios cuya máxima demanda anual sea mayor a 2 500 kW, tienen la condición de Usuarios Libres.
 
-- 2.4. Cliente Mayor.Persona natural o jurídica que se encuentra en posesión de un predio y está en posibilidad de hacer uso legal del suministro de energía eléctrica con fines productivos, siendo atendidos mediante opciones tarifarias binomias, con una potencia contratada mayor a 20kW.
+- 2.4. Cliente Mayor.- Persona natural o jurídica que se encuentra en posesión de un predio y está en posibilidad de hacer uso legal del suministro de energía eléctrica con fines productivos, siendo atendidos mediante opciones tarifarias binomias, con una potencia contratada mayor a 20kW.
 - 2.5. Sistema de Telemedición: Equipo que comprende una interfaz de comunicación para la medición y/o programación en forma remota del medidor del Cliente Mayor.
 - 2.6. AMI (Infraestructura de medición avanzada: (inglés: Advanced Metering Infrastructure o AMI) se refiere a los sistemas que miden, recolectan y analizan el uso de la energía, e interactúan con dispositivos como los medidores inteligentes de electricidad, de gas, o de agua. Dichos sistemas están en capacidad de gestionar toda la información recolectada y tomar decisiones, para ello la infraestructura (que usualmente es de propiedad de las empresas de servicios) incluye el hardware, software, equipos de comunicaciones, pantallas con información de consumo para los usuarios, etc.
 
 2.7.
 
-Propiedad del Cliente.Materiales y/o equipos definidos en el presupuesto y vendidos por ELSE a la firma del Contrato, los que son empleados en la instalación del suministro eléctrico. Antes de la instalación del suministro eléctrico, ELSE verifica su funcionamiento, asegura su integridad durante el almacenamiento y traslado hasta la instalación en el predio del Cliente.
+Propiedad del Cliente.- Materiales y/o equipos definidos en el presupuesto y vendidos por ELSE a la firma del Contrato, los que son empleados en la instalación del suministro eléctrico. Antes de la instalación del suministro eléctrico, ELSE verifica su funcionamiento, asegura su integridad durante el almacenamiento y traslado hasta la instalación en el predio del Cliente.
 
 ## 3. DOCUMENTOS A CONSULTAR
 

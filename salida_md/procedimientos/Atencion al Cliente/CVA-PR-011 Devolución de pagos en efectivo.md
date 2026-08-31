@@ -139,7 +139,7 @@ El procedimiento se encuentra desarrollado en Flujo N°1.
 ## 6.1. Requisitos
 
 - Llenado de solicitud
-- -DNI original
+- DNI original
 - Copia del Comprobante de pago cancelado.
 - Original de recibo cancelado (caso devolución doble pago)
 - Atención Clientela.- registra  la  solicitud de 'Devolución  en  Efectivo'  con  los requisitos  exigidos,  el  cual  será  firmado  por  el  titular  o  representante  legal,  debidamente autorizado con poder respectivo, expediente que se deriva al área respectiva para su informe correspondiente en el Sistema Comercial.

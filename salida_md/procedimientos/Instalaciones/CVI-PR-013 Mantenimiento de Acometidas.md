@@ -29,7 +29,7 @@ El alcance establecido para el presente procedimiento es aplicable en el ámbito
 
 ## 2. DEFINICIONES
 
-- 2.1. Acometida Domiciliaria.Es la parte de la instalación eléctrica que se construye desde las redes públicas de distribución hasta las instalaciones del usuario, y está conformada por los siguientes componentes:
+- 2.1. Acometida Domiciliaria.- Es la parte de la instalación eléctrica que se construye desde las redes públicas de distribución hasta las instalaciones del usuario, y está conformada por los siguientes componentes:
 - Conductor eléctrico entre el empalme de la red en BT de la concesionaria y los bornes de entrada del medidor de energía Conductores
 - Caja Portamedidor o de Medición: Caja metálica o de material polimérico, donde se ubica el medidor de energía y su dispositivo de protección.
 - Caja de Toma: Caja o gabinete metálico que contiene equipos de maniobra y/o protección para una conexión en derivación.

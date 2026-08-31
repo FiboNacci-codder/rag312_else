@@ -8,7 +8,9 @@
       "seccion_contiene": "ATENCIÓN DE RECLAMOS POR OPOSICION A CAMBIO DE RAZON SOCIAL"
     },
     "chunk_origen_index": 23,
-    "revisado": true
+    "revisado": true,
+    "ground_truth": "El recurso impugnatorio es un subproceso al que se accede si el usuario decide presentar un recurso. El plazo máximo para presentarlo es de hasta 15 días hábiles.",
+    "ground_truth_revisado": true
   },
   {
     "id": "q0002",
@@ -19,7 +21,9 @@
       "seccion_contiene": "2. DEFINICIONES"
     },
     "chunk_origen_index": 5,
-    "revisado": true
+    "revisado": true,
+    "ground_truth": "Los reintegros son el importe que la concesionaria está obligada a devolver al usuario debido a: inadecuada medición o error en el proceso de facturación.",
+    "ground_truth_revisado": true
   },
   {
     "id": "q0003",
@@ -30,7 +34,9 @@
       "seccion_contiene": "PREPARACIÓN REPORTE ANEXO 02."
     },
     "chunk_origen_index": 12,
-    "revisado": true
+    "revisado": true,
+    "ground_truth": "La frecuencia de entrega de la información es mensual (acumulativo durante el período semestral) y el plazo máximo es el décimo día hábil del mes inmediato siguiente.",
+    "ground_truth_revisado": true
   },
   {
     "id": "q0004",
@@ -41,7 +47,9 @@
       "seccion_contiene": "ATENCIÓN DE RECLAMOS POR NO ENTREGA DE RECIBOS"
     },
     "chunk_origen_index": 17,
-    "revisado": true
+    "revisado": true,
+    "ground_truth": "Pasar a la actividad 13.",
+    "ground_truth_revisado": true
   },
   {
     "id": "q0005",
@@ -52,7 +60,9 @@
       "seccion_contiene": "CORTES Y RECONEXIONES"
     },
     "chunk_origen_index": 14,
-    "revisado": true
+    "revisado": true,
+    "ground_truth": "El Contratista (Técnico) debe registrar los siguientes datos en el sistema GOS SIELSE para cerrar la jornada de trabajo:\n*   Tipo de corte\n*   Número de sticker\n*   Lectura\n*   Remaches de la caja toma\n*   Precinto de medidor de caja toma\n*   Fotos que sustentan la ejecución del trabajo\n\nEn el campo de Observaciones, se debe detallar la causa del impedimento de la ejecución del corte o reconexión.",
+    "ground_truth_revisado": true
   },
   {
     "id": "q0006",
@@ -63,7 +73,9 @@
       "seccion_contiene": null
     },
     "chunk_origen_index": 0,
-    "revisado": true
+    "revisado": true,
+    "ground_truth": "El dueño del proceso es el Gerente Comercial. La normalización de suministro a solicitud del cliente corresponde al proceso Nivel 1, denominado Gestión Técnico Comercial.",
+    "ground_truth_revisado": true
   },
   {
     "id": "q0007",
@@ -74,7 +86,9 @@
       "seccion_contiene": "REFACTURACIÓN"
     },
     "chunk_origen_index": 13,
-    "revisado": true
+    "revisado": true,
+    "ground_truth": "Para ingresar al módulo de refacturación dentro del sistema SIELSE, se debe realizar la siguiente actividad: Ingresar al módulo de refacturación. Esta acción es ejecutada por la Supervisión de Facturación, Supervisor Comercial o Facturador, y su resultado es que la solicitud queda registrada.",
+    "ground_truth_revisado": true
   },
   {
     "id": "q0008",
@@ -85,7 +99,9 @@
       "seccion_contiene": "ATENCIÓN DE RECLAMOS POR DAÑOS Y PERJUICIOS"
     },
     "chunk_origen_index": 8,
-    "revisado": true
+    "revisado": true,
+    "ground_truth": "Para la resolución de un reclamo de usuarios se deben considerar los siguientes documentos normativos y precedentes de observancia obligatoria:\n\n*   RM Nº 496-2005 -MEM/DM \"Contraste del Sistema de Medición de Energía Eléctrica\".\n*   Lineamientos Resolutivos de la Junta de Apelaciones de Reclamos de Usuarios - JARU (Parte I, II y III).\n*   Precedentes de Observancia Obligatoria aprobados en Sesión de Sala Plena de la Junta de Apelaciones de Reclamos de Usuarios - JARU.\n*   Resolución de Consejo Directivo del Organismo Supervisor de la Inversión en Energía y Minería OSINERGMIN N°079-2020-OS/CD \"Procedimiento Especial Para la Tramitación de los Reclamos de los Usuarios de los Servicios Públicos de Electricidad y Gas Natural, Derivados de las Facturaciones Emitidas Durante el Estado de Emergencia Nacional\".\n*   SIG-PR-004 Administración de Acciones Correctivas.",
+    "ground_truth_revisado": true
   },
   {
     "id": "q0009",
@@ -96,7 +112,9 @@
       "seccion_contiene": "ARCHIVAMIENTO DE EXPEDIENTES DE INSTALACIÓN DE SUMINISTROS NUEVOS EN TARIFA BT5 Y BT6"
     },
     "chunk_origen_index": 8,
-    "revisado": true
+    "revisado": true,
+    "ground_truth": "El expediente nuevo para instalación de suministro debe incluir los siguientes requisitos:\n\n1. CVA-RE-002 Solicitud de Servicio (Formato A)\n2. CVA-RE-023 Presupuesto Comercial\n3. Comprobante de pago Cancelado\n4. CVA-RE-003 Contrato de Suministro\n5. CVI-RE-002 Informe de Trabajo / Inspección\n6. CVI-RE-003 Acta de Instalación de Acometida\n7. CVI-RE-001 Constancia de visita (opcional)\n8. Documento que acredite propiedad del predio\n9. Copia D.N.I\n10. CVA-RE-004 Carta de Autorización Legalizada (opcional)\n11. CVA-RE-007 Declaración jurada\n12. CVI-RE-006 Ficha de factibilidad\n13. Croquis (opcional)\n14. CVA-RE-022 Solicitud de Otorgamiento de Crédito (opcional)\n15. Certificado de Aferición\n16. Potencia Contratada (opcional)\n17. CVA-RE-001 Comprobante de Recepción de Solicitudes\n\nPara los casos de expedientes existentes, además de lo anterior, se deberán incorporar los siguientes registros (cuando aplique):\n- Requisitos descritos en el formato CVA-RE-002 para el caso de: Cambio de razón social / Cambio de Tarifa.\n- Requisitos respectivos para el caso de: Cambio de Medidor / Reubicación de medidor / Mejoramiento de acometida domiciliaria.",
+    "ground_truth_revisado": true
   },
   {
     "id": "q0010",
@@ -107,7 +125,9 @@
       "seccion_contiene": "4. RECURSOS HUMANOS Y RESPONSABILIDADES"
     },
     "chunk_origen_index": 8,
-    "revisado": true
+    "revisado": true,
+    "ground_truth": "El Comité del Sistema Integrado de Gestión (CSIG) es el responsable de aprobar el presente procedimiento.",
+    "ground_truth_revisado": true
   },
   {
     "id": "q0011",
@@ -118,7 +138,9 @@
       "seccion_contiene": "6.2.4. Procedimiento"
     },
     "chunk_origen_index": 8,
-    "revisado": true
+    "revisado": true,
+    "ground_truth": "El procedimiento para la recepción del equipo de medición consiste en recibirlo de acuerdo al programa de mantenimiento según la ficha de identificación de Equipos e Instalaciones CVI-RE-012.",
+    "ground_truth_revisado": true
   },
   {
     "id": "q0012",
@@ -129,7 +151,9 @@
       "seccion_contiene": "3. MARCO NORMATIVO Y/O DOCUMENTOS RELACIONADOS"
     },
     "chunk_origen_index": 4,
-    "revisado": true
+    "revisado": true,
+    "ground_truth": "Para presentar un reclamo sobre su factura de electricidad, debe seguir el procedimiento administrativo de reclamos de los usuarios de los servicios públicos de electricidad y gas natural, establecido en la Resolución N° 269-2014-OS/CD. Este procedimiento se encuentra regulado además por la Resolución N° 115-2017-OS/CD, que define el procedimiento para la supervisión del proceso de facturación a los usuarios. La atención específica de estos reclamos se rige por la norma interna CVA-PR-001 \"Atención de Reclamos\".",
+    "ground_truth_revisado": true
   },
   {
     "id": "q0013",
@@ -140,7 +164,9 @@
       "seccion_contiene": "6. DESARROLLO / PROCEDIMIENTO"
     },
     "chunk_origen_index": 7,
-    "revisado": true
+    "revisado": true,
+    "ground_truth": "Los equipos específicos incluidos en el plan de calibración o verificación son las pinzas amperimétricas y los multímetros.",
+    "ground_truth_revisado": true
   },
   {
     "id": "q0014",
@@ -151,7 +177,9 @@
       "seccion_contiene": "1.          OBJETIVO Y ALCANCE"
     },
     "chunk_origen_index": 2,
-    "revisado": true
+    "revisado": true,
+    "ground_truth": "Para ser considerada para el retiro de conexión, la acometida debe encontrarse impaga por un período superior a seis meses, contados desde la ejecución efectiva del primer corte.",
+    "ground_truth_revisado": true
   },
   {
     "id": "q0015",
@@ -162,7 +190,9 @@
       "seccion_contiene": "INSTRUCTIVO DE INSTALACIÓN DE SUMINISTRO NUEVO REUBICACIÓN Y CAMBIO DE MEDIDOR"
     },
     "chunk_origen_index": 1,
-    "revisado": true
+    "revisado": true,
+    "ground_truth": "El responsable de la homologación del procedimiento CVI-IN-001 fue el Especialista en Sistemas de Gestión.",
+    "ground_truth_revisado": true
   },
   {
     "id": "q0016",
@@ -173,7 +203,9 @@
       "seccion_contiene": "2.6. Muestra en Campo"
     },
     "chunk_origen_index": 6,
-    "revisado": true
+    "revisado": true,
+    "ground_truth": "El nivel de error permitido a considerarse como calidad media del producto o servicio es 'σ'=1.0.",
+    "ground_truth_revisado": true
   },
   {
     "id": "q0017",
@@ -184,7 +216,9 @@
       "seccion_contiene": "REINSTALACIÓN DE SUMINISTRO"
     },
     "chunk_origen_index": 8,
-    "revisado": true
+    "revisado": true,
+    "ground_truth": "El Cliente SER es el cliente que está ubicado fuera del área de concesión y es atendido por ELSE. La normativa que lo rige es la Ley de Electrificación Rural.",
+    "ground_truth_revisado": true
   },
   {
     "id": "q0018",
@@ -195,7 +229,9 @@
       "seccion_contiene": "1. OBJETIVO Y ALCANCE"
     },
     "chunk_origen_index": 3,
-    "revisado": true
+    "revisado": true,
+    "ground_truth": "El procedimiento describe las acciones para la atención de llamadas mediante el canal telefónico destinado para este fin, el cual será atendido por el Contac Center.",
+    "ground_truth_revisado": true
   },
   {
     "id": "q0019",
@@ -206,7 +242,9 @@
       "seccion_contiene": "Contenido, frecuencia y plazos de entrega de la información"
     },
     "chunk_origen_index": 11,
-    "revisado": true
+    "revisado": true,
+    "ground_truth": "El código CVPC-IN-004 corresponde a la Tabla Nº 1, la cual muestra la descripción de la información requerida, así como la frecuencia y plazos máximos de publicación y de entrega de documentación a Osinergmin.",
+    "ground_truth_revisado": true
   },
   {
     "id": "q0020",
@@ -217,7 +255,9 @@
       "seccion_contiene": "Observaciones:"
     },
     "chunk_origen_index": 37,
-    "revisado": true
+    "revisado": true,
+    "ground_truth": "Se han considerado los siguientes valores para la verificación dentro del rango de 1 a 100 A: 10 A, 20 A, 50 A, 70 A y 100 A, con 220 V.",
+    "ground_truth_revisado": true
   },
   {
     "id": "q0021",
@@ -228,7 +268,9 @@
       "seccion_contiene": "5.2. Programación de Emisión"
     },
     "chunk_origen_index": 7,
-    "revisado": true
+    "revisado": true,
+    "ground_truth": "La verificación de las fechas reales de inicio y fin del contrato es necesaria porque, en función de estas fechas, se calcularán los pagos que realizará el cliente.",
+    "ground_truth_revisado": true
   },
   {
     "id": "q0022",
@@ -239,7 +281,9 @@
       "seccion_contiene": "SERVICIOS COMPLEMENTARIOS -NORMALIZACIÓN DE SUMINISTRO (A SOLICITUD DEL CLIENTE)"
     },
     "chunk_origen_index": 14,
-    "revisado": true
+    "revisado": true,
+    "ground_truth": "Esta actividad se realiza con el apoyo del procedimiento de Control de productos o servicios no conformes (SIG-PR-007).",
+    "ground_truth_revisado": true
   },
   {
     "id": "q0023",
@@ -250,7 +294,9 @@
       "seccion_contiene": "3. MARCO NORMATIVO Y/O DOCUMENTOS RELACIONADOS"
     },
     "chunk_origen_index": 6,
-    "revisado": true
+    "revisado": true,
+    "ground_truth": "La administración de acciones correctivas en SIELSE rige bajo las siguientes normativas y procedimientos administrativos:\n\n*   Ley de Concesiones Eléctricas Nº. 25844 y su Reglamento.\n*   Norma Técnica de Calidad de los Servicios Eléctricos (NTCSE). DS Nº 020-97-EM, y sus modificatorias.\n*   Norma Técnica de la calidad de los servicios eléctricos rurales R.D N° 016-2008EM/DGE.\n*   Ley N° 27444 - Ley del Procedimiento Administrativo General.\n*   Resolución de Consejo Directivo N° 269-2014-OS/CD. Procedimiento Administrativo de Reclamos de los Usuarios de los Servicios Públicos de Electricidad y Gas Natural.\n*   Procedimiento Nº 780-2007- OS/CD Procedimiento de supervisión de la operatividad del servicio de alumbrado público.\n*   Procedimiento Res Nº 047-2009-OS/CD. Procedimiento para la Supervisión de la Facturación, Cobranza y Atención al Usuario.\n*   Procedimiento Nº 228-2009- OS/CD Procedimiento para la supervisión de las Instalaciones de distribución eléctrica por seguridad pública.",
+    "ground_truth_revisado": true
   },
   {
     "id": "q0024",
@@ -261,7 +307,9 @@
       "seccion_contiene": "2. DEFINICIONES"
     },
     "chunk_origen_index": 3,
-    "revisado": true
+    "revisado": true,
+    "ground_truth": "La parte desglosable del recibo por consumo de energía eléctrica conocida como talón consigna información sobre el cliente, incluyendo el código del suministro, el nombre, el monto y el periodo de facturación, entre otros datos.",
+    "ground_truth_revisado": true
   },
   {
     "id": "q0025",
@@ -272,7 +320,9 @@
       "seccion_contiene": "4. RECURSOS HUMANOS Y RESPONSABILIDADES"
     },
     "chunk_origen_index": 8,
-    "revisado": true
+    "revisado": true,
+    "ground_truth": "El Comité del Sistema Integrado de Gestión (CSIG) es el responsable de aprobar el presente procedimiento.",
+    "ground_truth_revisado": true
   },
   {
     "id": "q0026",
@@ -283,7 +333,9 @@
       "seccion_contiene": "3. MARCO NORMATIVO Y/O DOCUMENTOS RELACIONADOS"
     },
     "chunk_origen_index": 4,
-    "revisado": true
+    "revisado": true,
+    "ground_truth": "La normativa reglamentaria específica que aplica para los servicios eléctricos rurales es la Norma Técnica de la calidad de los servicios eléctricos rurales R.D N° 016-2008EM/DGE.",
+    "ground_truth_revisado": true
   },
   {
     "id": "q0027",
@@ -294,7 +346,9 @@
       "seccion_contiene": "Requerimientos para la instalación de medidores"
     },
     "chunk_origen_index": 30,
-    "revisado": true
+    "revisado": true,
+    "ground_truth": "Caja porta medidor = ELSE 1.",
+    "ground_truth_revisado": true
   },
   {
     "id": "q0028",
@@ -305,7 +359,9 @@
       "seccion_contiene": "PROYECCIÓN DEL CONSUMO DE ENERGÍA NO FACTURADA"
     },
     "chunk_origen_index": 9,
-    "revisado": true
+    "revisado": true,
+    "ground_truth": "Para clientes con tarifa BT5B - Residencial y consumos menores a 30 kWh, el monto proyectado de energía se calcula multiplicando el consumo proyectado por la tarifa vigente de los primeros 30 kWh. Esta tarifa vigente (TarifaVigenteP30) corresponde al cargo por energía activa de los primeros 30 kWh, con un valor de 0.5522 ctm. S././kW.h.",
+    "ground_truth_revisado": true
   },
   {
     "id": "q0029",
@@ -316,7 +372,9 @@
       "seccion_contiene": "PROCEDIMIENTO DE INSTALACIÓN DE SUMINISTRO NUEVO PARA CLIENTES MAYORES"
     },
     "chunk_origen_index": 1,
-    "revisado": true
+    "revisado": true,
+    "ground_truth": "El responsable de revisar el procedimiento del Supervisor de Cobranzas es el Jefe de Ventas.",
+    "ground_truth_revisado": true
   },
   {
     "id": "q0030",
@@ -327,7 +385,9 @@
       "seccion_contiene": "PROCEDIMIENTO DE RECAUDACIÓN DE COBRANZA"
     },
     "chunk_origen_index": 1,
-    "revisado": true
+    "revisado": true,
+    "ground_truth": "El responsable directo de revisar el procedimiento de Supervisor de Cobranzas es el Jefe de Ventas.",
+    "ground_truth_revisado": true
   },
   {
     "id": "q0031",
@@ -338,7 +398,9 @@
       "seccion_contiene": "Comportamientos inapropiados de los voceros:"
     },
     "chunk_origen_index": 24,
-    "revisado": true
+    "revisado": true,
+    "ground_truth": "Ante las solicitudes informativas de los periodistas, si existe desconocimiento de la información, es preferible admitirlo y responder sin certeza. Se debe evitar especular o realizar conjeturas.",
+    "ground_truth_revisado": true
   },
   {
     "id": "q0032",
@@ -349,7 +411,9 @@
       "seccion_contiene": "ELABORACIÓN EL PRESUPUESTO DE PAGO DE SERVICIO EXTRAORDINARIO O SERVICIO TEMPORAL"
     },
     "chunk_origen_index": 17,
-    "revisado": true
+    "revisado": true,
+    "ground_truth": "El presupuesto se ingresa al sistema SIELSE.",
+    "ground_truth_revisado": true
   },
   {
     "id": "q0033",
@@ -360,7 +424,9 @@
       "seccion_contiene": null
     },
     "chunk_origen_index": 0,
-    "revisado": true
+    "revisado": true,
+    "ground_truth": "El nombre del procedimiento es Instalación de Suministro Nuevo y su código es CVI-PR-001.",
+    "ground_truth_revisado": true
   },
   {
     "id": "q0034",
@@ -371,7 +437,9 @@
       "seccion_contiene": "ALQUILER DE INFRAESTRUCTURA ELÉCTRICA"
     },
     "chunk_origen_index": 4,
-    "revisado": true
+    "revisado": true,
+    "ground_truth": "El Fondo de Inversión en Telecomunicaciones (FITEL) ostenta la calidad de persona jurídica de derecho público adscrita al Sector Transportes y Comunicaciones según la Ley Nº 28900.",
+    "ground_truth_revisado": true
   },
   {
     "id": "q0035",
@@ -382,7 +450,9 @@
       "seccion_contiene": "4. RECURSOS HUMANOS Y RESPONSABILIDADES"
     },
     "chunk_origen_index": 5,
-    "revisado": true
+    "revisado": true,
+    "ground_truth": "El Comité del Sistema Integrado de Gestión (CSIG) es responsable de la aprobación del presente procedimiento y de supervisar la implementación del mismo.",
+    "ground_truth_revisado": true
   },
   {
     "id": "q0036",
@@ -393,7 +463,9 @@
       "seccion_contiene": "2. DEFINICIONES"
     },
     "chunk_origen_index": 5,
-    "revisado": true
+    "revisado": true,
+    "ground_truth": "Los umbrales de máxima demanda anual que definen las condiciones de usuario son los siguientes:\n\n*   **Usuario Regulado:** Son aquellos usuarios cuya máxima demanda anual sea igual o menor a 200 kW.\n*   **Usuario Libre:**\n    *   Los usuarios cuya máxima demanda anual sea mayor de 200 kW y hasta 2500 kW tienen derecho a elegir entre la condición de Usuario Regulado o de Usuario Libre.\n    *   Los usuarios cuya máxima demanda anual sea mayor a 2500 kW tienen la condición de Usuarios Libres.",
+    "ground_truth_revisado": true
   },
   {
     "id": "q0037",
@@ -404,7 +476,9 @@
       "seccion_contiene": "SUPERVISIÓN LA ATENCIÓN DE CONTACT CENTER"
     },
     "chunk_origen_index": 11,
-    "revisado": true
+    "revisado": true,
+    "ground_truth": "El equipo de calidad de la Contratista del Contact Center tiene las siguientes funciones específicas: la formación de los asesores, la gestión de indicadores y el control de la calidad de la atención. En relación con la gestión de indicadores, el organismo regulador (OSINERGMIN) solicita audios de una muestra de llamadas telefónicas, obtenida del Anexo 17 de la base metodológica de la NTCSE, con el fin de calcular los indicadores ATNA e ICAT de manera trimestral.",
+    "ground_truth_revisado": true
   },
   {
     "id": "q0038",
@@ -415,6 +489,8 @@
       "seccion_contiene": "4. RECURSOS HUMANOS Y RESPONSABILIDADES"
     },
     "chunk_origen_index": 6,
-    "revisado": true
+    "revisado": true,
+    "ground_truth": "El Comité del Sistema Integrado de Gestión (CSIG) tiene la facultad de aprobar el presente procedimiento y de supervisar su implementación.",
+    "ground_truth_revisado": true
   }
 ]

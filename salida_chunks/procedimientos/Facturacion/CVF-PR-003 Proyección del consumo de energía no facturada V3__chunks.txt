@@ -111,7 +111,7 @@ Dónde: n = es el periodo o mes de referencia en el cual se está proyectando
 Consumo de energía por día = Consumo de energía facturado total / Nro. Días transcurridos
 Dónde: Días transcurridos = diferencia entre las fechas de lectura del periodo (n) y (n-3)
 Consumo de energía proyectado = Consumo de energía por día x días proyectados
-Dónde: Días proyectados = última fecha del periodo (n) -fecha de lectura del suministro según cronograma comercial en el periodo (n) más 1.
+Dónde: Días proyectados = última fecha del periodo (n) - fecha de lectura del suministro según cronograma comercial en el periodo (n) más 1.
 
 ================================================================================
 Chunk: 7 / 22
@@ -119,7 +119,7 @@ Páginas: [4]
 Sección: Ejemplo:
 Tipo: mixto: formula, text
 --------------------------------------------------------------------------------
-Días proyectados = 30/06/2023 -27/06/2023 + 1 = 4 días.
+Días proyectados = 30/06/2023 - 27/06/2023 + 1 = 4 días.
 <!-- formula-not-decoded -->
 
 ================================================================================
@@ -206,7 +206,7 @@ La calificación del suministro si es residencial o no-residencial; para aplicac
 - Finalmente, del consumo facturado para el periodo (n)
 En la hoja se presenta ejemplos para los diferentes rangos de consumo de un suministro perteneciente al sector típico 2:
 Ejemplo para  la  proyección  de  energía  de  un  cliente  con  tarifa  BT5B:  se  considera  el Consumo en el mes junio (n=06).
-- Días proyectados = 5 días (30/06/2023 -26/06/2023 + 1).
+- Días proyectados = 5 días (30/06/2023 - 26/06/2023 + 1).
 - También debemos tomar en cuenta los consumos de energía del mes mayo y abril del 2023.
 
 ================================================================================
@@ -293,7 +293,7 @@ Sección: Proyección de energía de un cliente con tarifa MT3:
 Tipo: mixto: list_item, table, text
 --------------------------------------------------------------------------------
 En el ejemplo se considera un Consumo en el mes junio (n=06).
-- Días proyectados = 3 días (30/06/2023 -28/06/2023 + 1).
+- Días proyectados = 3 días (30/06/2023 - 28/06/2023 + 1).
 - También debemos tomar en cuenta los consumos de energía en hora punta y hora fuera de punta del mes de mayo del 2023 (n-1) y abril del 2023 (n-2).
 - Por último, tomar en cuenta la fecha de lectura de campaña en el mes abril del 2023 (28/03/2023).
 Para determinar el consumo de energía proyectado en hora de punta y hora fuera de punta, se hace uso de la siguiente formula:
@@ -317,7 +317,7 @@ Dónde: n = es el periodo o mes de referencia en el cual se está proyectando
 Monto AP por día = Monto AP facturado total / Nro. Días transcurridos
 Dónde: Nro. Días transcurridos = periodo entre el mes (n) y (n-3) para montos AP >0
 Monto AP proyectado total = Monto AP por día    x días proyectados
-Dónde: Días proyectados = última fecha o día del periodo (n) -fecha  de  lectura según  cronograma  del  suministro  en  el  periodo  (n).      Ejemplo:  30/09/2025 -25/09/2025 + 1 = 6 días.
+Dónde: Días proyectados = última fecha o día del periodo (n) - fecha  de  lectura según  cronograma  del  suministro  en  el  periodo  (n).      Ejemplo:  30/09/2025 - 25/09/2025 + 1 = 6 días.
 Al utilizar el monto facturado por el concepto de alumbrado público, implícitamente
 se está utilizando costo unitario del AP por rangos de consumo por suministro.
 Se toma en cuenta también el importe resultante de la facturación por alumbrado público el cual no podrá ser inferior al 0.01% de una UIT ni exceder el 60% de una UIT.

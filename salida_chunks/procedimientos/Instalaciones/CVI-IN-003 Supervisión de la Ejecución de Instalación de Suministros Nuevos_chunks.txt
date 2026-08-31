@@ -58,7 +58,7 @@ Sección: 5. DESARROLLO / PROCEDIMIENTO
 Tipo: mixto: list_item, text
 --------------------------------------------------------------------------------
 - 5.1. El ejecutivo de instalaciones y/o los que hagan sus veces en el ámbito de la empresa recibe  las  ordenes  de  trabajo  ejecutadas  por  el  contratista  de  acuerdo  al  Instructivo CVI-IN-001 para la instalación de suministros nuevos, reubicación y cambio de medidor; los mismos que son adjuntados a sus respectivos expedientes.
-- 5.2. La supervisión de los trabajos ejecutados por el Contratista se realiza en forma aleatoria según SIG-TA-001 Tabla de muestra, considerando el nivel de inspección (inspección reducida 1), aplicado al total de instalaciones nuevas ejecutadas dentro del  mes,  lo  cual  queda  registrado  en  el  CVI-RE-002  INFORME  DE  TRABAJO  INSPECCIÓN
+- 5.2. La supervisión de los trabajos ejecutados por el Contratista se realiza en forma aleatoria según SIG-TA-001 Tabla de muestra, considerando el nivel de inspección (inspección reducida 1), aplicado al total de instalaciones nuevas ejecutadas dentro del  mes,  lo  cual  queda  registrado  en  el  CVI-RE-002  INFORME  DE  TRABAJO  - INSPECCIÓN
 - 5.3. En campo, (Técnico Supervisor) el ejecutivo de instalaciones o quien haga sus veces, proceden a ubicar el predio donde va realizar la supervisión, una vez encontrado, se procede de la siguiente manera:
 - Se quitan los remaches de la caja porta medidor colocados por el Contratista el día de la instalación del medidor.
 - Se verifica el ajuste de los tornillos de las bornearas del medidor.

@@ -29,7 +29,7 @@ Páginas: [2]
 Sección: 2. DEFINICIONES
 Tipo: list_item
 --------------------------------------------------------------------------------
-- 2.1. Refacturación.Nueva emisión de la factura de acuerdo a datos verificados.
+- 2.1. Refacturación.- Nueva emisión de la factura de acuerdo a datos verificados.
 
 ================================================================================
 Chunk: 4 / 16

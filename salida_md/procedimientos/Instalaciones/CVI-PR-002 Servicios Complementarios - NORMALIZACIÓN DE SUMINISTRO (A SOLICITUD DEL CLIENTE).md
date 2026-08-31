@@ -8,7 +8,7 @@
 | Nombre del proceso Nivel 1:  | Gestión Técnico Comercial |
 | Nombre del proceso Nivel 2:  | Servicios Complementarios |
 
-## PROCEDIMIENTO DE SERVICIOS COMPLEMENTARIOS -NORMALIZACIÓN DE SUMINISTRO (A SOLICITUD DEL CLIENTE)
+## PROCEDIMIENTO DE SERVICIOS COMPLEMENTARIOS - NORMALIZACIÓN DE SUMINISTRO (A SOLICITUD DEL CLIENTE)
 
 | Responsable     | Responsable                             | Fecha      |
 |-----------------|-----------------------------------------|------------|
@@ -42,7 +42,7 @@ Página
 
 ## PROCEDIMIENTO
 
-## SERVICIOS COMPLEMENTARIOS -NORMALIZACIÓN DE SUMINISTRO (A SOLICITUD DEL CLIENTE)
+## SERVICIOS COMPLEMENTARIOS - NORMALIZACIÓN DE SUMINISTRO (A SOLICITUD DEL CLIENTE)
 
 | Control de cambios                                                                                                   | Control de cambios         | Control de cambios   |
 |----------------------------------------------------------------------------------------------------------------------|----------------------------|----------------------|
@@ -67,7 +67,7 @@ Página
 
 ## PROCEDIMIENTO
 
-## SERVICIOS COMPLEMENTARIOS -NORMALIZACIÓN DE SUMINISTRO (A SOLICITUD DEL CLIENTE)
+## SERVICIOS COMPLEMENTARIOS - NORMALIZACIÓN DE SUMINISTRO (A SOLICITUD DEL CLIENTE)
 
 ## 1. OBJETIVO Y ALCANCE
 
@@ -76,9 +76,9 @@ Establecer el procedimiento de atención de Servicios Complementarios a solicitu
 ## 2. DEFINICIONES
 
 - 2.1. Mejoramiento de acometidas. - actividades de sustitución o modificación a solicitud del cliente, de la acometida para conservar sus condiciones normales de operación.
-- 2.2. Reubicación de Acometida Domiciliaria. actividad destinada a reubicar la acometida en el frontis de la vivienda por razones estéticas y/o técnicas.
-- 2.3. Mantenimiento y/o Reposición de Acometida. Actividad de mantenimiento o reposición de una conexión domiciliaria comprendida desde la red de distribución secundaria hasta el punto de entrega al cliente final; comprende los siguientes materiales; Conectores, cable de acometida, caja porta medidor, interruptor termo magnético, medidor de energía eléctrica, precintos y remaches.
-- 2.4. Acometida. Parte de la instalación de una conexión comprendida desde la red de distribución secundaria hasta el termo magnético de entrada del equipo de medición incluye el empalme de los cables o conductores instalados.
+- 2.2. Reubicación de Acometida Domiciliaria. - actividad destinada a reubicar la acometida en el frontis de la vivienda por razones estéticas y/o técnicas.
+- 2.3. Mantenimiento y/o Reposición de Acometida. - Actividad de mantenimiento o reposición de una conexión domiciliaria comprendida desde la red de distribución secundaria hasta el punto de entrega al cliente final; comprende los siguientes materiales; Conectores, cable de acometida, caja porta medidor, interruptor termo magnético, medidor de energía eléctrica, precintos y remaches.
+- 2.4. Acometida. - Parte de la instalación de una conexión comprendida desde la red de distribución secundaria hasta el termo magnético de entrada del equipo de medición incluye el empalme de los cables o conductores instalados.
 - 2.5. OT: Orden de Trabajo
 
 ## 3. MARCO NORMATIVO Y/O DOCUMENTOS RELACIONADOS
@@ -118,7 +118,7 @@ Código Versión Aprobado Fecha Página
 
 ## PROCEDIMIENTO
 
-## SERVICIOS COMPLEMENTARIOS -NORMALIZACIÓN DE SUMINISTRO (A SOLICITUD DEL CLIENTE)
+## SERVICIOS COMPLEMENTARIOS - NORMALIZACIÓN DE SUMINISTRO (A SOLICITUD DEL CLIENTE)
 
 ## 4. RECURSOS HUMANOS Y RESPONSABILIDADES
 
@@ -224,7 +224,7 @@ Página
 
 ## PROCEDIMIENTO
 
-## SERVICIOS COMPLEMENTARIOS -NORMALIZACIÓN DE SUMINISTRO (A SOLICITUD DEL CLIENTE)
+## SERVICIOS COMPLEMENTARIOS - NORMALIZACIÓN DE SUMINISTRO (A SOLICITUD DEL CLIENTE)
 
 <!-- image -->
 
@@ -252,7 +252,7 @@ Página
 
 ## PROCEDIMIENTO
 
-## SERVICIOS COMPLEMENTARIOS -NORMALIZACIÓN DE SUMINISTRO (A SOLICITUD DEL CLIENTE)
+## SERVICIOS COMPLEMENTARIOS - NORMALIZACIÓN DE SUMINISTRO (A SOLICITUD DEL CLIENTE)
 
 | Proveedores                                                        | Entradas                                           |   N° | Descripción Actividades                                                                                                                                                                                                                       | Salidas                                            | Clientes                                                         | Ejecutor de la Actividad                                             | Sistema que soporta la Actividad    | ¿Es con- trol Cable? (Sí=x)   |
 |--------------------------------------------------------------------|----------------------------------------------------|------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------|------------------------------------------------------------------|----------------------------------------------------------------------|-------------------------------------|-------------------------------|
@@ -287,7 +287,7 @@ Página
 
 ## PROCEDIMIENTO
 
-## SERVICIOS COMPLEMENTARIOS -NORMALIZACIÓN DE SUMINISTRO (A SOLICITUD DEL CLIENTE)
+## SERVICIOS COMPLEMENTARIOS - NORMALIZACIÓN DE SUMINISTRO (A SOLICITUD DEL CLIENTE)
 
 | Proveedores                                                        | Entradas                        |   N° | Descripción Actividades                                                                                                                                                | Salidas                         | Clientes                                                         | Ejecutor de la Actividad                                             | Sistema que soporta la Actividad   | ¿Es con- trol Cable? (Sí=x)   |
 |--------------------------------------------------------------------|---------------------------------|------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------|------------------------------------------------------------------|----------------------------------------------------------------------|------------------------------------|-------------------------------|
@@ -324,7 +324,7 @@ Página
 
 ## PROCEDIMIENTO
 
-## SERVICIOS COMPLEMENTARIOS -NORMALIZACIÓN DE SUMINISTRO (A SOLICITUD DEL CLIENTE)
+## SERVICIOS COMPLEMENTARIOS - NORMALIZACIÓN DE SUMINISTRO (A SOLICITUD DEL CLIENTE)
 
 | Proveedores                                                        | Entradas          |   N° | Descripción Actividades                                                                                                                                               | Salidas           | Clientes                                                         | Ejecutor de la Actividad                                             | Sistema que soporta la Actividad   | ¿Es con- trol Cable? (Sí=x)   |
 |--------------------------------------------------------------------|-------------------|------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------|------------------------------------------------------------------|----------------------------------------------------------------------|------------------------------------|-------------------------------|
