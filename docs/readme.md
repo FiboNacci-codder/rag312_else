@@ -748,14 +748,28 @@ resumen), tiempos de ejecución, y un aviso si `--k` supera el `TOP_K` real
 configurado en `rag_query1.py`.
 
 ```bash
+# golden set de chunks (default: golden_set.json)
 python eval_retrieval.py                    # normalizado (igual que producción)
 python eval_retrieval.py --sin-normalizar    # retrieval puro, sin LLM normalizador
 python eval_retrieval.py --k 7 --out resultados_eval.json
+
+# golden set de secciones markdown — nombres de salida distintos para no
+# pisar resultados_eval.json del golden set de chunks
+python eval_retrieval.py --golden golden_set_md_final.json --out resultados_eval_md.json
+python eval_retrieval.py --golden golden_set_md_final.json --out resultados_eval_md.json --sin-normalizar
 ```
+
+`--golden`/`--out` son genéricos igual que en `eval_generation.py`:
+`eval_retrieval.py` no distingue si el golden set viene de chunks o de
+secciones markdown, solo lee `id`, `pregunta` y `fuente_esperada`
+(`documento` + `seccion_contiene`) de cada item — el matching es siempre
+por `documento`/`seccion`, nunca por `chunk_origen_index`, así que el
+mismo script sirve para ambos orígenes sin cambios.
 
 Requiere: vLLM embeddings (8001), vLLM normalizador (8003, salvo con
 `--sin-normalizar`) y Qdrant (6333), con la colección
-`procedimientos_sielse` ya indexada.
+`procedimientos_sielse` ya indexada. `golden_set_md_final.json` se
+construye con el pipeline de la sección siguiente.
 
 ### Generación del golden set — nivel chunk vs. nivel sección markdown
 
@@ -822,11 +836,13 @@ al consolidar solo el archivo de aceptadas:
 ```bash
 python filtrar_golden_set.py --golden golden_set_md_raw.json --prefijo golden_set_md --muestra-aceptadas 0
 python consolidar_golden_set.py --archivos golden_set_md_aceptadas.json --out golden_set_md_final.json
+python eval_retrieval.py --golden golden_set_md_final.json --out resultados_eval_md.json
 ```
 
 Requiere: vLLM generador (8002) para generar preguntas; vLLM 4B (8003) para
 el juez de `filtrar_golden_set.py` (configurable con `JUDGE_LLM_URL`/`JUDGE_LLM_MODEL`).
-No requiere Qdrant.
+No requiere Qdrant para generar/filtrar el golden set — sí para el último
+paso (`eval_retrieval.py`), que además necesita vLLM embeddings (8001).
 
 ### `generar_ground_truth.py` + `revisar_ground_truth.py` — ground truth del golden set
 
