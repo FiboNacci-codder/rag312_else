@@ -23,7 +23,8 @@ Uso:
     python generar_ground_truth.py --golden golden_set.json --out golden_set.json
 
 Requiere que vLLM esté corriendo (GROUND_TRUTH_LLM_URL/GROUND_TRUTH_LLM_MODEL,
-default puerto 8002 / qwen35-9b). No requiere Qdrant.
+default puerto 8004 / qwen35-9b — instancia dedicada en GPU 7; override por
+variable de entorno para volver al 8002 compartido). No requiere Qdrant.
 """
 
 import argparse
@@ -37,9 +38,9 @@ from openai import OpenAI
 RAG_PROJECT_DIR = Path(os.environ.get("RAG_PROJECT_DIR", Path.home() / "rag312"))
 CHUNKS_JSON = RAG_PROJECT_DIR / "datos" / "chunks_data.json"
 
-# Mismo modelo que ya usa generar_golden_set.py para generar las preguntas y
-# rag_query1.py para generar respuestas en producción.
-LLM_URL = os.environ.get("GROUND_TRUTH_LLM_URL", "http://localhost:8002/v1")
+# Mismo modelo (qwen35-9b) que usa eval_generation.py como juez: instancia
+# dedicada en GPU 7, aislada del qwen35-9b de producción (puerto 8002).
+LLM_URL = os.environ.get("GROUND_TRUTH_LLM_URL", "http://localhost:8004/v1")
 LLM_MODEL = os.environ.get("GROUND_TRUTH_LLM_MODEL", "qwen35-9b")
 
 SYSTEM_PROMPT_PATH = Path(

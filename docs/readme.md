@@ -728,6 +728,53 @@ en Qdrant. Todos se ejecutan desde `tests/eval/` con el entorno conda
 `rag312` activo, y respetan la variable `RAG_PROJECT_DIR` (default
 `~/rag312`) para ubicar `consulta/` e `ingesta/`.
 
+### Scripts de conveniencia
+
+En vez de ir pegando el pipeline paso a paso cada vez, `tests/eval/` tiene 4 scripts
+que encadenan la secuencia completa (ya ejecutables, `chmod +x` aplicado):
+
+```bash
+./run_retrieval_eval_chunks.sh [n_chunks]        # default 60
+./run_retrieval_eval_markdown.sh [n_secciones]   # default 40
+./run_generation_eval_chunks.sh [n_muestra]      # default: todas las preguntas
+./run_generation_eval_markdown.sh [n_muestra]    # default: todas las preguntas
+```
+
+- `run_retrieval_eval_chunks.sh` / `_markdown.sh`: generan el golden set
+  (`generar_golden_set.py` / `generar_golden_set_md.py --por-categoria`), filtran vía
+  rápida (`filtrar_golden_set.py --muestra-aceptadas 0`, sin revisión manual),
+  consolidan (`consolidar_golden_set.py`) y corren `eval_retrieval.py`. El parámetro
+  opcional controla cuántos chunks/secciones muestrear.
+- `run_generation_eval_chunks.sh` / `_markdown.sh`: requieren que el golden set
+  correspondiente (`golden_set.json` / `golden_set_md_final.json`) ya exista — si no,
+  cortan con un mensaje indicando qué correr antes. Encadenan
+  `generar_ground_truth.py --auto-aprobar` (sin revisión manual) y `eval_generation.py`.
+  El parámetro opcional (`n_muestra`) limita a cuántas preguntas evaluar con RAGAS.
+
+Cada paso que encadenan corresponde 1:1 a los comandos documentados más abajo en esta
+sección — ver el detalle de qué hace cada uno ahí. Todos usan `set -euo pipefail`:
+cortan al primer error en vez de seguir con un paso que dependería de un archivo que
+no llegó a generarse.
+
+**Juez de RAGAS en una instancia dedicada (GPU 7, puerto 8004)**: `eval_generation.py`
+y `generar_ground_truth.py` por defecto ya apuntan ahí (`JUDGE_LLM_URL`/
+`JUDGE_LLM_MODEL` y `GROUND_TRUTH_LLM_URL`/`GROUND_TRUTH_LLM_MODEL`), aislado del
+`qwen35-9b` compartido de producción (puerto 8002, GPU 5, que además comparte tarjeta
+con `sielse_vision_api_qa`). Requiere tener esa instancia levantada — ver más abajo,
+subsección de la instancia dedicada — si no, `eval_generation.py`/
+`generar_ground_truth.py` van a fallar por conexión rechazada.
+
+Para una corrida puntual contra el 8002 de producción (o si la GPU 7 está caída),
+exportar las 4 variables antes de correr el script (sin tocar código):
+
+```bash
+export JUDGE_LLM_URL=http://localhost:8002/v1
+export JUDGE_LLM_MODEL=qwen35-9b
+export GROUND_TRUTH_LLM_URL=http://localhost:8002/v1
+export GROUND_TRUTH_LLM_MODEL=qwen35-9b
+./run_generation_eval_chunks.sh 5
+```
+
 ### `eval_retrieval.py` — calidad de retrieval (Recall@K, MRR)
 
 Corre cada pregunta del `golden_set.json` contra Qdrant usando

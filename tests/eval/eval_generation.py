@@ -36,8 +36,11 @@ Uso:
     python eval_generation.py --golden golden_set.json --n-muestra 15
 
 Requiere: vLLM embeddings (8001), vLLM normalizador (8003), vLLM generador
-(8002), Qdrant (6333) arriba, con la colección procedimientos_sielse ya
-indexada.
+(8002) y Qdrant (6333) arriba, con la colección procedimientos_sielse ya
+indexada, para correr el pipeline RAG completo (rag_query1.main()) — más
+una instancia vLLM aparte para el juez de RAGAS (default: puerto 8004,
+instancia dedicada en GPU 7; override con JUDGE_LLM_URL/JUDGE_LLM_MODEL,
+por ejemplo para volver al 8002 compartido).
 """
 
 import argparse
@@ -90,8 +93,8 @@ except ImportError:
     print("  pip install ragas --break-system-packages")
     sys.exit(1)
 
-# --- Modelos usados para el juez de RAGAS: los mismos vLLM del proyecto ---
-JUDGE_LLM_URL = os.environ.get("JUDGE_LLM_URL", "http://localhost:8002/v1")  # qwen35-9b
+# --- Modelos usados para el juez de RAGAS: instancia dedicada en GPU 7 ---
+JUDGE_LLM_URL = os.environ.get("JUDGE_LLM_URL", "http://localhost:8004/v1")  # qwen35-9b
 JUDGE_LLM_MODEL = os.environ.get("JUDGE_LLM_MODEL", "qwen35-9b")
 EMBED_URL = os.environ.get("EMBED_URL", "http://localhost:8001/v1")
 EMBED_MODEL = os.environ.get("EMBED_MODEL", "harrier-embed")
