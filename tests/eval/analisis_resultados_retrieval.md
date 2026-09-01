@@ -1,15 +1,16 @@
 # Análisis de resultados — `eval_retrieval.py`
 
-Este documento interpreta las dos corridas de `eval_retrieval.py` ya generadas:
+Este documento interpreta las corridas de `eval_retrieval.py`. Se actualizó tras
+reescribir `system_prompt_golden.txt` y `system_prompt_golden_md.txt` para generar
+preguntas desde la perspectiva de **personal interno de SIELSE** (técnico y no
+técnico) en vez de un cliente externo — ver §4 para la comparación antes/después.
 
 | Archivo | Golden set | Origen de las preguntas |
 |---|---|---|
 | `resultados_eval.json` | `golden_set.json` | Ancladas a **un chunk** puntual (`generar_golden_set.py`) |
-| `resultados_eval_md.json` | `golden_set_md_final.json` | Generadas desde **una sección completa** de markdown, en tono coloquial (`generar_golden_set_md.py`) |
+| `resultados_eval_md.json` | `golden_set_md_final.json` | Generadas desde **una sección completa** de markdown (`generar_golden_set_md.py`) |
 
-Ambas corridas usan `k=7` y normalización activa (`normalizado: true`, es decir, cada
-pregunta pasó por `normalizar_query.procesar_pregunta()` antes de buscar, igual que en
-producción).
+Ambas corridas usan `k=7` y normalización activa (`normalizado: true`).
 
 ## 1. Qué mide cada métrica
 
@@ -33,158 +34,162 @@ documento/sección correcto aparece en lo que trae Qdrant.
   documento correcto apareció en algún lugar del top-7?" — no le importa en qué
   posición.
 - **`mrr_*`** (Mean Reciprocal Rank): promedio de `rr_*` sobre todas las preguntas.
-  A diferencia de recall, **premia que el resultado correcto quede arriba** (rank 1
-  vale 1.0, rank 7 vale 0.14) — dos corridas pueden tener el mismo recall y un MRR muy
-  distinto si una devuelve los hits en rank 1 y la otra en rank 6-7.
-- **`por_categoria`**: mismo recall/MRR pero desglosado por `categoria` (subcarpeta de
-  `biblioteca/`) — sirve para detectar si el problema es transversal o está
-  concentrado en un área. Ojo con categorías de `n_preguntas` bajo (1-2): el
-  recall/MRR ahí es ruidoso, no una tendencia confiable.
-- **`n_errores`**: preguntas donde `recuperar_contexto()` u otra parte del pipeline
-  tiró una excepción (0 en ambas corridas — no hay nada que depurar por ese lado).
+  Premia que el resultado correcto quede arriba (rank 1 vale 1.0, rank 7 vale 0.14).
+- **`por_categoria`**: mismo recall/MRR por `categoria` (subcarpeta de `biblioteca/`).
+  Ojo con categorías de `n_preguntas` bajo (1-2): el número ahí es ruidoso.
+- **`n_errores`**: preguntas donde el pipeline tiró una excepción (0 en ambas
+  corridas).
 - **`tiempo_total_seg` / `tiempo_promedio_por_pregunta_seg`**: latencia del propio
-  proceso de evaluación (normalización + búsqueda por pregunta), no es una métrica de
-  calidad.
+  proceso de evaluación, no es una métrica de calidad.
 
-## 2. Resumen comparativo
+## 2. Resumen actual (con el prompt de personal interno)
 
-| Métrica | Chunks (`golden_set.json`) | Markdown (`golden_set_md_final.json`) | Δ |
+| Métrica | Chunks (n=35) | Markdown (n=16) | Δ |
 |---|---:|---:|---:|
-| n_preguntas | 31 | 25 | — |
-| n_errores | 0 | 0 | — |
-| Recall@7 fusion | **0.903** | **0.560** | -0.343 |
-| Recall@7 dense | 0.871 | 0.600 | -0.271 |
-| Recall@7 bm25 | 0.710 | 0.480 | -0.230 |
-| MRR fusion | **0.700** | **0.378** | -0.322 |
-| MRR dense | 0.733 | 0.390 | -0.343 |
-| MRR bm25 | 0.584 | 0.333 | -0.251 |
-| Tiempo prom./pregunta | 0.748s | 0.678s | — |
+| Recall@7 fusion | 0.743 | **0.813** | +0.070 |
+| Recall@7 dense | 0.686 | 0.688 | +0.002 |
+| Recall@7 bm25 | 0.657 | 0.625 | -0.032 |
+| MRR fusion | 0.501 | **0.669** | +0.168 |
+| MRR dense | 0.446 | 0.500 | +0.054 |
+| MRR bm25 | 0.450 | **0.642** | +0.192 |
+| Tiempo prom./pregunta | 0.738s | 0.783s | — |
 
-**El retrieval se comporta claramente peor sobre el golden set de markdown.** La caída
-no es un problema de una sola métrica — recall y MRR bajan juntos en los tres canales,
-así que no es solo "el documento correcto queda más abajo en el ranking", sino que en
-buena parte de los casos **no aparece en absoluto** dentro del top-7.
+Con preguntas de personal interno, **markdown queda ahora por encima de chunks** en
+recall y MRR de fusion — se invirtió respecto a la corrida anterior (ver §4). El
+n de markdown es chico (16) así que conviene tomar esto como tendencia, no como
+número definitivo — próxima corrida con más secciones (`--n-secciones 40` completo,
+sin que el filtro descarte tantas) daría una base más sólida.
 
-### Por qué son comparables con reservas
+### BM25 supera a dense en MRR (solo en markdown)
 
-Los dos golden sets no miden exactamente lo mismo:
-- **Chunks**: la pregunta se generó a partir del chunk exacto indexado en Qdrant → el
-  match es casi por diseño más fácil (mismo vocabulario, mismo nivel de granularidad).
-- **Markdown**: la pregunta se generó desde una sección completa y en tono **coloquial
-  deliberado** (ver ejemplos abajo: "Hola, ...", errores de tipeo como
-  "interrruptores", mezcla de inglés "approving") — es una prueba de estrés más
-  realista de cómo pregunta un usuario real, pero también más difícil de matchear
-  porque el vocabulario de la pregunta se aleja más del texto indexado.
-
-Es decir: la brecha no prueba por sí sola que el retrieval "empeoró" — prueba que el
-sistema **se degrada frente a preguntas coloquiales/parafraseadas**, que es
-información igual de valiosa (posiblemente más representativa del uso real).
-
-### Anomalía a investigar: fusion por debajo de dense en markdown
-
-En chunks, fusion (0.903) queda entre dense (0.871) y por encima — como se espera de
-una fusión RRF que combina dos señales razonables. En **markdown, fusion (0.56) queda
-por *debajo* de dense solo (0.60)** — el canal BM25 (0.48 recall) está arrastrando
-hacia abajo al híbrido en vez de sumar. Ejemplo concreto: `q0022` del set de markdown
-tiene `hit_bm25=true` (rank 7) pero `hit_fusion=false` (`rank_fusion=null`) — BM25 sí
-encontraba el documento correcto dentro del top-7 propio, pero al fusionarse con un
-dense más débil en esa pregunta, RRF lo empujó fuera del top-7 final. Vale la pena
-correr `eval_retrieval.py --golden golden_set_md_final.json --sin-normalizar` para ver
-si la normalización está ayudando o entorpeciendo estos casos coloquiales, y revisar
-si el `TOP_K` interno de cada canal antes de fusionar (en `rag_query1.py`) es
-suficiente para preguntas menos literales.
+En markdown, `mrr_bm25` (0.642) casi empata con `mrr_fusion` (0.669) y supera a
+`mrr_dense` (0.500) — lo contrario de chunks, donde dense y bm25 quedan parejos y
+ambos por debajo de fusion. Tiene sentido con el nuevo estilo de pregunta: el perfil
+"técnico/operativo" pide códigos y nombres exactos de sistemas (`"FACTURACIÓN SIELSE
+2.0"`, `"SEE RSP"`, `"IVR"`, `"Corte tipo [II]"`) que BM25 matchea directo por
+coincidencia léxica, mientras que dense depende de que el embedding capture bien un
+término técnico poco frecuente. Ejemplos con `hit_bm25=true` y `hit_dense=false`:
+`q0007` (rank_bm25=1 vs. dense sin hit) y `q0016` (rank_bm25=1 vs. dense sin hit) en
+`resultados_eval_md.json`.
 
 ## 3. Desglose por categoría
 
-### Chunks
+### Chunks (n=35)
 
 | Categoría | n | Recall fusion | MRR fusion |
 |---|---:|---:|---:|
-| Facturación | 3 | 0.667 | 0.417 |
-| Atención al Cliente | 5 | 0.800 | 0.540 |
-| Instalaciones | 9 | 0.889 | 0.704 |
-| Marketing | 5 | 1.000 | 0.767 |
-| Cobranzas | 5 | 1.000 | 0.867 |
+| Atención al Cliente | 12 | **0.417** | **0.264** |
+| Marketing | 3 | 0.667 | 0.178 |
+| Relaciones Públicas | 1 | 0.000 | 0.000 |
+| Clientes Mayores | 2 | 1.000 | 0.625 |
+| Cobranzas | 4 | 1.000 | 0.661 |
+| Facturación | 3 | 1.000 | 0.733 |
+| Instalaciones | 8 | 1.000 | 0.719 |
 | Pérdidas Comerciales | 2 | 1.000 | 1.000 |
-| Relaciones Públicas | 1 | 1.000 | 1.000 |
-| Supervisión Comercial | 1 | 1.000 | 0.250 |
 
-### Markdown
+### Markdown (n=16)
 
 | Categoría | n | Recall fusion | MRR fusion |
 |---|---:|---:|---:|
-| Marketing | 1 | 0.000 | 0.000 |
-| Cobranzas | 4 | 0.250 | 0.250 |
-| Atención al Cliente | 6 | 0.333 | 0.194 |
-| Instalaciones | 7 | 0.714 | 0.255 |
-| Facturación | 3 | 0.667 | 0.667 |
-| Clientes Mayores | 1 | 1.000 | 1.000 |
-| Pérdidas Comerciales | 3 | 1.000 | 0.833 |
+| Marketing | 2 | 0.500 | 0.500 |
+| Facturación | 4 | 0.750 | 0.625 |
+| Instalaciones | 4 | 0.750 | 0.425 |
+| Atención al Cliente | 2 | 1.000 | 1.000 |
+| Cobranzas | 3 | 1.000 | 0.833 |
+| Pérdidas Comerciales | 1 | 1.000 | 1.000 |
 
-**Patrón consistente en ambos sets**: *Facturación* y *Atención al Cliente* son las
-categorías más débiles; *Pérdidas Comerciales* es sólida en ambos. En markdown,
-*Cobranzas* también cae fuerte (0.25 recall) — no se ve en chunks, lo que sugiere que
-el problema ahí es específico de cómo se formulan las preguntas coloquiales sobre esos
-documentos, no del contenido indexado en sí. *Marketing* e *Instalaciones* en markdown
-tienen `n` bajo o son ruidosas — no sacar conclusiones fuertes de una sola categoría
-con 1 pregunta.
+**Hallazgo que se repite en las tres corridas hechas hasta ahora (chunks original,
+markdown original, chunks con prompt nuevo): *Atención al Cliente* es sistemáticamente
+débil o inestable.** En esta corrida concentra 7 de los 9 misses de chunks
+(`recall_fusion=0.417` con `n=12`, la categoría más grande del set). Con tres corridas
+distintas mostrando el mismo patrón, ya no parece ruido de una muestra chica — vale la
+pena investigar si los documentos de esa categoría tienen un problema de chunking o
+indexación (ver §5).
 
-## 4. Preguntas MISS (candidatas para `inspeccionar_miss.py`)
+## 4. Antes / después del cambio de prompt
 
-`inspeccionar_miss.py` vuelve a correr `recuperar_contexto()` para estos casos y
-muestra qué trajo realmente el sistema, para distinguir falla real de retrieval vs.
-golden set mal etiquetado.
+| Métrica | Chunks antes¹ | Chunks ahora | Markdown antes¹ | Markdown ahora |
+|---|---:|---:|---:|---:|
+| n_preguntas | 31 | 35 | 25 | 16 |
+| Recall@7 fusion | 0.903 | 0.743 | 0.560 | 0.813 |
+| MRR fusion | 0.700 | 0.501 | 0.378 | 0.669 |
 
-### Chunks — 3 de 31 (`resultados_eval.json`)
+¹ Corrida previa a reescribir `system_prompt_golden.txt`/`system_prompt_golden_md.txt`
+(preguntas de cliente/coloquiales en markdown; chunk-set ya mixto pero sin pedir
+detalles técnicos específicos).
+
+**Chunks bajó, markdown subió.** No es una regresión del retrieval — el sistema no
+cambió, cambió el tipo de pregunta:
+- Las preguntas de chunk ahora piden más **detalles puntuales** (códigos exactos,
+  fechas de homologación, nombres de responsables, números de actividad) en vez de
+  preguntas más generales — son más difíciles de matchear por `seccion_contiene`
+  aunque el chunk de origen sea el correcto, y varias (`q0003`, `q0007`, `q0010`,
+  `q0015`, `q0021`, `q0023`, `q0024`, `q0029`, `q0033`) piden un dato que puede estar
+  en la sección pero no en el chunk puntual que se usó para generarlas — un riesgo
+  conocido del enfoque "un chunk = una pregunta".
+- Las preguntas de markdown dejaron de ser conversación de WhatsApp con errores de
+  tipeo y pasaron a preguntas operativas concretas sobre la sección completa, que
+  matchean mejor porque usan vocabulario del propio documento.
+
+Esto confirma que el golden set anterior no era representativo del uso real (personal
+interno) — el nuevo es más duro para chunks pero más realista para ambos.
+
+## 5. Preguntas MISS (candidatas para `inspeccionar_miss.py`)
+
+### Chunks — 9 de 35 (`resultados_eval.json`)
 
 | id | Categoría | Pregunta |
 |---|---|---|
-| q0007 | Atención al Cliente | ¿Quién es el responsable de aprobar el procedimiento CSIG y supervisar su implementación? |
-| q0011 | Instalaciones | ¿Qué procedimientos se deben seguir si el cliente es mayor? |
-| q0012 | Facturación | ¿Qué procedimiento administrativo debo seguir para reclamar sobre mi facturación según la Resolución N° 269-2014 OS/CD? |
+| q0003 | Atención al Cliente | ¿Qué documentos de salida se generan en la actividad 18 y cuáles son sus códigos CVA? |
+| q0007 | Atención al Cliente | ¿Quién es el responsable de aprobar este procedimiento y supervisar su implementación? |
+| q0010 | Atención al Cliente | ¿Qué documentos normativos y precedentes específicos se listan como base para la gestión de reclamos de usuarios? *(hit_dense rank 10, hit_bm25 rank 8 — casi hit)* |
+| q0015 | Atención al Cliente | Si al verificar la vida útil del medidor no se cumple, ¿cuál es el subproceso al que se debe derivar inmediatamente? |
+| q0021 | Atención al Cliente | ¿Qué normativa específica regula el contraste del sistema de medición de energía eléctrica en SIELSE? |
+| q0023 | Marketing | ¿Quién es el responsable de aprobar el procedimiento del Sistema Integrado de Gestión? |
+| q0024 | Atención al Cliente | ¿Quién es el responsable de aprobar el procedimiento y supervisar su implementación? |
+| q0029 | Relaciones Públicas | ¿Cuál es la actitud recomendada frente a las solicitudes informativas cuando se desconoce la respuesta? |
+| q0033 | Atención al Cliente | ¿Qué pasos debe seguir un Supervisor de Instalaciones y mediciones cuando un Contratista indica que no tiene sistema de medición? |
 
 ```bash
+python inspeccionar_miss.py --resultados resultados_eval.json --golden golden_set.json --id q0010
 python inspeccionar_miss.py --resultados resultados_eval.json --golden golden_set.json --id q0007
-python inspeccionar_miss.py --resultados resultados_eval.json --golden golden_set.json --id q0011
-python inspeccionar_miss.py --resultados resultados_eval.json --golden golden_set.json --id q0012
-```
-
-### Markdown — 11 de 25 (`resultados_eval_md.json`)
-
-| id | Categoría | Pregunta |
-|---|---|---|
-| q0001 | Atención al Cliente | Se incluye en el documento el procedimiento para reclamar por el cobro de la factura? |
-| q0002 | Instalaciones | Hola, ¿qué pasa si mi factura es muy alta, hay alguna ley que me permita reclamarla o pedir que la revisen? |
-| q0003 | Atención al Cliente | Hola, si me pasa un reclamo sobre mi consumo de luz, ¿cómo me van a verificar si la lectura del medidor es correcta? |
-| q0007 | Cobranzas | Hola, ¿quién es el encargado de approving las reglas de cobro y quién es el de cuidar los datos de los clientes? |
-| q0009 | Cobranzas | ¿Por qué me cortaron la luz si no debo dinero? *(hit_dense=true, rank 5 — casi entra)* |
-| q0011 | Instalaciones | ¿Qué hago si me piden los interrruptores, el medidor y el tubo bastón al mismo tiempo? |
-| q0012 | Marketing | Hola, ¿cómo hago para dejar mi opinión sobre el servicio que me prestaron? |
-| q0013 | Atención al Cliente | Hola, me llegó un reclamo que dice que tengo que firmar una carta de confirmación en dos días, ¿qué pasa si no logro hacerlo a tiempo? |
-| q0015 | Facturación | ¿Autoriza la dirección para que yo haga uso de este documento? |
-| q0019 | Atención al Cliente | ¿Qué pasa si queremos cancelar el trámite directo y pedirnos el reintegro de lo que pagamos? |
-| q0022 | Cobranzas | Hola, quiero pagar mi recibo de luz, ¿qué me pueden decir sobre esos talones desglosables? *(hit_bm25=true rank 7 — ver anomalía §2)* |
-
-```bash
-python inspeccionar_miss.py --resultados resultados_eval_md.json --golden golden_set_md_final.json --id q0009
-python inspeccionar_miss.py --resultados resultados_eval_md.json --golden golden_set_md_final.json --id q0022
+python inspeccionar_miss.py --resultados resultados_eval.json --golden golden_set.json --id q0024
 # repetir para el resto de la lista según haga falta
 ```
 
-Prioridad sugerida: `q0009` y `q0022` primero (son "casi hits" — algún canal sí los
-encontró, lo que sugiere ajuste fino más que falla estructural); después las de
-*Cobranzas* y *Atención al Cliente*, que son las categorías más débiles en markdown.
+### Markdown — 3 de 16 (`resultados_eval_md.json`)
 
-## 5. Próximos pasos sugeridos
+| id | Categoría | Pregunta |
+|---|---|---|
+| q0002 | Instalaciones | ¿Cómo se clasifica un cliente que se encuentra fuera del área de concesión de SIELSE y cuál es el rol de ELSE en su atención? |
+| q0005 | Marketing | ¿Cuál es el responsable de aprobar este procedimiento y en qué fecha se formalizó su homologación? |
+| q0008 | Facturación | ¿Quiénes tienen las firmas de validación y aprobación de este documento? |
 
-1. Correr `inspeccionar_miss.py` sobre los casos "casi hit" (q0009, q0022) para
-   entender si es un problema de `TOP_K` insuficiente antes de fusionar, de la
-   reformulación de `normalizar_query.py`, o de que la sección esperada realmente no
-   contiene la respuesta literal.
-2. Repetir la corrida de markdown con `--sin-normalizar` y comparar recall/MRR contra
-   esta corrida normalizada, para aislar si la reformulación coloquial→formal está
-   ayudando o hace falta ajustar su prompt.
-3. Si el patrón de *Cobranzas*/*Atención al Cliente* se confirma con más preguntas,
-   revisar si esos documentos necesitan mejor chunking (`ingesta/ocr_docling.py`) o si
-   el golden set de markdown está generando preguntas demasiado alejadas del texto
-   real de esas secciones.
+```bash
+python inspeccionar_miss.py --resultados resultados_eval_md.json --golden golden_set_md_final.json --id q0002
+python inspeccionar_miss.py --resultados resultados_eval_md.json --golden golden_set_md_final.json --id q0005
+python inspeccionar_miss.py --resultados resultados_eval_md.json --golden golden_set_md_final.json --id q0008
+```
+
+Nota: `q0005`/`q0008`/`q0023`/`q0024`/`q0007`(chunks) comparten un patrón — preguntan
+"quién aprueba/homologa este procedimiento" sin mencionar el nombre del documento.
+Esa info suele vivir en el encabezado/metadata del PDF, no en el cuerpo de la sección
+que generó la pregunta — vale la pena confirmar con `inspeccionar_miss.py` si es una
+limitación real de chunking/indexado o si la pregunta es ambigua per se (aplica a
+varios documentos, no solo al de origen).
+
+## 6. Próximos pasos sugeridos
+
+1. **Priorizar *Atención al Cliente***: es la categoría más débil en las tres corridas
+   hechas hasta ahora. Revisar con `inspeccionar_miss.py` los 7 misses de esa
+   categoría en chunks antes que el resto — si el patrón se sostiene, mirar el
+   chunking de esos PDFs específicos en `ingesta/ocr_docling.py`.
+2. Investigar el patrón "quién aprueba el procedimiento" (5 misses lo comparten,
+   ver nota de §5) — puede requerir indexar mejor los metadatos de aprobación/
+   homologación, no un problema de embeddings.
+3. Ampliar el golden set de markdown (subió el score pero con solo 16 preguntas
+   después del filtro) corriendo `run_retrieval_eval_markdown.sh` de nuevo con más
+   secciones o revisando por qué el juez descartó tantas de las 40 generadas.
+4. Repetir con `--sin-normalizar` para aislar si `normalizar_query.py` ayuda o
+   entorpece con este estilo de pregunta técnica (antes solo se probó con el estilo
+   coloquial).
