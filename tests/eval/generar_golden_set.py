@@ -95,7 +95,7 @@ def muestrear_chunks(chunks: list[dict], n: int, por_categoria: bool, seed: int)
     return seleccionados[:n] if len(seleccionados) > n else seleccionados
 
 
-def generar_preguntas_llm(client: OpenAI, texto_chunk: str, n_preguntas: int) -> list[str]:
+def generar_preguntas_llm(client: OpenAI, texto_chunk: str, n_preguntas: int, system_prompt: str) -> list[str]:
     user_prompt = f"Cantidad de preguntas a generar: {n_preguntas}\n\nFragmento:\n{texto_chunk}"
     respuesta = client.chat.completions.create(
         model=LLM_MODEL,
