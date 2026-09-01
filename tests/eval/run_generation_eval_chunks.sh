@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 # Test de generación (RAGAS) — golden set a nivel chunk (golden_set.json)
 # Requiere golden_set.json ya consolidado (ver run_retrieval_eval_chunks.sh)
+# Uso: ./run_generation_eval_chunks.sh [n_muestra]   (default: todas las preguntas)
 set -euo pipefail
 cd "$(dirname "${BASH_SOURCE[0]}")"
 
@@ -9,5 +10,10 @@ if [[ ! -f golden_set.json ]]; then
     exit 1
 fi
 
+MUESTRA_ARGS=()
+if [[ -n "${1:-}" ]]; then
+    MUESTRA_ARGS=(--n-muestra "$1")
+fi
+
 python generar_ground_truth.py --golden golden_set.json --out golden_set.json --auto-aprobar
-python eval_generation.py --golden golden_set.json --out resultados_generation.json
+python eval_generation.py --golden golden_set.json --out resultados_generation.json "${MUESTRA_ARGS[@]}"
