@@ -827,13 +827,24 @@ python consolidar_golden_set.py \
 ```
 
 **Para saltar la revisión manual de preguntas** (tandas grandes, 40+
-secciones): `filtrar_golden_set.py --muestra-aceptadas 0` confía 100% en el
-juez automático para las "aceptadas" (no fuerza ninguna revisión de
-control) y directamente no se corre `revisar_golden_set.py` — las "dudosas"
-quedan con `revisado: false` y `consolidar_golden_set.py` las excluye solas
-al consolidar solo el archivo de aceptadas:
+chunks/secciones): `filtrar_golden_set.py --muestra-aceptadas 0` confía
+100% en el juez automático para las "aceptadas" (no fuerza ninguna
+revisión de control) y directamente no se corre `revisar_golden_set.py` —
+las "dudosas" quedan con `revisado: false` y `consolidar_golden_set.py`
+las excluye solas al consolidar solo el archivo de aceptadas. Copiar y
+pegar tal cual — nombres de archivo fijos, sin numeración:
 
 ```bash
+# Chunks — todo con nombres por defecto (golden_set.json)
+python generar_golden_set.py --n-chunks 60 --por-categoria
+python filtrar_golden_set.py --muestra-aceptadas 0
+python consolidar_golden_set.py --archivos golden_set_aceptadas.json --out golden_set.json
+python eval_retrieval.py --golden golden_set.json --out resultados_eval.json
+```
+
+```bash
+# Markdown — sufijo _md en todo para no pisar los archivos de chunks
+python generar_golden_set_md.py --n-secciones 40 --por-categoria --out golden_set_md_raw.json
 python filtrar_golden_set.py --golden golden_set_md_raw.json --prefijo golden_set_md --muestra-aceptadas 0
 python consolidar_golden_set.py --archivos golden_set_md_aceptadas.json --out golden_set_md_final.json
 python eval_retrieval.py --golden golden_set_md_final.json --out resultados_eval_md.json
