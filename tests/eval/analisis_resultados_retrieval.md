@@ -39,6 +39,17 @@ documento/sección correcto aparece en lo que trae Qdrant.
   Ojo con categorías de `n_preguntas` bajo (1-2): el número ahí es ruidoso.
 - **`n_errores`**: preguntas donde el pipeline tiró una excepción (0 en ambas
   corridas).
+- **`fuente_esperada`** *(campo nuevo)*: copia de lo que el golden set espera
+  (`documento` + `seccion_contiene`) directamente en cada fila del `detalle` — antes
+  había que cruzar el `id` contra `golden_set.json`/`golden_set_md_final.json` a mano
+  para saber qué se esperaba.
+- **`resultados_top_k`** *(campo nuevo)*: lo que realmente devolvió la fusión RRF para
+  esa pregunta — una lista de `{rank, documento, seccion, correcto, fragmento}` por
+  cada uno de los k resultados, con `fragmento` siendo los primeros 300 caracteres del
+  chunk (`page_content`). Esto es lo que hace posible revisar un MISS sin volver a
+  correr nada: se ve exactamente qué trajo el sistema y si el motivo fue traer el
+  documento equivocado, la sección equivocada del mismo documento, o directamente no
+  encontrar nada relacionado.
 - **`tiempo_total_seg` / `tiempo_promedio_por_pregunta_seg`**: latencia del propio
   proceso de evaluación, no es una métrica de calidad.
 

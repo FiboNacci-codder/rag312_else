@@ -82,6 +82,9 @@ def coincide(payload: dict, fuente_esperada: dict) -> bool:
     return doc_ok
 
 
+SNIPPET_LEN = 300  # caracteres de page_content a guardar por resultado, para revisión manual
+
+
 def evaluar_pregunta(item: dict, resultados_fusion, detalle_scores, k: int) -> dict:
     fuente_esperada = item["fuente_esperada"]
 
@@ -108,10 +111,23 @@ def evaluar_pregunta(item: dict, resultados_fusion, detalle_scores, k: int) -> d
     def rr(rank):
         return 1.0 / rank if rank else 0.0
 
+    # --- Contexto para revisión manual: qué trajo realmente el top-k de fusión ---
+    resultados_top_k = [
+        {
+            "rank": i,
+            "documento": r.payload.get("source"),
+            "seccion": r.payload.get("seccion"),
+            "correcto": coincide(r.payload, fuente_esperada),
+            "fragmento": (r.payload.get("page_content") or "")[:SNIPPET_LEN],
+        }
+        for i, r in enumerate(resultados_fusion[:k], start=1)
+    ]
+
     return {
         "id": item["id"],
         "categoria": item.get("categoria"),
         "pregunta": item["pregunta"],
+        "fuente_esperada": fuente_esperada,
         "rank_fusion": rank_fusion,
         "rank_dense": rank_dense,
         "rank_bm25": rank_bm25,
@@ -121,6 +137,7 @@ def evaluar_pregunta(item: dict, resultados_fusion, detalle_scores, k: int) -> d
         "rr_fusion": rr(rank_fusion),
         "rr_dense": rr(rank_dense),
         "rr_bm25": rr(rank_bm25),
+        "resultados_top_k": resultados_top_k,
     }
 
 
@@ -188,9 +205,11 @@ def main():
             print(f"    ERROR: {e}")
             fila = {
                 "id": item["id"], "categoria": item.get("categoria"),
-                "pregunta": pregunta, "error": str(e),
+                "pregunta": pregunta, "fuente_esperada": item.get("fuente_esperada"),
+                "error": str(e),
                 "hit_fusion": False, "hit_dense": False, "hit_bm25": False,
                 "rr_fusion": 0.0, "rr_dense": 0.0, "rr_bm25": 0.0,
+                "resultados_top_k": [],
             }
         filas.append(fila)
         estado = "OK" if fila.get("hit_fusion") else "MISS"
