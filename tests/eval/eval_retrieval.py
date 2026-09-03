@@ -16,7 +16,7 @@ set mediría un pipeline distinto al que corre en producción. Usar
 falla viene del retrieval en sí o de la reformulación).
 
 Uso:
-    # Desde ~/rag312/consulta (o ajustando RAG_PROJECT_DIR):
+    # Desde ~/rag312_else/consulta (o ajustando RAG_PROJECT_DIR):
     python eval_retrieval.py
     python eval_retrieval.py --golden golden_set.json --k 7
     python eval_retrieval.py --out resultados_eval.json

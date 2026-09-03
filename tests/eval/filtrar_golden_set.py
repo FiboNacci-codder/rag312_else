@@ -12,10 +12,10 @@ el golden set en 3 archivos de salida para que la revisión manual se concentre
 solo donde hace falta.
 
 Uso:
-    source ~/rag312/conda/activar.sh
+    source ~/rag312_else/conda/activar.sh
     conda activate rag312
-    export RAG_PROJECT_DIR=~/rag312
-    cd ~/rag312/tests/eval
+    export RAG_PROJECT_DIR=~/rag312_else
+    cd ~/rag312_else/tests/eval
 
     python filtrar_golden_set.py
     python filtrar_golden_set.py --golden golden_set.json --muestra-aceptadas 0.2

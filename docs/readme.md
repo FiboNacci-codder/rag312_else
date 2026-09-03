@@ -26,7 +26,7 @@ RAG de producción sobre procedimientos internos de ELSE. Los usuarios preguntan
 ## 3. Estructura de directorios (confirmada)
 
 ```
-~/rag312/
+~/rag312_else/
 ├── biblioteca/                               ← Lugar donde se encuentra los pdf's
 ├── conda/                                    ← Se encuentra el activador de conda
 ├── consulta/                                 ← Se encuentran los archivos para realizar la parte de la consulta en el rag (normalizar_query.py y rag_query1.py) 
@@ -46,7 +46,7 @@ RAG de producción sobre procedimientos internos de ELSE. Los usuarios preguntan
 
 ## Entorno de CONDA
 Para activar el entorno de CONDA se debe de activar con los siguientes comandos el cual hace que se tenga la version de python 3.12
-- source ~/rag312/conda/activar.sh 
+- source ~/rag312_else/conda/activar.sh 
 - conda activate rag312
 - pip install -e .   (desde la raíz del repo, una vez — instala rag312/ en modo editable; volver a correrlo solo si cambia pyproject.toml)
 
@@ -54,7 +54,7 @@ Para activar el entorno de CONDA se debe de activar con los siguientes comandos 
 
 Para iniciar los servicios vLLM se debe de iniciar con la variables de entorno se utiliza el siguiente comando 
 
-- source ~/rag312/containers/env.sh
+- source ~/rag312_else/containers/env.sh
 
 
 
@@ -729,7 +729,7 @@ La separación entre pregunta original y reformulada permite elegir estrategias 
 Los scripts de esta carpeta miden la calidad del sistema una vez indexado
 en Qdrant. Todos se ejecutan desde `tests/eval/` con el entorno conda
 `rag312` activo, y respetan la variable `RAG_PROJECT_DIR` (default
-`~/rag312`) para ubicar `consulta/` e `ingesta/`.
+`~/rag312_else`) para ubicar `consulta/` e `ingesta/`.
 
 ### Scripts de conveniencia
 
@@ -1011,7 +1011,7 @@ python inspeccionar_miss.py --sin-normalizar
 **`app_gradio.py`** (producción, puerto 7861): chat (`gr.Chatbot`) sobre `rag_query1.main()`, sin memoria real (visualmente muestra historial, cada pregunta se procesa aislada). Acceso vía túnel SSH o forwarding automático de VS Code Remote-SSH.
 
 ```bash
-cd ~/rag312/interfaz
+cd ~/rag312_else/interfaz
 python app_gradio.py
 ```
 
@@ -1022,18 +1022,18 @@ python app_gradio.py
 Requiere el entorno conda `rag312` activo (`fastapi`, `uvicorn` y `python-multipart` ya están en `requirements.txt`) y los servicios vLLM (8001, 8002, 8003) + Qdrant (6333) corriendo, igual que `rag_query1.py`.
 
 ```bash
-source ~/rag312/conda/activar.sh
+source ~/rag312_else/conda/activar.sh
 conda activate rag312
-source ~/rag312/containers/env.sh   # variables de entorno vLLM, si aplica
+source ~/rag312_else/containers/env.sh   # variables de entorno vLLM, si aplica
 
-cd ~/rag312/interfaz
+cd ~/rag312_else/interfaz
 python app_web.py
 ```
 
 Luego abrir `http://localhost:8080/` (o el host/túnel correspondiente si se accede remoto). También se puede levantar con recarga automática durante desarrollo:
 
 ```bash
-cd ~/rag312/interfaz
+cd ~/rag312_else/interfaz
 uvicorn app_web:app --reload --host 0.0.0.0 --port 8080
 ```
 

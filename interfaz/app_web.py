@@ -1,7 +1,7 @@
 import sys
 from pathlib import Path
 
-BASE_DIR = Path(__file__).parent          # ~/rag312/interfaz
+BASE_DIR = Path(__file__).parent          # ~/rag312_else/interfaz
 STATIC_DIR = BASE_DIR / "static"
 
 sys.path.insert(0, str(BASE_DIR.parent))

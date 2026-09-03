@@ -6,7 +6,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 A production RAG (Retrieval-Augmented Generation) system over internal procedure documents (PDFs) for ELSE/SIELSE, a utility company. Users ask questions in natural language and get answers citing the source document/page/section. Everything runs on local vLLM servers (no OpenAI/Anthropic API calls) plus a local Qdrant vector DB. See `docs/readme.md` for the full narrative writeup (hardware, per-script deep dives) — this file only covers what's needed to be productive quickly.
 
-The project's canonical layout lives at `~/rag312` on a remote GPU server (`elsecluster5`, RHEL 9.4, 8x L40S, Apptainer for GPU containers). This repo is the code; large/generated artifacts (`conda/`, `containers/*.sif`, `qdrant_storage/`) are gitignored and only exist on that server.
+The project's canonical layout lives at `~/rag312_else` on a remote GPU server (`elsecluster5`, RHEL 9.4, 8x L40S, Apptainer for GPU containers). This repo is the code; large/generated artifacts (`conda/`, `containers/*.sif`, `qdrant_storage/`) are gitignored and only exist on that server.
 
 ## Pipeline architecture (read this before touching any script)
 
@@ -40,11 +40,11 @@ Qdrant runs on port 6333 (Podman, CPU-only). Collection name `procedimientos_sie
 ## Environment setup
 
 ```bash
-source ~/rag312/conda/activar.sh
+source ~/rag312_else/conda/activar.sh
 conda activate rag312          # Python 3.12
-source ~/rag312/containers/env.sh   # sets VLLM_SIF, HF_HOME, FASTEMBED_CACHE_DIR
+source ~/rag312_else/containers/env.sh   # sets VLLM_SIF, HF_HOME, FASTEMBED_CACHE_DIR
 ```
-`RAG_PROJECT_DIR` (default `~/rag312`) is read by every `tests/eval/*.py` script to locate `consulta/`, `ingesta/`, `datos/`, `salida_md/`. Set it if the checkout isn't at `~/rag312`.
+`RAG_PROJECT_DIR` (default `~/rag312_else`) is read by every `tests/eval/*.py` script to locate `consulta/`, `ingesta/`, `datos/`, `salida_md/`. Set it if the checkout isn't at `~/rag312_else`.
 
 Dependencies: `pip install -r requirements.txt` (pinned, includes `docling`, `langchain*`, `qdrant-client`, `fastapi`/`uvicorn`, `gradio`, `ragas`). No separate lint/format tooling is configured in this repo.
 

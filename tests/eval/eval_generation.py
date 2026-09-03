@@ -26,11 +26,11 @@ Solo se evalúan preguntas con "ground_truth" presente y
 reportan aparte (no frenan la corrida).
 
 Uso:
-    source ~/rag312/conda/activar.sh
+    source ~/rag312_else/conda/activar.sh
     conda activate rag312
     pip install ragas --break-system-packages   # una sola vez
-    export RAG_PROJECT_DIR=~/rag312
-    cd ~/rag312/tests/eval
+    export RAG_PROJECT_DIR=~/rag312_else
+    cd ~/rag312_else/tests/eval
 
     python eval_generation.py
     python eval_generation.py --golden golden_set.json --n-muestra 15

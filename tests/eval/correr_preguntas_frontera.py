@@ -10,10 +10,10 @@ RAG admite que no tiene la información, o si alucina una respuesta segura
 pero incorrecta.
 
 Uso:
-    source ~/rag312/conda/activar.sh
+    source ~/rag312_else/conda/activar.sh
     conda activate rag312
-    export RAG_PROJECT_DIR=~/rag312
-    cd ~/rag312/tests/eval
+    export RAG_PROJECT_DIR=~/rag312_else
+    cd ~/rag312_else/tests/eval
 
     python generar_preguntas_frontera.py --n-secciones 20 --por-categoria
     python correr_preguntas_frontera.py --n-muestra 5   # prueba rápida

@@ -16,10 +16,10 @@ un solo chunk (tablas largas, procedimientos con varios pasos que quedaron
 en distintos chunks, etc.).
 
 Uso:
-    source ~/rag312/conda/activar.sh
+    source ~/rag312_else/conda/activar.sh
     conda activate rag312
-    export RAG_PROJECT_DIR=~/rag312
-    cd ~/rag312/tests/eval
+    export RAG_PROJECT_DIR=~/rag312_else
+    cd ~/rag312_else/tests/eval
 
     python generar_golden_set_md.py --n-secciones 40 --por-categoria
     python generar_golden_set_md.py --out golden_set_md_raw.json

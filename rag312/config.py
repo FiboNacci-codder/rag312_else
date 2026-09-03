@@ -22,7 +22,7 @@ from pydantic_settings import BaseSettings, SettingsConfigDict
 class Settings(BaseSettings):
     model_config = SettingsConfigDict(env_prefix="", extra="ignore")
 
-    rag_project_dir: Path = Path.home() / "rag312"
+    rag_project_dir: Path = Path.home() / "rag312_else"
 
     qdrant_host: str = "localhost"
     qdrant_port: int = 6333

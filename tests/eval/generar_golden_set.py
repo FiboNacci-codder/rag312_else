@@ -7,9 +7,9 @@ Como la pregunta se genera A PARTIR del chunk, la fuente_esperada queda
 100% alineada con lo que existe en Qdrant, sin trabajo manual de matching.
 
 Uso:
-    source ~/rag312/conda/activar.sh
+    source ~/rag312_else/conda/activar.sh
     conda activate rag312
-    export RAG_PROJECT_DIR=~/rag312   # si el proyecto no está en ~/rag312
+    export RAG_PROJECT_DIR=~/rag312_else   # si el proyecto no está en ~/rag312_else
 
     # Generar 2 preguntas por chunk, muestreando 60 chunks en total:
     python generar_golden_set.py --n-chunks 60 --preguntas-por-chunk 2

@@ -14,10 +14,10 @@ revisar_ground_truth.py — por eso cada item queda marcado con
 "ground_truth_revisado": false.
 
 Uso:
-    source ~/rag312/conda/activar.sh
+    source ~/rag312_else/conda/activar.sh
     conda activate rag312
-    export RAG_PROJECT_DIR=~/rag312
-    cd ~/rag312/tests/eval
+    export RAG_PROJECT_DIR=~/rag312_else
+    cd ~/rag312_else/tests/eval
 
     python generar_ground_truth.py
     python generar_ground_truth.py --golden golden_set.json --out golden_set.json
