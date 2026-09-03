@@ -10,6 +10,15 @@ qdrant_storage/
 # Modelos descargados (HF cache, fastembed cache)
 modelos/
 
+# Salidas del pipeline de ingesta (regenerables con ocr_docling.py / embeddings.py)
+salida_md/
+salida_chunks/
+datos/
+
+# Outputs de corridas de eval (regenerables con eval_retrieval.py / eval_generation.py / filtrar_golden_set.py)
+tests/eval/resultados_*.json
+tests/eval/filtrado_reporte*.json
+
 # Python
 __pycache__/
 *.pyc

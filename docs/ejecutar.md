@@ -5,6 +5,35 @@ completo (`biblioteca/*.pdf` → Qdrant) desde cero, en el servidor
 `elsecluster5`, ahora que el proyecto vive en `~/rag312_else` (antes
 `~/rag312`).
 
+## 0. Antes de nada: actualizar el repo con `git pull`
+
+`salida_md/`, `salida_chunks/`, `datos/` y los outputs de eval
+(`tests/eval/resultados_*.json`, `filtrado_reporte.json`) dejaron de
+trackearse en git (ahora están en `.gitignore`) porque son puramente
+regenerables y causaban que `git pull` fallara cada vez que se corría el
+pipeline en el servidor (`error: Your local changes ... would be
+overwritten by merge`).
+
+Si en el servidor esos archivos ya existen con cambios locales (de correr
+`ocr_docling.py`/`embeddings.py`/algún eval antes de este cambio), hay que
+descartarlos **antes** de tirar del pull — es seguro porque son regenerables
+con el pipeline de este mismo documento:
+
+```bash
+git checkout -- salida_md/ salida_chunks/ datos/ \
+  tests/eval/resultados_eval.json tests/eval/resultados_eval_md.json \
+  tests/eval/resultados_generation.json tests/eval/resultados_generation_md.json \
+  tests/eval/filtrado_reporte.json 2>/dev/null
+
+git pull
+```
+
+Después del pull, esos archivos siguen físicamente en disco tal cual
+estaban — solo dejan de estar bajo control de git. `git status` los va a
+mostrar como ignorados, no como modificados. (`tests/eval/golden_set*.json`
+— el dataset de preguntas curado a mano — sigue trackeado normalmente, no
+se toca.)
+
 ## 1. Activar conda
 
 ```bash
