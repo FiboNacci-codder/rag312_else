@@ -1,44 +1,27 @@
 import sys
 import time
-import numpy as np
 from pathlib import Path
-from qdrant_client import QdrantClient
+
+import numpy as np
 from qdrant_client.models import Prefetch, FusionQuery, Fusion, SparseVector
-from langchain_openai import OpenAIEmbeddings
-from openai import OpenAI
+
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+from rag312.clients import build_embedder, build_llm_client, build_qdrant_client, build_sparse_embedder
+from rag312.config import get_generate_config, settings
+
 from normalizar_query import procesar_pregunta
 
-BASE_DIR = Path(__file__).parent          # ~/rag312/consulta
-PROJECT_DIR = BASE_DIR.parent              # ~/rag312
-sys.path.insert(0, str(PROJECT_DIR / "ingesta"))
-from embeddings import build_sparse_embedder
-
+BASE_DIR = Path(__file__).parent
 SYSTEM_PROMPT_PATH = BASE_DIR / "system_prompt.txt"
 
-VLLM_EMBED_URL = "http://localhost:8001/v1"
-EMBED_MODEL = "harrier-embed"
-QDRANT_HOST = "localhost"
-QDRANT_PORT = 6333
-COLLECTION_NAME = "procedimientos_sielse"
-TOP_K = 10
-PREFETCH_LIMIT = 20
-UMBRAL_SIMILITUD = 0.5  # aplica solo sobre el score dense crudo (0-1)
+COLLECTION_NAME = settings.collection_name
+TOP_K = settings.top_k
+PREFETCH_LIMIT = settings.prefetch_limit
+UMBRAL_SIMILITUD = settings.umbral_similitud  # aplica solo sobre el score dense crudo (0-1)
+DENSE_VECTOR_NAME = settings.dense_vector_name
+SPARSE_VECTOR_NAME = settings.sparse_vector_name
+INSTRUCTION_PREFIX = settings.instruction_prefix
 
-DENSE_VECTOR_NAME = "dense"
-SPARSE_VECTOR_NAME = "bm25"
-
-INSTRUCTION_PREFIX = "Instruct: Retrieve relevant passages that answer the query\nQuery: "
-
-VLLM_LLM_URL = "http://localhost:8002/v1"
-LLM_MODEL = "qwen35-9b"
-
-def build_embedder():
-    return OpenAIEmbeddings(
-        base_url=VLLM_EMBED_URL,
-        api_key="no-necesaria",
-        model=EMBED_MODEL,
-        check_embedding_ctx_length=False,
-    )
 
 def cosine_similarity(v1: list[float], v2: list[float]) -> float:
     v1, v2 = np.array(v1), np.array(v2)
@@ -47,7 +30,8 @@ def cosine_similarity(v1: list[float], v2: list[float]) -> float:
         return 0.0
     return float(np.dot(v1, v2) / denom)
 
-def recuperar_contexto(pregunta: str, embedder, sparse_embedder, client):
+
+def _embed_query(pregunta: str, embedder, sparse_embedder):
     query_con_prefijo = INSTRUCTION_PREFIX + pregunta
     vector_denso = embedder.embed_query(query_con_prefijo)
     vector_sparse_raw = next(sparse_embedder.embed([pregunta]))
@@ -55,59 +39,67 @@ def recuperar_contexto(pregunta: str, embedder, sparse_embedder, client):
         indices=vector_sparse_raw.indices.tolist(),
         values=vector_sparse_raw.values.tolist(),
     )
+    return vector_denso, vector_sparse
 
-    # --- Rama dense sola (top-20, para rank real) ---
-    dense_resultados = client.query_points(
+
+def _buscar_dense(client, vector_denso, limit: int) -> dict:
+    """Rama dense sola (top-20, para rank real)."""
+    resultados = client.query_points(
         collection_name=COLLECTION_NAME,
         query=vector_denso,
         using=DENSE_VECTOR_NAME,
-        limit=PREFETCH_LIMIT,
+        limit=limit,
         with_payload=False,
     ).points
-    dense_info = {
-        r.id: {"rank": i + 1, "score": r.score}
-        for i, r in enumerate(dense_resultados)
-    }
+    return {r.id: {"rank": i + 1, "score": r.score} for i, r in enumerate(resultados)}
 
-    # --- Rama sparse sola (top-20, para rank real) ---
-    sparse_resultados = client.query_points(
+
+def _buscar_sparse(client, vector_sparse, limit: int) -> dict:
+    """Rama sparse sola (top-20, para rank real)."""
+    resultados = client.query_points(
         collection_name=COLLECTION_NAME,
         query=vector_sparse,
         using=SPARSE_VECTOR_NAME,
-        limit=PREFETCH_LIMIT,
+        limit=limit,
         with_payload=False,
     ).points
-    sparse_info = {
-        r.id: {"rank": i + 1, "score": r.score}
-        for i, r in enumerate(sparse_resultados)
-    }
+    return {r.id: {"rank": i + 1, "score": r.score} for i, r in enumerate(resultados)}
 
-    # --- Query fusionada (RRF) — resultado final ---
-    resultados_fusionados = client.query_points(
+
+def _buscar_fusionado(client, vector_denso, vector_sparse, prefetch_limit: int, top_k: int):
+    """Query fusionada (RRF) — resultado final."""
+    return client.query_points(
         collection_name=COLLECTION_NAME,
         prefetch=[
-            Prefetch(query=vector_denso, using=DENSE_VECTOR_NAME, limit=PREFETCH_LIMIT),
-            Prefetch(query=vector_sparse, using=SPARSE_VECTOR_NAME, limit=PREFETCH_LIMIT),
+            Prefetch(query=vector_denso, using=DENSE_VECTOR_NAME, limit=prefetch_limit),
+            Prefetch(query=vector_sparse, using=SPARSE_VECTOR_NAME, limit=prefetch_limit),
         ],
         query=FusionQuery(fusion=Fusion.RRF),
-        limit=TOP_K,
+        limit=top_k,
         with_payload=True,
     ).points
 
-    # --- Para los que no cayeron en el top-20 de alguna rama, calcular su score real ---
-    ids_faltan_dense = [r.id for r in resultados_fusionados if r.id not in dense_info]
-    if ids_faltan_dense:
-        puntos_dense = client.retrieve(
-            collection_name=COLLECTION_NAME,
-            ids=ids_faltan_dense,
-            with_vectors=[DENSE_VECTOR_NAME],
-        )
-        for p in puntos_dense:
-            vec_doc = p.vector.get(DENSE_VECTOR_NAME) if isinstance(p.vector, dict) else None
-            if vec_doc:
-                sim = cosine_similarity(vector_denso, vec_doc)
-                dense_info[p.id] = {"rank": None, "score": sim}  # sin rank real (fuera del top-20)
 
+def _completar_scores_dense_faltantes(client, resultados_fusionados, dense_info: dict, vector_denso) -> dict:
+    """Para los que no cayeron en el top-20 de la rama dense, calcular su score real."""
+    ids_faltan_dense = [r.id for r in resultados_fusionados if r.id not in dense_info]
+    if not ids_faltan_dense:
+        return dense_info
+
+    puntos_dense = client.retrieve(
+        collection_name=COLLECTION_NAME,
+        ids=ids_faltan_dense,
+        with_vectors=[DENSE_VECTOR_NAME],
+    )
+    for p in puntos_dense:
+        vec_doc = p.vector.get(DENSE_VECTOR_NAME) if isinstance(p.vector, dict) else None
+        if vec_doc:
+            sim = cosine_similarity(vector_denso, vec_doc)
+            dense_info[p.id] = {"rank": None, "score": sim}  # sin rank real (fuera del top-20)
+    return dense_info
+
+
+def _construir_detalle_scores(resultados_fusionados, dense_info: dict, sparse_info: dict) -> list[dict]:
     detalle_scores = []
     for rank_fusion, r in enumerate(resultados_fusionados, start=1):
         d = dense_info.get(r.id)
@@ -122,13 +114,26 @@ def recuperar_contexto(pregunta: str, embedder, sparse_embedder, client):
             "rank_bm25": s["rank"] if s else None,
             "score_bm25": round(s["score"], 4) if s else None,
         })
+    return detalle_scores
+
+
+def recuperar_contexto(pregunta: str, embedder, sparse_embedder, client):
+    vector_denso, vector_sparse = _embed_query(pregunta, embedder, sparse_embedder)
+
+    dense_info = _buscar_dense(client, vector_denso, PREFETCH_LIMIT)
+    sparse_info = _buscar_sparse(client, vector_sparse, PREFETCH_LIMIT)
+    resultados_fusionados = _buscar_fusionado(client, vector_denso, vector_sparse, PREFETCH_LIMIT, TOP_K)
+    dense_info = _completar_scores_dense_faltantes(client, resultados_fusionados, dense_info, vector_denso)
+    detalle_scores = _construir_detalle_scores(resultados_fusionados, dense_info, sparse_info)
 
     return resultados_fusionados, detalle_scores
+
 
 SYSTEM_PROMPT = """Eres un asistente que se llama Foquito que responde preguntas sobre procedimientos institucionales de SIELSE.
 Responde usando ÚNICAMENTE la información del contexto proporcionado en cada consulta.
 Si el contexto no contiene la respuesta, dilo explícitamente, no inventes información.
 Cita la fuente (archivo y página) al final de tu respuesta."""
+
 
 def armar_prompt(pregunta: str, resultados) -> str:
     if not resultados:
@@ -146,14 +151,17 @@ def armar_prompt(pregunta: str, resultados) -> str:
 PREGUNTA: {pregunta}"""
     return prompt_usuario
 
+
 def cargar_system_prompt() -> str:
     return SYSTEM_PROMPT_PATH.read_text(encoding="utf-8")
 
+
 def generar_respuesta(prompt_usuario: str) -> str:
     system_prompt = cargar_system_prompt()
-    client_llm = OpenAI(base_url=VLLM_LLM_URL, api_key="no-necesaria")
+    role_config = get_generate_config()
+    client_llm = build_llm_client(role_config)
     respuesta = client_llm.chat.completions.create(
-        model=LLM_MODEL,
+        model=role_config.model,
         messages=[
             {"role": "system", "content": system_prompt},
             {"role": "user", "content": prompt_usuario},
@@ -165,14 +173,31 @@ def generar_respuesta(prompt_usuario: str) -> str:
     return respuesta.choices[0].message.content
 
 
+_embedder = None
+_sparse_embedder = None
+_qdrant_client = None
+
+
+def _get_clients():
+    """Clientes (vLLM embeddings, BM25 sparse, Qdrant) cacheados a nivel de
+    módulo: reconstruirlos en cada llamada a main() era el costo pagado por
+    cada request de app_web.py."""
+    global _embedder, _sparse_embedder, _qdrant_client
+    if _embedder is None:
+        _embedder = build_embedder()
+    if _sparse_embedder is None:
+        _sparse_embedder = build_sparse_embedder()
+    if _qdrant_client is None:
+        _qdrant_client = build_qdrant_client()
+    return _embedder, _sparse_embedder, _qdrant_client
+
+
 def main(pregunta: str) -> dict:
     proc = procesar_pregunta(pregunta)
     pregunta_original = proc["original"]
     pregunta_busqueda = proc["busqueda"]
 
-    embedder = build_embedder()
-    sparse_embedder = build_sparse_embedder()
-    client = QdrantClient(host=QDRANT_HOST, port=QDRANT_PORT)
+    embedder, sparse_embedder, client = _get_clients()
 
     t0 = time.time()
     resultados, detalle_scores = recuperar_contexto(pregunta_busqueda, embedder, sparse_embedder, client)

@@ -26,7 +26,7 @@ question → consulta/normalizar_query.py (spelling fix + colloquial→formal re
          → consulta/rag_query1.py: dense (vLLM harrier-embed) + sparse (BM25) hybrid search in Qdrant, RRF fusion
          → answer generation via vLLM (qwen35-9b), citing sources
 ```
-`consulta/rag_query1.py` (hybrid dense+sparse) is the current/active query engine — it's what both interfaces and every eval script call. `consulta/rag_query.py` (no `1`) is an older dense-only version kept for reference; don't extend it unless asked.
+`consulta/rag_query1.py` (hybrid dense+sparse) is the sole query engine — it's what both interfaces and every eval script call. (An older dense-only `rag_query.py` existed previously but was removed as dead code; it was never actually wired into either interface despite earlier docs claiming otherwise.)
 
 Three vLLM servers back everything, started via `containers/env.sh` + `vllm serve` (see `docs/readme.md` §4 for exact invocations):
 | Port | Model | Role |
@@ -48,6 +48,10 @@ source ~/rag312/containers/env.sh   # sets VLLM_SIF, HF_HOME, FASTEMBED_CACHE_DI
 
 Dependencies: `pip install -r requirements.txt` (pinned, includes `docling`, `langchain*`, `qdrant-client`, `fastapi`/`uvicorn`, `gradio`, `ragas`). No separate lint/format tooling is configured in this repo.
 
+Then `pip install -e .` (from the repo root) to install the local `rag312/` package in editable mode — it's the only way `ingesta/`, `consulta/`, `interfaz/`, and `tests/eval/` scripts can `import rag312`. Re-run it whenever `pyproject.toml` changes; it doesn't need to be re-run when the scripts themselves change.
+
+`rag312/` is a small shared-infrastructure package (`config.py` for settings/constants, `clients.py` for vLLM/Qdrant client factories, `utils.py` for misc helpers) — it holds no pipeline logic itself. `ingesta/`, `consulta/`, `interfaz/`, and `tests/eval/` remain plain script directories invoked the same way as always (`python ingesta/embeddings.py`, etc.), they just import shared config/clients from `rag312` instead of redeclaring constants per file.
+
 ## Evaluation (`tests/eval/`)
 
 There is no unit test suite yet — `tests/unit/*.py` and `tests/integration/*.py` are empty placeholder files. Quality is measured instead by the eval scripts in `tests/eval/`, all run from that directory with `RAG_PROJECT_DIR` set and the vLLM/Qdrant services up. `docs/readme.md` §6 documents each one in depth; the short version:
@@ -60,7 +64,7 @@ There is no unit test suite yet — `tests/unit/*.py` and `tests/integration/*.p
 
 ## Interfaces (`interfaz/`)
 
-- **`app_gradio.py`** (port 7861) — `gr.Chatbot` over `rag_query.main()` (note: the older, dense-only query module), no real memory across turns.
+- **`app_gradio.py`** (port 7861) — `gr.Chatbot` over `rag_query1.main()`, no real memory across turns.
 - **`app_web.py`** (port 8080, FastAPI, in development) — custom HTML/CSS/JS frontend (`interfaz/static/`) over `rag_query1.main()` (the current hybrid engine). Routes: `GET /` serves `static/index.html`, `POST /api/chat` calls the RAG pipeline, `POST /api/upload` is a stub (file ingestion via the UI isn't implemented yet). Conversation history is kept client-side in `localStorage`, not server-side.
 
 Both require the vLLM services (8001/8002/8003) and Qdrant (6333) running, same as any `rag_query*.py` call.

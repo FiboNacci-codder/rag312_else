@@ -30,21 +30,19 @@ chunks trajo, solo el resumen de ranks).
 
 import argparse
 import json
-import os
-import sys
 from pathlib import Path
 
-RAG_PROJECT_DIR = Path(os.environ.get("RAG_PROJECT_DIR", Path.home() / "rag312"))
-CONSULTA_DIR = RAG_PROJECT_DIR / "consulta"
-INGESTA_DIR = RAG_PROJECT_DIR / "ingesta"
-for p in (CONSULTA_DIR, INGESTA_DIR):
-    if str(p) not in sys.path:
-        sys.path.insert(0, str(p))
+from _shared import asegurar_paths_pipeline
 
-from qdrant_client import QdrantClient
-from rag_query1 import build_embedder, recuperar_contexto, QDRANT_HOST, QDRANT_PORT, TOP_K
-from embeddings import build_sparse_embedder
+asegurar_paths_pipeline()
+
+from rag312.clients import build_embedder, build_qdrant_client, build_sparse_embedder
+from rag312.config import settings
+
+from rag_query1 import recuperar_contexto
 from normalizar_query import procesar_pregunta
+
+TOP_K = settings.top_k
 
 
 def main():
@@ -77,7 +75,7 @@ def main():
 
     embedder = build_embedder()
     sparse_embedder = build_sparse_embedder()
-    client = QdrantClient(host=QDRANT_HOST, port=QDRANT_PORT)
+    client = build_qdrant_client()
 
     for fila in objetivo:
         item = golden_set.get(fila["id"])

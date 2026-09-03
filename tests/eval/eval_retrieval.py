@@ -28,39 +28,29 @@ corriendo, y que la colección procedimientos_sielse ya esté indexada.
 
 import argparse
 import json
-import os
 import sys
 import time
 from collections import defaultdict
 from pathlib import Path
 from statistics import mean
 
-# --- Localizar el proyecto RAG real (consulta/ e ingesta/) ---
-# Se puede sobreescribir con la variable de entorno RAG_PROJECT_DIR si este
-# script no vive dentro de ~/rag312/tests/eval.
-RAG_PROJECT_DIR = Path(os.environ.get("RAG_PROJECT_DIR", Path.home() / "rag312"))
-CONSULTA_DIR = RAG_PROJECT_DIR / "consulta"
-INGESTA_DIR = RAG_PROJECT_DIR / "ingesta"
+import _shared
+from _shared import asegurar_paths_pipeline
 
-for p in (CONSULTA_DIR, INGESTA_DIR):
-    if str(p) not in sys.path:
-        sys.path.insert(0, str(p))
+asegurar_paths_pipeline()
+
+from rag312.clients import build_embedder, build_qdrant_client, build_sparse_embedder
+from rag312.config import settings
 
 try:
-    from qdrant_client import QdrantClient
-    from rag_query1 import (
-        build_embedder,
-        recuperar_contexto,
-        QDRANT_HOST,
-        QDRANT_PORT,
-        TOP_K as PRODUCTION_TOP_K,
-    )
-    from embeddings import build_sparse_embedder
+    from rag_query1 import recuperar_contexto
     from normalizar_query import procesar_pregunta
 except ImportError as e:
-    print(f"ERROR: no se pudo importar el pipeline RAG desde {CONSULTA_DIR} / {INGESTA_DIR}")
+    print(f"ERROR: no se pudo importar el pipeline RAG desde {_shared.CONSULTA_DIR} / {_shared.INGESTA_DIR}")
     print(f"Ajustá RAG_PROJECT_DIR o corré este script desde el entorno conda rag312.\nDetalle: {e}")
     sys.exit(1)
+
+PRODUCTION_TOP_K = settings.top_k
 
 
 def cargar_golden_set(path: Path) -> list[dict]:
@@ -182,7 +172,7 @@ def main():
 
     embedder = build_embedder()
     sparse_embedder = build_sparse_embedder()
-    client = QdrantClient(host=QDRANT_HOST, port=QDRANT_PORT)
+    client = build_qdrant_client()
 
     filas = []
     t_inicio = time.time()

@@ -33,15 +33,14 @@ import os
 import sys
 from pathlib import Path
 
-from openai import OpenAI
-
-RAG_PROJECT_DIR = Path(os.environ.get("RAG_PROJECT_DIR", Path.home() / "rag312"))
-CHUNKS_JSON = RAG_PROJECT_DIR / "datos" / "chunks_data.json"
+from _shared import CHUNKS_JSON, mapear_chunks_por_indice, obtener_contexto
+from rag312.clients import build_llm_client
+from rag312.config import get_ground_truth_config
 
 # Mismo modelo (qwen35-9b) que usa eval_generation.py como juez: instancia
 # dedicada en GPU 7, aislada del qwen35-9b de producción (puerto 8002).
-LLM_URL = os.environ.get("GROUND_TRUTH_LLM_URL", "http://localhost:8004/v1")
-LLM_MODEL = os.environ.get("GROUND_TRUTH_LLM_MODEL", "qwen35-9b")
+GROUND_TRUTH_CONFIG = get_ground_truth_config()
+LLM_MODEL = GROUND_TRUTH_CONFIG.model
 
 SYSTEM_PROMPT_PATH = Path(
     os.environ.get("GROUND_TRUTH_SYSTEM_PROMPT_PATH", Path(__file__).parent / "system_prompt_ground_truth.txt")
@@ -56,33 +55,17 @@ def cargar_system_prompt() -> str:
 
 
 def cargar_chunks_por_indice() -> dict:
-    """Mapea (source, chunk_index) -> page_content, igual que filtrar_golden_set.py."""
+    """Preserva el comportamiento original (distinto de _shared.cargar_chunks_por_indice):
+    sys.exit(1) con mensaje propio si falta CHUNKS_JSON."""
     if not CHUNKS_JSON.exists():
         print(f"ERROR: no existe {CHUNKS_JSON}. Ajustá RAG_PROJECT_DIR.")
         sys.exit(1)
     with open(CHUNKS_JSON, "r", encoding="utf-8") as f:
         data = json.load(f)
-    mapa = {}
-    for c in data:
-        meta = c.get("metadata", {})
-        clave = (meta.get("source"), meta.get("chunk_index"))
-        mapa[clave] = c.get("page_content", "")
-    return mapa
+    return mapear_chunks_por_indice(data)
 
 
-def obtener_contexto(item: dict, chunks_map: dict) -> str | None:
-    """Fragmento de origen para generar el ground truth.
-
-    Items de generar_golden_set_md.py (nivel sección) traen "texto_seccion";
-    items de generar_golden_set.py (nivel chunk) se resuelven vía chunk_origen_index.
-    """
-    if item.get("texto_seccion"):
-        return item["texto_seccion"]
-    clave = (item.get("fuente_esperada", {}).get("documento"), item.get("chunk_origen_index"))
-    return chunks_map.get(clave)
-
-
-def generar_ground_truth_llm(client: OpenAI, system_prompt: str, pregunta: str, chunk_texto: str) -> str:
+def generar_ground_truth_llm(client, system_prompt: str, pregunta: str, chunk_texto: str) -> str:
     user_prompt = f"FRAGMENTO:\n{chunk_texto}\n\nPREGUNTA:\n{pregunta}"
     respuesta = client.chat.completions.create(
         model=LLM_MODEL,
@@ -114,7 +97,7 @@ def main():
         golden_set = json.load(f)
 
     chunks_map = cargar_chunks_por_indice()
-    client = OpenAI(base_url=LLM_URL, api_key="no-necesaria")
+    client = build_llm_client(GROUND_TRUTH_CONFIG)
     system_prompt = cargar_system_prompt()
 
     print(f"Generando ground truth para {len(golden_set)} preguntas con {LLM_MODEL}...\n")

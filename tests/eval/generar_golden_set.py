@@ -22,7 +22,7 @@ Uso:
 
     python generar_golden_set.py --n-chunks 60 --por-categoria --preguntas-por-chunk 1
 
-Requiere que vLLM esté corriendo en el puerto configurado (LLM_MODEL/LLM_URL).
+Requiere que vLLM esté corriendo en el puerto configurado (GOLDEN_LLM_URL/GOLDEN_LLM_MODEL).
 No requiere Qdrant.
 """
 
@@ -37,11 +37,12 @@ from pathlib import Path
 
 from openai import OpenAI
 
-RAG_PROJECT_DIR = Path(os.environ.get("RAG_PROJECT_DIR", Path.home() / "rag312"))
-CHUNKS_JSON = RAG_PROJECT_DIR / "datos" / "chunks_data.json"
+from _shared import CHUNKS_JSON, cargar_system_prompt as _cargar_system_prompt_shared
+from rag312.clients import build_llm_client
+from rag312.config import get_golden_set_config
 
-LLM_URL = os.environ.get("GOLDEN_LLM_URL", "http://localhost:8002/v1")
-LLM_MODEL = os.environ.get("GOLDEN_LLM_MODEL", "qwen35-9b")
+GOLDEN_CONFIG = get_golden_set_config()
+LLM_MODEL = GOLDEN_CONFIG.model
 
 # Prompt externo, editable sin tocar el código
 SYSTEM_PROMPT_PATH = Path(
@@ -49,10 +50,7 @@ SYSTEM_PROMPT_PATH = Path(
 )
 
 def cargar_system_prompt() -> str:
-    if not SYSTEM_PROMPT_PATH.exists():
-        print(f"ERROR: no existe el archivo de prompt {SYSTEM_PROMPT_PATH}")
-        sys.exit(1)
-    return SYSTEM_PROMPT_PATH.read_text(encoding="utf-8")
+    return _cargar_system_prompt_shared(SYSTEM_PROMPT_PATH)
 
 
 def cargar_chunks() -> list[dict]:
@@ -135,7 +133,7 @@ def main():
 
     print(f"Chunks seleccionados para generar preguntas: {len(seleccionados)}\n")
 
-    client = OpenAI(base_url=LLM_URL, api_key="no-necesaria")
+    client = build_llm_client(GOLDEN_CONFIG)
     system_prompt = cargar_system_prompt()
 
     golden_set = []

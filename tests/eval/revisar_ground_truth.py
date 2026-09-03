@@ -20,31 +20,10 @@ Controles:
 
 import argparse
 import json
-import os
 import sys
 from pathlib import Path
 
-RAG_PROJECT_DIR = Path(os.environ.get("RAG_PROJECT_DIR", Path.home() / "rag312"))
-CHUNKS_JSON = RAG_PROJECT_DIR / "datos" / "chunks_data.json"
-
-
-def cargar_chunks_por_indice() -> dict:
-    """Mapea (source, chunk_index) -> page_content, para mostrar contexto al revisar."""
-    if not CHUNKS_JSON.exists():
-        return {}
-    with open(CHUNKS_JSON, "r", encoding="utf-8") as f:
-        data = json.load(f)
-    mapa = {}
-    for c in data:
-        meta = c.get("metadata", {})
-        clave = (meta.get("source"), meta.get("chunk_index"))
-        mapa[clave] = c.get("page_content", "")
-    return mapa
-
-
-def guardar(golden_set: list, path: Path):
-    with open(path, "w", encoding="utf-8") as f:
-        json.dump(golden_set, f, ensure_ascii=False, indent=2)
+from _shared import cargar_chunks_por_indice, guardar, obtener_contexto
 
 
 def main():
@@ -80,11 +59,7 @@ def main():
         print(f"[{n}/{len(pendientes_idx)}] id={item['id']}  categoria={item.get('categoria')}")
         print(f"PREGUNTA: {item['pregunta']}")
 
-        if item.get("texto_seccion"):
-            contexto = item["texto_seccion"]
-        else:
-            clave = (item.get('fuente_esperada', {}).get('documento'), item.get('chunk_origen_index'))
-            contexto = chunks_map.get(clave)
+        contexto = obtener_contexto(item, chunks_map)
         if contexto:
             print("-" * 70)
             print("Fragmento origen (primeros 500 caracteres):")

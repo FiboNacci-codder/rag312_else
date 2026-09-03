@@ -1,45 +1,24 @@
+import sys
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+
+import csv
 import json
 import time
-import csv
-import os
-from pathlib import Path
 
 import numpy as np
 from langchain_core.documents import Document
-from langchain_openai import OpenAIEmbeddings
-from fastembed import SparseTextEmbedding
 
-BASE_DIR = Path(__file__).parent          # ~/rag312/ingesta
-PROJECT_DIR = BASE_DIR.parent              # ~/rag312
+from rag312.clients import build_embedder, build_sparse_embedder
+from rag312.config import settings
+from rag312.utils import formatear_tiempo
 
-CHUNKS_JSON = PROJECT_DIR / "datos" / "chunks_data.json"
-METRICS_CSV = PROJECT_DIR / "datos" / "metricas_embeddings.csv"
-VECTORS_OUT = PROJECT_DIR / "datos" / "embeddings_data.json"
+CHUNKS_JSON = settings.datos_dir / "chunks_data.json"
+METRICS_CSV = settings.datos_dir / "metricas_embeddings.csv"
+VECTORS_OUT = settings.datos_dir / "embeddings_data.json"
 
-VLLM_BASE_URL = "http://localhost:8001/v1"
-MODEL_NAME = "harrier-embed"
-BATCH_SIZE = 16  # cuántos chunks se envían juntos al servidor en cada llamada
-
-# --- Config sparse (BM25) ---
-SPARSE_MODEL_NAME = "Qdrant/bm25"
-SPARSE_LANGUAGE = "spanish"
-
-
-def build_embedder():
-    return OpenAIEmbeddings(
-        base_url=VLLM_BASE_URL,
-        api_key="no-necesaria",
-        model=MODEL_NAME,
-        check_embedding_ctx_length=False,
-    )
-
-
-def build_sparse_embedder():
-    return SparseTextEmbedding(
-        model_name=SPARSE_MODEL_NAME,
-        cache_dir=os.environ.get("FASTEMBED_CACHE_DIR", str(Path.home() / "rag/modelos/fastembed_cache")),
-        language=SPARSE_LANGUAGE,
-    )
+BATCH_SIZE = settings.batch_size_embeddings
 
 
 def cargar_chunks() -> list[Document]:
@@ -48,10 +27,53 @@ def cargar_chunks() -> list[Document]:
     return [Document(page_content=d["page_content"], metadata=d["metadata"]) for d in data]
 
 
-def formatear_tiempo(segundos: float) -> str:
-    minutos = int(segundos // 60)
-    segs = segundos % 60
-    return f"{minutos}m {segs:.1f}s"
+def embed_batch(embedder, sparse_embedder, batch_textos: list[str]):
+    batch_vectores = embedder.embed_documents(batch_textos)
+    batch_sparse = list(sparse_embedder.embed(batch_textos))
+    return batch_vectores, batch_sparse
+
+
+def guardar_metricas_csv(filas: list[list], path: Path) -> None:
+    with open(path, "w", newline="", encoding="utf-8") as f:
+        writer = csv.writer(f)
+        writer.writerow(["Archivo", "Chunk index", "Caracteres", "Palabras", "Dimensión vector", "Norma", "Términos sparse"])
+        writer.writerows(filas)
+
+
+def guardar_vectores_json(docs: list[Document], vectores_totales: list, vectores_sparse_totales: list, path: Path) -> None:
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump(
+            [
+                {
+                    "page_content": d.page_content,
+                    "metadata": d.metadata,
+                    "embedding": vec,
+                    "sparse_indices": sparse_vec.indices.tolist(),
+                    "sparse_values": sparse_vec.values.tolist(),
+                }
+                for d, vec, sparse_vec in zip(docs, vectores_totales, vectores_sparse_totales)
+            ],
+            f,
+        )
+
+
+def imprimir_resumen(docs: list[Document], metricas_filas: list[list], tiempo_total: float) -> None:
+    ok = sum(1 for fila in metricas_filas if fila[4] != "ERROR")
+    errores = len(metricas_filas) - ok
+    dim = metricas_filas[0][4] if metricas_filas and metricas_filas[0][4] != "ERROR" else "N/A"
+
+    print("\n" + "=" * 50)
+    print("RESUMEN")
+    print("=" * 50)
+    print(f"Total chunks procesados : {len(docs)}")
+    print(f"Exitosos                : {ok}")
+    print(f"Errores                 : {errores}")
+    print(f"Dimensión del vector    : {dim}")
+    print(f"Tiempo total            : {formatear_tiempo(tiempo_total)}")
+    print(f"Promedio por chunk      : {tiempo_total / max(len(docs), 1):.3f}s")
+    print(f"Chunks/segundo          : {len(docs) / tiempo_total:.2f}")
+    print(f"\nMétricas guardadas en  : {METRICS_CSV}")
+    print(f"Vectores guardados en  : {VECTORS_OUT}")
 
 
 def main():
@@ -74,8 +96,7 @@ def main():
 
         t0 = time.time()
         try:
-            batch_vectores = embedder.embed_documents(batch_textos)
-            batch_sparse = list(sparse_embedder.embed(batch_textos))
+            batch_vectores, batch_sparse = embed_batch(embedder, sparse_embedder, batch_textos)
             elapsed = time.time() - t0
             vectores_totales.extend(batch_vectores)
             vectores_sparse_totales.extend(batch_sparse)
@@ -107,45 +128,9 @@ def main():
 
     tiempo_total = time.time() - t_inicio_global
 
-    # --- Guardar métricas en CSV ---
-    with open(METRICS_CSV, "w", newline="", encoding="utf-8") as f:
-        writer = csv.writer(f)
-        writer.writerow(["Archivo", "Chunk index", "Caracteres", "Palabras", "Dimensión vector", "Norma", "Términos sparse"])
-        writer.writerows(metricas_filas)
-
-    # --- Guardar vectores (dense + sparse) + metadata para el siguiente paso (Qdrant) ---
-    with open(VECTORS_OUT, "w", encoding="utf-8") as f:
-        json.dump(
-            [
-                {
-                    "page_content": d.page_content,
-                    "metadata": d.metadata,
-                    "embedding": vec,
-                    "sparse_indices": sparse_vec.indices.tolist(),
-                    "sparse_values": sparse_vec.values.tolist(),
-                }
-                for d, vec, sparse_vec in zip(docs, vectores_totales, vectores_sparse_totales)
-            ],
-            f,
-        )
-
-    # --- Resumen en consola ---
-    ok = sum(1 for fila in metricas_filas if fila[4] != "ERROR")
-    errores = len(metricas_filas) - ok
-    dim = metricas_filas[0][4] if metricas_filas and metricas_filas[0][4] != "ERROR" else "N/A"
-
-    print("\n" + "=" * 50)
-    print("RESUMEN")
-    print("=" * 50)
-    print(f"Total chunks procesados : {len(docs)}")
-    print(f"Exitosos                : {ok}")
-    print(f"Errores                 : {errores}")
-    print(f"Dimensión del vector    : {dim}")
-    print(f"Tiempo total            : {formatear_tiempo(tiempo_total)}")
-    print(f"Promedio por chunk      : {tiempo_total / max(len(docs), 1):.3f}s")
-    print(f"Chunks/segundo          : {len(docs) / tiempo_total:.2f}")
-    print(f"\nMétricas guardadas en  : {METRICS_CSV}")
-    print(f"Vectores guardados en  : {VECTORS_OUT}")
+    guardar_metricas_csv(metricas_filas, METRICS_CSV)
+    guardar_vectores_json(docs, vectores_totales, vectores_sparse_totales, VECTORS_OUT)
+    imprimir_resumen(docs, metricas_filas, tiempo_total)
 
     return docs, vectores_totales, vectores_sparse_totales
 

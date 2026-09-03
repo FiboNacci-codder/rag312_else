@@ -2,9 +2,10 @@ import sys
 import html
 from pathlib import Path
 
-BASE_DIR = Path(__file__).parent          # ~/rag/interfaz
-PROJECT_DIR = BASE_DIR.parent              # ~/rag
-sys.path.insert(0, str(PROJECT_DIR / "consulta"))
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+from rag312.config import settings
+
+sys.path.insert(0, str(settings.rag_project_dir / "consulta"))
 
 import gradio as gr
 from rag_query1 import main as consultar_rag

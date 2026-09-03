@@ -2,9 +2,12 @@ import sys
 from pathlib import Path
 
 BASE_DIR = Path(__file__).parent          # ~/rag312/interfaz
-PROJECT_DIR = BASE_DIR.parent              # ~/rag312
 STATIC_DIR = BASE_DIR / "static"
-sys.path.insert(0, str(PROJECT_DIR / "consulta"))
+
+sys.path.insert(0, str(BASE_DIR.parent))
+from rag312.config import settings
+
+sys.path.insert(0, str(settings.rag_project_dir / "consulta"))
 
 from fastapi import FastAPI
 from fastapi.responses import FileResponse, JSONResponse

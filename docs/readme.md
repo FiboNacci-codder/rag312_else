@@ -36,9 +36,11 @@ RAG de producción sobre procedimientos internos de ELSE. Los usuarios preguntan
 ├── ingesta/                                  ← Se encuentran 3 archivos para la creacion de la base de datos vectorial  
 ├── interfaz/                                 ← Se encuentra el codigo de interfaz en gradio para las consultas  
 ├── modelos/                                  ← Se encuentran almacenado los modelos que se utilizan para embedding y para los llm's
+├── rag312/                                   ← Paquete instalable (pip install -e .) con la infraestructura compartida: config.py (constantes/roles de LLM), clients.py (factories de clientes vLLM/Qdrant), utils.py. No contiene lógica de pipeline propia.
 ├── salida_chunks/                            ← Se encuentran los chunks de la ejecucion del archivo ocr_docling.py  en el mismo orden que biblioteca
 ├── salida_md/                                ← Se encuentranl los archivos de resultado de la ejecucion de ocr_docling.py  en el mismo orden que biblioteca
 ├── qdrant_storage/                           ← Se encuentra los archivos almacenados de la base de datos vectorial  
+├── pyproject.toml                            ← Metadata del paquete rag312 (usa requirements.txt como fuente de las dependencias)
 └── requirements.txt                          ← Se encuentran las librerias actuales para correr el proyecto
 ```
 
@@ -46,6 +48,7 @@ RAG de producción sobre procedimientos internos de ELSE. Los usuarios preguntan
 Para activar el entorno de CONDA se debe de activar con los siguientes comandos el cual hace que se tenga la version de python 3.12
 - source ~/rag312/conda/activar.sh 
 - conda activate rag312
+- pip install -e .   (desde la raíz del repo, una vez — instala rag312/ en modo editable; volver a correrlo solo si cambia pyproject.toml)
 
 ## 4. Servicios vLLM 
 
@@ -1005,7 +1008,7 @@ python inspeccionar_miss.py --sin-normalizar
 
 ### 7.1. Gradio
 
-**`app_gradio.py`** (producción, puerto 7861): chat (`gr.Chatbot`) sobre `rag_query.main()`, sin memoria real (visualmente muestra historial, cada pregunta se procesa aislada). Acceso vía túnel SSH o forwarding automático de VS Code Remote-SSH.
+**`app_gradio.py`** (producción, puerto 7861): chat (`gr.Chatbot`) sobre `rag_query1.main()`, sin memoria real (visualmente muestra historial, cada pregunta se procesa aislada). Acceso vía túnel SSH o forwarding automático de VS Code Remote-SSH.
 
 ```bash
 cd ~/rag312/interfaz

@@ -26,21 +26,20 @@ producción. No requiere el juez de RAGAS ni ninguna instancia dedicada.
 
 import argparse
 import json
-import os
 import random
 import sys
 import time
 from pathlib import Path
 
-RAG_PROJECT_DIR = Path(os.environ.get("RAG_PROJECT_DIR", Path.home() / "rag312"))
-CONSULTA_DIR = RAG_PROJECT_DIR / "consulta"
-if str(CONSULTA_DIR) not in sys.path:
-    sys.path.insert(0, str(CONSULTA_DIR))
+import _shared
+from _shared import asegurar_paths_pipeline
+
+asegurar_paths_pipeline()
 
 try:
     from rag_query1 import main as rag_main
 except ImportError as e:
-    print(f"ERROR: no se pudo importar rag_query1 desde {CONSULTA_DIR}. Detalle: {e}")
+    print(f"ERROR: no se pudo importar rag_query1 desde {_shared.CONSULTA_DIR}. Detalle: {e}")
     sys.exit(1)
 
 

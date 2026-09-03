@@ -1,8 +1,10 @@
 import re
-from openai import OpenAI
+import sys
+from pathlib import Path
 
-VLLM_LLM_URL = "http://localhost:8003/v1"
-LLM_MODEL = "qwen35-4b"
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+from rag312.clients import build_llm_client
+from rag312.config import get_normalize_config
 
 SYSTEM_PROMPT_CORRECCION = """Eres un corrector ortográfico. Tu única tarea es corregir errores ortográficos y de tipeo en el texto que te dan, sin cambiar su significado ni estructura.
 
@@ -32,21 +34,34 @@ vez de "me llegó carísimo el recibo").
 - No respondas la pregunta, solo reformúlala.
 - Responde ÚNICAMENTE con la pregunta reformulada, nada más."""
 
+_client_llm = None
+_role_config = None
+
+
+def _get_client_llm():
+    global _client_llm, _role_config
+    if _client_llm is None:
+        _role_config = get_normalize_config()
+        _client_llm = build_llm_client(_role_config)
+    return _client_llm, _role_config
+
+
 def normalizar_basico(texto: str) -> str:
     texto = texto.strip()
     texto = re.sub(r"\s+", " ", texto)
     return texto
 
-def corregir_con_llm(texto: str) -> str:
-    client_llm = OpenAI(base_url=VLLM_LLM_URL, api_key="no-necesaria")
+
+def _chat_completar(system_prompt: str, texto: str, temperature: float, max_tokens: int = 1024) -> str:
+    client_llm, role_config = _get_client_llm()
     respuesta = client_llm.chat.completions.create(
-        model=LLM_MODEL,
+        model=role_config.model,
         messages=[
-            {"role": "system", "content": SYSTEM_PROMPT_CORRECCION},
+            {"role": "system", "content": system_prompt},
             {"role": "user", "content": texto},
         ],
-        max_tokens=1024,
-        temperature=0.0,
+        max_tokens=max_tokens,
+        temperature=temperature,
         extra_body={"chat_template_kwargs": {"enable_thinking": False}},
     )
     contenido = respuesta.choices[0].message.content
@@ -55,25 +70,14 @@ def corregir_con_llm(texto: str) -> str:
         return texto
     return contenido.strip()
 
+
+def corregir_con_llm(texto: str) -> str:
+    return _chat_completar(SYSTEM_PROMPT_CORRECCION, texto, temperature=0.0)
 
 
 def reformular_query(texto: str) -> str:
-    client_llm = OpenAI(base_url=VLLM_LLM_URL, api_key="no-necesaria")
-    respuesta = client_llm.chat.completions.create(
-        model=LLM_MODEL,
-        messages=[
-            {"role": "system", "content": SYSTEM_PROMPT_REWRITING},
-            {"role": "user", "content": texto},
-        ],
-        max_tokens=1024,
-        temperature=0.2,  # algo de flexibilidad, pero controlada
-        extra_body={"chat_template_kwargs": {"enable_thinking": False}},
-    )
-    contenido = respuesta.choices[0].message.content
-    if not contenido:
-        # fallback: si el LLM no devolvió nada, usar el texto original sin corregir
-        return texto
-    return contenido.strip()
+    return _chat_completar(SYSTEM_PROMPT_REWRITING, texto, temperature=0.2)  # algo de flexibilidad, pero controlada
+
 
 def procesar_pregunta(texto: str, corregir: bool = True, reformular: bool = True) -> dict:
     """
@@ -104,8 +108,8 @@ def procesar_pregunta(texto: str, corregir: bool = True, reformular: bool = True
         "busqueda": texto_busqueda,
     }
 
+
 if __name__ == "__main__":
-    import sys
     pregunta = " ".join(sys.argv[1:]) if len(sys.argv) > 1 else input("Pregunta de prueba: ")
     resultado = procesar_pregunta(pregunta)
     print(f"\nOriginal    : {resultado['original']}")

@@ -16,6 +16,11 @@ __pycache__/
 *.pyo
 .ipynb_checkpoints/
 
+# Artefactos de `pip install -e .`
+*.egg-info/
+build/
+dist/
+
 # Archivos de caché de pruebas (opcional, pero recomendado)
 tests/**/__pycache__/
 tests/**/*.pyc

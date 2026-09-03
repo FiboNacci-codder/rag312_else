@@ -37,21 +37,23 @@ tener un golden set combinado chunk-level + sección-level.
 import argparse
 import json
 import os
-import random
-import re
-import sys
-from collections import defaultdict
 from pathlib import Path
 
-from openai import OpenAI
+from _shared import (
+    cargar_system_prompt as _cargar_system_prompt_shared,
+    cargar_todas_las_secciones as _cargar_todas_las_secciones_shared,
+    generar_preguntas_llm as _generar_preguntas_llm_shared,
+    muestrear_secciones,
+)
+from rag312.clients import build_llm_client
+from rag312.config import get_golden_set_config, settings
 
-# --- Rutas del proyecto (esto es lo que faltaba) ---
-RAG_PROJECT_DIR = Path(os.environ.get("RAG_PROJECT_DIR", Path.home() / "rag312"))
-SALIDA_MD_DIR = RAG_PROJECT_DIR / "salida_md" / "procedimientos"
-BIBLIOTECA_DIR = RAG_PROJECT_DIR / "biblioteca" / "procedimientos"
+# --- Rutas del proyecto ---
+SALIDA_MD_DIR = settings.salida_md_dir / "procedimientos"
+BIBLIOTECA_DIR = settings.biblioteca_dir / "procedimientos"
 
-LLM_URL = os.environ.get("GOLDEN_LLM_URL", "http://localhost:8002/v1")
-LLM_MODEL = os.environ.get("GOLDEN_LLM_MODEL", "qwen35-9b")
+GOLDEN_CONFIG = get_golden_set_config()
+LLM_MODEL = GOLDEN_CONFIG.model
 
 MIN_PALABRAS_SECCION = 60
 MAX_PALABRAS_SECCION = 1200
@@ -62,99 +64,18 @@ SYSTEM_PROMPT_PATH = Path(
 )
 
 def cargar_system_prompt() -> str:
-    if not SYSTEM_PROMPT_PATH.exists():
-        print(f"ERROR: no existe el archivo de prompt {SYSTEM_PROMPT_PATH}")
-        sys.exit(1)
-    return SYSTEM_PROMPT_PATH.read_text(encoding="utf-8")
-
-def parsear_secciones(md_texto: str, source_pdf: str, categoria: str) -> list[dict]:
-    """
-    Divide un markdown en secciones usando los headings (#, ##, ###...).
-    Cada sección incluye su heading + todo el texto hasta el próximo heading
-    del mismo nivel o superior.
-    """
-    lineas = md_texto.split("\n")
-    secciones = []
-    heading_actual = None
-    buffer = []
-
-    def cerrar_seccion():
-        if buffer:
-            texto = "\n".join(buffer).strip()
-            if len(texto.split()) >= MIN_PALABRAS_SECCION:
-                secciones.append({
-                    "seccion": heading_actual or "(sin título)",
-                    "texto": texto,
-                    "source": source_pdf,
-                    "categoria": categoria,
-                })
-
-    for linea in lineas:
-        m = re.match(r"^(#{1,4})\s+(.*)", linea)
-        if m:
-            cerrar_seccion()
-            heading_actual = m.group(2).strip()
-            buffer = []
-        else:
-            buffer.append(linea)
-    cerrar_seccion()
-    return secciones
+    return _cargar_system_prompt_shared(SYSTEM_PROMPT_PATH)
 
 
 def cargar_todas_las_secciones() -> list[dict]:
-    if not SALIDA_MD_DIR.exists():
-        print(f"ERROR: no existe {SALIDA_MD_DIR}. Ajustá RAG_PROJECT_DIR.")
-        sys.exit(1)
-
-    todas = []
-    for md_path in sorted(SALIDA_MD_DIR.rglob("*.md")):
-        categoria = md_path.parent.name
-        # Nombre del PDF original: mismo stem, extensión .pdf, tal como lo
-        # guarda ocr_docling.py en metadata["source"] (pdf_path.name)
-        source_pdf = md_path.stem + ".pdf"
-        texto = md_path.read_text(encoding="utf-8")
-        todas.extend(parsear_secciones(texto, source_pdf, categoria))
-    return todas
+    return _cargar_todas_las_secciones_shared(SALIDA_MD_DIR, MIN_PALABRAS_SECCION)
 
 
-def muestrear_secciones(secciones: list[dict], n: int, por_categoria: bool, seed: int) -> list[dict]:
-    random.seed(seed)
-    if not por_categoria:
-        n = min(n, len(secciones))
-        return random.sample(secciones, n)
-
-    por_cat = defaultdict(list)
-    for s in secciones:
-        por_cat[s["categoria"]].append(s)
-
-    total = len(secciones)
-    seleccionadas = []
-    for cat, lista in por_cat.items():
-        cuota = max(1, round(n * len(lista) / total))
-        cuota = min(cuota, len(lista))
-        seleccionadas.extend(random.sample(lista, cuota))
-
-    random.shuffle(seleccionadas)
-    return seleccionadas[:n] if len(seleccionadas) > n else seleccionadas
-
-
-def generar_preguntas_llm(client: OpenAI, texto_seccion: str, n_preguntas: int, system_prompt: str) -> list[str]:
-    texto_truncado = " ".join(texto_seccion.split()[:MAX_PALABRAS_SECCION])
-    user_prompt = f"Cantidad de preguntas a generar: {n_preguntas}\n\nSECCIÓN:\n{texto_truncado}"
-    respuesta = client.chat.completions.create(
-        model=LLM_MODEL,
-        messages=[
-            {"role": "system", "content": system_prompt},
-            {"role": "user", "content": user_prompt},
-        ],
-        max_tokens=400,
-        temperature=0.7,
-        extra_body={"chat_template_kwargs": {"enable_thinking": False}},
+def generar_preguntas_llm(client, texto_seccion: str, n_preguntas: int, system_prompt: str) -> list[str]:
+    return _generar_preguntas_llm_shared(
+        client, LLM_MODEL, texto_seccion, n_preguntas, system_prompt,
+        temperature=0.7, max_palabras_truncado=MAX_PALABRAS_SECCION,
     )
-    contenido = respuesta.choices[0].message.content or ""
-    lineas = [l.strip() for l in contenido.split("\n") if l.strip()]
-    limpias = [re.sub(r"^[\-\*\d\.\)]+\s*", "", l) for l in lineas]
-    return [l for l in limpias if len(l.split()) >= 3][:n_preguntas]
 
 
 def main():
@@ -177,7 +98,7 @@ def main():
         seleccionadas = muestrear_secciones(secciones, args.n_secciones, args.por_categoria, args.seed)
     print(f"Secciones seleccionadas para generar preguntas: {len(seleccionadas)}\n")
 
-    client = OpenAI(base_url=LLM_URL, api_key="no-necesaria")
+    client = build_llm_client(GOLDEN_CONFIG)
     system_prompt = cargar_system_prompt()
 
     golden_set = []

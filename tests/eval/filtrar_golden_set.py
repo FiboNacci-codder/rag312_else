@@ -26,25 +26,24 @@ Salidas:
     golden_set_rechazadas.json  -> no pasaron ningún criterio (revisar el 100%, por si el juez se equivocó)
     filtrado_reporte.json       -> veredicto completo de las 3 dimensiones por pregunta
 
-Requiere que vLLM esté corriendo (LLM_URL/LLM_MODEL). No requiere Qdrant.
+Requiere que vLLM esté corriendo (JUDGE_LLM_URL/JUDGE_LLM_MODEL). No requiere Qdrant.
 """
 
 import argparse
 import json
-import os
 import random
-import sys
 from pathlib import Path
 
 from openai import OpenAI
 
-RAG_PROJECT_DIR = Path(os.environ.get("RAG_PROJECT_DIR", Path.home() / "rag312"))
-CHUNKS_JSON = RAG_PROJECT_DIR / "datos" / "chunks_data.json"
+from _shared import CHUNKS_JSON, mapear_chunks_por_indice, obtener_contexto
+from rag312.clients import build_llm_client
+from rag312.config import get_judge_filter_config
 
 # Usamos el 4B (más rápido/barato) para el juez por defecto; se puede
 # apuntar al 9B si se prefiere más criterio a costa de velocidad.
-LLM_URL = os.environ.get("JUDGE_LLM_URL", "http://localhost:8003/v1")
-LLM_MODEL = os.environ.get("JUDGE_LLM_MODEL", "qwen35-4b")
+JUDGE_CONFIG = get_judge_filter_config()
+LLM_MODEL = JUDGE_CONFIG.model
 
 SYSTEM_PROMPT = """Eres un evaluador de calidad de preguntas para un dataset de prueba de un \
 sistema de búsqueda (RAG) sobre procedimientos institucionales de una empresa de servicios (SIELSE).
@@ -67,27 +66,11 @@ Responde ÚNICAMENTE con un JSON válido, sin texto adicional, con este formato 
 
 
 def cargar_chunks_por_indice() -> dict:
+    """Preserva el comportamiento original: crashea si falta CHUNKS_JSON
+    (a diferencia de _shared.cargar_chunks_por_indice, que devuelve {})."""
     with open(CHUNKS_JSON, "r", encoding="utf-8") as f:
         data = json.load(f)
-    mapa = {}
-    for c in data:
-        meta = c.get("metadata", {})
-        clave = (meta.get("source"), meta.get("chunk_index"))
-        mapa[clave] = c.get("page_content", "")
-    return mapa
-
-
-def obtener_contexto(item: dict, chunks_map: dict) -> str | None:
-    """Fragmento de origen para juzgar la pregunta.
-
-    Los items generados por generar_golden_set_md.py (nivel sección) traen su
-    propio "texto_seccion" y no tienen chunk_origen_index; los generados por
-    generar_golden_set.py (nivel chunk) se resuelven vía chunks_data.json.
-    """
-    if item.get("texto_seccion"):
-        return item["texto_seccion"]
-    clave = (item["fuente_esperada"].get("documento"), item.get("chunk_origen_index"))
-    return chunks_map.get(clave)
+    return mapear_chunks_por_indice(data)
 
 
 def evaluar_pregunta(client: OpenAI, pregunta: str, chunk_texto: str) -> dict:
@@ -165,7 +148,7 @@ def main():
         golden_set = json.load(f)
 
     chunks_map = cargar_chunks_por_indice()
-    client = OpenAI(base_url=LLM_URL, api_key="no-necesaria")
+    client = build_llm_client(JUDGE_CONFIG)
 
     print(f"Evaluando {len(golden_set)} preguntas con el juez ({LLM_MODEL})...\n")
 

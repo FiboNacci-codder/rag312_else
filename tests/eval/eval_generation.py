@@ -47,24 +47,23 @@ import argparse
 import asyncio
 import json
 import math
-import os
 import random
 import sys
 import time
 from collections import defaultdict
 from pathlib import Path
 
-RAG_PROJECT_DIR = Path(os.environ.get("RAG_PROJECT_DIR", Path.home() / "rag312"))
-CONSULTA_DIR = RAG_PROJECT_DIR / "consulta"
-INGESTA_DIR = RAG_PROJECT_DIR / "ingesta"
-for p in (CONSULTA_DIR, INGESTA_DIR):
-    if str(p) not in sys.path:
-        sys.path.insert(0, str(p))
+import _shared
+from _shared import asegurar_paths_pipeline
+
+asegurar_paths_pipeline()
+
+from rag312.config import get_embed_config, get_judge_ragas_config
 
 try:
     from rag_query1 import main as rag_main
 except ImportError as e:
-    print(f"ERROR: no se pudo importar rag_query1 desde {CONSULTA_DIR}. Detalle: {e}")
+    print(f"ERROR: no se pudo importar rag_query1 desde {_shared.CONSULTA_DIR}. Detalle: {e}")
     sys.exit(1)
 
 # --- Parche: ragas importa ChatVertexAI desde una ruta que ya no existe en
@@ -94,35 +93,34 @@ except ImportError:
     sys.exit(1)
 
 # --- Modelos usados para el juez de RAGAS: instancia dedicada en GPU 7 ---
-JUDGE_LLM_URL = os.environ.get("JUDGE_LLM_URL", "http://localhost:8004/v1")  # qwen35-9b
-JUDGE_LLM_MODEL = os.environ.get("JUDGE_LLM_MODEL", "qwen35-9b")
-EMBED_URL = os.environ.get("EMBED_URL", "http://localhost:8001/v1")
-EMBED_MODEL = os.environ.get("EMBED_MODEL", "harrier-embed")
+JUDGE_CONFIG = get_judge_ragas_config()
+EMBED_CONFIG = get_embed_config()
+JUDGE_LLM_MODEL = JUDGE_CONFIG.model  # usado en los prints de progreso más abajo
 
 METRICAS = ["faithfulness", "answer_relevancy", "context_precision", "context_recall"]
 
 
 def build_ragas_llm_embeddings():
     judge_client = AsyncOpenAI(
-        base_url=JUDGE_LLM_URL,
+        base_url=JUDGE_CONFIG.url,
         api_key="no-necesaria",
         timeout=600,
         max_retries=3,
     )
     llm = llm_factory(
-        JUDGE_LLM_MODEL,
+        JUDGE_CONFIG.model,
         client=judge_client,
         temperature=0.0,
         max_tokens=4096,
         extra_body={"chat_template_kwargs": {"enable_thinking": False}},  # <-- clave
     )
     embed_client = AsyncOpenAI(
-        base_url=EMBED_URL,
+        base_url=EMBED_CONFIG.url,
         api_key="no-necesaria",
         timeout=600,
         max_retries=3,
     )
-    embeddings = OpenAIEmbeddings(client=embed_client, model=EMBED_MODEL)
+    embeddings = OpenAIEmbeddings(client=embed_client, model=EMBED_CONFIG.model)
     return llm, embeddings
 
 

@@ -1,6 +1,10 @@
+import sys
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+
 import json
 import time
-from pathlib import Path
 
 from qdrant_client import QdrantClient
 from qdrant_client.models import (
@@ -11,18 +15,15 @@ from qdrant_client.models import (
     SparseVector,
 )
 
-BASE_DIR = Path(__file__).parent          # ~/rag/ingesta
-PROJECT_DIR = BASE_DIR.parent              # ~/rag
-VECTORS_JSON = PROJECT_DIR / "datos" / "embeddings_data.json"
+from rag312.clients import build_qdrant_client
+from rag312.config import settings
 
-QDRANT_HOST = "localhost"
-QDRANT_PORT = 6333
-COLLECTION_NAME = "procedimientos_sielse"
-VECTOR_DIM = 1024
+VECTORS_JSON = settings.datos_dir / "embeddings_data.json"
 
-# Nombres de los vector spaces dentro de la colección
-DENSE_VECTOR_NAME = "dense"
-SPARSE_VECTOR_NAME = "bm25"
+COLLECTION_NAME = settings.collection_name
+VECTOR_DIM = settings.vector_dim
+DENSE_VECTOR_NAME = settings.dense_vector_name
+SPARSE_VECTOR_NAME = settings.sparse_vector_name
 
 
 def cargar_datos():
@@ -56,7 +57,7 @@ def main():
     datos = cargar_datos()
     print(f"Cargados {len(datos)} registros desde {VECTORS_JSON}")
 
-    client = QdrantClient(host=QDRANT_HOST, port=QDRANT_PORT)
+    client = build_qdrant_client()
 
     recrear_coleccion(client)
 
