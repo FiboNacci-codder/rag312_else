@@ -80,6 +80,17 @@ def _buscar_fusionado(client, vector_denso, vector_sparse, prefetch_limit: int, 
     ).points
 
 
+def _buscar_rama_simple(client, vector, using: str, limit: int):
+    """Resultado directo de una sola rama (sin fusión), con payload — para modo='dense'/'sparse'."""
+    return client.query_points(
+        collection_name=COLLECTION_NAME,
+        query=vector,
+        using=using,
+        limit=limit,
+        with_payload=True,
+    ).points
+
+
 def _completar_scores_dense_faltantes(client, resultados_fusionados, dense_info: dict, vector_denso) -> dict:
     """Para los que no cayeron en el top-20 de la rama dense, calcular su score real."""
     ids_faltan_dense = [r.id for r in resultados_fusionados if r.id not in dense_info]
@@ -117,16 +128,42 @@ def _construir_detalle_scores(resultados_fusionados, dense_info: dict, sparse_in
     return detalle_scores
 
 
-def recuperar_contexto(pregunta: str, embedder, sparse_embedder, client):
+def recuperar_contexto(
+    pregunta: str,
+    embedder,
+    sparse_embedder,
+    client,
+    modo: str = "hybrid",
+    top_k: int | None = None,
+    umbral_similitud: float | None = None,
+):
+    top_k = TOP_K if top_k is None else top_k
+    umbral_similitud = UMBRAL_SIMILITUD if umbral_similitud is None else umbral_similitud
+
     vector_denso, vector_sparse = _embed_query(pregunta, embedder, sparse_embedder)
 
     dense_info = _buscar_dense(client, vector_denso, PREFETCH_LIMIT)
     sparse_info = _buscar_sparse(client, vector_sparse, PREFETCH_LIMIT)
-    resultados_fusionados = _buscar_fusionado(client, vector_denso, vector_sparse, PREFETCH_LIMIT, TOP_K)
-    dense_info = _completar_scores_dense_faltantes(client, resultados_fusionados, dense_info, vector_denso)
-    detalle_scores = _construir_detalle_scores(resultados_fusionados, dense_info, sparse_info)
 
-    return resultados_fusionados, detalle_scores
+    if modo == "dense":
+        resultados = _buscar_rama_simple(client, vector_denso, DENSE_VECTOR_NAME, top_k)
+    elif modo == "sparse":
+        resultados = _buscar_rama_simple(client, vector_sparse, SPARSE_VECTOR_NAME, top_k)
+    else:
+        resultados = _buscar_fusionado(client, vector_denso, vector_sparse, PREFETCH_LIMIT, top_k)
+
+    dense_info = _completar_scores_dense_faltantes(client, resultados, dense_info, vector_denso)
+    detalle_scores = _construir_detalle_scores(resultados, dense_info, sparse_info)
+
+    if umbral_similitud > 0:
+        pares = [
+            (r, d) for r, d in zip(resultados, detalle_scores)
+            if d["similitud_dense"] is not None and d["similitud_dense"] / 100 >= umbral_similitud
+        ]
+        resultados = [p[0] for p in pares]
+        detalle_scores = [p[1] for p in pares]
+
+    return resultados, detalle_scores
 
 
 SYSTEM_PROMPT = """Eres un asistente que se llama Foquito que responde preguntas sobre procedimientos institucionales de SIELSE.
@@ -192,15 +229,25 @@ def _get_clients():
     return _embedder, _sparse_embedder, _qdrant_client
 
 
-def main(pregunta: str) -> dict:
-    proc = procesar_pregunta(pregunta)
+def main(
+    pregunta: str,
+    corregir: bool = True,
+    reformular: bool = True,
+    modo_retrieval: str = "hybrid",
+    top_k: int | None = None,
+    umbral_similitud: float | None = None,
+) -> dict:
+    proc = procesar_pregunta(pregunta, corregir=corregir, reformular=reformular)
     pregunta_original = proc["original"]
     pregunta_busqueda = proc["busqueda"]
 
     embedder, sparse_embedder, client = _get_clients()
 
     t0 = time.time()
-    resultados, detalle_scores = recuperar_contexto(pregunta_busqueda, embedder, sparse_embedder, client)
+    resultados, detalle_scores = recuperar_contexto(
+        pregunta_busqueda, embedder, sparse_embedder, client,
+        modo=modo_retrieval, top_k=top_k, umbral_similitud=umbral_similitud,
+    )
     t_retrieval = time.time() - t0
 
     prompt = armar_prompt(pregunta_original, resultados)
@@ -238,6 +285,13 @@ def main(pregunta: str) -> dict:
         "fuentes": fuentes,
         "tiempo_retrieval": t_retrieval,
         "tiempo_generacion": t_generacion,
+        "config": {
+            "corregir": corregir,
+            "reformular": reformular,
+            "modo_retrieval": modo_retrieval,
+            "top_k": TOP_K if top_k is None else top_k,
+            "umbral_similitud": UMBRAL_SIMILITUD if umbral_similitud is None else umbral_similitud,
+        },
     }
 
 

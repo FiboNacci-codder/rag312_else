@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Comparador RAG - Procedimientos SIELSE</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <div class="app-shell app-shell--comparador">
+    <div class="app-content">
+      <header class="app-header">
+        <div class="app-header__brand">
+          <span class="app-header__logo">⚡</span>
+          <h1>Comparador de configuraciones RAG</h1>
+        </div>
+        <div class="app-header__acciones">
+          <button id="btn-agregar-tarjeta" class="btn btn--primary" type="button">
+            + Agregar comparación
+          </button>
+          <button id="btn-tema" class="btn btn--icon" type="button" title="Cambiar modo día/noche">
+            🌙 Modo día/noche
+          </button>
+        </div>
+      </header>
+
+      <main class="app-main app-main--comparador">
+        <p class="comparador__ayuda">
+          Cada tarjeta es independiente: configurá sus opciones y escribí su
+          propia pregunta. No se dispara nada entre tarjetas — comparás a tu
+          propio ritmo.
+        </p>
+        <div id="panel-tarjetas" class="panel-tarjetas"></div>
+      </main>
+    </div>
+  </div>
+
+  <template id="tpl-tarjeta">
+    <article class="tarjeta-config">
+      <header class="tarjeta-config__head">
+        <span class="tarjeta-config__nombre"></span>
+        <button class="tarjeta-config__quitar" type="button" title="Quitar tarjeta">✕</button>
+      </header>
+
+      <div class="tarjeta-config__opciones">
+        <fieldset class="tarjeta-config__grupo">
+          <legend>Retrieval</legend>
+          <label class="tarjeta-config__opcion">
+            <input type="checkbox" data-campo="embedding" checked />
+            Embedding
+          </label>
+          <label class="tarjeta-config__opcion">
+            <input type="checkbox" data-campo="bm25" checked />
+            BM25
+          </label>
+        </fieldset>
+
+        <fieldset class="tarjeta-config__grupo">
+          <legend>Preprocesamiento</legend>
+          <label class="tarjeta-config__opcion">
+            <input type="checkbox" data-campo="reformular" checked />
+            Reformulación de la pregunta
+          </label>
+          <label class="tarjeta-config__opcion">
+            <input type="checkbox" data-campo="corregir" checked />
+            Corrector de ortografía
+          </label>
+        </fieldset>
+
+        <fieldset class="tarjeta-config__grupo tarjeta-config__grupo--numerico">
+          <legend>Chunks</legend>
+          <label class="tarjeta-config__numerico">
+            Chunks para el LLM (top-K)
+            <input type="number" data-campo="topK" min="1" max="20" value="10" />
+          </label>
+          <label class="tarjeta-config__numerico">
+            Umbral de similitud
+            <span class="tarjeta-config__rango">
+              <input type="range" data-campo="umbralSimilitud" min="0" max="100" value="0" />
+              <output data-campo="umbralSimilitudValor">0%</output>
+            </span>
+          </label>
+        </fieldset>
+      </div>
+
+      <div class="tarjeta-config__mensajes"></div>
+
+      <form class="tarjeta-config__form">
+        <textarea
+          class="tarjeta-config__textarea"
+          placeholder="Escribí una pregunta para esta configuración..."
+          rows="1"
+        ></textarea>
+        <button class="btn btn--primary" type="submit">Enviar</button>
+      </form>
+    </article>
+  </template>
+
+  <script src="/static/script.js"></script>
+</body>
+</html>

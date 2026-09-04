@@ -33,7 +33,7 @@ class Settings(BaseSettings):
 
     top_k: int = 10
     prefetch_limit: int = 20
-    umbral_similitud: float = 0.5
+    umbral_similitud: float = 0.0  # 0 = sin filtro; aplica solo sobre el score dense (0-1)
     instruction_prefix: str = "Instruct: Retrieve relevant passages that answer the query\nQuery: "
 
     cuda_visible_devices_ocr: str = "4,5,6,7"
