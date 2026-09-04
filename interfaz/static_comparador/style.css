@@ -330,13 +330,33 @@ body {
   font-size: 0.75rem;
 }
 
-.fuente summary {
-  cursor: pointer;
+.fuente__header {
   font-weight: 600;
   color: var(--else-blue);
 }
 
-[data-theme="dark"] .fuente summary {
+[data-theme="dark"] .fuente__header {
+  color: var(--else-yellow);
+}
+
+.fuente__titulo {
+  display: block;
+}
+
+.fuente__chunk-toggle {
+  margin-top: 0.4rem;
+  border-top: 1px dashed var(--border);
+  padding-top: 0.3rem;
+}
+
+.fuente__chunk-toggle summary {
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.72rem;
+  color: var(--else-blue);
+}
+
+[data-theme="dark"] .fuente__chunk-toggle summary {
   color: var(--else-yellow);
 }
 

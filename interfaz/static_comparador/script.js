@@ -79,17 +79,20 @@
       const fuentesWrap = document.createElement("div");
       fuentesWrap.className = "mensaje__fuentes";
       mensaje.fuentes.forEach((f) => {
-        const detalle = document.createElement("details");
+        const detalle = document.createElement("div");
         detalle.className = "fuente";
         const paginaTxt = Array.isArray(f.pagina) ? f.pagina.join(", ") : f.pagina;
         const seccionTxt = f.seccion ? ` — ${f.seccion}` : "";
         detalle.innerHTML = `
-          <summary>
-            ${escaparHtml(f.documento || "Documento")} (pág. ${escaparHtml(
+          <div class="fuente__header">
+            <span class="fuente__titulo">${escaparHtml(f.documento || "Documento")} (pág. ${escaparHtml(
           String(paginaTxt ?? "-")
-        )}${escaparHtml(seccionTxt)})
-          </summary>
-          <div class="fuente__chunk"></div>
+        )}${escaparHtml(seccionTxt)})</span>
+          </div>
+          <details class="fuente__chunk-toggle">
+            <summary>Ver chunk</summary>
+            <div class="fuente__chunk"></div>
+          </details>
           <details class="fuente__tecnico">
             <summary>Detalles técnicos</summary>
             <ul class="fuente__scores">
