@@ -53,14 +53,50 @@ source ~/rag312_else/containers/env.sh   # VLLM_SIF, HF_HOME, FASTEMBED_CACHE_DI
 export RAG_PROJECT_DIR=~/rag312_else     # opcional: ya es el default en rag312/config.py, pero no está de más ser explícito
 ```
 
-## 3. Instalar el paquete `rag312` en modo editable
+## 3. Instalar el paquete `rag312` y las dependencias
 
-Solo hace falta la primera vez, o cuando cambie `pyproject.toml`:
+Un `pip install -e .` a secas intenta resolver de una las ~300 dependencias
+fijadas en `requirements.txt`, y ahí se choca con que `torch==2.6.0+cu124` /
+`torchaudio==2.6.0+cu124` / `torchvision==0.21.0+cu124` no existen en PyPI
+(solo están en `https://download.pytorch.org/whl/cu124`) — y encima el conda
+base del servidor trae torch con CUDA 13, no la 12.4 que necesita este
+proyecto. En vez de pelear con eso, conviene instalar de forma incremental:
+
+**3.1. Registrar `rag312` en modo editable sin arrastrar sus dependencias**
+(solo hace falta la primera vez, o cuando cambie `pyproject.toml`):
 
 ```bash
 cd ~/rag312_else
-pip install -e .
+pip install -e . --no-deps
 ```
+
+**3.2. Arreglar torch/CUDA primero**, porque el conda base trae CUDA 13 y acá
+se necesita CUDA 12.4:
+
+```bash
+pip uninstall torch torchvision torchaudio -y
+pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu124
+```
+
+Verificar:
+
+```bash
+python3 -c "import torch; print(torch.cuda.is_available()); print(torch.cuda.get_device_name(0))"
+python3 -c "import torch; print(torch.__version__); print(torch.version.cuda)"
+```
+
+**3.3. Correr los scripts de la ingesta en orden** (`ingesta/ocr_docling.py`
+→ `ingesta/embeddings.py` → `ingesta/ingest_qdrant.py`) e ir instalando lo
+que falte a medida que aparezcan `ModuleNotFoundError` (`pip install
+<paquete>` y volver a correr). Según lo que se ha necesitado hasta ahora:
+`docling`, `langchain_core`, `easyocr`, `langchain_openai`, `fastembed`,
+`qdrant_client`, `gradio`, `langchain_community`, `ragas` — pero esto es una
+guía, no una checklist fija: instalar lo que pida cada traceback, que varía
+según qué scripts se corran primero.
+
+`requirements.txt` sigue existiendo como referencia de versiones conocidas
+que funcionan, pero ya no se instala de una con `pip install -r
+requirements.txt` / `pip install -e .` a secas.
 
 ## 4. Levantar Qdrant (Podman)
 
