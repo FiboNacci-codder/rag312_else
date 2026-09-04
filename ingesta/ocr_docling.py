@@ -150,6 +150,7 @@ def main():
 
     OUTPUT_DIR.mkdir(exist_ok=True)
     CHUNKS_DIR.mkdir(exist_ok=True)
+    settings.datos_dir.mkdir(exist_ok=True)
 
     converter = build_converter()
     chunker = build_chunker()
