@@ -41,11 +41,10 @@ class Settings(BaseSettings):
     batch_size_embeddings: int = 16
     sparse_model_name: str = "Qdrant/bm25"
     sparse_language: str = "spanish"
-    # TODO: el default histórico apunta a ~/rag/... (typo de un rename previo
-    # ~/rag -> ~/rag312). En la práctica no importa porque containers/env.sh
-    # siempre exporta FASTEMBED_CACHE_DIR antes de correr cualquier script,
-    # pero se preserva el valor tal cual en vez de "corregirlo" en silencio.
-    fastembed_cache_dir: str = str(Path.home() / "rag/modelos/fastembed_cache")
+
+    @property
+    def fastembed_cache_dir(self) -> str:
+        return str(self.rag_project_dir / "modelos" / "fastembed_cache")
 
     @property
     def biblioteca_dir(self) -> Path:
