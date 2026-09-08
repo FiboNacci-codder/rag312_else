@@ -188,6 +188,9 @@
               <li><span>Score BM25</span><span>${escaparHtml(
                 formatearNumero(f.score_bm25, 4)
               )} · rank ${escaparHtml(formatearRank(f.rank_bm25, true))}</span></li>
+              <li><span>Score reranker</span><span>${escaparHtml(
+                formatearNumero(f.score_rerank, 4)
+              )} · rank ${escaparHtml(formatearRank(f.rank_rerank, false))}</span></li>
               ${
                 f.chunk_index != null && f.num_chunks != null
                   ? `<li><span>Posición del fragmento</span><span>${escaparHtml(

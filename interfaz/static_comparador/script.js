@@ -105,6 +105,9 @@
               <li><span>Score BM25</span><span>${escaparHtml(
                 formatearNumero(f.score_bm25, 4)
               )} · rank ${escaparHtml(formatearRank(f.rank_bm25, true))}</span></li>
+              <li><span>Score reranker</span><span>${escaparHtml(
+                formatearNumero(f.score_rerank, 4)
+              )} · rank ${escaparHtml(formatearRank(f.rank_rerank, false))}</span></li>
             </ul>
           </details>
         `;
