@@ -22,6 +22,8 @@ app.mount("/static", StaticFiles(directory=STATIC_DIR), name="static")
 
 class PreguntaRequest(BaseModel):
     pregunta: str
+    rerank: bool = True
+    rerank_top_n: int | None = None
 
 
 @app.get("/")
@@ -35,7 +37,7 @@ def chat(request: PreguntaRequest):
     if not pregunta:
         return JSONResponse({"error": "Por favor escribe una pregunta."})
     try:
-        resultado = consultar_rag(pregunta)
+        resultado = consultar_rag(pregunta, rerank=request.rerank, rerank_top_n=request.rerank_top_n)
     except Exception as e:
         return JSONResponse({"error": f"Ocurrió un error al consultar el sistema: {e}"})
     return resultado

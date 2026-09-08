@@ -15,6 +15,19 @@
       <button id="btn-nueva-conversacion" class="btn btn--primary sidebar__nueva" type="button">
         + Nueva conversación
       </button>
+
+      <div class="sidebar__ajustes">
+        <h2 class="sidebar__ajustes-titulo">Ajustes de búsqueda</h2>
+        <label class="sidebar__ajustes-campo">
+          <input type="checkbox" id="chk-rerank" checked />
+          Activar 2do filtro (reranker)
+        </label>
+        <label class="sidebar__ajustes-campo">
+          Chunks a conservar
+          <input type="number" id="input-rerank-top-n" min="1" max="20" value="5" />
+        </label>
+      </div>
+
       <ul id="lista-historial" class="sidebar__lista"></ul>
       <button
         id="btn-adjuntar"

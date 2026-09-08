@@ -116,10 +116,10 @@ escribir en el volumen montado.
 
 ## 5. Levantar el vLLM de embeddings (harrier-embed, puerto 8001)
 
-Es el único de los tres servidores vLLM que hace falta para la ingesta
-(`embeddings.py`). Los otros dos (`qwen35-9b`/8002, `qwen35-4b`/8003) solo
-hacen falta después, para consultar (ver `docs/readme.md` §4 para los tres
-comandos completos):
+Es el único de los cuatro servidores vLLM que hace falta para la ingesta
+(`embeddings.py`). Los otros tres (`qwen35-9b`/8002, `qwen35-4b`/8003,
+`qwen3-reranker-4b`/8005) solo hacen falta después, para consultar (ver
+`docs/readme.md` §4 para los cuatro comandos completos):
 
 ```bash
 CUDA_VISIBLE_DEVICES=6 apptainer exec --nv \
@@ -170,5 +170,6 @@ print(c.count(settings.collection_name))
 ```
 
 Si da un `count` mayor a 0, la base vectorial quedó reconstruida. A partir
-de ahí ya se puede levantar el vLLM generador (8002) y el normalizador
-(8003) y probar una consulta real con `python consulta/rag_query1.py "pregunta de prueba"`.
+de ahí ya se puede levantar el vLLM generador (8002), el normalizador
+(8003) y el reranker (8005, opcional — `rag_query1.main(..., rerank=False)`
+lo omite) y probar una consulta real con `python consulta/rag_query1.py "pregunta de prueba"`.

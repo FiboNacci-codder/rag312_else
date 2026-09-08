@@ -10,6 +10,8 @@
   const btnTema = document.getElementById("btn-tema");
   const btnNuevaConversacion = document.getElementById("btn-nueva-conversacion");
   const listaHistorial = document.getElementById("lista-historial");
+  const chkRerank = document.getElementById("chk-rerank");
+  const inputRerankTopN = document.getElementById("input-rerank-top-n");
 
   let conversacionId = crypto.randomUUID();
   let mensajes = [];
@@ -238,7 +240,11 @@
       const resp = await fetch("/api/chat", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ pregunta }),
+        body: JSON.stringify({
+          pregunta,
+          rerank: chkRerank.checked,
+          rerank_top_n: Number(inputRerankTopN.value) || 5,
+        }),
       });
       const data = await resp.json();
       pensando.remove();

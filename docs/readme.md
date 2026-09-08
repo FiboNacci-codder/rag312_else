@@ -96,7 +96,26 @@ CUDA_VISIBLE_DEVICES=4 apptainer exec --nv \
     --max-model-len 8192 \
     --reasoning-parser qwen3 \
     --language-model-only
+
+# Qwen3-Reranker-4B — reranking de candidatos post-fusión (GPU 0, puerto 8005)
+CUDA_VISIBLE_DEVICES=0 apptainer exec --nv \
+  --env HF_HOME="$HF_HOME" \
+  "$VLLM_SIF" \
+  vllm serve Qwen/Qwen3-Reranker-4B \
+    --task score \
+    --hf_overrides '{"architectures": ["Qwen3ForSequenceClassification"],"classifier_from_token": ["no", "yes"],"is_original_qwen3_reranker": true}' \
+    --served-model-name qwen3-reranker-4b \
+    --host 0.0.0.0 \
+    --port 8005 \
+    --gpu-memory-utilization 0.5 \
+    --max-model-len 8192
 ```
+
+Nota: el reranker es opcional para consultas puntuales (`rag_query1.main(..., rerank=False)` u
+`eval_retrieval.py` sin `--rerank` lo omiten), pero está activo por defecto (`rerank=True`) en
+`main()`, así que en producción (`app_web.py`/`app_gradio.py`) el puerto 8005 debe estar
+levantado igual que los otros tres. Configurable vía `RERANK_LLM_URL`/`RERANK_LLM_MODEL`
+(mismo mecanismo que `JUDGE_LLM_URL`/`NORMALIZE_LLM_URL`, ver `rag312/config.py`).
 
 ---
 
@@ -817,9 +836,10 @@ por `documento`/`seccion`, nunca por `chunk_origen_index`, así que el
 mismo script sirve para ambos orígenes sin cambios.
 
 Requiere: vLLM embeddings (8001), vLLM normalizador (8003, salvo con
-`--sin-normalizar`) y Qdrant (6333), con la colección
-`procedimientos_sielse` ya indexada. `golden_set_md_final.json` se
-construye con el pipeline de la sección siguiente.
+`--sin-normalizar`), vLLM reranker (8005, solo con `--rerank`) y Qdrant
+(6333), con la colección `procedimientos_sielse` ya indexada.
+`golden_set_md_final.json` se construye con el pipeline de la sección
+siguiente.
 
 ### Generación del golden set — nivel chunk vs. nivel sección markdown
 
@@ -982,9 +1002,9 @@ python eval_generation.py --golden golden_set_md_final.json --out resultados_gen
 golden set viene de chunks o de secciones markdown, solo necesita que cada
 item tenga `pregunta`, `ground_truth` y `ground_truth_revisado: true`.
 
-Requiere: vLLM embeddings (8001), normalizador (8003), generador (8002) y
-Qdrant (6333) — las cuatro dependencias, porque corre el pipeline
-completo por cada pregunta.
+Requiere: vLLM embeddings (8001), normalizador (8003), reranker (8005,
+salvo que se llame con `rerank=False`), generador (8002) y Qdrant (6333)
+— corre el pipeline completo (`rag_query1.main()`) por cada pregunta.
 
 ### `inspeccionar_miss.py` — depuración caso por caso
 
@@ -1019,7 +1039,7 @@ python app_gradio.py
 
 **`app_web.py`** (en desarrollo, puerto 8080): interfaz HTML propia (`interfaz/static/`) sobre `rag_query1.main()`, con estilo azul/amarillo (Electro Sur Este), modo día/noche, preguntas sugeridas, historial de conversaciones (guardado en `localStorage` del navegador, no en el servidor) y visualización de fuentes/tiempo de generación. El botón de subir archivo está visible pero deshabilitado ("Función en desarrollo") — todavía no hay ingesta de archivos vía la interfaz.
 
-Requiere el entorno conda `rag312` activo (`fastapi`, `uvicorn` y `python-multipart` ya están en `requirements.txt`) y los servicios vLLM (8001, 8002, 8003) + Qdrant (6333) corriendo, igual que `rag_query1.py`.
+Requiere el entorno conda `rag312` activo (`fastapi`, `uvicorn` y `python-multipart` ya están en `requirements.txt`) y los servicios vLLM (8001, 8002, 8003, 8005) + Qdrant (6333) corriendo, igual que `rag_query1.py`.
 
 ```bash
 source ~/rag312_else/conda/activar.sh

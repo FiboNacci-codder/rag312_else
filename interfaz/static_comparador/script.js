@@ -199,6 +199,8 @@
     const topK = Number(elTarjeta.querySelector('[data-campo="topK"]').value) || 10;
     const umbralSimilitud =
       Number(elTarjeta.querySelector('[data-campo="umbralSimilitud"]').value) / 100;
+    const rerank = elTarjeta.querySelector('[data-campo="rerank"]').checked;
+    const rerankTopN = Number(elTarjeta.querySelector('[data-campo="rerankTopN"]').value) || 5;
 
     renderMensajeEnTarjeta(contenedorMensajes, { rol: "usuario", texto: pregunta });
     textarea.value = "";
@@ -222,6 +224,8 @@
           modo_retrieval: modoRetrieval,
           top_k: topK,
           umbral_similitud: umbralSimilitud,
+          rerank,
+          rerank_top_n: rerankTopN,
         }),
       });
       const data = await resp.json();

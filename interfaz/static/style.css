@@ -117,6 +117,41 @@ body {
   width: 100%;
 }
 
+.sidebar__ajustes {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 0.6rem 0.7rem;
+  background: var(--surface-alt);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.sidebar__ajustes-titulo {
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin: 0;
+  color: var(--text-muted);
+}
+
+.sidebar__ajustes-campo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  font-size: 0.82rem;
+  color: var(--text);
+}
+
+.sidebar__ajustes-campo input[type="number"] {
+  width: 4rem;
+  padding: 0.2rem 0.4rem;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--surface);
+  color: var(--text);
+}
+
 .sidebar__lista {
   list-style: none;
   margin: 0;

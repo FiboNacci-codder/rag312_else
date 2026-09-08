@@ -5,11 +5,12 @@ están duplicadas en ingesta/embeddings.py, consulta/rag_query1.py,
 consulta/normalizar_query.py y varios scripts de tests/eval/.
 """
 
+import httpx
 from langchain_openai import OpenAIEmbeddings
 from openai import OpenAI
 from qdrant_client import QdrantClient
 
-from rag312.config import LLMRoleConfig, get_embed_config, settings
+from rag312.config import LLMRoleConfig, get_embed_config, get_rerank_config, settings
 
 
 def build_embedder(role_config: LLMRoleConfig | None = None) -> OpenAIEmbeddings:
@@ -39,3 +40,10 @@ def build_llm_client(role_config: LLMRoleConfig) -> OpenAI:
 
 def build_qdrant_client() -> QdrantClient:
     return QdrantClient(host=settings.qdrant_host, port=settings.qdrant_port)
+
+
+def build_rerank_client(role_config: LLMRoleConfig | None = None) -> httpx.Client:
+    """Cliente HTTP para el endpoint /rerank de vLLM (estilo Cohere), no cubierto
+    por el SDK de openai."""
+    role_config = role_config or get_rerank_config()
+    return httpx.Client(base_url=role_config.url, timeout=settings.rerank_timeout_seg)

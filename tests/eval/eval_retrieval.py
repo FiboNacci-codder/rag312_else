@@ -21,9 +21,11 @@ Uso:
     python eval_retrieval.py --golden golden_set.json --k 7
     python eval_retrieval.py --out resultados_eval.json
     python eval_retrieval.py --sin-normalizar   # retrieval puro, sin LLM normalizador
+    python eval_retrieval.py --rerank           # aplica Qwen3-Reranker-4B (puerto 8005) antes de medir
 
-Requiere que vLLM (8001, y 8003 si se normaliza) y Qdrant (6333) estén
-corriendo, y que la colección procedimientos_sielse ya esté indexada.
+Requiere que vLLM (8001, y 8003 si se normaliza, y 8005 si se usa --rerank) y
+Qdrant (6333) estén corriendo, y que la colección procedimientos_sielse ya
+esté indexada.
 """
 
 import argparse
@@ -39,11 +41,11 @@ from _shared import asegurar_paths_pipeline
 
 asegurar_paths_pipeline()
 
-from rag312.clients import build_embedder, build_qdrant_client, build_sparse_embedder
+from rag312.clients import build_embedder, build_qdrant_client, build_rerank_client, build_sparse_embedder
 from rag312.config import settings
 
 try:
-    from rag_query1 import recuperar_contexto
+    from rag_query1 import recuperar_contexto, rerankear_resultados
     from normalizar_query import procesar_pregunta
 except ImportError as e:
     print(f"ERROR: no se pudo importar el pipeline RAG desde {_shared.CONSULTA_DIR} / {_shared.INGESTA_DIR}")
@@ -157,6 +159,13 @@ def main():
              "normalizar_query.procesar_pregunta() (salta el LLM normalizador, puerto 8003). "
              "Por defecto se normaliza, igual que en producción.",
     )
+    parser.add_argument(
+        "--rerank",
+        action="store_true",
+        help="Aplicar el reranker Qwen3-Reranker-4B (puerto 8005) sobre los candidatos "
+             "de la fusión antes de calcular Recall@K/MRR, igual que hace rag_query1.main().",
+    )
+    parser.add_argument("--rerank-top-n", type=int, default=None, help="Override de settings.rerank_top_n")
     args = parser.parse_args()
 
     if args.k > PRODUCTION_TOP_K:
@@ -165,14 +174,23 @@ def main():
             f"rag_query1.py; la fusión RRF solo devuelve {PRODUCTION_TOP_K} resultados, "
             f"así que Recall@{args.k} quedará igual a Recall@{PRODUCTION_TOP_K}."
         )
+    rerank_top_n_efectivo = args.rerank_top_n if args.rerank_top_n is not None else settings.rerank_top_n
+    if args.rerank and args.k > rerank_top_n_efectivo:
+        print(
+            f"AVISO: --k={args.k} es mayor que rerank_top_n={rerank_top_n_efectivo}; "
+            f"tras el reranking solo quedan {rerank_top_n_efectivo} candidatos, "
+            f"así que Recall@{args.k} quedará igual a Recall@{rerank_top_n_efectivo}."
+        )
 
     golden_set = cargar_golden_set(Path(args.golden))
     print(f"Cargadas {len(golden_set)} preguntas desde {args.golden}")
-    print(f"Modo búsqueda: {'CRUDA (sin normalizar)' if args.sin_normalizar else 'NORMALIZADA (igual que producción)'}\n")
+    print(f"Modo búsqueda: {'CRUDA (sin normalizar)' if args.sin_normalizar else 'NORMALIZADA (igual que producción)'}"
+          f" | Rerank: {'SI' if args.rerank else 'NO'}\n")
 
     embedder = build_embedder()
     sparse_embedder = build_sparse_embedder()
     client = build_qdrant_client()
+    rerank_client = build_rerank_client() if args.rerank else None
 
     filas = []
     t_inicio = time.time()
@@ -190,6 +208,11 @@ def main():
             resultados_fusion, detalle_scores = recuperar_contexto(
                 pregunta_busqueda, embedder, sparse_embedder, client
             )
+            if args.rerank:
+                resultados_fusion, detalle_scores = rerankear_resultados(
+                    pregunta_busqueda, resultados_fusion, detalle_scores, rerank_client,
+                    top_n=args.rerank_top_n,
+                )
             fila = evaluar_pregunta(item, resultados_fusion, detalle_scores, args.k)
         except Exception as e:
             print(f"    ERROR: {e}")
@@ -215,6 +238,7 @@ def main():
         "n_errores": n_errores,
         "k": args.k,
         "normalizado": not args.sin_normalizar,
+        "rerank": args.rerank,
         f"recall_at_{args.k}_fusion": sum(f["hit_fusion"] for f in filas) / n,
         f"recall_at_{args.k}_dense": sum(f["hit_dense"] for f in filas) / n,
         f"recall_at_{args.k}_bm25": sum(f["hit_bm25"] for f in filas) / n,

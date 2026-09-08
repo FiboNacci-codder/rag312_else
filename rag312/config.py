@@ -36,6 +36,9 @@ class Settings(BaseSettings):
     umbral_similitud: float = 0.0  # 0 = sin filtro; aplica solo sobre el score dense (0-1)
     instruction_prefix: str = "Instruct: Retrieve relevant passages that answer the query\nQuery: "
 
+    rerank_top_n: int = 5  # candidatos finales tras reranking, de los top_k fusionados
+    rerank_timeout_seg: float = 10.0
+
     cuda_visible_devices_ocr: str = "4,5,6,7"
 
     batch_size_embeddings: int = 16
@@ -90,6 +93,15 @@ def get_normalize_config() -> LLMRoleConfig:
     return LLMRoleConfig(
         url=os.environ.get("NORMALIZE_LLM_URL", "http://localhost:8003/v1"),
         model=os.environ.get("NORMALIZE_LLM_MODEL", "qwen35-4b"),
+    )
+
+
+def get_rerank_config() -> LLMRoleConfig:
+    """Reranker Qwen3-Reranker-4B: instancia dedicada (cross-encoder --task score),
+    puerto/GPU propios, no compartidos con ningún otro rol."""
+    return LLMRoleConfig(
+        url=os.environ.get("RERANK_LLM_URL", "http://localhost:8005/v1"),
+        model=os.environ.get("RERANK_LLM_MODEL", "qwen3-reranker-4b"),
     )
 
 

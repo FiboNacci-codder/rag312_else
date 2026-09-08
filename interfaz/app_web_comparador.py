@@ -28,6 +28,8 @@ class PreguntaRequest(BaseModel):
     modo_retrieval: Literal["hybrid", "dense", "sparse"] = "hybrid"
     top_k: int | None = None
     umbral_similitud: float | None = None
+    rerank: bool = True
+    rerank_top_n: int | None = None
 
 
 @app.get("/")
@@ -48,6 +50,8 @@ def chat(request: PreguntaRequest):
             modo_retrieval=request.modo_retrieval,
             top_k=request.top_k,
             umbral_similitud=request.umbral_similitud,
+            rerank=request.rerank,
+            rerank_top_n=request.rerank_top_n,
         )
     except Exception as e:
         return JSONResponse({"error": f"Ocurrió un error al consultar el sistema: {e}"})

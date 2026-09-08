@@ -6,8 +6,8 @@ import numpy as np
 from qdrant_client.models import Prefetch, FusionQuery, Fusion, SparseVector
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
-from rag312.clients import build_embedder, build_llm_client, build_qdrant_client, build_sparse_embedder
-from rag312.config import get_generate_config, settings
+from rag312.clients import build_embedder, build_llm_client, build_qdrant_client, build_rerank_client, build_sparse_embedder
+from rag312.config import get_generate_config, get_rerank_config, settings
 
 from normalizar_query import procesar_pregunta
 
@@ -193,6 +193,37 @@ def cargar_system_prompt() -> str:
     return SYSTEM_PROMPT_PATH.read_text(encoding="utf-8")
 
 
+def _llamar_rerank_api(rerank_client, model: str, pregunta: str, documentos: list[str], top_n: int) -> list[dict]:
+    resp = rerank_client.post("/rerank", json={
+        "model": model, "query": pregunta, "documents": documentos, "top_n": top_n,
+    })
+    resp.raise_for_status()
+    return resp.json()["results"]  # [{"index", "relevance_score", ...}, ...], ya ordenado desc
+
+
+def rerankear_resultados(pregunta: str, resultados, detalle_scores: list[dict], rerank_client, top_n: int | None = None):
+    """Reordena/trunca (resultados, detalle_scores) según el score del cross-encoder
+    Qwen3-Reranker. No muta los ScoredPoint de Qdrant: reordena ambas listas en
+    conjunto y agrega rank_rerank/score_rerank a detalle_scores para trazabilidad."""
+    top_n = settings.rerank_top_n if top_n is None else top_n
+    if not resultados:
+        return resultados, detalle_scores
+
+    documentos = [r.payload.get("page_content", "") for r in resultados]
+    role_config = get_rerank_config()
+    results = _llamar_rerank_api(rerank_client, role_config.model, pregunta, documentos, top_n)
+
+    resultados_out, detalle_out = [], []
+    for rank, item in enumerate(results, start=1):
+        idx = item["index"]
+        d = dict(detalle_scores[idx])
+        d["rank_rerank"] = rank
+        d["score_rerank"] = round(item["relevance_score"], 4)
+        resultados_out.append(resultados[idx])
+        detalle_out.append(d)
+    return resultados_out, detalle_out
+
+
 def generar_respuesta(prompt_usuario: str) -> str:
     system_prompt = cargar_system_prompt()
     role_config = get_generate_config()
@@ -213,20 +244,23 @@ def generar_respuesta(prompt_usuario: str) -> str:
 _embedder = None
 _sparse_embedder = None
 _qdrant_client = None
+_rerank_client = None
 
 
 def _get_clients():
-    """Clientes (vLLM embeddings, BM25 sparse, Qdrant) cacheados a nivel de
-    módulo: reconstruirlos en cada llamada a main() era el costo pagado por
+    """Clientes (vLLM embeddings, BM25 sparse, Qdrant, reranker) cacheados a nivel
+    de módulo: reconstruirlos en cada llamada a main() era el costo pagado por
     cada request de app_web.py."""
-    global _embedder, _sparse_embedder, _qdrant_client
+    global _embedder, _sparse_embedder, _qdrant_client, _rerank_client
     if _embedder is None:
         _embedder = build_embedder()
     if _sparse_embedder is None:
         _sparse_embedder = build_sparse_embedder()
     if _qdrant_client is None:
         _qdrant_client = build_qdrant_client()
-    return _embedder, _sparse_embedder, _qdrant_client
+    if _rerank_client is None:
+        _rerank_client = build_rerank_client()
+    return _embedder, _sparse_embedder, _qdrant_client, _rerank_client
 
 
 def main(
@@ -236,12 +270,14 @@ def main(
     modo_retrieval: str = "hybrid",
     top_k: int | None = None,
     umbral_similitud: float | None = None,
+    rerank: bool = True,
+    rerank_top_n: int | None = None,
 ) -> dict:
     proc = procesar_pregunta(pregunta, corregir=corregir, reformular=reformular)
     pregunta_original = proc["original"]
     pregunta_busqueda = proc["busqueda"]
 
-    embedder, sparse_embedder, client = _get_clients()
+    embedder, sparse_embedder, client, rerank_client = _get_clients()
 
     t0 = time.time()
     resultados, detalle_scores = recuperar_contexto(
@@ -249,6 +285,14 @@ def main(
         modo=modo_retrieval, top_k=top_k, umbral_similitud=umbral_similitud,
     )
     t_retrieval = time.time() - t0
+
+    t_rerank = 0.0
+    if rerank:
+        t0 = time.time()
+        resultados, detalle_scores = rerankear_resultados(
+            pregunta_busqueda, resultados, detalle_scores, rerank_client, top_n=rerank_top_n,
+        )
+        t_rerank = time.time() - t0
 
     prompt = armar_prompt(pregunta_original, resultados)
 
@@ -278,12 +322,15 @@ def main(
             "fuera_top20_dense": d["fuera_top20_dense"],
             "rank_bm25": d["rank_bm25"],
             "score_bm25": d["score_bm25"],
+            "rank_rerank": d.get("rank_rerank"),
+            "score_rerank": d.get("score_rerank"),
         })
 
     return {
         "respuesta": respuesta,
         "fuentes": fuentes,
         "tiempo_retrieval": t_retrieval,
+        "tiempo_rerank": t_rerank,
         "tiempo_generacion": t_generacion,
         "config": {
             "corregir": corregir,
@@ -291,6 +338,8 @@ def main(
             "modo_retrieval": modo_retrieval,
             "top_k": TOP_K if top_k is None else top_k,
             "umbral_similitud": UMBRAL_SIMILITUD if umbral_similitud is None else umbral_similitud,
+            "rerank": rerank,
+            "rerank_top_n": settings.rerank_top_n if rerank_top_n is None else rerank_top_n,
         },
     }
 
@@ -303,4 +352,4 @@ if __name__ == "__main__":
     print(resultado["respuesta"])
     print("\n--- Fuentes ---")
     print(_json.dumps(resultado["fuentes"], ensure_ascii=False, indent=2))
-    print(f"\nTiempo retrieval: {resultado['tiempo_retrieval']:.2f}s | generación: {resultado['tiempo_generacion']:.2f}s")
+    print(f"\nTiempo retrieval: {resultado['tiempo_retrieval']:.2f}s | rerank: {resultado['tiempo_rerank']:.2f}s | generación: {resultado['tiempo_generacion']:.2f}s")
