@@ -97,18 +97,18 @@ CUDA_VISIBLE_DEVICES=4 apptainer exec --nv \
     --reasoning-parser qwen3 \
     --language-model-only
 
-# Qwen3-Reranker-4B — reranking de candidatos post-fusión (GPU 0, puerto 8005)
-CUDA_VISIBLE_DEVICES=0 apptainer exec --nv \
+# Qwen3-Reranker-4B — reranking de candidatos post-fusión (GPU 7, puerto 8005)
+CUDA_VISIBLE_DEVICES=7 apptainer exec --nv \
   --env HF_HOME="$HF_HOME" \
   "$VLLM_SIF" \
-  vllm serve Qwen/Qwen3-Reranker-4B \
-    --task score \
-    --hf_overrides '{"architectures": ["Qwen3ForSequenceClassification"],"classifier_from_token": ["no", "yes"],"is_original_qwen3_reranker": true}' \
+  vllm serve Qwen/Qwen3-Reranker-4B-seq-cls \
     --served-model-name qwen3-reranker-4b \
     --host 0.0.0.0 \
     --port 8005 \
     --gpu-memory-utilization 0.5 \
-    --max-model-len 8192
+    --max-model-len 16384 \
+    --runner pooling \
+    --convert classify
 ```
 
 Nota: el reranker es opcional para consultas puntuales (`rag_query1.main(..., rerank=False)` u
