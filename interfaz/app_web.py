@@ -22,6 +22,9 @@ app.mount("/static", StaticFiles(directory=STATIC_DIR), name="static")
 
 class PreguntaRequest(BaseModel):
     pregunta: str
+    modo_retrieval: str = "hybrid"
+    top_k: int | None = None
+    umbral_similitud: float | None = None
     rerank: bool = True
     rerank_top_n: int | None = None
 
@@ -37,7 +40,14 @@ def chat(request: PreguntaRequest):
     if not pregunta:
         return JSONResponse({"error": "Por favor escribe una pregunta."})
     try:
-        resultado = consultar_rag(pregunta, rerank=request.rerank, rerank_top_n=request.rerank_top_n)
+        resultado = consultar_rag(
+            pregunta,
+            modo_retrieval=request.modo_retrieval,
+            top_k=request.top_k,
+            umbral_similitud=request.umbral_similitud,
+            rerank=request.rerank,
+            rerank_top_n=request.rerank_top_n,
+        )
     except Exception as e:
         return JSONResponse({"error": f"Ocurrió un error al consultar el sistema: {e}"})
     return resultado

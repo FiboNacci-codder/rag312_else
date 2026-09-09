@@ -16,17 +16,35 @@
         + Nueva conversación
       </button>
 
-      <div class="sidebar__ajustes">
-        <h2 class="sidebar__ajustes-titulo">Ajustes de búsqueda</h2>
-        <label class="sidebar__ajustes-campo">
-          <input type="checkbox" id="chk-rerank" checked />
-          Activar 2do filtro (reranker)
-        </label>
-        <label class="sidebar__ajustes-campo">
-          Chunks a conservar
-          <input type="number" id="input-rerank-top-n" min="1" max="20" value="5" />
-        </label>
-      </div>
+      <details class="sidebar__ajustes">
+        <summary class="sidebar__ajustes-toggle">⚙️ Filtros de búsqueda avanzados</summary>
+        <div class="sidebar__ajustes-body">
+          <label class="sidebar__ajustes-campo">
+            Comparador
+            <select id="select-modo-retrieval">
+              <option value="hybrid" selected>Híbrido (BM25 + embeddings)</option>
+              <option value="dense">Solo embeddings</option>
+              <option value="sparse">Solo BM25</option>
+            </select>
+          </label>
+          <label class="sidebar__ajustes-campo">
+            Chunks a recuperar
+            <input type="number" id="input-top-k" min="1" max="50" placeholder="por defecto" />
+          </label>
+          <label class="sidebar__ajustes-campo">
+            Umbral de similitud
+            <input type="number" id="input-umbral-similitud" min="0" max="1" step="0.05" placeholder="0" />
+          </label>
+          <label class="sidebar__ajustes-campo">
+            <input type="checkbox" id="chk-rerank" checked />
+            Activar 2do filtro (reranker)
+          </label>
+          <label class="sidebar__ajustes-campo">
+            Chunks a conservar
+            <input type="number" id="input-rerank-top-n" min="1" max="20" value="5" />
+          </label>
+        </div>
+      </details>
 
       <ul id="lista-historial" class="sidebar__lista"></ul>
       <button

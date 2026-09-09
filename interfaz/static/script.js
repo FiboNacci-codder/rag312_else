@@ -12,6 +12,9 @@
   const listaHistorial = document.getElementById("lista-historial");
   const chkRerank = document.getElementById("chk-rerank");
   const inputRerankTopN = document.getElementById("input-rerank-top-n");
+  const selectModoRetrieval = document.getElementById("select-modo-retrieval");
+  const inputTopK = document.getElementById("input-top-k");
+  const inputUmbralSimilitud = document.getElementById("input-umbral-similitud");
 
   let conversacionId = crypto.randomUUID();
   let mensajes = [];
@@ -245,6 +248,9 @@
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           pregunta,
+          modo_retrieval: selectModoRetrieval.value,
+          top_k: inputTopK.value !== "" ? Number(inputTopK.value) : null,
+          umbral_similitud: inputUmbralSimilitud.value !== "" ? Number(inputUmbralSimilitud.value) : null,
           rerank: chkRerank.checked,
           rerank_top_n: Number(inputRerankTopN.value) || 5,
         }),
