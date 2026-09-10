@@ -5,6 +5,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
 import csv
 import json
+import threading
 import time
 
 import numpy as np
@@ -20,11 +21,17 @@ VECTORS_OUT = settings.datos_dir / "embeddings_data.json"
 
 BATCH_SIZE = settings.batch_size_embeddings
 
+_vectores_json_lock = threading.Lock()
+
 
 def cargar_chunks() -> list[Document]:
     with open(CHUNKS_JSON, "r", encoding="utf-8") as f:
         data = json.load(f)
     return [Document(page_content=d["page_content"], metadata=d["metadata"]) for d in data]
+
+
+def cargar_chunks_por_ruta(ruta_biblioteca: str) -> list[Document]:
+    return [d for d in cargar_chunks() if d.metadata.get("ruta_biblioteca") == ruta_biblioteca]
 
 
 def embed_batch(embedder, sparse_embedder, batch_textos: list[str]):
@@ -40,21 +47,51 @@ def guardar_metricas_csv(filas: list[list], path: Path) -> None:
         writer.writerows(filas)
 
 
-def guardar_vectores_json(docs: list[Document], vectores_totales: list, vectores_sparse_totales: list, path: Path) -> None:
-    with open(path, "w", encoding="utf-8") as f:
-        json.dump(
-            [
-                {
-                    "page_content": d.page_content,
-                    "metadata": d.metadata,
-                    "embedding": vec,
-                    "sparse_indices": sparse_vec.indices.tolist(),
-                    "sparse_values": sparse_vec.values.tolist(),
-                }
-                for d, vec, sparse_vec in zip(docs, vectores_totales, vectores_sparse_totales)
-            ],
-            f,
-        )
+def construir_registros(docs: list[Document], vectores_totales: list, vectores_sparse_totales: list) -> list[dict]:
+    return [
+        {
+            "page_content": d.page_content,
+            "metadata": d.metadata,
+            "embedding": vec,
+            "sparse_indices": sparse_vec.indices.tolist(),
+            "sparse_values": sparse_vec.values.tolist(),
+        }
+        for d, vec, sparse_vec in zip(docs, vectores_totales, vectores_sparse_totales)
+    ]
+
+
+def fusionar_y_guardar_vectores_json(nuevos_registros: list[dict], path: Path) -> None:
+    """Fusiona `nuevos_registros` con el `embeddings_data.json` existente,
+    reemplazando cualquier entrada previa que comparta `ruta_biblioteca` con
+    alguno de los nuevos (permite re-embeber un archivo actualizado sin
+    duplicar sus vectores)."""
+    rutas_nuevas = {r["metadata"]["ruta_biblioteca"] for r in nuevos_registros}
+    with _vectores_json_lock:
+        existentes = []
+        if path.exists():
+            with open(path, "r", encoding="utf-8") as f:
+                existentes = json.load(f)
+        conservados = [r for r in existentes if r["metadata"].get("ruta_biblioteca") not in rutas_nuevas]
+        combinados = conservados + nuevos_registros
+        path.parent.mkdir(parents=True, exist_ok=True)
+        with open(path, "w", encoding="utf-8") as f:
+            json.dump(combinados, f)
+
+
+def embeber_ruta(ruta_biblioteca: str) -> list[dict]:
+    """Embebe (dense + sparse) solo los chunks de `ruta_biblioteca` ya
+    presentes en chunks_data.json. No escribe embeddings_data.json: el
+    llamador decide cómo persistir (ver fusionar_y_guardar_vectores_json)."""
+    docs = cargar_chunks_por_ruta(ruta_biblioteca)
+    if not docs:
+        raise ValueError(f"No hay chunks para ruta_biblioteca={ruta_biblioteca!r} en {CHUNKS_JSON}")
+
+    embedder = build_embedder()
+    sparse_embedder = build_sparse_embedder()
+
+    textos = [d.page_content for d in docs]
+    vectores_totales, vectores_sparse_totales = embed_batch(embedder, sparse_embedder, textos)
+    return construir_registros(docs, vectores_totales, vectores_sparse_totales)
 
 
 def imprimir_resumen(docs: list[Document], metricas_filas: list[list], tiempo_total: float) -> None:
@@ -129,7 +166,7 @@ def main():
     tiempo_total = time.time() - t_inicio_global
 
     guardar_metricas_csv(metricas_filas, METRICS_CSV)
-    guardar_vectores_json(docs, vectores_totales, vectores_sparse_totales, VECTORS_OUT)
+    fusionar_y_guardar_vectores_json(construir_registros(docs, vectores_totales, vectores_sparse_totales), VECTORS_OUT)
     imprimir_resumen(docs, metricas_filas, tiempo_total)
 
     return docs, vectores_totales, vectores_sparse_totales

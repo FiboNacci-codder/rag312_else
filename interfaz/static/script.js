@@ -15,6 +15,8 @@
   const selectModoRetrieval = document.getElementById("select-modo-retrieval");
   const inputTopK = document.getElementById("input-top-k");
   const inputUmbralSimilitud = document.getElementById("input-umbral-similitud");
+  const btnAdjuntar = document.getElementById("btn-adjuntar");
+  const inputArchivo = document.getElementById("input-archivo");
 
   let conversacionId = crypto.randomUUID();
   let mensajes = [];
@@ -304,6 +306,73 @@
     tarjeta.addEventListener("click", () => {
       enviarPregunta(tarjeta.dataset.pregunta);
     });
+  });
+
+  // ---------- Subida de archivos ----------
+
+  function renderMensajeSistema(texto) {
+    sugeridasEl.hidden = true;
+    const burbuja = document.createElement("div");
+    burbuja.className = "mensaje mensaje--asistente mensaje--sistema";
+    burbuja.textContent = texto;
+    chatEl.appendChild(burbuja);
+    chatEl.scrollTop = chatEl.scrollHeight;
+    return burbuja;
+  }
+
+  async function consultarEstadoCarga(jobId, nombreArchivo, burbuja) {
+    try {
+      const resp = await fetch(`/api/upload/status/${jobId}`);
+      const estado = await resp.json();
+      if (!resp.ok) {
+        burbuja.textContent = `No se pudo consultar el estado de "${nombreArchivo}": ${estado.detail || resp.statusText}`;
+        burbuja.classList.add("mensaje--error");
+        return;
+      }
+      if (estado.status === "en_progreso") {
+        setTimeout(() => consultarEstadoCarga(jobId, nombreArchivo, burbuja), 3000);
+        return;
+      }
+      if (estado.status === "completado") {
+        burbuja.textContent = `"${nombreArchivo}" se agregó a la biblioteca. ${estado.mensaje || ""}`;
+      } else {
+        burbuja.textContent = `Error al procesar "${nombreArchivo}": ${estado.mensaje || "error desconocido"}`;
+        burbuja.classList.add("mensaje--error");
+      }
+    } catch (err) {
+      burbuja.textContent = `No se pudo consultar el estado de "${nombreArchivo}": ${err.message}`;
+      burbuja.classList.add("mensaje--error");
+    }
+  }
+
+  async function subirArchivo(file) {
+    const burbuja = renderMensajeSistema(`Subiendo "${file.name}"...`);
+
+    const formData = new FormData();
+    formData.append("archivo", file);
+
+    try {
+      const resp = await fetch("/api/upload", { method: "POST", body: formData });
+      const data = await resp.json();
+      if (!resp.ok) {
+        burbuja.textContent = `Error al subir "${file.name}": ${data.detail || resp.statusText}`;
+        burbuja.classList.add("mensaje--error");
+        return;
+      }
+      burbuja.textContent = `Procesando "${data.archivo}" (esto puede tardar unos minutos)...`;
+      setTimeout(() => consultarEstadoCarga(data.job_id, data.archivo, burbuja), 3000);
+    } catch (err) {
+      burbuja.textContent = `No se pudo subir "${file.name}": ${err.message}`;
+      burbuja.classList.add("mensaje--error");
+    }
+  }
+
+  btnAdjuntar.addEventListener("click", () => inputArchivo.click());
+
+  inputArchivo.addEventListener("change", () => {
+    const file = inputArchivo.files[0];
+    inputArchivo.value = "";
+    if (file) subirArchivo(file);
   });
 
   // ---------- Inicialización ----------

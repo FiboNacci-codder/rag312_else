@@ -65,6 +65,10 @@ class Settings(BaseSettings):
     def datos_dir(self) -> Path:
         return self.rag_project_dir / "datos"
 
+    @property
+    def cargas_manuales_dir(self) -> Path:
+        return self.biblioteca_dir / "cargas_manuales"
+
 
 settings = Settings()
 

@@ -9,6 +9,7 @@ os.environ["CUDA_VISIBLE_DEVICES"] = settings.cuda_visible_devices_ocr
 
 import csv
 import json
+import threading
 import time
 
 from docling.document_converter import DocumentConverter, PdfFormatOption
@@ -29,6 +30,8 @@ OUTPUT_DIR = settings.salida_md_dir
 CHUNKS_DIR = settings.salida_chunks_dir
 CSV_PATH = settings.datos_dir / "metricas_ocr.csv"
 CHUNKS_JSON_PATH = settings.datos_dir / "chunks_data.json"
+
+_chunks_json_lock = threading.Lock()
 
 
 def build_converter():
@@ -128,14 +131,54 @@ def guardar_metricas_csv(filas: list[list], csv_path: Path) -> None:
         writer.writerows(filas)
 
 
-def guardar_chunks_json(langchain_docs: list[Document], path: Path) -> None:
-    with open(path, "w", encoding="utf-8") as f:
-        json.dump(
-            [{"page_content": d.page_content, "metadata": d.metadata} for d in langchain_docs],
-            f,
-            ensure_ascii=False,
-            indent=2,
-        )
+def fusionar_y_guardar_chunks_json(nuevos_docs: list[Document], path: Path) -> None:
+    """Fusiona `nuevos_docs` con el `chunks_data.json` existente, reemplazando
+    cualquier entrada previa que comparta `ruta_biblioteca` con alguno de los
+    nuevos (permite re-subir/actualizar un archivo sin duplicar sus chunks)."""
+    rutas_nuevas = {d.metadata["ruta_biblioteca"] for d in nuevos_docs}
+    with _chunks_json_lock:
+        existentes = []
+        if path.exists():
+            with open(path, "r", encoding="utf-8") as f:
+                existentes = json.load(f)
+        conservados = [e for e in existentes if e["metadata"].get("ruta_biblioteca") not in rutas_nuevas]
+        combinados = conservados + [
+            {"page_content": d.page_content, "metadata": d.metadata} for d in nuevos_docs
+        ]
+        path.parent.mkdir(parents=True, exist_ok=True)
+        with open(path, "w", encoding="utf-8") as f:
+            json.dump(combinados, f, ensure_ascii=False, indent=2)
+
+
+def procesar_pdf(
+    pdf_path: Path,
+    converter: DocumentConverter,
+    chunker: HybridChunker,
+    input_dir: Path,
+    output_dir: Path,
+    chunks_dir: Path,
+) -> list[Document]:
+    """Convierte, chunkea y guarda (markdown + chunks .txt) un único PDF.
+    Devuelve los Document de LangChain listos para embeddings/Qdrant."""
+    result = convertir_pdf(pdf_path, converter)
+    doc = result.document
+    guardar_markdown(doc, pdf_path, input_dir, output_dir)
+
+    chunks = list(chunker.chunk(doc))
+    docs_del_pdf = chunkear_documento(doc, chunks, pdf_path, input_dir)
+    guardar_chunks_txt(chunks, docs_del_pdf, pdf_path, input_dir, chunks_dir)
+    return docs_del_pdf
+
+
+def procesar_uno(pdf_path: Path) -> list[Document]:
+    """Punto de entrada programático para OCR-ear un solo PDF (usado por
+    ingestar_archivo.py). No toca chunks_data.json: el llamador decide cómo
+    persistir el resultado (ver fusionar_y_guardar_chunks_json)."""
+    OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+    CHUNKS_DIR.mkdir(parents=True, exist_ok=True)
+    converter = build_converter()
+    chunker = build_chunker()
+    return procesar_pdf(pdf_path, converter, chunker, INPUT_DIR, OUTPUT_DIR, CHUNKS_DIR)
 
 
 def main():
@@ -164,23 +207,14 @@ def main():
         print(f"[{i}/{len(pdfs)}] Procesando: {pdf_path.name}")
         t0 = time.time()
         try:
-            result = convertir_pdf(pdf_path, converter)
+            docs_del_pdf = procesar_pdf(pdf_path, converter, chunker, INPUT_DIR, OUTPUT_DIR, CHUNKS_DIR)
             elapsed = time.time() - t0
-
-            doc = result.document
-            markdown_out = guardar_markdown(doc, pdf_path, INPUT_DIR, OUTPUT_DIR)
-
-            # --- Chunking + conversión a Document de LangChain ---
-            chunks = list(chunker.chunk(doc))
-            docs_del_pdf = chunkear_documento(doc, chunks, pdf_path, INPUT_DIR)
             langchain_docs.extend(docs_del_pdf)
 
-            # --- Guardar chunks de este PDF en su propia carpeta espejo ---
-            guardar_chunks_txt(chunks, docs_del_pdf, pdf_path, INPUT_DIR, CHUNKS_DIR)
-
-            num_paginas = len(doc.pages)
+            todas_paginas = {p for d in docs_del_pdf for p in d.metadata["paginas"]}
+            num_paginas = max(todas_paginas) if todas_paginas else 0
             tiempo_str = formatear_tiempo(elapsed)
-            print(f"    OK en {tiempo_str} ({num_paginas} pág., {len(chunks)} chunks) -> {markdown_out.name}\n")
+            print(f"    OK en {tiempo_str} ({len(docs_del_pdf)} chunks)\n")
             filas.append([pdf_path.name, tiempo_str, num_paginas])
 
         except Exception as e:
@@ -194,7 +228,7 @@ def main():
     print(f"Listo. Métricas guardadas en: {CSV_PATH}")
     print(f"Total de Document (LangChain) generados: {len(langchain_docs)}")
 
-    guardar_chunks_json(langchain_docs, CHUNKS_JSON_PATH)
+    fusionar_y_guardar_chunks_json(langchain_docs, CHUNKS_JSON_PATH)
     print(f"Chunks (JSON) guardados en: {CHUNKS_JSON_PATH}")
     return langchain_docs  # listos para pasar a tu embedder
 
