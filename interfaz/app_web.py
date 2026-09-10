@@ -118,6 +118,20 @@ def upload_status(job_id: str):
     return job
 
 
+@app.get("/api/documento/{ruta_biblioteca:path}")
+def documento(ruta_biblioteca: str):
+    biblioteca_dir = settings.biblioteca_dir.resolve()
+    destino = (biblioteca_dir / ruta_biblioteca).resolve()
+    if destino.suffix.lower() != ".pdf" or not destino.is_relative_to(biblioteca_dir) or not destino.is_file():
+        return JSONResponse(status_code=404, content={"detail": "Documento no encontrado"})
+    return FileResponse(
+        destino,
+        media_type="application/pdf",
+        filename=destino.name,
+        content_disposition_type="inline",
+    )
+
+
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run(app, host="0.0.0.0", port=7862)
