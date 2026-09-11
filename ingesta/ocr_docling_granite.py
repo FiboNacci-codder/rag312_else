@@ -14,10 +14,14 @@ import sys
 import time
 from pathlib import Path
 
+_pre_parser = argparse.ArgumentParser(add_help=False)
+_pre_parser.add_argument("--gpu", type=str, default=None)
+_pre_args, _ = _pre_parser.parse_known_args()
+
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 from rag312.config import settings
 
-os.environ["CUDA_VISIBLE_DEVICES"] = settings.cuda_visible_devices_ocr
+os.environ["CUDA_VISIBLE_DEVICES"] = _pre_args.gpu or settings.cuda_visible_devices_ocr
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import ocr_docling
@@ -33,8 +37,6 @@ from rag312.utils import formatear_tiempo
 INPUT_DIR = settings.biblioteca_dir
 OUTPUT_DIR = settings.salida_md_granite_dir
 CHUNKS_DIR = settings.salida_chunks_granite_dir
-CSV_PATH = settings.datos_dir / "metricas_ocr_granite.csv"
-CHUNKS_JSON_PATH = settings.datos_dir / "chunks_data_granite.json"
 
 
 def build_converter_granite() -> DocumentConverter:
@@ -54,7 +56,16 @@ def parse_args():
     parser.add_argument("--carpeta", type=str, default=None, help="Subcarpeta relativa dentro de biblioteca/ a procesar (default: toda biblioteca/)")
     parser.add_argument("--limite", type=int, default=None, help="Procesar solo los primeros N PDFs encontrados")
     parser.add_argument("--pdf", type=str, default=None, help="Ruta a un único PDF a procesar (ignora --carpeta/--limite)")
-    return parser.parse_args()
+    parser.add_argument("--gpu", type=str, default=None, help="GPU(s) a usar (valor de CUDA_VISIBLE_DEVICES para este proceso), ya resuelto antes de los imports")
+    parser.add_argument("--particiones", type=int, default=None, help="Cantidad total de procesos paralelos (usar junto con --particion)")
+    parser.add_argument("--particion", type=int, default=None, help="Índice 0-based de este proceso dentro de --particiones")
+    args = parser.parse_args()
+
+    if (args.particiones is None) != (args.particion is None):
+        parser.error("--particiones y --particion deben usarse juntos")
+    if args.particiones is not None and not (0 <= args.particion < args.particiones):
+        parser.error("--particion debe estar entre 0 y --particiones - 1")
+    return args
 
 
 def main():
@@ -75,8 +86,18 @@ def main():
         if args.limite:
             pdfs = pdfs[: args.limite]
 
+    etiqueta = ""
+    if args.particiones:
+        pdfs = pdfs[args.particion :: args.particiones]
+        etiqueta = f"[partición {args.particion}/{args.particiones}, GPU {os.environ.get('CUDA_VISIBLE_DEVICES')}] "
+        csv_path = settings.datos_dir / f"metricas_ocr_granite_part{args.particion}.csv"
+        chunks_json_path = settings.datos_dir / f"chunks_data_granite_part{args.particion}.json"
+    else:
+        csv_path = settings.datos_dir / "metricas_ocr_granite.csv"
+        chunks_json_path = settings.datos_dir / "chunks_data_granite.json"
+
     if not pdfs:
-        print(f"No se encontraron PDFs para procesar.")
+        print(f"{etiqueta}No se encontraron PDFs para procesar.")
         sys.exit(1)
 
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
@@ -89,10 +110,10 @@ def main():
     filas = []
     langchain_docs = []
 
-    print(f"Encontrados {len(pdfs)} PDFs. Iniciando procesamiento con granite-docling...\n")
+    print(f"{etiqueta}Encontrados {len(pdfs)} PDFs. Iniciando procesamiento con granite-docling...\n")
 
     for i, pdf_path in enumerate(pdfs, start=1):
-        print(f"[{i}/{len(pdfs)}] Procesando: {pdf_path.name}")
+        print(f"{etiqueta}[{i}/{len(pdfs)}] Procesando: {pdf_path.name}")
         t0 = time.time()
         try:
             docs_del_pdf = ocr_docling.procesar_pdf(pdf_path, converter, chunker, INPUT_DIR, OUTPUT_DIR, CHUNKS_DIR)
@@ -102,21 +123,21 @@ def main():
             todas_paginas = {p for d in docs_del_pdf for p in d.metadata["paginas"]}
             num_paginas = max(todas_paginas) if todas_paginas else 0
             tiempo_str = formatear_tiempo(elapsed)
-            print(f"    OK en {tiempo_str} ({len(docs_del_pdf)} chunks)\n")
+            print(f"{etiqueta}    OK en {tiempo_str} ({len(docs_del_pdf)} chunks)\n")
             filas.append([pdf_path.name, tiempo_str, num_paginas])
 
         except Exception as e:
             elapsed = time.time() - t0
             tiempo_str = formatear_tiempo(elapsed)
-            print(f"    ERROR tras {tiempo_str}: {e}\n")
+            print(f"{etiqueta}    ERROR tras {tiempo_str}: {e}\n")
             filas.append([pdf_path.name, f"ERROR ({tiempo_str})", "N/A"])
 
-    ocr_docling.guardar_metricas_csv(filas, CSV_PATH)
-    print(f"Listo. Métricas guardadas en: {CSV_PATH}")
-    print(f"Total de Document (LangChain) generados: {len(langchain_docs)}")
+    ocr_docling.guardar_metricas_csv(filas, csv_path)
+    print(f"{etiqueta}Listo. Métricas guardadas en: {csv_path}")
+    print(f"{etiqueta}Total de Document (LangChain) generados: {len(langchain_docs)}")
 
-    ocr_docling.fusionar_y_guardar_chunks_json(langchain_docs, CHUNKS_JSON_PATH)
-    print(f"Chunks (JSON) guardados en: {CHUNKS_JSON_PATH}")
+    ocr_docling.fusionar_y_guardar_chunks_json(langchain_docs, chunks_json_path)
+    print(f"{etiqueta}Chunks (JSON) guardados en: {chunks_json_path}")
     return langchain_docs
 
 
