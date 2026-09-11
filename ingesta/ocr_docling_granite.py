@@ -21,10 +21,10 @@ _pre_args, _ = _pre_parser.parse_known_args()
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 from rag312.config import settings
 
-os.environ["CUDA_VISIBLE_DEVICES"] = _pre_args.gpu or settings.cuda_visible_devices_ocr
-
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-import ocr_docling
+import ocr_docling  # OJO: este import fija CUDA_VISIBLE_DEVICES al default (settings.cuda_visible_devices_ocr) — lo pisamos abajo con --gpu
+
+os.environ["CUDA_VISIBLE_DEVICES"] = _pre_args.gpu or settings.cuda_visible_devices_ocr
 
 from docling.document_converter import DocumentConverter, PdfFormatOption
 from docling.datamodel.base_models import InputFormat
