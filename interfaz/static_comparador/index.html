@@ -44,6 +44,16 @@
 
       <div class="tarjeta-config__opciones">
         <fieldset class="tarjeta-config__grupo">
+          <legend>Pipeline / colección</legend>
+          <label class="tarjeta-config__opcion">
+            <select data-campo="coleccion">
+              <option value="procedimientos_sielse" selected>OCR original (EasyOCR)</option>
+              <option value="procedimientos_sielse_granite">OCR VLM (Docling Granite)</option>
+            </select>
+          </label>
+        </fieldset>
+
+        <fieldset class="tarjeta-config__grupo">
           <legend>Retrieval</legend>
           <label class="tarjeta-config__opcion">
             <input type="checkbox" data-campo="embedding" checked />

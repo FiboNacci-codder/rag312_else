@@ -42,10 +42,10 @@ def _embed_query(pregunta: str, embedder, sparse_embedder):
     return vector_denso, vector_sparse
 
 
-def _buscar_dense(client, vector_denso, limit: int) -> dict:
+def _buscar_dense(client, vector_denso, limit: int, collection_name: str) -> dict:
     """Rama dense sola (top-20, para rank real)."""
     resultados = client.query_points(
-        collection_name=COLLECTION_NAME,
+        collection_name=collection_name,
         query=vector_denso,
         using=DENSE_VECTOR_NAME,
         limit=limit,
@@ -54,10 +54,10 @@ def _buscar_dense(client, vector_denso, limit: int) -> dict:
     return {r.id: {"rank": i + 1, "score": r.score} for i, r in enumerate(resultados)}
 
 
-def _buscar_sparse(client, vector_sparse, limit: int) -> dict:
+def _buscar_sparse(client, vector_sparse, limit: int, collection_name: str) -> dict:
     """Rama sparse sola (top-20, para rank real)."""
     resultados = client.query_points(
-        collection_name=COLLECTION_NAME,
+        collection_name=collection_name,
         query=vector_sparse,
         using=SPARSE_VECTOR_NAME,
         limit=limit,
@@ -66,10 +66,10 @@ def _buscar_sparse(client, vector_sparse, limit: int) -> dict:
     return {r.id: {"rank": i + 1, "score": r.score} for i, r in enumerate(resultados)}
 
 
-def _buscar_fusionado(client, vector_denso, vector_sparse, prefetch_limit: int, top_k: int):
+def _buscar_fusionado(client, vector_denso, vector_sparse, prefetch_limit: int, top_k: int, collection_name: str):
     """Query fusionada (RRF) — resultado final."""
     return client.query_points(
-        collection_name=COLLECTION_NAME,
+        collection_name=collection_name,
         prefetch=[
             Prefetch(query=vector_denso, using=DENSE_VECTOR_NAME, limit=prefetch_limit),
             Prefetch(query=vector_sparse, using=SPARSE_VECTOR_NAME, limit=prefetch_limit),
@@ -80,10 +80,10 @@ def _buscar_fusionado(client, vector_denso, vector_sparse, prefetch_limit: int, 
     ).points
 
 
-def _buscar_rama_simple(client, vector, using: str, limit: int):
+def _buscar_rama_simple(client, vector, using: str, limit: int, collection_name: str):
     """Resultado directo de una sola rama (sin fusión), con payload — para modo='dense'/'sparse'."""
     return client.query_points(
-        collection_name=COLLECTION_NAME,
+        collection_name=collection_name,
         query=vector,
         using=using,
         limit=limit,
@@ -91,14 +91,14 @@ def _buscar_rama_simple(client, vector, using: str, limit: int):
     ).points
 
 
-def _completar_scores_dense_faltantes(client, resultados_fusionados, dense_info: dict, vector_denso) -> dict:
+def _completar_scores_dense_faltantes(client, resultados_fusionados, dense_info: dict, vector_denso, collection_name: str) -> dict:
     """Para los que no cayeron en el top-20 de la rama dense, calcular su score real."""
     ids_faltan_dense = [r.id for r in resultados_fusionados if r.id not in dense_info]
     if not ids_faltan_dense:
         return dense_info
 
     puntos_dense = client.retrieve(
-        collection_name=COLLECTION_NAME,
+        collection_name=collection_name,
         ids=ids_faltan_dense,
         with_vectors=[DENSE_VECTOR_NAME],
     )
@@ -136,23 +136,25 @@ def recuperar_contexto(
     modo: str = "hybrid",
     top_k: int | None = None,
     umbral_similitud: float | None = None,
+    collection_name: str | None = None,
 ):
     top_k = TOP_K if top_k is None else top_k
     umbral_similitud = UMBRAL_SIMILITUD if umbral_similitud is None else umbral_similitud
+    collection_name = COLLECTION_NAME if collection_name is None else collection_name
 
     vector_denso, vector_sparse = _embed_query(pregunta, embedder, sparse_embedder)
 
-    dense_info = _buscar_dense(client, vector_denso, PREFETCH_LIMIT)
-    sparse_info = _buscar_sparse(client, vector_sparse, PREFETCH_LIMIT)
+    dense_info = _buscar_dense(client, vector_denso, PREFETCH_LIMIT, collection_name)
+    sparse_info = _buscar_sparse(client, vector_sparse, PREFETCH_LIMIT, collection_name)
 
     if modo == "dense":
-        resultados = _buscar_rama_simple(client, vector_denso, DENSE_VECTOR_NAME, top_k)
+        resultados = _buscar_rama_simple(client, vector_denso, DENSE_VECTOR_NAME, top_k, collection_name)
     elif modo == "sparse":
-        resultados = _buscar_rama_simple(client, vector_sparse, SPARSE_VECTOR_NAME, top_k)
+        resultados = _buscar_rama_simple(client, vector_sparse, SPARSE_VECTOR_NAME, top_k, collection_name)
     else:
-        resultados = _buscar_fusionado(client, vector_denso, vector_sparse, PREFETCH_LIMIT, top_k)
+        resultados = _buscar_fusionado(client, vector_denso, vector_sparse, PREFETCH_LIMIT, top_k, collection_name)
 
-    dense_info = _completar_scores_dense_faltantes(client, resultados, dense_info, vector_denso)
+    dense_info = _completar_scores_dense_faltantes(client, resultados, dense_info, vector_denso, collection_name)
     detalle_scores = _construir_detalle_scores(resultados, dense_info, sparse_info)
 
     if umbral_similitud > 0:
@@ -272,6 +274,7 @@ def main(
     umbral_similitud: float | None = None,
     rerank: bool = True,
     rerank_top_n: int | None = None,
+    collection_name: str | None = None,
 ) -> dict:
     proc = procesar_pregunta(pregunta, corregir=corregir, reformular=reformular)
     pregunta_original = proc["original"]
@@ -283,6 +286,7 @@ def main(
     resultados, detalle_scores = recuperar_contexto(
         pregunta_busqueda, embedder, sparse_embedder, client,
         modo=modo_retrieval, top_k=top_k, umbral_similitud=umbral_similitud,
+        collection_name=collection_name,
     )
     t_retrieval = time.time() - t0
 
@@ -340,6 +344,7 @@ def main(
             "umbral_similitud": UMBRAL_SIMILITUD if umbral_similitud is None else umbral_similitud,
             "rerank": rerank,
             "rerank_top_n": settings.rerank_top_n if rerank_top_n is None else rerank_top_n,
+            "collection_name": COLLECTION_NAME if collection_name is None else collection_name,
         },
     }
 

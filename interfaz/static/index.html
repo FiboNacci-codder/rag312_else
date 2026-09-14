@@ -20,6 +20,13 @@
         <summary class="sidebar__ajustes-toggle">⚙️ Filtros de búsqueda avanzados</summary>
         <div class="sidebar__ajustes-body">
           <label class="sidebar__ajustes-campo">
+            Colección / OCR
+            <select id="select-coleccion">
+              <option value="procedimientos_sielse" selected>OCR original (EasyOCR)</option>
+              <option value="procedimientos_sielse_granite">OCR VLM (Docling Granite)</option>
+            </select>
+          </label>
+          <label class="sidebar__ajustes-campo">
             Comparador
             <select id="select-modo-retrieval">
               <option value="hybrid" selected>Híbrido (BM25 + embeddings)</option>

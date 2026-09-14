@@ -36,6 +36,7 @@ class PreguntaRequest(BaseModel):
     umbral_similitud: float | None = None
     rerank: bool = True
     rerank_top_n: int | None = None
+    collection_name: str = "procedimientos_sielse"
 
 
 @app.get("/")
@@ -56,6 +57,7 @@ def chat(request: PreguntaRequest):
             umbral_similitud=request.umbral_similitud,
             rerank=request.rerank,
             rerank_top_n=request.rerank_top_n,
+            collection_name=request.collection_name,
         )
     except Exception as e:
         return JSONResponse({"error": f"Ocurrió un error al consultar el sistema: {e}"})

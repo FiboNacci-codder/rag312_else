@@ -16,7 +16,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 from rag312.config import settings
 
 CSV_FINAL = settings.datos_dir / "metricas_ocr_granite.csv"
-JSON_FINAL = settings.datos_dir / "chunks_data_granite.json"
+JSON_FINAL = settings.chunks_json_granite_path
 
 
 def parse_args():

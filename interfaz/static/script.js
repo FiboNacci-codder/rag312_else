@@ -15,6 +15,7 @@
   const selectModoRetrieval = document.getElementById("select-modo-retrieval");
   const inputTopK = document.getElementById("input-top-k");
   const inputUmbralSimilitud = document.getElementById("input-umbral-similitud");
+  const selectColeccion = document.getElementById("select-coleccion");
   const btnAdjuntar = document.getElementById("btn-adjuntar");
   const inputArchivo = document.getElementById("input-archivo");
 
@@ -267,6 +268,7 @@
           umbral_similitud: inputUmbralSimilitud.value !== "" ? Number(inputUmbralSimilitud.value) : null,
           rerank: chkRerank.checked,
           rerank_top_n: Number(inputRerankTopN.value) || 5,
+          collection_name: selectColeccion.value,
         }),
       });
       const data = await resp.json();

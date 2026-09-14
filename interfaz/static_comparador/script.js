@@ -204,6 +204,7 @@
       Number(elTarjeta.querySelector('[data-campo="umbralSimilitud"]').value) / 100;
     const rerank = elTarjeta.querySelector('[data-campo="rerank"]').checked;
     const rerankTopN = Number(elTarjeta.querySelector('[data-campo="rerankTopN"]').value) || 5;
+    const coleccion = elTarjeta.querySelector('[data-campo="coleccion"]').value;
 
     renderMensajeEnTarjeta(contenedorMensajes, { rol: "usuario", texto: pregunta });
     textarea.value = "";
@@ -229,6 +230,7 @@
           umbral_similitud: umbralSimilitud,
           rerank,
           rerank_top_n: rerankTopN,
+          collection_name: coleccion,
         }),
       });
       const data = await resp.json();

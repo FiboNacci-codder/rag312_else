@@ -396,6 +396,10 @@ Script de generación de **embeddings híbridos** (densos + dispersos) para chun
 ## Nota para el Chatbot
 Este script es el **segundo paso crítico** en el pipeline RAG híbrido. Convierte texto en representaciones vectoriales duales (densas y dispersas) que permiten búsquedas semánticas y de palabras clave simultáneamente. El JSON final contiene todo lo necesario para indexar en Qdrant sin reprocesar los chunks.
 
+### Flag `--granite` (comparación de OCR)
+
+`python embeddings.py --granite` embebe en cambio `datos/chunks_data_granite.json` (salida de `ocr_docling_granite.py`, el OCR VLM/Docling+Granite) y escribe `datos/embeddings_data_granite.json` / `metricas_embeddings_granite.csv`, sin tocar los archivos del pipeline original. Misma lógica de embebido (mismo vLLM harrier-embed, mismo BM25), solo cambian las rutas de entrada/salida.
+
 # Resumen de `ingest_qdrant.py`
 
 ## Descripción General
@@ -494,6 +498,10 @@ Script de **indexación híbrida en Qdrant** que almacena vectores densos y disp
 
 ## Nota para el Chatbot
 Este script completa la **fase de ingesta del pipeline RAG**. La colección resultante permite búsquedas híbridas que aprovechan lo mejor de la semántica (embeddings densos) y la precisión léxica (BM25). El payload enriquecido con metadatos jerárquicos permite filtrado avanzado durante la recuperación, mejorando la relevancia de los chunks recuperados para el sistema RAG.
+
+### Flag `--granite` (comparación de OCR)
+
+`python ingest_qdrant.py --granite` lee en cambio `datos/embeddings_data_granite.json` y (re)crea la colección `procedimientos_sielse_granite` — separada de `procedimientos_sielse`, que no se toca. El comportamiento destructivo de `recrear_coleccion()` sigue aplicando, pero está acotado al nombre de colección efectivo (`procedimientos_sielse_granite` con `--granite`, `procedimientos_sielse` sin él), así que correr una variante nunca borra la otra. Esto permite tener ambas colecciones (OCR original vs. OCR VLM/Docling+Granite) indexadas en paralelo para comparar calidad de retrieval/generación.
 
 ## Fase de Consulta
 # Resumen de `normalizarquery.py`
@@ -663,6 +671,8 @@ Diccionario completo con:
 | UMBRAL_SIMILITUD | 0.5 | Filtro opcional por score dense |
 | Temperatura LLM | 0.2 | Balance entre creatividad y determinismo |
 | Max tokens LLM | 800 | Longitud máxima de respuesta |
+
+`main()`/`recuperar_contexto()` aceptan además un parámetro opcional `collection_name` (default `None` → `settings.collection_name`, es decir `procedimientos_sielse`) para apuntar la búsqueda a otra colección Qdrant sin reiniciar el proceso — por ejemplo `procedimientos_sielse_granite`, la colección del pipeline OCR VLM/Docling+Granite (ver `ingest_qdrant.py --granite`). El nombre de colección efectivamente usado se refleja en `resultado["config"]["collection_name"]`. Es lo que permiten alternar el desplegable "Colección / OCR" en `app_web.py` y el fieldset "Pipeline / colección" en `app_web_comparador.py` (sección 7), y el flag `--collection` de `eval_retrieval.py`/`eval_generation.py` (sección 6).
 
 ## Características Destacadas
 
@@ -841,6 +851,12 @@ Requiere: vLLM embeddings (8001), vLLM normalizador (8003, salvo con
 `golden_set_md_final.json` se construye con el pipeline de la sección
 siguiente.
 
+`--collection` permite apuntar la evaluación a otra colección Qdrant (por
+default usa `settings.collection_name`, `procedimientos_sielse`) — por
+ejemplo `--collection procedimientos_sielse_granite` para medir el
+pipeline OCR VLM/Docling+Granite (ver `ingest_qdrant.py --granite`) contra
+el mismo `golden_set.json`, y comparar Recall@K/MRR entre ambos.
+
 ### Generación del golden set — nivel chunk vs. nivel sección markdown
 
 Hay dos formas de generar las **preguntas** del golden set, que después
@@ -1006,6 +1022,11 @@ Requiere: vLLM embeddings (8001), normalizador (8003), reranker (8005,
 salvo que se llame con `rerank=False`), generador (8002) y Qdrant (6333)
 — corre el pipeline completo (`rag_query1.main()`) por cada pregunta.
 
+`--collection` funciona igual que en `eval_retrieval.py`: apunta la
+corrida a otra colección Qdrant (default `settings.collection_name`) para
+comparar métricas RAGAS entre `procedimientos_sielse` y
+`procedimientos_sielse_granite`.
+
 ### `inspeccionar_miss.py` — depuración caso por caso
 
 Toma el `detalle` de una corrida de `eval_retrieval.py`
@@ -1056,5 +1077,18 @@ Luego abrir `http://localhost:8080/` (o el host/túnel correspondiente si se acc
 cd ~/rag312_else/interfaz
 uvicorn app_web:app --reload --host 0.0.0.0 --port 8080
 ```
+
+El panel de "⚙️ Filtros de búsqueda avanzados" de la barra lateral incluye un desplegable **"Colección / OCR"** para alternar entre `procedimientos_sielse` (OCR original) y `procedimientos_sielse_granite` (OCR VLM/Docling+Granite) sin reiniciar el servidor — útil para comparar respuestas del mismo chat contra ambos pipelines.
+
+### 7.3. Comparador (`app_web_comparador.py`)
+
+Variante de la interfaz web (puerto 7863) pensada para comparar configuraciones lado a lado: cada "tarjeta" es independiente, con su propio desplegable de colección/OCR, modo de retrieval, top-K, umbral de similitud, reranking y su propia pregunta/respuesta — no se dispara nada entre tarjetas. Útil para correr la misma pregunta contra `procedimientos_sielse` y `procedimientos_sielse_granite` a la vez y comparar a simple vista.
+
+```bash
+cd ~/rag312_else/interfaz
+python app_web_comparador.py
+```
+
+Abrir `http://localhost:7863/`. Mismos requisitos de servicios que `app_web.py`.
 
 ---

@@ -27,6 +27,7 @@ class Settings(BaseSettings):
     qdrant_host: str = "localhost"
     qdrant_port: int = 6333
     collection_name: str = "procedimientos_sielse"
+    collection_name_granite: str = "procedimientos_sielse_granite"
     vector_dim: int = 1024
     dense_vector_name: str = "dense"
     sparse_vector_name: str = "bm25"
@@ -72,6 +73,14 @@ class Settings(BaseSettings):
     @property
     def datos_dir(self) -> Path:
         return self.rag_project_dir / "datos"
+
+    @property
+    def chunks_json_granite_path(self) -> Path:
+        return self.datos_dir / "chunks_data_granite.json"
+
+    @property
+    def embeddings_json_granite_path(self) -> Path:
+        return self.datos_dir / "embeddings_data_granite.json"
 
     @property
     def cargas_manuales_dir(self) -> Path:

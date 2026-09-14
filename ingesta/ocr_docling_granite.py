@@ -94,7 +94,7 @@ def main():
         chunks_json_path = settings.datos_dir / f"chunks_data_granite_part{args.particion}.json"
     else:
         csv_path = settings.datos_dir / "metricas_ocr_granite.csv"
-        chunks_json_path = settings.datos_dir / "chunks_data_granite.json"
+        chunks_json_path = settings.chunks_json_granite_path
 
     if not pdfs:
         print(f"{etiqueta}No se encontraron PDFs para procesar.")

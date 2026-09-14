@@ -166,7 +166,14 @@ def main():
              "de la fusión antes de calcular Recall@K/MRR, igual que hace rag_query1.main().",
     )
     parser.add_argument("--rerank-top-n", type=int, default=None, help="Override de settings.rerank_top_n")
+    parser.add_argument(
+        "--collection", type=str, default=None,
+        help="Nombre de colección Qdrant a evaluar (default: settings.collection_name). "
+             "Usar 'procedimientos_sielse_granite' para evaluar el pipeline OCR VLM/Docling.",
+    )
     args = parser.parse_args()
+
+    collection_name = args.collection or settings.collection_name
 
     if args.k > PRODUCTION_TOP_K:
         print(
@@ -206,7 +213,8 @@ def main():
                     print(f"    -> búsqueda: {pregunta_busqueda}")
 
             resultados_fusion, detalle_scores = recuperar_contexto(
-                pregunta_busqueda, embedder, sparse_embedder, client
+                pregunta_busqueda, embedder, sparse_embedder, client,
+                collection_name=collection_name,
             )
             if args.rerank:
                 resultados_fusion, detalle_scores = rerankear_resultados(
@@ -236,6 +244,7 @@ def main():
     resumen = {
         "n_preguntas": n,
         "n_errores": n_errores,
+        "collection": collection_name,
         "k": args.k,
         "normalizado": not args.sin_normalizar,
         "rerank": args.rerank,

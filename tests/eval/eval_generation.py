@@ -58,7 +58,7 @@ from _shared import asegurar_paths_pipeline
 
 asegurar_paths_pipeline()
 
-from rag312.config import get_embed_config, get_judge_ragas_config
+from rag312.config import get_embed_config, get_judge_ragas_config, settings
 
 try:
     from rag_query1 import main as rag_main
@@ -148,6 +148,11 @@ def main():
                          help="Evaluar solo una muestra aleatoria (por defecto: todas)")
     parser.add_argument("--seed", type=int, default=42)
     parser.add_argument("--out", type=str, default=str(Path(__file__).parent / "resultados_generation.json"))
+    parser.add_argument(
+        "--collection", type=str, default=None,
+        help="Nombre de colección Qdrant a evaluar (default: settings.collection_name). "
+             "Usar 'procedimientos_sielse_granite' para evaluar el pipeline OCR VLM/Docling.",
+    )
     args = parser.parse_args()
 
     with open(args.golden, "r", encoding="utf-8") as f:
@@ -185,7 +190,7 @@ def main():
         pregunta = item["pregunta"]
         print(f"[{i}/{len(golden_set)}] {pregunta[:70]}")
         try:
-            resultado = rag_main(pregunta)
+            resultado = rag_main(pregunta, collection_name=args.collection)
         except Exception as e:
             print(f"    ERROR ejecutando el pipeline: {e}")
             errores.append({"id": item.get("id"), "pregunta": pregunta, "error": str(e)})
@@ -270,6 +275,7 @@ def main():
             fila[metrica] = float(valor) if valor is not None and not es_nan else None
 
     resumen = {
+        "collection": args.collection or settings.collection_name,
         "n_preguntas_golden": n_total,
         "n_sin_ground_truth": n_sin_ground_truth,
         "n_preguntas_evaluadas": len(preguntas),

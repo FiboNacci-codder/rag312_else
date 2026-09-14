@@ -173,4 +173,19 @@ def main():
 
 
 if __name__ == "__main__":
+    import argparse
+
+    parser = argparse.ArgumentParser(description="Genera embeddings dense+sparse desde chunks_data*.json")
+    parser.add_argument(
+        "--granite", action="store_true",
+        help="Usa datos/chunks_data_granite.json como entrada y escribe "
+             "datos/embeddings_data_granite.json / metricas_embeddings_granite.csv",
+    )
+    args = parser.parse_args()
+
+    if args.granite:
+        CHUNKS_JSON = settings.chunks_json_granite_path
+        METRICS_CSV = settings.datos_dir / "metricas_embeddings_granite.csv"
+        VECTORS_OUT = settings.embeddings_json_granite_path
+
     main()

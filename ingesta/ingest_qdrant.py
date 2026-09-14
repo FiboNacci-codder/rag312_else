@@ -142,4 +142,17 @@ def main():
 
 
 if __name__ == "__main__":
+    import argparse
+
+    parser = argparse.ArgumentParser(description="(Re)crea la colección Qdrant y sube embeddings_data*.json")
+    parser.add_argument(
+        "--granite", action="store_true",
+        help="Usa datos/embeddings_data_granite.json y la colección procedimientos_sielse_granite",
+    )
+    args = parser.parse_args()
+
+    if args.granite:
+        VECTORS_JSON = settings.embeddings_json_granite_path
+        COLLECTION_NAME = settings.collection_name_granite
+
     main()
