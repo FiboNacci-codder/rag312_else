@@ -13,6 +13,8 @@ modelos/
 # Salidas del pipeline de ingesta (regenerables con ocr_docling.py / embeddings.py)
 salida_md/
 salida_chunks/
+salida_md_granite/
+salida_chunks_granite/
 datos/
 
 # Outputs de corridas de eval (regenerables con eval_retrieval.py / eval_generation.py / filtrar_golden_set.py)
