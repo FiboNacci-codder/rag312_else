@@ -19,14 +19,14 @@
       <details class="sidebar__ajustes">
         <summary class="sidebar__ajustes-toggle">⚙️ Filtros de búsqueda avanzados</summary>
         <div class="sidebar__ajustes-body">
-          <label class="sidebar__ajustes-campo">
+          <label class="sidebar__ajustes-campo sidebar__ajustes-campo--vertical">
             Colección / OCR
             <select id="select-coleccion">
               <option value="procedimientos_sielse" selected>OCR original (EasyOCR)</option>
               <option value="procedimientos_sielse_granite">OCR VLM (Docling Granite)</option>
             </select>
           </label>
-          <label class="sidebar__ajustes-campo">
+          <label class="sidebar__ajustes-campo sidebar__ajustes-campo--vertical">
             Comparador
             <select id="select-modo-retrieval">
               <option value="hybrid" selected>Híbrido (BM25 + embeddings)</option>
@@ -34,11 +34,11 @@
               <option value="sparse">Solo BM25</option>
             </select>
           </label>
-          <label class="sidebar__ajustes-campo">
+          <label class="sidebar__ajustes-campo sidebar__ajustes-campo--vertical">
             Chunks a recuperar
             <input type="number" id="input-top-k" min="1" max="50" placeholder="por defecto" />
           </label>
-          <label class="sidebar__ajustes-campo">
+          <label class="sidebar__ajustes-campo sidebar__ajustes-campo--vertical">
             Umbral de similitud
             <input type="number" id="input-umbral-similitud" min="0" max="1" step="0.05" placeholder="0" />
           </label>
@@ -46,7 +46,7 @@
             <input type="checkbox" id="chk-rerank" checked />
             Activar 2do filtro (reranker)
           </label>
-          <label class="sidebar__ajustes-campo">
+          <label class="sidebar__ajustes-campo sidebar__ajustes-campo--vertical">
             Chunks a conservar
             <input type="number" id="input-rerank-top-n" min="1" max="20" value="5" />
           </label>

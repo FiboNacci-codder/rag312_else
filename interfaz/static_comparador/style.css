@@ -343,6 +343,32 @@ body {
   display: block;
 }
 
+.fuente__ruta {
+  margin-top: 0.2rem;
+  font-size: 0.72rem;
+  font-weight: 400;
+  color: var(--text-muted);
+  word-break: break-all;
+  display: block;
+}
+
+.fuente__abrir {
+  display: inline-block;
+  margin-top: 0.35rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--else-blue);
+  text-decoration: none;
+}
+
+.fuente__abrir:hover {
+  text-decoration: underline;
+}
+
+[data-theme="dark"] .fuente__abrir {
+  color: var(--else-yellow);
+}
+
 .fuente__chunk-toggle {
   margin-top: 0.4rem;
   border-top: 1px dashed var(--border);

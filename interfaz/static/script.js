@@ -111,7 +111,9 @@
         <span class="item-historial__titulo"></span>
         <span class="item-historial__fecha"></span>
       `;
-      li.querySelector(".item-historial__titulo").textContent = conv.titulo;
+      const tituloEl = li.querySelector(".item-historial__titulo");
+      tituloEl.textContent = conv.titulo;
+      tituloEl.title = conv.titulo;
       li.querySelector(".item-historial__fecha").textContent = fecha.toLocaleString();
       li.addEventListener("click", () => cargarConversacion(id));
       listaHistorial.appendChild(li);

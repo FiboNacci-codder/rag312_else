@@ -56,6 +56,12 @@
     return fueraTop ? "fuera del top-20" : "—";
   }
 
+  function urlDocumento(ruta, pagina) {
+    const partes = ruta.split("/").map(encodeURIComponent).join("/");
+    const ancla = pagina ? `#page=${encodeURIComponent(pagina)}` : "";
+    return `/api/documento/${partes}${ancla}`;
+  }
+
   // ---------- Render de un mensaje dentro de la tarjeta ----------
 
   function renderMensajeEnTarjeta(contenedorMensajes, mensaje) {
@@ -82,12 +88,19 @@
         const detalle = document.createElement("div");
         detalle.className = "fuente";
         const paginaTxt = Array.isArray(f.pagina) ? f.pagina.join(", ") : f.pagina;
+        const primeraPagina = Array.isArray(f.pagina) ? f.pagina[0] : f.pagina;
         const seccionTxt = f.seccion ? ` — ${f.seccion}` : "";
         detalle.innerHTML = `
           <div class="fuente__header">
             <span class="fuente__titulo">${escaparHtml(f.documento || "Documento")} (pág. ${escaparHtml(
           String(paginaTxt ?? "-")
         )}${escaparHtml(seccionTxt)})</span>
+            ${f.ruta ? `<span class="fuente__ruta">📁 ${escaparHtml(f.ruta)}</span>` : ""}
+            ${
+              f.ruta
+                ? `<a class="fuente__abrir" href="${urlDocumento(f.ruta, primeraPagina)}" target="_blank" rel="noopener noreferrer">📄 Abrir PDF</a>`
+                : ""
+            }
           </div>
           <details class="fuente__chunk-toggle">
             <summary>Ver chunk</summary>
