@@ -18,6 +18,7 @@ salida_md/
 salida_chunks/
 salida_md_granite/
 salida_chunks_granite/
+salida_md_teleocr/
 datos/
 
 # Outputs de corridas de eval (regenerables con eval_retrieval.py / eval_generation.py / filtrar_golden_set.py)
