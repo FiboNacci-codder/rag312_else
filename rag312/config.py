@@ -71,10 +71,6 @@ class Settings(BaseSettings):
         return self.rag_project_dir / "salida_chunks_granite"
 
     @property
-    def salida_md_teleocr_dir(self) -> Path:
-        return self.rag_project_dir / "salida_md_teleocr"
-
-    @property
     def datos_dir(self) -> Path:
         return self.rag_project_dir / "datos"
 

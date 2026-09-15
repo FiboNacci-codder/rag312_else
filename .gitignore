@@ -10,6 +10,9 @@ qdrant_storage/
 # Modelos descargados (HF cache, fastembed cache)
 modelos/
 
+# Clon de repos externos usados para probar motores de OCR candidatos (no es código propio)
+teleocr_repo/
+
 # Salidas del pipeline de ingesta (regenerables con ocr_docling.py / embeddings.py)
 salida_md/
 salida_chunks/
