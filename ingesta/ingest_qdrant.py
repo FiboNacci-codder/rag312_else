@@ -145,14 +145,26 @@ if __name__ == "__main__":
     import argparse
 
     parser = argparse.ArgumentParser(description="(Re)crea la colección Qdrant y sube embeddings_data*.json")
-    parser.add_argument(
+    grupo_variante = parser.add_mutually_exclusive_group()
+    grupo_variante.add_argument(
         "--granite", action="store_true",
         help="Usa datos/embeddings_data_granite.json y la colección procedimientos_sielse_granite",
+    )
+    grupo_variante.add_argument(
+        "--teleocr", choices=["recursive", "markdown_header"], default=None,
+        help="Usa datos/embeddings_data_teleocr_<variante>.json y la colección "
+             "procedimientos_sielse_teleocr_<variante>",
     )
     args = parser.parse_args()
 
     if args.granite:
         VECTORS_JSON = settings.embeddings_json_granite_path
         COLLECTION_NAME = settings.collection_name_granite
+    elif args.teleocr == "recursive":
+        VECTORS_JSON = settings.embeddings_json_teleocr_recursive_path
+        COLLECTION_NAME = settings.collection_name_teleocr_recursive
+    elif args.teleocr == "markdown_header":
+        VECTORS_JSON = settings.embeddings_json_teleocr_markdown_header_path
+        COLLECTION_NAME = settings.collection_name_teleocr_markdown_header
 
     main()

@@ -59,8 +59,8 @@ from transformers import AutoTokenizer
 INPUT_DIR = settings.salida_md_teleocr_dir
 DATOS_DIR = settings.datos_dir
 REPORT_CSV_PATH = DATOS_DIR / "reporte_chunking_teleocr.csv"
-OUT_DIR_RECURSIVE = settings.rag_project_dir / "salida_chunks_teleocr_recursive"
-OUT_DIR_MARKDOWN_HEADER = settings.rag_project_dir / "salida_chunks_teleocr_markdown_header"
+OUT_DIR_RECURSIVE = settings.salida_chunks_teleocr_recursive_dir
+OUT_DIR_MARKDOWN_HEADER = settings.salida_chunks_teleocr_markdown_header_dir
 
 MAX_TOKENS = 2048  # mismo presupuesto que HybridChunker en ocr_docling.py (harrier-embed)
 CHUNK_OVERLAP_TOKENS = 200

@@ -28,6 +28,8 @@ class Settings(BaseSettings):
     qdrant_port: int = 6333
     collection_name: str = "procedimientos_sielse"
     collection_name_granite: str = "procedimientos_sielse_granite"
+    collection_name_teleocr_recursive: str = "procedimientos_sielse_teleocr_recursive"
+    collection_name_teleocr_markdown_header: str = "procedimientos_sielse_teleocr_markdown_header"
     vector_dim: int = 1024
     dense_vector_name: str = "dense"
     sparse_vector_name: str = "bm25"
@@ -75,6 +77,14 @@ class Settings(BaseSettings):
         return self.rag_project_dir / "salida_md_teleocr"
 
     @property
+    def salida_chunks_teleocr_recursive_dir(self) -> Path:
+        return self.rag_project_dir / "salida_chunks_teleocr_recursive"
+
+    @property
+    def salida_chunks_teleocr_markdown_header_dir(self) -> Path:
+        return self.rag_project_dir / "salida_chunks_teleocr_markdown_header"
+
+    @property
     def datos_dir(self) -> Path:
         return self.rag_project_dir / "datos"
 
@@ -85,6 +95,14 @@ class Settings(BaseSettings):
     @property
     def embeddings_json_granite_path(self) -> Path:
         return self.datos_dir / "embeddings_data_granite.json"
+
+    @property
+    def embeddings_json_teleocr_recursive_path(self) -> Path:
+        return self.datos_dir / "embeddings_data_teleocr_recursive.json"
+
+    @property
+    def embeddings_json_teleocr_markdown_header_path(self) -> Path:
+        return self.datos_dir / "embeddings_data_teleocr_markdown_header.json"
 
     @property
     def cargas_manuales_dir(self) -> Path:

@@ -25,8 +25,18 @@ _vectores_json_lock = threading.Lock()
 
 
 def cargar_chunks() -> list[Document]:
-    with open(CHUNKS_JSON, "r", encoding="utf-8") as f:
-        data = json.load(f)
+    """Lee CHUNKS_JSON. Admite tanto un único archivo plano (producción,
+    --granite: `[{"page_content","metadata"}, ...]`) como un directorio
+    (--teleocr: árbol de `<stem>_chunks.json` por PDF, uno por archivo, que
+    se concatenan) — ver probar_chunking_teleocr.py, que escribe ese árbol."""
+    if CHUNKS_JSON.is_dir():
+        data = []
+        for path in sorted(CHUNKS_JSON.rglob("*.json")):
+            with open(path, "r", encoding="utf-8") as f:
+                data.extend(json.load(f))
+    else:
+        with open(CHUNKS_JSON, "r", encoding="utf-8") as f:
+            data = json.load(f)
     return [Document(page_content=d["page_content"], metadata=d["metadata"]) for d in data]
 
 
@@ -176,10 +186,17 @@ if __name__ == "__main__":
     import argparse
 
     parser = argparse.ArgumentParser(description="Genera embeddings dense+sparse desde chunks_data*.json")
-    parser.add_argument(
+    grupo_variante = parser.add_mutually_exclusive_group()
+    grupo_variante.add_argument(
         "--granite", action="store_true",
         help="Usa datos/chunks_data_granite.json como entrada y escribe "
              "datos/embeddings_data_granite.json / metricas_embeddings_granite.csv",
+    )
+    grupo_variante.add_argument(
+        "--teleocr", choices=["recursive", "markdown_header"], default=None,
+        help="Usa el árbol salida_chunks_teleocr_<variante>/ (probar_chunking_teleocr.py) "
+             "como entrada y escribe datos/embeddings_data_teleocr_<variante>.json / "
+             "metricas_embeddings_teleocr_<variante>.csv",
     )
     args = parser.parse_args()
 
@@ -187,5 +204,13 @@ if __name__ == "__main__":
         CHUNKS_JSON = settings.chunks_json_granite_path
         METRICS_CSV = settings.datos_dir / "metricas_embeddings_granite.csv"
         VECTORS_OUT = settings.embeddings_json_granite_path
+    elif args.teleocr == "recursive":
+        CHUNKS_JSON = settings.salida_chunks_teleocr_recursive_dir
+        METRICS_CSV = settings.datos_dir / "metricas_embeddings_teleocr_recursive.csv"
+        VECTORS_OUT = settings.embeddings_json_teleocr_recursive_path
+    elif args.teleocr == "markdown_header":
+        CHUNKS_JSON = settings.salida_chunks_teleocr_markdown_header_dir
+        METRICS_CSV = settings.datos_dir / "metricas_embeddings_teleocr_markdown_header.csv"
+        VECTORS_OUT = settings.embeddings_json_teleocr_markdown_header_path
 
     main()
