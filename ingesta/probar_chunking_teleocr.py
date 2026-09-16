@@ -31,7 +31,10 @@ página confirmado en el markdown resultante, así que acá el campo `paginas`
 queda en `None` para todos los chunks — no se inventa un valor.
 
 Este script NO es parte del pipeline de producción: no toca
-`datos/chunks_data.json`, escribe sus resultados en archivos aparte.
+`datos/chunks_data.json`. Por cada splitter escribe un archivo de chunks por
+PDF (no un único JSON con todo junto), espejando la jerarquía de
+`biblioteca/` — mismo patrón que `salida_chunks/` en ocr_docling.py — bajo
+`salida_chunks_teleocr_recursive/` y `salida_chunks_teleocr_markdown_header/`.
 
 Uso típico (desde el env "rag312", después de correr
 ocr_teleocr_batch.py):
@@ -56,8 +59,8 @@ from transformers import AutoTokenizer
 INPUT_DIR = settings.salida_md_teleocr_dir
 DATOS_DIR = settings.datos_dir
 REPORT_CSV_PATH = DATOS_DIR / "reporte_chunking_teleocr.csv"
-OUT_JSON_RECURSIVE = DATOS_DIR / "chunks_data_teleocr_recursive.json"
-OUT_JSON_MARKDOWN_HEADER = DATOS_DIR / "chunks_data_teleocr_markdown_header.json"
+OUT_DIR_RECURSIVE = settings.rag_project_dir / "salida_chunks_teleocr_recursive"
+OUT_DIR_MARKDOWN_HEADER = settings.rag_project_dir / "salida_chunks_teleocr_markdown_header"
 
 MAX_TOKENS = 2048  # mismo presupuesto que HybridChunker en ocr_docling.py (harrier-embed)
 CHUNK_OVERLAP_TOKENS = 200
@@ -135,13 +138,19 @@ def chunkear_markdown_header(texto: str, meta_base: dict, tokenizer) -> list[Doc
     ]
 
 
-def guardar_json(docs: list[Document], path: Path) -> None:
-    path.parent.mkdir(parents=True, exist_ok=True)
-    with open(path, "w", encoding="utf-8") as f:
+def guardar_chunks_pdf(docs: list[Document], pdf_dir: Path, input_dir: Path, output_dir: Path) -> Path:
+    """Escribe los chunks de un único PDF en su propio archivo, espejando la
+    jerarquía de biblioteca/ — mismo patrón que guardar_chunks_txt() en
+    ocr_docling.py, pero en JSON en vez de .txt (no hay texto de debug extra
+    que aportar más allá del page_content/metadata ya estructurado)."""
+    destino = output_dir / pdf_dir.relative_to(input_dir).parent / (pdf_dir.name + "_chunks.json")
+    destino.parent.mkdir(parents=True, exist_ok=True)
+    with open(destino, "w", encoding="utf-8") as f:
         json.dump(
             [{"page_content": d.page_content, "metadata": d.metadata} for d in docs],
             f, ensure_ascii=False, indent=2,
         )
+    return destino
 
 
 def calcular_metricas(nombre_splitter: str, docs: list[Document], tokenizer) -> dict:
@@ -217,13 +226,16 @@ def main():
     for i, md_path in enumerate(mds, start=1):
         print(f"[{i}/{len(mds)}] Procesando: {md_path.relative_to(INPUT_DIR)}")
         texto = md_path.read_text(encoding="utf-8")
+        pdf_dir = md_path.parent
         meta_base = metadata_base(md_path, INPUT_DIR)
-        docs_recursive.extend(chunkear_recursive_simple(texto, meta_base, tokenizer))
-        docs_markdown_header.extend(chunkear_markdown_header(texto, meta_base, tokenizer))
 
-    DATOS_DIR.mkdir(exist_ok=True)
-    guardar_json(docs_recursive, OUT_JSON_RECURSIVE)
-    guardar_json(docs_markdown_header, OUT_JSON_MARKDOWN_HEADER)
+        docs_pdf_recursive = chunkear_recursive_simple(texto, meta_base, tokenizer)
+        docs_pdf_markdown_header = chunkear_markdown_header(texto, meta_base, tokenizer)
+        guardar_chunks_pdf(docs_pdf_recursive, pdf_dir, INPUT_DIR, OUT_DIR_RECURSIVE)
+        guardar_chunks_pdf(docs_pdf_markdown_header, pdf_dir, INPUT_DIR, OUT_DIR_MARKDOWN_HEADER)
+
+        docs_recursive.extend(docs_pdf_recursive)
+        docs_markdown_header.extend(docs_pdf_markdown_header)
 
     filas = [
         calcular_metricas("recursive_simple", docs_recursive, tokenizer),
@@ -232,8 +244,8 @@ def main():
     guardar_reporte_csv(filas, REPORT_CSV_PATH)
     imprimir_reporte(filas)
 
-    print(f"\nrecursive_simple: {len(docs_recursive)} chunks -> {OUT_JSON_RECURSIVE}")
-    print(f"markdown_header: {len(docs_markdown_header)} chunks -> {OUT_JSON_MARKDOWN_HEADER}")
+    print(f"\nrecursive_simple: {len(docs_recursive)} chunks -> {OUT_DIR_RECURSIVE}")
+    print(f"markdown_header: {len(docs_markdown_header)} chunks -> {OUT_DIR_MARKDOWN_HEADER}")
     print(f"Reporte comparativo: {REPORT_CSV_PATH}")
     print("Nota: 'paginas' queda en None para ambos splitters — TeleOCR no expone marcadores de página en su markdown.")
 
